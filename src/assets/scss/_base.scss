@@ -1,0 +1,45 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: proxima-nova,sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2e2d36;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline:none;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  height: 100vh;
+}
