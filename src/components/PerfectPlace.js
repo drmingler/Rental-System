@@ -9,13 +9,12 @@ function PerfectPlace() {
         <Row>
           <Col lg={12} className="perfect-place-content">
             <h1>
-              This is Suzie. She just booked her <br />
-              new home
+              This is Suzie. She just booked <br />
+                her new home
             </h1>
-            <p>
-              “I was looking for a place for ages. Then I discovered <br />
-              HousingAnywhere. Within one week I found my new <br /> home!”
-            </p>
+            <p>“I was looking for a place for ages. Then I discovered </p>
+            <p> HousingAnywhere. Within one week I found my new </p>{" "}
+            <p> home!”</p>
             <button>Find The Perfect Place</button>
           </Col>
         </Row>
@@ -26,7 +25,7 @@ function PerfectPlace() {
         }
         alt="perfect-picture"
       />
-      <span/>
+      <span />
     </section>
   );
 }

@@ -14,6 +14,12 @@ $lighter-dark-colour:  #858e98;
 $mediumpurple: mediumpurple;
 $deep-purple: #7c54c1;
 $light-yellow: #f7a31d;
+$light-border: #e9eaef;
+
+// Section spacing
+$section-spacing : 100px;
+$small-section-spacing : 50px;
+
 
 %flex {
   display: flex;
@@ -31,3 +37,8 @@ $light-yellow: #f7a31d;
   flex-direction: row;
 }
 
+%large-heading-style{
+  font-size: $large-font-size;
+  line-height: $medium-line-height;
+  font-weight: 700;
+}

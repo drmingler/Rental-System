@@ -1,5 +1,6 @@
 @import "variables";
 
+// Page header section
 .header-container {
   background: linear-gradient(
     -60.76deg,
@@ -135,18 +136,17 @@
   }
 }
 
+// City section
 .cities-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
 }
 
 .cities-title {
   text-align: center;
 
   h1 {
-    font-size: $large-font-size;
-    line-height: $medium-line-height;
-    font-weight: 700;
+    @extend %large-heading-style;
   }
 
   p {
@@ -200,7 +200,7 @@
 }
 
 .rental-steps-container {
-  padding-bottom: 100px;
+  padding-bottom: $section-spacing;
 
   .switch {
     @extend %flex-row;
@@ -235,6 +235,7 @@
   }
 }
 
+// rental instruction section
 .rental-instruction {
   .rental-info {
     position: relative;
@@ -285,6 +286,7 @@
   }
 }
 
+// Perfect place section
 .perfect-place-section {
   background-color: #9679ff;
   padding: 11.25rem 4rem 9.75rem;
@@ -293,7 +295,6 @@
   .perfect-place-content {
     z-index: 1;
     h1 {
-      //font-style: italic;
       font-weight: 700;
       font-size: 38px;
       line-height: 50px;
@@ -337,8 +338,37 @@
   }
 }
 
-// Responsiveness
+.available-cities-section {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  text-align: center;
 
+  h1 {
+    @extend %large-heading-style;
+    margin-bottom: 80px;
+    line-height: 60px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  a {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: $mediumpurple;
+  }
+  .light-border {
+    border-right: 1px solid $light-border;
+  }
+}
+
+
+.featured-states-section{
+
+}
+// Responsiveness
 @media (max-width: 767.98px) {
   %font-small {
     font-size: $medium-font-size;
@@ -390,8 +420,8 @@
     }
   }
   .cities-container {
-    margin-top: 50px;
-    margin-bottom: 0px;
+    margin-top: $small-section-spacing;
+    margin-bottom: 0;
   }
   .cities-title {
     h1 {
@@ -440,12 +470,24 @@
       }
       p {
         font-size: $small-font-size;
+        line-height: 24px;
+        margin-bottom: 0;
       }
       button {
         padding: 13px 20px;
       }
     }
   }
+  .available-cities-section {
+    padding-top: $small-section-spacing;
+    padding-bottom: $section-spacing;
+    h1 {
+      @extend %font-small;
+      line-height: $small-line-height;
+      margin-bottom: 40px;
+    }
+  }
+
 }
 
 @media (min-width: 1000px) {
