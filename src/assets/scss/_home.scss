@@ -243,6 +243,7 @@
     .info-img-container {
       height: 108px;
       text-align: center;
+
       img {
         height: auto;
         //width: 100%;
@@ -251,11 +252,13 @@
 
     .info-content {
       line-height: $small-line-height;
+
       h3 {
         font-size: 17px;
         font-weight: 600;
         margin: 17px 0;
       }
+
       p {
         opacity: 0.8;
       }
@@ -270,9 +273,11 @@
       color: $deep-purple;
     }
   }
+
   .learn-more-btn {
     margin-top: 50px;
     text-align: center;
+
     button {
       padding: 6px 16px;
       border: none;
@@ -292,17 +297,21 @@
   padding: 11.25rem 4rem 9.75rem;
   color: white;
   position: relative;
+
   .perfect-place-content {
     z-index: 1;
+
     h1 {
       font-weight: 700;
       font-size: 38px;
       line-height: 50px;
       margin-bottom: 20px;
     }
+
     p {
       font-size: $medium-font-size;
     }
+
     button {
       margin-top: 20px;
       padding: 16px 28px;
@@ -315,6 +324,7 @@
       font-weight: 700;
     }
   }
+
   img {
     position: absolute;
     bottom: 0;
@@ -325,6 +335,7 @@
     height: 100%;
     object-fit: cover;
   }
+
   span {
     position: absolute;
     width: 100%;
@@ -338,6 +349,7 @@
   }
 }
 
+// Available Cities Section
 .available-cities-section {
   padding-top: $section-spacing;
   padding-bottom: $section-spacing;
@@ -348,26 +360,50 @@
     margin-bottom: 80px;
     line-height: 60px;
   }
+
   h4 {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
   }
+
   a {
     text-align: center;
     font-size: 14px;
     line-height: 20px;
     color: $mediumpurple;
   }
+
   .light-border {
     border-right: 1px solid $light-border;
   }
 }
 
+// Listing Categories Section
+.listing-categories-section {
+  padding-bottom: $section-spacing;
+  text-align: center;
+  h1 {
+    @extend %large-heading-style;
+    margin-bottom: 80px;
+    line-height: 60px;
+  }
 
-.featured-states-section{
+  a {
+    font-size: 14px;
+    line-height: 20px;
+    color: $mediumpurple;
+  }
 
+  .right-border {
+    border-right: 1px solid $lighter-dark-colour;
+  }
 }
+
+
+
+
+
 // Responsiveness
 @media (max-width: 767.98px) {
   %font-small {
@@ -447,9 +483,11 @@
   .rental-instruction {
     .rental-info {
       text-align: center;
+
       .info-content {
         margin-bottom: 50px;
       }
+
       .step-number {
         font-size: $small-font-size;
         right: 190px;
@@ -459,6 +497,7 @@
   }
   .perfect-place-section {
     padding: 4rem 1.125rem 3rem;
+
     img {
       object-position: right;
     }
@@ -468,11 +507,13 @@
         font-size: $medium-font-size;
         line-height: 25px;
       }
+
       p {
         font-size: $small-font-size;
         line-height: 24px;
         margin-bottom: 0;
       }
+
       button {
         padding: 13px 20px;
       }
@@ -480,14 +521,24 @@
   }
   .available-cities-section {
     padding-top: $small-section-spacing;
-    padding-bottom: $section-spacing;
+    padding-bottom: $small-section-spacing;
+
     h1 {
       @extend %font-small;
       line-height: $small-line-height;
       margin-bottom: 40px;
     }
   }
-
+  .listing-categories-section {
+    h1 {
+      @extend %font-small;
+      margin-bottom: 40px;
+      line-height: $small-line-height;
+    }
+    .right-border {
+      border-right: none;
+    }
+  }
 }
 
 @media (min-width: 1000px) {
