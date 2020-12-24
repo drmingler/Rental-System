@@ -1,8 +1,19 @@
+// Fonts
 $small-font-size: 16px;
 $small-line-height: 22px;
 $medium-font-size : 20px;
 $medium-line-height: 28px;
 $large-font-size: 48px;
+
+// Colours
+$bg-colour-1:  #9679ff;
+$bg-colour-2:  #d499ea;
+$bg-colour-3:  #eea4b3;
+$light-dark-colour:  #2e2d36;
+$lighter-dark-colour:  #858e98;
+$mediumpurple: mediumpurple;
+$deep-purple: #7c54c1;
+$light-yellow: #f7a31d;
 
 %flex {
   display: flex;
