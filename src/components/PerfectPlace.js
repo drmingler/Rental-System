@@ -23,7 +23,7 @@ function PerfectPlace() {
         src={
           "https://thumb.housinganywhere.com/dist/testimonial-tenant-30cbcc728b32547df28713d1be50258d.bundle.jpg"
         }
-        alt="perfect-picture"
+        alt="perfect"
       />
       <span />
     </section>

@@ -362,16 +362,14 @@
   }
 
   h4 {
-    font-size: 14px;
+    font-size: $smallest-font-size;
     font-weight: 700;
     line-height: 20px;
   }
 
   a {
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    color: $mediumpurple;
+    @extend %link-font;
   }
 
   .light-border {
@@ -383,6 +381,7 @@
 .listing-categories-section {
   padding-bottom: $section-spacing;
   text-align: center;
+
   h1 {
     @extend %large-heading-style;
     margin-bottom: 80px;
@@ -390,9 +389,7 @@
   }
 
   a {
-    font-size: 14px;
-    line-height: 20px;
-    color: $mediumpurple;
+    @extend %link-font;
   }
 
   .right-border {
@@ -400,9 +397,42 @@
   }
 }
 
+// Site footer
+.footer {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  background-color: #2d2e35;
+  .footer-icon {
+    margin-bottom: 40px;
 
-
-
+    a{
+      font-size: 16px;
+      text-align: center;
+      background-color: #414250;
+      color: white;
+      margin-right: 20px;
+      padding: 11px 11px 9px 11px;
+      border-radius: 50%;
+    }
+  }
+  p {
+    color: white;
+    @extend %link-font;
+    margin-bottom: 40px;
+  }
+  h4 {
+    font-size: $smallest-font-size;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+  }
+  a {
+    @extend %link-font;
+  }
+  ul {
+    padding-bottom: 30px;
+  }
+}
 
 // Responsiveness
 @media (max-width: 767.98px) {
@@ -416,6 +446,11 @@
     font-size: $small-font-size;
     line-height: $small-line-height;
     font-weight: 700;
+  }
+
+  .cities-container {
+    padding-top: 0;
+    padding-bottom: $small-section-spacing;
   }
 
   .header-title {
@@ -472,7 +507,7 @@
     }
   }
   .city-name {
-    font-size: 14px;
+    font-size: $smallest-font-size;
     line-height: 20px;
   }
   .switch-btn {
@@ -535,9 +570,17 @@
       margin-bottom: 40px;
       line-height: $small-line-height;
     }
+
     .right-border {
       border-right: none;
     }
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+    text-align: center;
   }
 }
 

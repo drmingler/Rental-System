@@ -1,5 +1,6 @@
 // Fonts
 $small-font-size: 16px;
+$smallest-font-size: 14px;
 $small-line-height: 22px;
 $medium-font-size : 20px;
 $medium-line-height: 28px;
@@ -15,6 +16,7 @@ $mediumpurple: mediumpurple;
 $deep-purple: #7c54c1;
 $light-yellow: #f7a31d;
 $light-border: #e9eaef;
+$footer_bg-colour:#2d2e35;
 
 // Section spacing
 $section-spacing : 100px;
@@ -37,6 +39,12 @@ $small-section-spacing : 50px;
   flex-direction: row;
 }
 
+%link-font{
+  font-size: $smallest-font-size;
+  line-height: 20px;
+  color: $mediumpurple;
+  cursor: pointer;
+}
 %large-heading-style{
   font-size: $large-font-size;
   line-height: $medium-line-height;
