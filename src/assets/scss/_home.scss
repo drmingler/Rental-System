@@ -1,12 +1,111 @@
 @import "variables";
 
+%NavBarCommon {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 11;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+
+.navbar {
+  @extend %NavBarCommon;
+  background-color: white;
+  border-bottom: 1px solid $light-border;
+}
+
+.nav-transparent {
+  @extend %NavBarCommon;
+  background-color: transparent;
+  border: none;
+
+  .nav-item-container {
+    border: none;
+
+    .nav-items {
+      li {
+        color: white;
+        &:hover{
+          color: white;
+          border-bottom: 2px solid white;
+        }
+      }
+    }
+  }
+
+  .list-property {
+    button {
+      border: 1px solid white;
+      color: white;
+    }
+  }
+}
+
+.nav-item-container {
+  @extend %flex-row;
+  height: 100%;
+  border-left: 1px solid $light-border;
+}
+
+.nav-items {
+  @extend %flex-row;
+  justify-content: space-between;
+  margin-right: 50px;
+
+  li {
+    margin-left: 60px;
+    text-align: center;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    color: $lighter-dark-colour;
+    transition: all 0.1s ease-in;
+    &:hover{
+      color: $deep-purple;
+      border-bottom: 2px solid $deeper-purple;
+    }
+  }
+}
+
+.list-property {
+  @extend %flex-row;
+
+  button {
+    padding: 6px 10px;
+    border: 1px solid #dc7338;
+    color: #dc7338;
+    background-color: transparent;
+    font-size: $smallest-font-size;
+    border-radius: 4px;
+  }
+
+  .name-dropdown {
+    margin-left: 40px;
+    background-color: $deeper-purple;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+
+    h4 {
+      text-align: center;
+      margin-top: 7px;
+      font-size: 23px;
+      color: white;
+    }
+  }
+}
+
 // Page header section
 .header-container {
   background: linear-gradient(
-    -60.76deg,
-    $bg-colour-1 0,
-    $bg-colour-2 57.96%,
-    $bg-colour-3 100%
+                  -60.76deg,
+                  $bg-colour-1 0,
+                  $bg-colour-2 57.96%,
+                  $bg-colour-3 100%
   );
 
   &::before {
@@ -402,10 +501,11 @@
   padding-top: $section-spacing;
   padding-bottom: $section-spacing;
   background-color: #2d2e35;
+
   .footer-icon {
     margin-bottom: 40px;
 
-    a{
+    a {
       font-size: 16px;
       text-align: center;
       background-color: #414250;
@@ -415,20 +515,24 @@
       border-radius: 50%;
     }
   }
+
   p {
     color: white;
     @extend %link-font;
     margin-bottom: 40px;
   }
+
   h4 {
     font-size: $smallest-font-size;
     font-weight: 700;
     line-height: 20px;
     color: white;
   }
+
   a {
     @extend %link-font;
   }
+
   ul {
     padding-bottom: 30px;
   }
@@ -576,6 +680,7 @@
     }
   }
 }
+
 @media (max-width: 1000px) {
   .footer {
     padding-top: $small-section-spacing;
