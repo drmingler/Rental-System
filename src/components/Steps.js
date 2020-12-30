@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import "../assets/scss/style.scss";
+import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import useToggle from "../hooks/useToggle";
 
 function Steps() {
-  const [active, setActive] = useState(false);
+  const { showActive, setActive } = useToggle();
   return (
     <section className="rental-steps-container">
       <Container>
@@ -13,14 +13,14 @@ function Steps() {
               <Col md={10} lg={7} xl={6} sm={12}>
                 <div className="switch-btn">
                   <button
-                    className={`${active && "active"}`}
+                    className={`${showActive && "active"}`}
                     onClick={() => setActive(true)}
                   >
                     <span>For tenants</span>
                   </button>
                   <button
-                    className={`${!active && "active"}`}
-                    onClick={() => setActive(!active)}
+                    className={`${!showActive && "active"}`}
+                    onClick={() => setActive(false)}
                   >
                     <span>For landlords</span>
                   </button>
