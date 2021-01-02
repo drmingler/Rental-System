@@ -1,0 +1,26 @@
+@import "variables";
+@mixin dropdown-item-container {
+  cursor: pointer;
+  padding: 6px 8px;
+  display: flex;
+  &:hover {
+    background-color: $hover-color;
+    transition: background-color 0.2s ease;
+  }
+  .dropdown-item-icon {
+    padding-right: 20px;
+    svg {
+      height: $svg-big-size;
+    }
+  }
+  h5 {
+    font-size: $small-font-size;
+    font-weight: 700;
+    margin-bottom: 0;
+    opacity: 0.8;
+  }
+  span {
+    font-size: 14px;
+    color: $lighter-dark-colour;
+  }
+}
