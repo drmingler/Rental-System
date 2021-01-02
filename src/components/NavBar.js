@@ -1,10 +1,10 @@
 import React, { useLayoutEffect, useState } from "react";
-import { ReactComponent as HouseIcon } from "../assets/house.svg";
 import {
-  DropdownItem,
   MenuOptionsDropDown,
-  AccountSettingsDropDown
-} from "./CustomDropdown/index";
+  AccountSettingsDropDown,
+  LearnMoreContent,
+  ProductContent
+} from "./Dropdown/index";
 
 function NavBar() {
   const [transparent, setTransparent] = useState("navbar-transparent");
@@ -27,19 +27,11 @@ function NavBar() {
       </div>
       <div className="nav-item-container">
         <ul className="nav-items">
-          <MenuOptionsDropDown menuOption={"Properties"}>
-            <h3>Rental Accommodation</h3>
-            <DropdownItem icon={<HouseIcon />}>
-              <h5>Find a place</h5>
-              <span>How renting works on our platform</span>
-            </DropdownItem>
-            <DropdownItem icon={<HouseIcon />}>
-              <h5>Rent out your place</h5>
-              <span>How to rent your properties online</span>
-            </DropdownItem>
+          <MenuOptionsDropDown menuOption={"Products"}>
+            <ProductContent />
           </MenuOptionsDropDown>
           <li>
-            <a href="/">Products</a>
+            <a href="/">Properties</a>
           </li>
           <li>
             <a href="/">Messages</a>
@@ -48,15 +40,7 @@ function NavBar() {
             <a href="/">Pricing</a>
           </li>
           <MenuOptionsDropDown menuOption={"Learn More"}>
-            <h3>Rental Accommodation</h3>
-            <DropdownItem icon={<HouseIcon />}>
-              <h5>Find a place</h5>
-              <span>How renting works on our platform</span>
-            </DropdownItem>
-            <DropdownItem icon={<HouseIcon />}>
-              <h5>Rent out your place</h5>
-              <span>How to rent your properties online</span>
-            </DropdownItem>
+            <LearnMoreContent />
           </MenuOptionsDropDown>
         </ul>
         <div className="list-property">
