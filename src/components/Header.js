@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import useToggle from "../hooks/useToggle";
 
 function Header() {
+  const { setActive, showActive } = useToggle();
+  const [activeButton, setActiveButton] = useState("rent");
+
+  const handleSetButton = buttonName => {
+    setActiveButton(buttonName);
+  };
   return (
     <header className="header-container">
       <Container>
@@ -11,17 +18,36 @@ function Header() {
             <div className="header-input">
               <Col md={10} lg={7}>
                 <div className="rent-list-btn">
-                  <button className="rent-btn">Rent</button>
-                  <button className="list-btn">List</button>
+                  <button
+                    onClick={() => handleSetButton("rent")}
+                    className={`rent-btn ${activeButton === "rent" &&
+                      "rent-btn-active"}`}
+                  >
+                    Rent
+                  </button>
+                  <button
+                    onClick={() => handleSetButton("list")}
+                    className={`list-btn ${activeButton === "list" &&
+                      "list-btn-active"}`}
+                  >
+                    List
+                  </button>
                 </div>
                 <div className="input-container">
-                  <input placeholder="Where do you want to live?" type="text" />
-                  <ul className={"location-dropdown"}>
-                    <li> Hello </li>
-                    <li> Hello </li>
-                    <li> Hello </li>
-                    <li> Hello </li>
-                    <li> Hello </li>
+                  <input
+                    placeholder="Where do you want to live?"
+                    type="text"
+                    onClick={() => setActive(!showActive)}
+                  />
+                  <ul
+                    className={`location-dropdown ${showActive &&
+                      "location-dropdown-enter"}`}
+                  >
+                    <li> Hello</li>
+                    <li> Hello</li>
+                    <li> Hello</li>
+                    <li> Hello</li>
+                    <li> Hello</li>
                   </ul>
                 </div>
               </Col>
