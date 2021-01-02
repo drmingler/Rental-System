@@ -2,6 +2,7 @@
 
 // Page header section
 .header-container {
+  position: relative;
   background: linear-gradient(
     -60.76deg,
     $bg-colour-1 0,
@@ -16,9 +17,11 @@
     height: 100%;
     width: 100%;
     background-size: 1400px;
-    bottom: 100px;
+    top: 100px;
+    bottom: 0px;
     background-repeat: no-repeat;
     background-position: center;
+    background-image: url("https://cdn.rentberry.com/static/rentberry/browser/assets/images/cities/san-francisco/San_F.svg?v=1607418911945");
   }
 }
 
@@ -82,6 +85,10 @@
   z-index: 1;
   display: none;
 
+  &-enter {
+    display: block;
+  }
+
   li {
     padding: 0 30px;
     line-height: 70px;
@@ -106,11 +113,21 @@
   .rent-btn {
     background-color: rgba(46, 45, 54, 0.3);
     color: white;
+    transition: all 0.2s ease-in;
+    &-active {
+      background-color: white;
+      color: $mediumpurple;
+    }
   }
 
   .list-btn {
-    background-color: white;
-    color: $mediumpurple;
+    background-color: rgba(46, 45, 54, 0.3);
+    color: white;
+    transition: all 0.2s ease-in;
+    &-active {
+      background-color: white;
+      color: $mediumpurple;
+    }
   }
 }
 
@@ -397,48 +414,6 @@
   }
 }
 
-// Site footer
-.footer {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
-  background-color: #2d2e35;
-
-  .footer-icon {
-    margin-bottom: 40px;
-
-    a {
-      font-size: 16px;
-      text-align: center;
-      background-color: #414250;
-      color: white;
-      margin-right: 20px;
-      padding: 11px 11px 9px 11px;
-      border-radius: 50%;
-    }
-  }
-
-  p {
-    color: white;
-    @extend %link-font;
-    margin-bottom: 40px;
-  }
-
-  h4 {
-    font-size: $smallest-font-size;
-    font-weight: 700;
-    line-height: 20px;
-    color: white;
-  }
-
-  a {
-    @extend %link-font;
-  }
-
-  ul {
-    padding-bottom: 30px;
-  }
-}
-
 // Responsiveness
 @media (max-width: 767.98px) {
   %font-small {
@@ -579,14 +554,6 @@
     .right-border {
       border-right: none;
     }
-  }
-}
-
-@media (max-width: 1000px) {
-  .footer {
-    padding-top: $small-section-spacing;
-    padding-bottom: $small-section-spacing;
-    text-align: center;
   }
 }
 
