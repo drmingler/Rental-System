@@ -9,12 +9,12 @@ function MenuOptionsDropDown({ menuOption, children }) {
     <li ref={innerRef} className="nav-item-dropdown">
       <div onClick={() => setActive(!showActive)}>
         <span className="nav-option">{menuOption}</span>
-        {showActive && (
+        {!showActive && (
           <span className="chevron-icon">
             <ChevronDown />
           </span>
         )}
-        {!showActive && (
+        {showActive && (
           <span className="chevron-icon">
             <ChevronUp />
           </span>
