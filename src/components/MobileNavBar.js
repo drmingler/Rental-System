@@ -1,6 +1,11 @@
 import React from "react";
 import { ReactComponent as MenuIcon } from "../assets/align-justify.svg";
 import { ReactComponent as CancelIcon } from "../assets/x.svg";
+import {
+  MobileLearnMore,
+  MobileAccountSettings,
+  MobileProducts
+} from "./MobileDropDown/index";
 import useToggle from "../hooks/useToggle";
 
 const MobileNavbar = () => {
@@ -28,30 +33,21 @@ const MobileNavbar = () => {
         ${showActive && "show-mobile-dropdown"}`}
       >
         <ul>
-          <li>
-            <a href="/">Profile dropdown</a>
-          </li>
-          <li>
-            <a href="/">Rent</a>
-          </li>
+          <MobileAccountSettings />
           <li>
             <a href="/">Listing a property</a>
           </li>
           <li>
             <a href="/">Properties</a>
           </li>
-          <li>
-            <a href="/">Products</a>
-          </li>
+          <MobileProducts />
           <li>
             <a href="/">Pricing</a>
           </li>
           <li>
             <a href="/">Messages</a>
           </li>
-          <li>
-            <a href="/">Learn More</a>
-          </li>
+          <MobileLearnMore />
           <li>
             <a href="/">Account Settings</a>
           </li>
