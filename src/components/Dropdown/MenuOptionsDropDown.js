@@ -7,18 +7,17 @@ function MenuOptionsDropDown({ menuOption, children }) {
   const { showActive, setActive, innerRef } = useDropDown();
   return (
     <li ref={innerRef} className="nav-item-dropdown">
-      <div onClick={() => setActive(!showActive)}>
-        <span className="nav-option">{menuOption}</span>
-        {!showActive && (
-          <span className="chevron-icon">
-            <ChevronDown />
-          </span>
-        )}
-        {showActive && (
-          <span className="chevron-icon">
-            <ChevronUp />
-          </span>
-        )}
+      <div className="nav-option" onClick={() => setActive(!showActive)}>
+        <span className="nav-name">{menuOption}</span>
+
+        <span
+          className={`chevron-icon ${!showActive && "chevron-icon-active"}`}
+        >
+          <ChevronDown />
+        </span>
+        <span className={`chevron-icon ${showActive && "chevron-icon-active"}`}>
+          <ChevronUp />
+        </span>
       </div>
       <div
         className={`dropdown-container

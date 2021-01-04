@@ -30,25 +30,28 @@
 
   .nav-item-container {
     border: none;
+    .nav-option {
+      display: flex;
+    }
+    .nav-name,
+    a {
+      text-decoration: none;
+      color: white;
 
-    .nav-items {
-      li {
-        a,
-        .nav-option {
-          text-decoration: none;
-          color: white;
+      &:hover {
+        color: white;
+        border-bottom: 2px solid white;
+      }
+    }
 
-          &:hover {
-            color: white;
-            border-bottom: 2px solid white;
-          }
-        }
-        .chevron-icon {
-          text-align: center;
-          color: white;
-          padding: 0 6px;
-          transition: all 0.3s ease-in;
-        }
+    .chevron-icon {
+      text-align: center;
+      color: white;
+      padding: 0 6px;
+      transition: all 0.3s ease-in;
+      display: none;
+      &-active {
+        display: block;
       }
     }
   }
@@ -76,8 +79,13 @@
     margin-left: 60px;
     text-align: center;
     transition: all 0.1s ease-in;
-    a,
+
     .nav-option {
+      display: flex;
+    }
+
+    a,
+    .nav-name {
       text-decoration: none;
       font-size: $small-font-size;
       line-height: $small-line-height;
@@ -91,6 +99,10 @@
       text-align: center;
       color: $lighter-dark-colour;
       padding: 0 6px;
+      display: none;
+      &-active {
+        display: block;
+      }
     }
   }
 }
