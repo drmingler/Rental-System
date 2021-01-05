@@ -387,6 +387,7 @@
   a {
     text-align: center;
     @extend %link-font;
+    line-height: $medium-line-height;
   }
 
   .light-border {

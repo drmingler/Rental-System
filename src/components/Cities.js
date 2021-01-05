@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/scss/style.scss";
 import { Container, Col, Row } from "react-bootstrap";
-import Berlin from "../assets/Berlin.webp";
+import Berlin from "../assets/img/Berlin.webp";
 
 function Cities() {
   return (

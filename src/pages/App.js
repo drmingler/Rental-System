@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../assets/scss/style.scss";
 import { StylesProvider } from "@material-ui/core/styles";
 import HomePage from "./HomePage";
+import RentingInstruction from "./RentingInstruction";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
     <StylesProvider injectFirst>
       <div className="App">
         <HomePage />
+        {/*<RentingInstruction />*/}
       </div>
     </StylesProvider>
   );
@@ -31,3 +33,12 @@ function App() {
 }
 
 export default App;
+
+// import React from "react";
+//
+// const RentingInstruction = () => {
+//   return (<div>
+//
+//   </div>);
+// };
+// export default RentingInstruction;

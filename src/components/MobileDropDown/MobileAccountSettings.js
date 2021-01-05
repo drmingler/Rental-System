@@ -4,7 +4,7 @@ import {
   MobileDropDownWrapper,
   MobileMenuOptionDropDown
 } from "./index";
-import { ReactComponent as HouseIcon } from "../../assets/house.svg";
+import { ReactComponent as HouseIcon } from "../../assets/img/house.svg";
 
 const MobileAccountSettings = () => {
   return (

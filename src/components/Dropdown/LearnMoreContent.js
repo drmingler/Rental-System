@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { DropdownItem } from "./index";
-import { ReactComponent as HouseIcon } from "../../assets/house.svg";
+import { ReactComponent as HouseIcon } from "../../assets/img/house.svg";
 
 const LearnMoreContent = () => {
   return (

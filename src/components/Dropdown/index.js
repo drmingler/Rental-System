@@ -10,12 +10,3 @@ export {
   LearnMoreContent,
   ProductContent
 };
-
-// import React from "react";
-//
-// const MobileAccountSettings = () => {
-//     return (<div>
-//
-//     </div>);
-// };
-// export default MobileAccountSettings;

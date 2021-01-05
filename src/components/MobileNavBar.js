@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as MenuIcon } from "../assets/align-justify.svg";
-import { ReactComponent as CancelIcon } from "../assets/x.svg";
+import { ReactComponent as MenuIcon } from "../assets/img/align-justify.svg";
+import { ReactComponent as CancelIcon } from "../assets/img/x.svg";
 import {
   MobileLearnMore,
   MobileAccountSettings,

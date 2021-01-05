@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { ReactComponent as ChevronDown } from "../../assets/chevron-down.svg";
-import { ReactComponent as ChevronUp } from "../../assets/chevron-up.svg";
+import { ReactComponent as ChevronDown } from "../../assets/img/chevron-down.svg";
+import { ReactComponent as ChevronUp } from "../../assets/img/chevron-up.svg";
 import { MobileDropDownContext } from "./MobileDropDownWrapper";
 
 const MobileDropDownHeader = props => {
