@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import useToggle from "../hooks/useToggle";
+import Switch from "./Switch";
 
 function Steps() {
   const { showActive, setActive } = useToggle();
@@ -9,24 +10,7 @@ function Steps() {
       <Container>
         <Row>
           <Col lg={12}>
-            <div className="switch">
-              <Col md={10} lg={7} xl={6} sm={12}>
-                <div className="switch-btn">
-                  <button
-                    className={`${showActive && "active"}`}
-                    onClick={() => setActive(true)}
-                  >
-                    <span>For tenants</span>
-                  </button>
-                  <button
-                    className={`${!showActive && "active"}`}
-                    onClick={() => setActive(false)}
-                  >
-                    <span>For landlords</span>
-                  </button>
-                </div>
-              </Col>
-            </div>
+            <Switch showActive={showActive} setActive={setActive} />
           </Col>
         </Row>
         <div className="rental-instruction">
