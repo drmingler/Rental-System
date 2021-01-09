@@ -1,13 +1,14 @@
 @import "variables";
+@import "mixins";
 
 // Page header section
 .header-container {
   position: relative;
   background: linear-gradient(
-    -60.76deg,
-    $bg-colour-1 0,
-    $bg-colour-2 57.96%,
-    $bg-colour-3 100%
+                  -60.76deg,
+                  $bg-colour-1 0,
+                  $bg-colour-2 57.96%,
+                  $bg-colour-3 100%
   );
 
   &::before {
@@ -26,7 +27,7 @@
 }
 
 .header-title {
-  font-weight: 700;
+  font-weight: $font-weight;
   font-size: 72px;
   text-align: center;
   margin-top: 7rem;
@@ -99,14 +100,11 @@
   @extend %flex-row;
 
   button {
-    text-align: center;
-    border: none;
+    @extend %button;
     padding: 11px 40px;
     font-size: $medium-font-size;
     line-height: $medium-line-height;
-    font-weight: 700;
     border-top-left-radius: 6px;
-    cursor: pointer;
     border-top-right-radius: 6px;
   }
 
@@ -114,6 +112,7 @@
     background-color: rgba(46, 45, 54, 0.3);
     color: white;
     transition: all 0.2s ease-in;
+
     &-active {
       background-color: white;
       color: $mediumpurple;
@@ -124,6 +123,7 @@
     background-color: rgba(46, 45, 54, 0.3);
     color: white;
     transition: all 0.2s ease-in;
+
     &-active {
       background-color: white;
       color: $mediumpurple;
@@ -138,18 +138,16 @@
   p {
     font-size: $medium-font-size;
     line-height: $medium-line-height;
-    font-weight: 700;
+    font-weight: $font-weight;
     color: white;
   }
 
   button {
+    @extend %button;
     padding: 8px 30px;
     font-size: $small-font-size;
-    font-weight: 700;
-    border: none;
     border-radius: 36px;
     background-color: $light-yellow;
-    color: white;
   }
 }
 
@@ -224,31 +222,7 @@
   }
 
   .switch-btn {
-    background-color: #f9f9f9;
-    height: 4.125rem;
-    border-radius: 2.125rem;
-    @extend %flex-row;
-    width: 100%;
-    margin-bottom: 50px;
-
-    button {
-      width: 48.5%;
-      border: none;
-      border-radius: 2.125rem;
-      background-color: transparent;
-      font-size: 18px;
-      text-align: center;
-      cursor: pointer;
-      font-weight: 700;
-      color: $lighter-dark-colour;
-      height: 3.2rem;
-
-      &.active {
-        background-color: white;
-        color: $deep-purple;
-        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
-      }
-    }
+    @include switch-btn;
   }
 }
 
@@ -283,7 +257,7 @@
 
     .step-number {
       position: absolute;
-      font-weight: 700;
+      font-weight: $font-weight;
       font-size: 36px;
       left: -40px;
       top: 112px;
@@ -296,12 +270,9 @@
     text-align: center;
 
     button {
+      @extend %button;
       padding: 6px 16px;
-      border: none;
       border-radius: 4px;
-      cursor: pointer;
-      font-weight: 700;
-      color: white;
       font-size: $small-font-size;
       background-color: $deep-purple;
     }
@@ -319,7 +290,7 @@
     z-index: 1;
 
     h1 {
-      font-weight: 700;
+      font-weight: $font-weight;
       font-size: 38px;
       line-height: 50px;
       margin-bottom: 20px;
@@ -330,15 +301,12 @@
     }
 
     button {
+      @extend %button;
       margin-top: 20px;
       padding: 16px 28px;
-      border: none;
       border-radius: 4px;
-      cursor: pointer;
-      color: white;
       font-size: $small-font-size;
       background-color: $deep-purple;
-      font-weight: 700;
     }
   }
 
@@ -380,7 +348,7 @@
 
   h4 {
     font-size: $smallest-font-size;
-    font-weight: 700;
+    font-weight: $font-weight;
     line-height: 20px;
   }
 
@@ -420,13 +388,13 @@
   %font-small {
     font-size: $medium-font-size;
     line-height: $medium-line-height;
-    font-weight: 700;
+    font-weight: $font-weight;
   }
 
   %font-smallest {
     font-size: $small-font-size;
     line-height: $small-line-height;
-    font-weight: 700;
+    font-weight: $font-weight;
   }
 
   .cities-container {

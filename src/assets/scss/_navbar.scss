@@ -250,7 +250,7 @@
     color: $mediumpurple;
     font-size: $large-font-size;
     line-height: $small-line-height;
-    font-weight: 700;
+    font-weight: $font-weight;
   }
   .mobile-navbar-content {
     position: fixed;
@@ -324,7 +324,7 @@
       span {
         position: relative;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: $font-weight;
         text-align: center;
         color: white;
         top: -12px;
