@@ -10,17 +10,18 @@ import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG3 from "../assets/img/newProperty3.jpg";
 import { ReactComponent as BookOnline } from "../assets/img/Book_online.svg";
 import RentingMobile from "../components/RentingMobile";
+import RentingHeader from "../components/RentingHeader";
 
 const RentingInstruction = () => {
   const { showActive, setActive } = useToggle();
   return (
     <Layout>
       <header className="renting-header">
-          <picture className="header-image">
-            <source media="(max-width:478px)" srcSet={rentBG1} />
-            <source media="(max-width:1366px)" srcSet={rentBG2} />
-            <img alt="renting-bg" srcSet={rentBG3} />
-          </picture>
+        <RentingHeader
+          largeImage={rentBG3}
+          mediumImage={rentBG2}
+          smallImage={rentBG1}
+        />
         <Container>
           <Row>
             <Col lg={12}>
