@@ -1,0 +1,213 @@
+@import "variables";
+@import "mixins";
+
+.renting-header {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  background-color: #9679ff;
+  position: relative;
+
+  .renting-header-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: $large-font-size;
+      font-weight: $font-weight;
+      margin: 2rem 0;
+    }
+    p {
+      font-size: $small-font-size;
+      line-height: $small-line-height;
+      margin: 0;
+    }
+  }
+  .switch {
+    @extend %flex-row;
+  }
+
+  .switch-btn {
+    @include switch-btn;
+  }
+}
+
+.renting-services {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  .services-container {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: $large-font-size;
+    font-weight: $font-weight;
+    line-height: $large-line-height;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    opacity: 0.8;
+  }
+  a {
+    font-size: $smallest-font-size;
+    line-height: $small-line-height;
+    color: $mediumpurple;
+  }
+}
+
+.header-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.service-image-container {
+  &.left {
+    margin-left: 5rem;
+  }
+  &.right {
+    margin-right: 5rem;
+  }
+
+  .service-image {
+    box-shadow: -20px 24px 40px 0 rgba(45, 70, 88, 0.08);
+    background: linear-gradient(
+      225deg,
+      rgba(45, 70, 88, 0.05) 0%,
+      rgba(45, 70, 88, 0.01) 100%
+    );
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+.renting-service-mobile {
+  display: none;
+}
+.renting-search {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  position: relative;
+  overflow: hidden;
+  picture {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .renting-search-content {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: $large-font-size;
+      font-weight: $font-weight;
+      line-height: $large-line-height;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      @extend %button;
+      padding: 9px 18px;
+      border-radius: 4px;
+      font-size: $small-font-size;
+      background-color: $deep-purple;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .renting-services {
+    display: none;
+  }
+  .renting-service-mobile {
+    display: block;
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+
+    h1 {
+      font-size: $large-font-size;
+      font-weight: $font-weight;
+      line-height: $large-line-height;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: $small-font-size;
+      line-height: $small-line-height;
+      opacity: 0.8;
+    }
+    a {
+      font-size: $smallest-font-size;
+      line-height: $small-line-height;
+      color: $mediumpurple;
+    }
+
+    .service-image {
+      box-shadow: -20px 24px 40px 0 rgba(45, 70, 88, 0.08);
+      background: linear-gradient(
+        225deg,
+        rgba(45, 70, 88, 0.05) 0%,
+        rgba(45, 70, 88, 0.01) 100%
+      );
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  %font-small {
+    font-size: $medium-font-size;
+    line-height: $medium-line-height;
+    font-weight: $font-weight;
+  }
+  .renting-service-mobile {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    h1 {
+      @extend %font-small;
+    }
+  }
+
+  .renting-header {
+    padding-bottom: $small-section-spacing;
+    margin-bottom: 3rem;
+    .renting-header-text {
+      h1 {
+        @extend %font-small;
+      }
+    }
+  }
+  .renting-services {
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+    h1 {
+      @extend %font-small;
+    }
+  }
+  .renting-search {
+    .renting-search-content {
+      h1 {
+        @extend %font-small;
+      }
+    }
+  }
+}
