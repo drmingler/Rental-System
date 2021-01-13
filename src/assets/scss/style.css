@@ -9917,13 +9917,13 @@ h3 {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -9998,13 +9998,13 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10033,13 +10033,13 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10456,13 +10456,13 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10546,13 +10546,13 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10581,13 +10581,13 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10607,13 +10607,11 @@ html {
   margin-bottom: 2rem;
 }
 .renting-header .renting-header-text h1 {
-  font-size: 48px;
-  font-weight: 700;
   margin: 2rem 0;
 }
 .renting-header .renting-header-text p {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 28px;
   margin: 0;
 }
 .renting-header .switch-btn {
@@ -10641,31 +10639,6 @@ html {
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
 }
 
-.renting-services {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.renting-services .services-container {
-  display: flex;
-  justify-content: center;
-}
-.renting-services h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-  margin-bottom: 2rem;
-}
-.renting-services p {
-  font-size: 16px;
-  line-height: 22px;
-  opacity: 0.8;
-}
-.renting-services a {
-  font-size: 14px;
-  line-height: 22px;
-  color: mediumpurple;
-}
-
 .header-image {
   position: absolute;
   left: 0;
@@ -10677,6 +10650,36 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.renting-text-container {
+  display: flex;
+  justify-content: center;
+}
+.renting-text-container p {
+  font-weight: 700;
+}
+
+.renting-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.renting-services .services-container {
+  display: flex;
+  justify-content: center;
+}
+.renting-services h1 {
+  margin-bottom: 2rem;
+}
+.renting-services p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #2e2d36;
+}
+.renting-services a {
+  font-size: 14px;
+  line-height: 22px;
+  color: mediumpurple;
 }
 
 .service-image-container.left {
@@ -10695,9 +10698,66 @@ html {
   align-items: center;
   display: flex;
 }
+.service-image-container .service-image-no-shadow {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.service-image-container .service-image-no-shadow img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
 
-.renting-service-mobile {
-  display: none;
+.go-to-inbox {
+  padding: 9px 18px;
+  margin-top: 2rem;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #7c54c1;
+}
+
+.tips {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.tips .tips-actions {
+  display: flex;
+  padding: 20px 20px 20px 50px;
+}
+.tips .tips-actions .tips-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #2e2d36;
+}
+.tips .tips-actions svg {
+  margin-right: 0.5rem;
+  height: 25px;
+  fill: mediumpurple;
+}
+
+.proven-results {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.proven-results .proven-results-image {
+  max-height: 100px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.proven-results .proven-results-image img {
+  max-height: 100px;
+  object-fit: cover;
+}
+.proven-results .proven-results-text {
+  margin-top: 2rem;
+}
+.proven-results .proven-results-text h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .renting-search {
@@ -10719,9 +10779,6 @@ html {
 }
 .renting-search .renting-search-content h1 {
   color: white;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
   margin-bottom: 2rem;
 }
 .renting-search .renting-search-content button {
@@ -10731,8 +10788,16 @@ html {
   background-color: #7c54c1;
 }
 
+.renting-service-mobile,
+.tips-mobile,
+.proven-results-mobile {
+  display: none;
+}
+
 @media (max-width: 1000px) {
-  .renting-services {
+  .renting-services,
+.tips,
+.proven-results {
     display: none;
   }
 
@@ -10741,14 +10806,20 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .renting-service-mobile h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 2rem;
+  }
   .renting-service-mobile p {
     font-size: 16px;
-    line-height: 22px;
-    opacity: 0.8;
+    line-height: 28px;
+    color: #2e2d36;
   }
   .renting-service-mobile a {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 28px;
     color: mediumpurple;
   }
   .renting-service-mobile .service-image {
@@ -10762,14 +10833,64 @@ html {
     display: flex;
     margin-bottom: 2rem;
   }
+
+  .tips-mobile {
+    display: block;
+  }
+  .tips-mobile h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 2rem;
+  }
+  .tips-mobile .tips-actions {
+    display: flex;
+    padding: 10px 0;
+  }
+  .tips-mobile .tips-actions .tips-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2e2d36;
+  }
+  .tips-mobile .tips-actions svg {
+    margin-right: 0.5rem;
+    height: 25px;
+    fill: mediumpurple;
+  }
+
+  .proven-results-mobile {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .proven-results-mobile .proven-results-mobile-wrapper {
+    margin-bottom: 20px;
+  }
+  .proven-results-mobile .proven-results-image {
+    max-height: 70px;
+    width: 100%;
+  }
+  .proven-results-mobile .proven-results-image img {
+    max-height: 70px;
+    object-fit: cover;
+  }
+  .proven-results-mobile .proven-results-text h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+  }
 }
 @media (max-width: 767.98px) {
-  .listing-categories-section h1, .available-cities-section h1, .cities-title h1, .header-title, .renting-search .renting-search-content h1, .renting-services h1, .renting-header .renting-header-text h1, .renting-service-mobile h1 {
+  .listing-categories-section h1, .available-cities-section h1, .cities-title h1, .header-title, .renting-search .renting-search-content h1, .renting-services h1, .renting-header .renting-header-text h1, .renting-service-mobile h1, .tips-mobile h1 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;
   }
 
+  .tips-mobile {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
   .renting-service-mobile {
     padding-top: 0;
     padding-bottom: 3rem;
@@ -10781,6 +10902,14 @@ html {
   .renting-services {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .service-image-no-shadow {
+    margin-bottom: 2rem;
+  }
+  .service-image-no-shadow img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
@@ -10804,13 +10933,13 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -10839,13 +10968,13 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button {
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
   text-align: center;
   border: none;
   cursor: pointer;
@@ -11181,7 +11310,7 @@ html {
 }
 
 @media (max-width: 767.98px) {
-  .listing-categories-section h1, .available-cities-section h1, .cities-title h1, .header-title, .renting-service-mobile h1, .renting-header .renting-header-text h1, .renting-services h1, .renting-search .renting-search-content h1 {
+  .listing-categories-section h1, .available-cities-section h1, .cities-title h1, .header-title, .tips-mobile h1, .renting-service-mobile h1, .renting-header .renting-header-text h1, .renting-services h1, .renting-search .renting-search-content h1 {
     font-size: 20px;
     line-height: 28px;
     font-weight: 700;

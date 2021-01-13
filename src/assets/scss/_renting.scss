@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+// Renting header
 .renting-header {
   padding-top: $section-spacing;
   padding-bottom: $section-spacing;
@@ -13,13 +14,12 @@
     margin-bottom: 2rem;
 
     h1 {
-      font-size: $large-font-size;
-      font-weight: $font-weight;
+      @extend %large-heading-style;
       margin: 2rem 0;
     }
     p {
       font-size: $small-font-size;
-      line-height: $small-line-height;
+      line-height: $medium-line-height;
       margin: 0;
     }
   }
@@ -29,31 +29,6 @@
 
   .switch-btn {
     @include switch-btn;
-  }
-}
-
-.renting-services {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
-  .services-container {
-    display: flex;
-    justify-content: center;
-  }
-  h1 {
-    font-size: $large-font-size;
-    font-weight: $font-weight;
-    line-height: $large-line-height;
-    margin-bottom: 2rem;
-  }
-  p {
-    font-size: $small-font-size;
-    line-height: $small-line-height;
-    opacity: 0.8;
-  }
-  a {
-    font-size: $smallest-font-size;
-    line-height: $small-line-height;
-    color: $mediumpurple;
   }
 }
 
@@ -67,6 +42,39 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.renting-text-container {
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-weight: 700;
+  }
+}
+
+// Renting Services
+.renting-services {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  .services-container {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    @extend %large-heading-style;
+    margin-bottom: 2rem;
+  }
+  p {
+    font-size: $small-font-size;
+    line-height: $medium-line-height;
+    color: $font-dark-colour;
+  }
+  a {
+    font-size: $smallest-font-size;
+    line-height: $small-line-height;
+    color: $mediumpurple;
   }
 }
 
@@ -92,10 +100,78 @@
     align-items: center;
     display: flex;
   }
+  .service-image-no-shadow {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 2rem;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
-.renting-service-mobile {
-  display: none;
+.go-to-inbox {
+  @extend %button;
+  padding: 9px 18px;
+  margin-top: 2rem;
+  border-radius: 4px;
+  font-size: $small-font-size;
+  background-color: $deep-purple;
 }
+
+// Renting tips
+.tips {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  text-align: center;
+
+  h1 {
+    @extend %large-heading-style;
+  }
+  .tips-actions {
+    display: flex;
+    padding: 20px 20px 20px 50px;
+
+    .tips-text {
+      font-size: $small-font-size;
+      line-height: $small-line-height;
+      color: $font-dark-colour;
+    }
+    svg {
+      margin-right: 0.5rem;
+      height: $svg-small-size;
+      fill: mediumpurple;
+    }
+  }
+}
+
+// Proven Result Section
+.proven-results {
+  padding-top: $section-spacing;
+  padding-bottom: $section-spacing;
+  text-align: center;
+
+  .proven-results-image {
+    max-height: 100px;
+    width: 100%;
+    margin-bottom: 2rem;
+    img {
+      max-height: 100px;
+      object-fit: cover;
+    }
+  }
+  .proven-results-text {
+    margin-top: 2rem;
+    h3 {
+      font-size: $medium-font-size;
+      line-height: $medium-line-height;
+      font-weight: $font-weight;
+    }
+  }
+}
+
+// Renting footer with search
 .renting-search {
   padding-top: $section-spacing;
   padding-bottom: $section-spacing;
@@ -113,9 +189,7 @@
     text-align: center;
     h1 {
       color: white;
-      font-size: $large-font-size;
-      font-weight: $font-weight;
-      line-height: $large-line-height;
+      @extend %large-heading-style;
       margin-bottom: 2rem;
     }
 
@@ -129,22 +203,44 @@
   }
 }
 
+// Platform usage page for mobile phones
+
+.renting-service-mobile,
+.tips-mobile,
+.proven-results-mobile {
+  display: none;
+}
+
 @media (max-width: 1000px) {
-  .renting-services {
+  .renting-services,
+  .tips,
+  .proven-results {
     display: none;
   }
+  //.tips {
+  //  .tips-actions {
+  //    padding: 20px;
+  //  }
+  //}
+
   .renting-service-mobile {
     display: block;
     padding-top: $small-section-spacing;
     padding-bottom: $small-section-spacing;
+    h1 {
+      font-size: $large-font-size;
+      font-weight: $font-weight;
+      line-height: $large-line-height;
+      margin-bottom: 2rem;
+    }
     p {
       font-size: $small-font-size;
-      line-height: $small-line-height;
-      opacity: 0.8;
+      line-height: $medium-line-height;
+      color: $font-dark-colour;
     }
     a {
       font-size: $smallest-font-size;
-      line-height: $small-line-height;
+      line-height: $medium-line-height;
       color: $mediumpurple;
     }
 
@@ -164,13 +260,70 @@
       margin-bottom: 2rem;
     }
   }
+  .tips-mobile {
+    display: block;
+    h1 {
+      font-size: $large-font-size;
+      font-weight: $font-weight;
+      line-height: $large-line-height;
+      margin-bottom: 2rem;
+    }
+    .tips-actions {
+      display: flex;
+      padding: 10px 0;
+
+      .tips-text {
+        font-size: $small-font-size;
+        line-height: $small-line-height;
+        color: $font-dark-colour;
+      }
+      svg {
+        margin-right: 0.5rem;
+        height: $svg-small-size;
+        fill: mediumpurple;
+      }
+    }
+  }
+  .proven-results-mobile {
+    display: block;
+    padding-top: 0;
+    padding-bottom: $small-section-spacing;
+
+    .proven-results-mobile-wrapper{
+      margin-bottom: 20px;
+    }
+    .proven-results-image {
+      max-height: 70px;
+      width: 100%;
+
+      img {
+        max-height: 70px;
+        object-fit: cover;
+      }
+    }
+    .proven-results-text {
+      h4 {
+        font-size: $small-font-size;
+        line-height: $small-line-height;
+        font-weight: $font-weight;
+      }
+    }
+  }
 }
+
 
 @media (max-width: 767.98px) {
   %font-small {
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: $font-weight;
+  }
+  .tips-mobile {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    h1 {
+      @extend %font-small;
+    }
   }
   .renting-service-mobile {
     padding-top: 0;
@@ -189,6 +342,7 @@
       }
     }
   }
+
   .renting-services {
     padding-top: $small-section-spacing;
     padding-bottom: $small-section-spacing;
@@ -201,6 +355,14 @@
       h1 {
         @extend %font-small;
       }
+    }
+  }
+  .service-image-no-shadow {
+    margin-bottom: 2rem;
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
