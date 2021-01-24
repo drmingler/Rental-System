@@ -6,8 +6,10 @@ import {
   ProductContent
 } from "./Dropdown/index";
 
-function NavBar() {
-  const [transparent, setTransparent] = useState("navbar-transparent");
+function NavBar({ fixed }) {
+  const [transparent, setTransparent] = useState(
+    fixed ? "navbar" : "navbar-transparent"
+  );
   useLayoutEffect(() => {
     window.onscroll = () => {
       let currentPosition = window.pageYOffset;
@@ -15,10 +17,10 @@ function NavBar() {
       if (currentPosition > 100) {
         setTransparent("navbar");
       } else {
-        setTransparent("navbar-transparent");
+        !fixed && setTransparent("navbar-transparent");
       }
     };
-  }, []);
+  }, [fixed]);
 
   return (
     <div className={`${transparent}`}>

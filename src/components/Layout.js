@@ -7,7 +7,7 @@ const Layout = props => {
   return (
     <Fragment>
       <MobileNavbar />
-      <NavBar />
+      <NavBar fixed={props.fixed}/>
       {props.children}
       <Footer />
     </Fragment>
