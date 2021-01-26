@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
 import Layout from "../components/Layout";
-import ListImageUploader from "../components/ListingImageUploader";
 import { Col, Container, Row } from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -12,31 +11,10 @@ import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker
 } from "@material-ui/pickers";
+import ImageUploaderContainer from "../components/ImageUploaderContainer";
 
 const AddPropertyPage = () => {
   const [selectedDate, setSelectedDate] = React.useState(null);
-  const [numberOfUploader, increaseNumberOfUploader] = React.useState(3);
-  const ref = useRef();
-
-  const checkUploads = () => {
-    const uploadedImagesContainers = ref.current.querySelectorAll(
-      ".listing-image"
-    );
-
-    // Check if all the uploader already have a background image
-    const hasBackgroundImage = Array.from(uploadedImagesContainers).map(
-      node => {
-        let background = node.style.backgroundImage;
-        return background !== 'url("")';
-      }
-    );
-
-    // if all the uploader already have a background image add a new uploader
-    let newNumberOfUploader = numberOfUploader + 1;
-    !hasBackgroundImage.includes(false) &&
-    increaseNumberOfUploader(newNumberOfUploader);
-  };
-
   const handleDateChange = date => {
     setSelectedDate(date);
   };
@@ -184,17 +162,7 @@ const AddPropertyPage = () => {
       <section className="house-listing-section">
         <Container fluid="lg">
           <Row>
-            <Col md={9}>
-              <div className="listing-image-container">
-                <Row ref={ref}>
-                  {[...Array(numberOfUploader)].map((eachUploader, idx) => (
-                    <Col xs={6} md={4} key={idx}>
-                      <ListImageUploader uploadCallback={checkUploads} />
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-            </Col>
+            <ImageUploaderContainer />
             <Col md={3}>
               <Paper elevation={0} className="listing-image-instruction">
                 <span>
