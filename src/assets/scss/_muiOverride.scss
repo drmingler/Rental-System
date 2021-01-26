@@ -1,0 +1,13 @@
+@import "variables";
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid $mediumpurple;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 2px solid $input-border-colour;
+}
+
+.MuiMenuItem-root {
+  line-height: 2;
+}

@@ -1,0 +1,395 @@
+@import "variables";
+
+// Page Header
+.add-property-header {
+  padding-top: $large-section-spacing;
+  padding-bottom: $large-section-spacing;
+  background-color: $bg-colour-4;
+
+  .property-form-container {
+    .MuiInputBase-input {
+      color: white;
+    }
+
+    .MuiFormLabel-root {
+      color: $placeholder-colour;
+    }
+
+    .MuiSelect-icon {
+      color: white;
+    }
+
+    ::placeholder {
+      color: $placeholder-colour;
+      opacity: 1;
+    }
+  }
+
+  .property-name {
+    .MuiInputBase-input {
+      font-size: 70px;
+      font-weight: $font-weight;
+    }
+  }
+
+  .property-contact {
+    margin-top: 30px;
+  }
+
+  .property-facilities {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
+  .price-form-container {
+    .MuiFormLabel-root {
+      color: $font-dark-colour;
+      opacity: 0.7;
+      font-size: $medium-font-size;
+      line-height: $small-line-height;
+    }
+  }
+
+  .monthly-rent-container {
+    background-color: white;
+  }
+  .monthly-rent-inputs {
+    padding: 40px 40px 30px;
+  }
+  .monthly-rent-instruction {
+    margin-top: 20px;
+    color: $placeholder-colour;
+    font-size: $smallest-font-size;
+    line-height: $small-line-height;
+  }
+}
+
+// Image Upload
+.section-header {
+  @extend %large-heading-style;
+}
+.listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: $bg-colour-5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+
+  &:hover {
+    box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+    transform: scale(1.1);
+  }
+
+  .upload-file-input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: 0;
+    padding: 0;
+    border-radius: 6px;
+    z-index: 9;
+    opacity: 0;
+    cursor: pointer;
+    text-indent: -999999px;
+    overflow: hidden;
+  }
+}
+
+.cancel-icon-container {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: $cancel-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  top: -10px;
+  right: -10px;
+
+  .cancel-icon {
+    color: white;
+    height: $medium-font-size;
+  }
+}
+
+.listing-svg {
+  margin-bottom: 5px;
+  svg {
+    height: 50px;
+  }
+}
+
+.image-instruction {
+  line-height: $smallest-line-height;
+  font-size: $smallest-font-size;
+  color: $placeholder-colour;
+}
+.listing-image-instruction {
+  margin-top: 10px;
+  background-color: $tips-color-1;
+  border-radius: 6px;
+  padding: 25px;
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  font-size: $small-font-size;
+  color: $font-dark-colour;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    border-radius: 50%;
+    background: $tips-color-2;
+    position: absolute;
+  }
+
+  a {
+    color: $deep-purple;
+    line-height: $medium-line-height;
+  }
+}
+
+// Pet Policy
+.pet-policy-items-container {
+  margin-top: 20px;
+}
+
+// Icons Style
+.listing-icon-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.listing-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: $smallest-font-size;
+  line-height: $small-line-height;
+  color: $placeholder-colour;
+
+  .svg-icon {
+    padding-right: 16px;
+  }
+  svg {
+    height: 20px;
+  }
+
+  &:hover {
+    color: $font-dark-colour;
+  }
+}
+
+//Listing Description
+.listing-description {
+  input {
+    font-size: $medium-font-size;
+  }
+  .MuiFormHelperText-root {
+    font-size: $smallest-font-size;
+    color: $placeholder-colour;
+  }
+}
+
+// Listing Amenities
+.listing-amenities-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    display: block;
+    background-color: $bg-colour-5;
+    top: 0;
+    left: 0;
+    width: calc((100% - 940px) / 2);
+  }
+
+  .listing-image-instruction {
+    margin-top: 30px;
+  }
+}
+
+.listing-amenities {
+  background-color: $bg-colour-5;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
+
+  .warning {
+    svg {
+      height: 25px;
+    }
+  }
+
+  .listing-amenities-icon {
+    margin-top: 20px;
+  }
+}
+
+// Post Listing Section
+.post-listing-section {
+  padding-top: $small-section-spacing;
+  padding-bottom: $small-section-spacing;
+  .available-from {
+    margin-top: 20px;
+    .section-header {
+      font-size: 24px;
+      line-height: $medium-line-height;
+      font-weight: $font-weight;
+    }
+    .MuiFormControl-marginNormal {
+      margin-top: 30px;
+    }
+    input {
+      font-size: $medium-font-size;
+    }
+  }
+}
+
+// Post Listing Section
+.post-listing-button-section {
+  padding-bottom: $small-section-spacing;
+  .listing-button {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    color: white;
+    line-height: 60px;
+    font-weight: $font-weight;
+    border-radius: 5px;
+    background-color: $button-inactive-colour;
+    box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #9c94b6;
+    }
+  }
+  .listing-terms {
+    text-align: center;
+    margin-top: 20px;
+    font-size: $smallest-font-size;
+    line-height: $smallest-line-height;
+    color: $placeholder-colour;
+    a {
+      color: $mediumpurple;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-lg {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-lg,
+  .container-sm {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  %small-heading-style {
+    font-size: $medium-font-size;
+    line-height: $smallest-line-height;
+    font-weight: 700;
+  }
+
+  .add-property-header {
+    .property-name {
+      .MuiInputBase-input {
+        font-size: $small-font-size;
+        font-weight: 400;
+      }
+    }
+    .property-contact {
+      margin-top: 0;
+    }
+
+    .property-facilities {
+      margin-top: 0;
+    }
+  }
+
+  .house-listing-section {
+    .section-header {
+      @extend %small-heading-style;
+    }
+  }
+
+  .amenities-header {
+    .section-header {
+      @extend %small-heading-style;
+    }
+  }
+  .post-listing-section {
+    .available-from {
+      .section-header {
+        @extend %small-heading-style;
+      }
+    }
+  }
+
+  .pet-policy-items-container {
+    margin: 0;
+  }
+
+  .pet-policy,
+  .listing-description {
+    margin-bottom: 40px;
+  }
+
+  .listing-amenities {
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+    .listing-icon {
+      span {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  .listing-image {
+    margin: 15px auto 0;
+    height: 150px;
+    width: 150px;
+  }
+  .listing-image-instruction,
+  .warning {
+    display: none;
+  }
+  .listing-amenities-section {
+    background-color: $bg-colour-5;
+  }
+}

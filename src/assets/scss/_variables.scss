@@ -5,35 +5,45 @@ $smallest-line-height: 20px;
 $small-font-size: 16px;
 $small-line-height: 22px;
 
-$medium-font-size : 20px;
+$medium-font-size: 20px;
 $medium-line-height: 28px;
 
 $large-font-size: 48px;
 $large-line-height: 48px;
 
-$font-weight :700;
+$font-weight: 700;
 
 // Colours
-$bg-colour-1:  #9679ff;
-$bg-colour-2:  #d499ea;
-$bg-colour-3:  #eea4b3;
-$font-dark-colour:  #2e2d36;
-$lighter-dark-colour:  #858e98;
+$bg-colour-1: #9679ff;
+$bg-colour-2: #d499ea;
+$bg-colour-3: #eea4b3;
+$bg-colour-4: #434057;
+$bg-colour-5: #f4f5f7;
+$footer_bg-colour: #2d2e35;
+
+$font-dark-colour: #2e2d36;
+$lighter-dark-colour: #858e98;
 $mediumpurple: mediumpurple;
 $deep-purple: #7c54c1;
 $deeper-purple: #7a1ea0;
 $light-yellow: #f7a31d;
 $light-border: #e9eaef;
 $hover-color: #f2f3f5;
-$footer_bg-colour:#2d2e35;
+$placeholder-colour: #9a99b6;
+$input-border-colour: #d2d4df;
+$tips-color-1: #feffd9;
+$tips-color-2: #dc7338;
+$cancel-color: #e0485c;
+$button-inactive-colour: #9c99b6;
 
 // Section spacing
-$section-spacing : 100px;
-$small-section-spacing : 50px;
+$medium-section-spacing: 100px;
+$large-section-spacing: 150px;
+$small-section-spacing: 50px;
 
 // Icon
-$svg-small-size : 25px;
-$svg-big-size : 30px;
+$svg-small-size: 25px;
+$svg-big-size: 30px;
 
 %flex {
   display: flex;
@@ -51,18 +61,17 @@ $svg-big-size : 30px;
   flex-direction: row;
 }
 
-%link-font{
+%link-font {
   font-size: $smallest-font-size;
   line-height: 20px;
   color: $mediumpurple;
   cursor: pointer;
 }
-%large-heading-style{
+%large-heading-style {
   font-size: $large-font-size;
   line-height: $large-line-height;
   font-weight: 700;
 }
-
 
 %button {
   text-align: center;
