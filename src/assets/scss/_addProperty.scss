@@ -168,7 +168,7 @@
     cursor: pointer;
     color: $deep-purple;
     line-height: $medium-line-height;
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -177,6 +177,7 @@
 // Pet Policy
 .pet-policy-items-container {
   margin-top: 20px;
+  margin-bottom: 130px;
 }
 
 // Icons Style
@@ -208,6 +209,10 @@
 }
 
 //Listing Description
+.listing-description-input {
+  margin-bottom: 80px;
+}
+
 .listing-description {
   input {
     font-size: $medium-font-size;
@@ -260,6 +265,7 @@
   padding-bottom: $small-section-spacing;
   .available-from {
     margin-top: 20px;
+    margin-bottom: 55px;
     .section-header {
       font-size: 24px;
       line-height: $medium-line-height;
@@ -337,10 +343,7 @@
         font-weight: 400;
       }
     }
-    .property-contact {
-      margin-top: 0;
-    }
-
+    .property-contact,
     .property-facilities {
       margin-top: 0;
     }
@@ -359,13 +362,15 @@
   }
   .post-listing-section {
     .available-from {
+      margin-bottom: 0;
       .section-header {
         @extend %small-heading-style;
       }
     }
   }
 
-  .pet-policy-items-container {
+  .pet-policy-items-container,
+  .listing-description-input {
     margin: 0;
   }
 

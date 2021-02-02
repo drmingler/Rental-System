@@ -11131,6 +11131,7 @@ html {
 
 .pet-policy-items-container {
   margin-top: 20px;
+  margin-bottom: 130px;
 }
 
 .listing-icon-container {
@@ -11156,6 +11157,10 @@ html {
 }
 .listing-icon:hover {
   color: #2e2d36;
+}
+
+.listing-description-input {
+  margin-bottom: 80px;
 }
 
 .listing-description input {
@@ -11201,6 +11206,7 @@ html {
 }
 .post-listing-section .available-from {
   margin-top: 20px;
+  margin-bottom: 55px;
 }
 .post-listing-section .available-from .section-header {
   font-size: 24px;
@@ -11270,14 +11276,16 @@ html {
     font-size: 16px;
     font-weight: 400;
   }
-  .add-property-header .property-contact {
-    margin-top: 0;
-  }
-  .add-property-header .property-facilities {
+  .add-property-header .property-contact,
+.add-property-header .property-facilities {
     margin-top: 0;
   }
 
-  .pet-policy-items-container {
+  .post-listing-section .available-from {
+    margin-bottom: 0;
+  }
+  .pet-policy-items-container,
+.listing-description-input {
     margin: 0;
   }
 

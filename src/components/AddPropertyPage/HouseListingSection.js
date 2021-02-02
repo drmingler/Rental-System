@@ -57,7 +57,7 @@ function HouseListingSection() {
           <Row>
             <Col md={8}>
               <TextField
-                className="property-name"
+                className="property-name listing-description-input"
                 placeholder="Type a short description"
                 fullWidth
                 margin="normal"
