@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import React from "react";
 import { ReactComponent as AlertCircle } from "../../assets/img/alert-circle.svg";
-import { ListingIconContainer, ListingImageInstructions } from "./index";
+import { ListingIconContainer, ListingInstructions } from "./index";
 
 const ListingAmenitySection = () => {
   return (
@@ -140,10 +140,10 @@ const ListingAmenitySection = () => {
                 </li>
               </ul>
             </Col>
-            <ListingImageInstructions offset={0}>
+            <ListingInstructions offset={0}  InstructionKey={"instruction4"}>
               Check all amenities that your property has. Tenants like to know
               what your place offers.
-            </ListingImageInstructions>
+            </ListingInstructions>
           </Row>
         </Container>
       </div>

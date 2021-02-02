@@ -164,9 +164,13 @@
     position: absolute;
   }
 
-  a {
+  .got-it {
+    cursor: pointer;
     color: $deep-purple;
     line-height: $medium-line-height;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 

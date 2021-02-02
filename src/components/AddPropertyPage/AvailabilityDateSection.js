@@ -5,7 +5,7 @@ import {
   MuiPickersUtilsProvider
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
-import { ListingImageInstructions } from "./index";
+import { ListingInstructions } from "./index";
 
 const AvailabilityDateSection = () => {
   const [selectedDate, setSelectedDate] = React.useState(null);
@@ -36,10 +36,10 @@ const AvailabilityDateSection = () => {
               </MuiPickersUtilsProvider>
             </div>
           </Col>
-          <ListingImageInstructions offset={5}>
+          <ListingInstructions offset={5} InstructionKey={"instruction5"}>
             Specify when your property will be available so tenants can choose
             proper move-in dates.
-          </ListingImageInstructions>
+          </ListingInstructions>
         </Row>
       </Container>
     </section>

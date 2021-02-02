@@ -11120,9 +11120,13 @@ html {
   background: #dc7338;
   position: absolute;
 }
-.listing-image-instruction a {
+.listing-image-instruction .got-it {
+  cursor: pointer;
   color: #7c54c1;
   line-height: 28px;
+}
+.listing-image-instruction .got-it:hover {
+  text-decoration: underline;
 }
 
 .pet-policy-items-container {

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {
   ImageUploaderContainer,
-  ListingImageInstructions,
+  ListingInstructions,
   ListingIconContainer
 } from "./index";
 import TextField from "@material-ui/core/TextField";
@@ -14,10 +14,10 @@ function HouseListingSection() {
       <Container fluid="lg">
         <Row>
           <ImageUploaderContainer />
-          <ListingImageInstructions offset={0}>
+          <ListingInstructions offset={0}  InstructionKey={"instruction1"}>
             Tenants like to see photos of listed property. The first photo will
             be used as a listing cover.
-          </ListingImageInstructions>
+          </ListingInstructions>
         </Row>
         <div className="pet-policy">
           <h1 className="section-header">Pet Policy</h1>
@@ -46,10 +46,10 @@ function HouseListingSection() {
                 </Row>
               </div>
             </Col>
-            <ListingImageInstructions offset={1}>
+            <ListingInstructions offset={1}  InstructionKey={"instruction2"}>
               Is your property pet-friendly? 61% of tenants in the US live with
               their little friends.
-            </ListingImageInstructions>
+            </ListingInstructions>
           </Row>
         </div>
         <div className="listing-description">
@@ -64,9 +64,9 @@ function HouseListingSection() {
                 helperText="Minimum 140 characters"
               />
             </Col>
-            <ListingImageInstructions offset={1}>
+            <ListingInstructions offset={1}  InstructionKey={"instruction3"}>
               Describe what differentiates your property from others.
-            </ListingImageInstructions>
+            </ListingInstructions>
           </Row>
         </div>
       </Container>
