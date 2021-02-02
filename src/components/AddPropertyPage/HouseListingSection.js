@@ -1,6 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ImageUploaderContainer, ListingImageInstructions } from "./index";
+import {
+  ImageUploaderContainer,
+  ListingImageInstructions,
+  ListingIconContainer
+} from "./index";
 import TextField from "@material-ui/core/TextField";
 import { ReactComponent as AlertCircle } from "../../assets/img/alert-circle.svg";
 
@@ -22,28 +26,22 @@ function HouseListingSection() {
               <div className="pet-policy-items-container">
                 <Row>
                   <Col md={4} lg={3} xs={6} className="listing-icon-container">
-                    <div className="listing-icon">
-                      <div className="svg-icon">
-                        <AlertCircle />
-                      </div>
-                      <span>Dogs Allowed</span>
-                    </div>
+                    <ListingIconContainer
+                      icon={<AlertCircle />}
+                      text={"Dogs Allowed"}
+                    />
                   </Col>
                   <Col md={4} lg={3} xs={6} className="listing-icon-container">
-                    <div className="listing-icon">
-                      <div className="svg-icon">
-                        <AlertCircle />
-                      </div>
-                      <span>Cats Allowed</span>
-                    </div>
+                    <ListingIconContainer
+                      icon={<AlertCircle />}
+                      text={"Cats Allowed"}
+                    />
                   </Col>
                   <Col md={4} lg={3} xs={6} className="listing-icon-container">
-                    <div className="listing-icon">
-                      <div className="svg-icon">
-                        <AlertCircle />
-                      </div>
-                      <span>No Pets</span>
-                    </div>
+                    <ListingIconContainer
+                      icon={<AlertCircle />}
+                      text={"No Pets"}
+                    />
                   </Col>
                 </Row>
               </div>
