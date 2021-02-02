@@ -153,8 +153,8 @@
 
 // City section
 .cities-container {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
 }
 
 .cities-title {
@@ -215,7 +215,7 @@
 }
 
 .rental-steps-container {
-  padding-bottom: $section-spacing;
+  padding-bottom: $medium-section-spacing;
 
   .switch {
     @extend %flex-row;
@@ -336,8 +336,8 @@
 
 // Available Cities Section
 .available-cities-section {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   text-align: center;
 
   h1 {
@@ -365,7 +365,7 @@
 
 // Listing Categories Section
 .listing-categories-section {
-  padding-bottom: $section-spacing;
+  padding-bottom: $medium-section-spacing;
   text-align: center;
 
   h1 {

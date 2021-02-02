@@ -3,8 +3,8 @@
 
 // Renting header
 .renting-header {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   background-color: #9679ff;
   position: relative;
 
@@ -56,8 +56,8 @@
 
 // Renting Services
 .renting-services {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   .services-container {
     display: flex;
     justify-content: center;
@@ -122,8 +122,8 @@
 
 // Renting tips
 .tips {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   text-align: center;
 
   h1 {
@@ -148,8 +148,8 @@
 
 // Proven Result Section
 .proven-results {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   text-align: center;
 
   .proven-results-image {
@@ -173,8 +173,8 @@
 
 // Renting footer with search
 .renting-search {
-  padding-top: $section-spacing;
-  padding-bottom: $section-spacing;
+  padding-top: $medium-section-spacing;
+  padding-bottom: $medium-section-spacing;
   position: relative;
   overflow: hidden;
   picture {
