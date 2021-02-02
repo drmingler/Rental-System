@@ -4,7 +4,7 @@ import { Col } from "react-bootstrap";
 
 const ListingImageInstructions = ({ children, offset }) => {
   return (
-    <Col md={{ span: 3, offset: offset ? 1 : 0 }}>
+    <Col md={{ span: 3, offset: offset }}>
       <Paper elevation={0} className="listing-image-instruction">
         <span>{children}</span>
         <div>

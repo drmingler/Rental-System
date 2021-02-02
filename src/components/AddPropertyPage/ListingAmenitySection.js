@@ -140,7 +140,7 @@ const ListingAmenitySection = () => {
                 </li>
               </ul>
             </Col>
-            <ListingImageInstructions offset={false}>
+            <ListingImageInstructions offset={0}>
               Check all amenities that your property has. Tenants like to know
               what your place offers.
             </ListingImageInstructions>

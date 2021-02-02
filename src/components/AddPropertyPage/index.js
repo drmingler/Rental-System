@@ -5,6 +5,7 @@ import HouseListingSection from "./HouseListingSection";
 import ListingImageInstructions from "./ListingImageInstructions";
 import ListingIconContainer from "./ListingIconContainer";
 import ListingAmenitySection from "./ListingAmenitySection";
+import AvailabilityDateSection from "./AvailabilityDateSection";
 
 export {
     ImageUploaderContainer,
@@ -13,5 +14,6 @@ export {
     HouseListingSection,
     ListingImageInstructions,
     ListingIconContainer,
-    ListingAmenitySection
+    ListingAmenitySection,
+    AvailabilityDateSection
 };

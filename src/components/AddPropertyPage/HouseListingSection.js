@@ -14,7 +14,7 @@ function HouseListingSection() {
       <Container fluid="lg">
         <Row>
           <ImageUploaderContainer />
-          <ListingImageInstructions offset={false}>
+          <ListingImageInstructions offset={0}>
             Tenants like to see photos of listed property. The first photo will
             be used as a listing cover.
           </ListingImageInstructions>
@@ -46,7 +46,7 @@ function HouseListingSection() {
                 </Row>
               </div>
             </Col>
-            <ListingImageInstructions offset={true}>
+            <ListingImageInstructions offset={1}>
               Is your property pet-friendly? 61% of tenants in the US live with
               their little friends.
             </ListingImageInstructions>
@@ -64,7 +64,7 @@ function HouseListingSection() {
                 helperText="Minimum 140 characters"
               />
             </Col>
-            <ListingImageInstructions offset={true}>
+            <ListingImageInstructions offset={1}>
               Describe what differentiates your property from others.
             </ListingImageInstructions>
           </Row>
