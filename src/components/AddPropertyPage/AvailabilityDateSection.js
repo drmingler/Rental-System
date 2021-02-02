@@ -5,8 +5,7 @@ import {
   MuiPickersUtilsProvider
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
-import Paper from "@material-ui/core/Paper";
-import {ListingImageInstructions} from "./index";
+import { ListingImageInstructions } from "./index";
 
 const AvailabilityDateSection = () => {
   const [selectedDate, setSelectedDate] = React.useState(null);
