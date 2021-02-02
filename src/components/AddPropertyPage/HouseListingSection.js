@@ -1,27 +1,19 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ImageUploaderContainer } from "./index";
-import Paper from "@material-ui/core/Paper";
+import { ImageUploaderContainer, ListingImageInstructions } from "./index";
 import TextField from "@material-ui/core/TextField";
 import { ReactComponent as AlertCircle } from "../../assets/img/alert-circle.svg";
 
-function HouseListingInstruction() {
+function HouseListingSection() {
   return (
     <section className="house-listing-section">
       <Container fluid="lg">
         <Row>
           <ImageUploaderContainer />
-          <Col md={3}>
-            <Paper elevation={0} className="listing-image-instruction">
-              <span>
-                Tenants like to see photos of listed property. The first photo
-                will be used as a listing cover.
-              </span>
-              <div>
-                <a href="/">Got It</a>
-              </div>
-            </Paper>
-          </Col>
+          <ListingImageInstructions offset={false}>
+            Tenants like to see photos of listed property. The first photo will
+            be used as a listing cover.
+          </ListingImageInstructions>
         </Row>
         <div className="pet-policy">
           <h1 className="section-header">Pet Policy</h1>
@@ -56,17 +48,10 @@ function HouseListingInstruction() {
                 </Row>
               </div>
             </Col>
-            <Col md={{ span: 3, offset: 1 }}>
-              <Paper elevation={0} className="listing-image-instruction">
-                <span>
-                  Is your property pet-friendly? 61% of tenants in the US live
-                  with their little friends.
-                </span>
-                <div>
-                  <a href="/">Got It</a>
-                </div>
-              </Paper>
-            </Col>
+            <ListingImageInstructions offset={true}>
+              Is your property pet-friendly? 61% of tenants in the US live with
+              their little friends.
+            </ListingImageInstructions>
           </Row>
         </div>
         <div className="listing-description">
@@ -81,20 +66,13 @@ function HouseListingInstruction() {
                 helperText="Minimum 140 characters"
               />
             </Col>
-            <Col md={{ span: 3, offset: 1 }}>
-              <Paper elevation={0} className="listing-image-instruction">
-                <span>
-                  Describe what differentiates your property from others.
-                </span>
-                <div>
-                  <a href="/">Got it</a>
-                </div>
-              </Paper>
-            </Col>
+            <ListingImageInstructions offset={true}>
+              Describe what differentiates your property from others.
+            </ListingImageInstructions>
           </Row>
         </div>
       </Container>
     </section>
   );
 }
-export default HouseListingInstruction;
+export default HouseListingSection;
