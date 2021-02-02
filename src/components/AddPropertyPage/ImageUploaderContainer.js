@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Col, Row } from "react-bootstrap";
-import ListImageUploader from "./ListingImageUploader";
+import { ListingImageUploader } from "./index";
 
 const ImageUploaderContainer = () => {
   const [numberOfUploads, increaseNumberOfUploader] = React.useState(3);
@@ -32,7 +32,7 @@ const ImageUploaderContainer = () => {
         <Row ref={ref}>
           {[...Array(numberOfUploads)].map((eachUploader, idx) => (
             <Col xs={6} md={4} key={idx}>
-              <ListImageUploader uploadCallback={checkUploads} />
+              <ListingImageUploader uploadCallback={checkUploads} />
             </Col>
           ))}
         </Row>

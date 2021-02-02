@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
 import Paper from "@material-ui/core/Paper";
-import { ReactComponent as Cancel } from "../assets/img/x.svg";
-import { ReactComponent as Camera } from "../assets/img/camera.svg";
+import { ReactComponent as Cancel } from "../../assets/img/x.svg";
+import { ReactComponent as Camera } from "../../assets/img/camera.svg";
 
-const ListImageUploader = ({ uploadCallback }) => {
+const ListingImageUploader = ({ uploadCallback }) => {
   const [backgroundImage, setBackgroundImage] = useState(null);
   const [showImage, setImageVisibility] = useState(false);
 
@@ -54,4 +54,4 @@ const ListImageUploader = ({ uploadCallback }) => {
     </Paper>
   );
 };
-export default ListImageUploader;
+export default ListingImageUploader;
