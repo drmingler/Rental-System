@@ -1,0 +1,472 @@
+@import "variables";
+
+.houses-for-rent-container {
+  position: fixed;
+  overflow-y: scroll;
+  padding-top: 80px;
+}
+
+.scroll-area-container {
+  position: relative;
+}
+
+// House search panel
+.house-search-panel {
+  position: absolute;
+  height: 50px;
+  z-index: 13;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-bottom: 1px solid $light-border;
+  background-color: white;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.house-search-panel-small-device {
+  display: none;
+}
+
+.house-location-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .panel-menu-icon {
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 20px;
+    color: $deep-purple;
+    margin-right: 10px;
+  }
+
+  .house-location-text {
+    text-align: center;
+    color: $deep-purple;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.hide-dropdown-container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  cursor: pointer;
+
+  .panel-menu-icon {
+    min-width: 16px;
+    min-height: 16px;
+    color: $deep-purple;
+    margin-right: 10px;
+    transform: rotate(180deg);
+  }
+  .hide-dropdown-text {
+    text-align: center;
+    color: $deep-purple;
+  }
+}
+
+.filter-dropdown {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  .filter-dropdown-text {
+    font-size: $smallest-font-size;
+    color: $placeholder-colour;
+  }
+  .filter-dropdown-icon {
+    margin-left: 10px;
+    color: $deep-purple;
+  }
+}
+.dropdown-option-container {
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+.dropdown-option {
+  line-height: 20px;
+  height: 50px;
+  padding: 0 20px;
+  font-size: $smallest-font-size;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  color: $font-dark-colour;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+//Search control panel
+.search-control-panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  padding-top: 70px;
+  //padding-top: 50px;
+  z-index: 11;
+  background-color: $bg-colour-6;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.search-control-enter {
+  transform: translateY(0%);
+}
+
+.panel-container {
+  padding-top: 25px;
+}
+.panel-price {
+  font-weight: $font-weight;
+  color: white;
+  background-color: $light-yellow;
+  padding: 0 15px;
+  height: 30px;
+  border-radius: 20px;
+  line-height: 30px;
+  text-align: center;
+
+  .plus {
+    font-weight: 400;
+  }
+}
+
+.panel-slider {
+  .MuiSlider-root {
+    width: 95%;
+  }
+  .MuiSlider-thumb {
+    width: 30px;
+    height: 30px;
+    margin-top: -13px;
+    transition: none;
+    box-shadow: 1px 2px 4px 1px rgba(46, 45, 54, 0.2);
+    background: white;
+  }
+  .MuiSlider-track {
+    height: 8px;
+    background-color: $deep-purple;
+  }
+  .MuiSlider-rail {
+    height: 8px;
+    background-color: $mediumpurple;
+  }
+}
+
+.panel-heading {
+  padding-top: 10px;
+  h4 {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    font-weight: $font-weight;
+  }
+}
+
+.panel-options-container,
+.panel-icon-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.panel-options {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(50, 48, 58, 0.15);
+  color: $font-dark-colour;
+  &.active{
+    background-color: $deep-purple;
+    color: white;
+  }
+}
+
+.panel-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.panel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(50, 48, 58, 0.15);
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &.active{
+    background-color: $deep-purple;
+    color: white;
+  }
+}
+.panel-icon-text {
+  margin-left: 10px;
+  font-size: $smallest-font-size;
+  line-height: $smallest-line-height;
+  color: $font-dark-colour;
+  white-space: nowrap;
+}
+
+.panel-button {
+  padding-bottom: 100px;
+  button {
+    color: $deep-purple;
+    border: 1px solid $deep-purple;
+    padding: 4px 25px;
+    border-radius: 3px;
+    background: transparent;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: white;
+      background-color: $deep-purple;
+    }
+  }
+}
+
+.find-property-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  transform: translateY(-100vh);
+  transition: transform 0.3s ease-in-out;
+  button {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    background-color: $deep-purple;
+  }
+}
+
+.find-property-btn-enter {
+  visibility: visible;
+  transform: translateY(0vh);
+}
+
+// Available Houses List Section
+.house-scroll-area {
+  margin-top: 50px;
+  overflow-y: auto;
+  height: auto;
+  max-height: calc(100vh - 130px);
+}
+
+.house-cards {
+  position: relative;
+  margin: 10px 0;
+  transition: all 0.3s ease-out;
+}
+.house-card-header {
+  padding-top: 10px;
+  font-size: $smallest-font-size;
+  font-weight: $font-weight;
+}
+.house-price {
+  cursor: pointer;
+  position: absolute;
+  padding: 3px 16px;
+  border-radius: 20px;
+  background-color: $light-yellow;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 1;
+  .price-text {
+    font-weight: $font-weight;
+    line-height: $small-line-height;
+  }
+}
+.house-card-text {
+  padding: 9px 0 15px 0;
+  font-size: $smallest-font-size;
+  color: $lighter-dark-colour;
+}
+.house-card-footer {
+  padding-top: 16px;
+  border-top: 1px solid $light-border;
+  display: flex;
+  .house-card-icon-container {
+    margin-right: 12px;
+
+    .svg-icon {
+      padding-right: 6px;
+    }
+    span {
+      text-align: center;
+    }
+    svg {
+      height: 20px;
+    }
+  }
+}
+
+.rental-map {
+  min-height: calc(100vh - 80px);
+  background-color: mediumpurple;
+}
+
+@media (max-width: 768px) {
+  .house-location-container {
+    .panel-menu-icon {
+      display: none;
+    }
+
+    .house-location-text {
+      display: block;
+      font-size: $smallest-font-size;
+      color: $font-dark-colour;
+      line-height: $smallest-line-height;
+    }
+  }
+  // House Search panel for small devices
+  .house-search-panel-small-device {
+    position: absolute;
+    height: 50px;
+    z-index: 12;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    border-bottom: 1px solid $light-border;
+    background-color: white;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .small-device-menu-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .panel-menu-icon {
+      min-width: 16px;
+      min-height: 16px;
+      color: $deep-purple;
+      margin-right: 10px;
+    }
+
+    .small-device-menu-text {
+      text-align: center;
+      color: $deep-purple;
+      margin: 0 10px 0 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  // Scroll area for small devices
+  .house-scroll-area {
+    margin-top: 100px;
+    height: calc(100vh - 150px);
+  }
+
+  // Search control panel for small devices
+  .search-control-panel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .panel-button {
+    display: none;
+  }
+
+  .panel-icon {
+    height: 30px;
+    width: 30px;
+
+    .svg-icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .panel-icon-text {
+    font-size: 12px;
+    margin-left: 5px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1080px) {
+  .houses-for-rent-container {
+    padding-top: 50px;
+  }
+  .house-scroll-area {
+    max-height: calc(100vh - 100px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  .house-card-footer {
+    .house-card-icon-container {
+      margin-right: 0;
+
+      .svg-icon {
+        padding-right: 0;
+        padding-bottom: 1px;
+      }
+      span {
+        font-size: 11px;
+        text-align: center;
+      }
+      svg {
+        height: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 476px) {
+  .house-card-footer {
+    .house-card-icon-container {
+      margin-right: 2px;
+
+      .svg-icon {
+        padding-right: 1px;
+        padding-bottom: 1px;
+      }
+      span {
+        font-size: 12px;
+        text-align: center;
+      }
+      svg {
+        height: 15px;
+      }
+    }
+  }
+}
