@@ -1,4 +1,5 @@
 import Amenities from "./Amenities";
 import AmenitiesIcon from "./AmenitiesIcon";
+import SearchControlPanel from "./SearchControlPanel";
 
-export { Amenities, AmenitiesIcon };
+export { Amenities, AmenitiesIcon, SearchControlPanel };
