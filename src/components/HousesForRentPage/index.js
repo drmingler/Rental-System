@@ -6,6 +6,7 @@ import HousePriceSlider from "./HousePriceSlider";
 import CustomTransition from "./CustomTransition";
 import FilterOptions from "./FilterOptions";
 import FilterOptionPanel from "./FilterOptionPanel";
+import HouseScrollArea from "./HouseScrollArea";
 
 export {
   Amenities,
@@ -15,5 +16,6 @@ export {
   HousePriceSlider,
   CustomTransition,
   FilterOptions,
-  FilterOptionPanel
+  FilterOptionPanel,
+  HouseScrollArea
 };

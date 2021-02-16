@@ -7,8 +7,12 @@ import {
   HousePriceSlider
 } from "./index";
 
-
-const FilterOptionPanel = ({panel, filtersOptions, setFilterOption}) => {
+const FilterOptionPanel = ({
+  panel,
+  filtersOptions,
+  setFilterOption,
+  clearFilter
+}) => {
   return (
     <CustomTransition
       state={panel}
