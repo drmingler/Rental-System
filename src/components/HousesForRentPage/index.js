@@ -5,6 +5,7 @@ import SearchControlPanelMobile from "./SearchControlPanelMobile";
 import HousePriceSlider from "./HousePriceSlider";
 import CustomTransition from "./CustomTransition";
 import FilterOptions from "./FilterOptions";
+import FilterOptionPanel from "./FilterOptionPanel";
 
 export {
   Amenities,
@@ -13,5 +14,6 @@ export {
   SearchControlPanelMobile,
   HousePriceSlider,
   CustomTransition,
-  FilterOptions
+  FilterOptions,
+  FilterOptionPanel
 };
