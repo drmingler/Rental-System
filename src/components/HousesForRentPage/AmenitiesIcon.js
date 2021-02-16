@@ -1,7 +1,7 @@
 import React from "react";
 import {Col} from "react-bootstrap";
 
-const AmenitiesIcon = ({ text, children, filtersOptions, setFilterOption }) => {
+const AmenitiesIcon = ({ iconDark, iconWhite, text, filtersOptions, setFilterOption }) => {
     let filterOption = filtersOptions[text];
 
     function handleClick() {
@@ -15,7 +15,7 @@ const AmenitiesIcon = ({ text, children, filtersOptions, setFilterOption }) => {
 
     return (
         <Col xs={6} className="panel-icon-container" onClick={handleClick}>
-            <div className={`panel-icon ${filterOption && "active"}`}>{children}</div>
+            <div className={`panel-icon ${filterOption && "active"}`}>{filterOption ? iconWhite : iconDark}</div>
             <span className="panel-icon-text">{text}</span>
         </Col>
     );
