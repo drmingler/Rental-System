@@ -1,0 +1,13 @@
+<svg width="500" height="600" viewBox="9.5 23 5 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Rent" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22" transform="translate(0.000000, 24.000000)">
+            <rect id="Rectangle-" x="0" y="0" width="24" height="24"></rect>
+            <g id="Group-6" transform="translate(3.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M17,6 C17.5522847,6 18,5.55228475 18,5 C18,4.44771525 17.5522847,4 17,4 L1,4 C0.44771525,4 0,4.44771525 0,5 C0,5.55228475 0.44771525,6 1,6 L17,6 Z" id="Stroke-14"></path>
+                <path d="M15,10 C15.5522847,10 16,9.55228475 16,9 C16,8.44771525 15.5522847,8 15,8 L3,8 C2.44771525,8 2,8.44771525 2,9 C2,9.55228475 2.44771525,10 3,10 L15,10 Z" id="Stroke-15"></path>
+                <path d="M12,14 C12.5522847,14 13,13.5522847 13,13 C13,12.4477153 12.5522847,12 12,12 L6,12 C5.44771525,12 5,12.4477153 5,13 C5,13.5522847 5.44771525,14 6,14 L12,14 Z" id="Stroke-16"></path>
+                <path d="M4,5 L4,6 L5,6 L13,6 L14,6 L14,5 C14,2.23871525 11.7612847,0 9,0 C6.23871525,0 4,2.23871525 4,5 Z M12,5 L13,4 L5,4 L6,5 C6,3.34328475 7.34328475,2 9,2 C10.6567153,2 12,3.34328475 12,5 Z" id="Stroke-17"></path>
+            </g>
+        </g>
+    </g>
+</svg>

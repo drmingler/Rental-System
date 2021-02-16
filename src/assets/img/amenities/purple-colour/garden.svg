@@ -1,0 +1,12 @@
+<svg width="500" height="600" viewBox="9.5 23 5 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Rent" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1-" transform="translate(0.000000, 24.000000)">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <g id="Group-8" transform="translate(6.000000, 4.000000)" stroke="#7B53C1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M12,6 C12,4.37 10.86,3.012 9.336,2.664 C8.988,1.14 7.63,0 6,0 C4.37,0 3.012,1.14 2.664,2.664 C1.14,3.012 0,4.37 0,6 C0,7.63 1.14,8.988 2.664,9.336 C3.012,10.86 4.37,12 6,12 C7.63,12 8.988,10.86 9.336,9.336 C10.86,8.988 12,7.63 12,6 L12,6 Z" id="Stroke-2"></path>
+                <path d="M6,12 L6,16" id="Stroke-4"></path>
+                <path d="M8,16 L4,16" id="Stroke-6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

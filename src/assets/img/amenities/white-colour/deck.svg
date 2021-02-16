@@ -1,0 +1,13 @@
+<svg width="500" height="600" viewBox="9.5 23 5 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Rent" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1" transform="translate(0.000000, 24.000000)">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <path d="M12,12 L12,19" id="Stroke-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14,19 L10,19" id="Stroke-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g id="Group-8" transform="translate(5.000000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M7,1 L7,0" id="Stroke-4"></path>
+                <path d="M2.9078,6.8333 C3.9668,6.8333 4.9258,7.1243 5.6488,7.5973 C6.0518,7.8603 6.5188,8.0003 6.9998,8.0003 L7.0008,8.0003 C7.4818,8.0003 7.9488,7.8603 8.3508,7.5973 C9.0748,7.1243 10.0328,6.8333 11.0918,6.8333 C12.2298,6.8333 13.2578,7.1653 13.9998,7.7003 C13.8408,3.9743 10.7728,1.0003 6.9998,1.0003 C3.2268,1.0003 0.1588,3.9743 -0.0002,7.7003 C0.7418,7.1653 1.7698,6.8333 2.9078,6.8333 L2.9078,6.8333 Z" id="Stroke-6"></path>
+            </g>
+        </g>
+    </g>
+</svg>
