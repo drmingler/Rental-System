@@ -14,14 +14,14 @@ const DropDownOption = {
 
 const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
   const { showActive, setActive, innerRef } = useDropDown();
-  const showDropDown = () => {
-    setActive(!showActive);
-  };
-
   const [showActiveFilter, setActiveFilter] = useState(
     DropDownOption["bestMatch"]
   );
 
+  const showDropDown = () => {
+    setActive(!showActive);
+  };
+  
   const handleSelect = key => {
     setActiveFilter(DropDownOption[key]);
   };
