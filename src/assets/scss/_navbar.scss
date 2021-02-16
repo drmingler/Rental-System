@@ -253,7 +253,7 @@
     font-weight: $font-weight;
   }
   .mobile-navbar-content {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: #f8f9fa;
     z-index: 13;

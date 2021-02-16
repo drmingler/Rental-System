@@ -9,7 +9,6 @@ function MenuOptionsDropDown({ menuOption, children }) {
     <li ref={innerRef} className="nav-item-dropdown">
       <div className="nav-option" onClick={() => setActive(!showActive)}>
         <span className="nav-name">{menuOption}</span>
-
         <span
           className={`chevron-icon ${!showActive && "chevron-icon-active"}`}
         >
