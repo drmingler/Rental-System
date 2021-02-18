@@ -1,7 +1,7 @@
 @import "variables";
 
 .houses-for-rent-container {
-  position: fixed;
+  //position: fixed;
   overflow-y: scroll;
   padding-top: 80px;
 }
@@ -121,8 +121,7 @@
   top: 0;
   left: 0;
   padding-top: 70px;
-  //padding-top: 50px;
-  z-index: 11;
+  z-index: 10;
   background-color: $bg-colour-6;
   transform: translateY(-100%);
   transition: transform 0.3s ease-out;
@@ -199,7 +198,7 @@
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(50, 48, 58, 0.15);
   color: $font-dark-colour;
-  &.active{
+  &.active {
     background-color: $deep-purple;
     color: white;
   }
@@ -224,7 +223,7 @@
     width: 24px;
     height: 24px;
   }
-  &.active{
+  &.active {
     background-color: $deep-purple;
     color: white;
   }
@@ -258,7 +257,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 10;
   transform: translateY(-100vh);
   transition: transform 0.3s ease-in-out;
   button {
@@ -282,10 +281,17 @@
 .house-scroll-area {
   margin-top: 50px;
   overflow-y: auto;
-  height: auto;
   max-height: calc(100vh - 130px);
+  height: 100%;
 }
-
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .colour{
+    color: $deep-purple;
+  }
+}
 .house-cards {
   position: relative;
   margin: 10px 0;
@@ -422,14 +428,21 @@
     margin-left: 5px;
     overflow: hidden;
   }
+  .rental-map {
+    display: none;
+  }
 }
 
 @media (max-width: 1080px) {
   .houses-for-rent-container {
     padding-top: 50px;
   }
+
   .house-scroll-area {
     max-height: calc(100vh - 100px);
+  }
+  .rental-map {
+    min-height: calc(100vh - 50px);
   }
 }
 

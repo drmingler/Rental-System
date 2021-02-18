@@ -11354,7 +11354,6 @@ html {
 }
 
 .houses-for-rent-container {
-  position: fixed;
   overflow-y: scroll;
   padding-top: 80px;
 }
@@ -11471,7 +11470,7 @@ html {
   top: 0;
   left: 0;
   padding-top: 70px;
-  z-index: 11;
+  z-index: 10;
   background-color: #f8f9fa;
   transform: translateY(-100%);
   transition: transform 0.3s ease-out;
@@ -11607,7 +11606,7 @@ html {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 10;
   transform: translateY(-100vh);
   transition: transform 0.3s ease-in-out;
 }
@@ -11630,8 +11629,17 @@ html {
 .house-scroll-area {
   margin-top: 50px;
   overflow-y: auto;
-  height: auto;
   max-height: calc(100vh - 130px);
+  height: 100%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .colour {
+  color: #7c54c1;
 }
 
 .house-cards {
@@ -11766,6 +11774,10 @@ html {
     margin-left: 5px;
     overflow: hidden;
   }
+
+  .rental-map {
+    display: none;
+  }
 }
 @media (max-width: 1080px) {
   .houses-for-rent-container {
@@ -11774,6 +11786,10 @@ html {
 
   .house-scroll-area {
     max-height: calc(100vh - 100px);
+  }
+
+  .rental-map {
+    min-height: calc(100vh - 50px);
   }
 }
 @media (min-width: 768px) and (max-width: 1500px) {

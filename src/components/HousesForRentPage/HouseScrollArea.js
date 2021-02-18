@@ -10,6 +10,7 @@ import { ListingIconContainer } from "../AddPropertyPage";
 import { ReactComponent as BedIcon } from "../../assets/img/beds-icon.svg";
 import { ReactComponent as BathIcon } from "../../assets/img/bath-icon.svg";
 import { ReactComponent as SqrtIcon } from "../../assets/img/sqft-icon.svg";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const HouseCards = ({ image }) => {
   return (
@@ -48,6 +49,16 @@ const HouseCards = ({ image }) => {
     </Col>
   );
 };
+function Loading() {
+  return (
+    <Col xl={12} className="loading">
+      <Row className="justify-content-center">
+        <CircularProgress className="colour" />
+      </Row>
+    </Col>
+  );
+}
+
 
 const HouseScrollArea = () => {
   return (
