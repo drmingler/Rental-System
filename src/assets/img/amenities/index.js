@@ -38,8 +38,21 @@ import { ReactComponent as StudentFriendlyDark } from "./gray-colour/student-fri
 import { ReactComponent as StudentFriendlyWhite } from "./white-colour/student-friendly.svg";
 import { ReactComponent as UtilitiesDark } from "./gray-colour/utilities-included.svg";
 import { ReactComponent as UtilitiesWhite } from "./white-colour/utilities-included.svg";
+import { ReactComponent as BedIconWhite } from "./white-colour/bed-icon-white.svg";
+import { ReactComponent as BathIconWhite } from "./white-colour/bath-icon-white.svg";
+import { ReactComponent as DogIconWhite } from "./white-colour/dog-icon-white.svg";
+import { ReactComponent as CatIconWhite } from "./white-colour/cat-icon-white.svg";
+import { ReactComponent as SqrtIconWhite } from "./white-colour/sqrt-icon-white.svg";
+import { ReactComponent as MoneyIconWhite } from "./white-colour/money-icon-white.svg";
+
 
 export {
+  BedIconWhite,
+  BathIconWhite,
+  CatIconWhite,
+  DogIconWhite,
+  SqrtIconWhite,
+  MoneyIconWhite,
   PoolDark,
   PoolWhite,
   GardenDark,

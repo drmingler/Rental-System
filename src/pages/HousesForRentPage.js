@@ -10,7 +10,7 @@ import {
   HouseScrollArea
 } from "../components/HousesForRentPage/index";
 
-const HouseForRentPage = () => {
+const HousesForRentPage = () => {
   const [panel, setPanel] = useState(false);
   const [smallDevice, setCurrentDevice] = useState(false);
 
@@ -68,4 +68,4 @@ const HouseForRentPage = () => {
     </Fragment>
   );
 };
-export default HouseForRentPage;
+export default HousesForRentPage;

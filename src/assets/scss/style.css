@@ -11898,6 +11898,211 @@ html {
   color: white;
 }
 
+.property-header-container {
+  padding-bottom: 150px;
+}
+
+.house-details-header {
+  position: relative;
+}
+
+.house-details-background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+  transform-origin: center center 0;
+}
+.house-details-background-image:before {
+  content: "";
+  display: block;
+  background-color: rgba(20, 16, 52, 0.69);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.animate {
+  transform: scale(1);
+  -webkit-animation: zoominout 2.5s ease-out 1 normal;
+  animation: zoominout 2.5s ease-out 1 normal;
+}
+
+.property-header-address {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-wrapper {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 34px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.address-wrapper.address {
+  text-transform: capitalize;
+}
+.address-wrapper.apartment {
+  cursor: pointer;
+}
+.address-wrapper.apartment:hover {
+  transition: background-color 0.3s ease-out;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.property-utility-summary {
+  padding-top: 90px;
+}
+
+.property-utilities h1 {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 700;
+  color: white;
+}
+
+.utilities-item-wrapper {
+  padding-top: 57px;
+}
+
+.property-utility {
+  display: inline-block;
+  margin-right: 50px;
+}
+.property-utility span {
+  text-align: center;
+  color: white;
+  display: block;
+}
+.property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.property-utility .icon-wrapper {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.property-utility .name {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.apply-for-property {
+  width: 220px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.property-monthly-price {
+  padding: 25px 0;
+}
+.property-monthly-price .monthly-price-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #858e98;
+}
+.property-monthly-price .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.property-monthly-price .arrow-icon {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  color: #53c160;
+}
+
+.property-availability {
+  background-color: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+.property-availability .available {
+  margin-right: 6px;
+}
+.property-availability .right-now {
+  font-weight: 700;
+}
+
+.apply-for-property-button {
+  width: 100%;
+  background-color: #53c160;
+  border: none;
+  color: white;
+  height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn-container, .header-input {
+  flex-direction: column;
+}
+
+.rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  flex-direction: row;
+}
+
+.listing-categories-section a, .available-cities-section a, .footer p, .footer a {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
 .MuiInput-underline:after {
   border-bottom: 2px solid mediumpurple;
 }
