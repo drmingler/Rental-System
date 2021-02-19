@@ -202,7 +202,7 @@ export default ListingIconContainer;
 //     HighToLow: "By Price: High to Low"
 // };
 //
-// const HouseForRentPage = () => {
+// const HousesForRentPage = () => {
 //     const { showActive, setActive, innerRef } = useDropDown();
 //
 //     const [panel, setPanel] = useState(false);
@@ -722,4 +722,4 @@ export default ListingIconContainer;
 //         </Fragment>
 //     );
 // };
-// export default HouseForRentPage;
+// export default HousesForRentPage;

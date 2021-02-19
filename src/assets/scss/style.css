@@ -11933,8 +11933,7 @@ html {
 
 .animate {
   transform: scale(1);
-  -webkit-animation: zoominout 2.5s ease-out 1 normal;
-  animation: zoominout 2.5s ease-out 1 normal;
+  transition: transform 2.5s ease-out;
 }
 
 .property-header-address {

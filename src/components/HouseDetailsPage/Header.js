@@ -27,9 +27,7 @@ const Header = () => {
   const [animateBackground, setAnimation] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
       setAnimation(true);
-    }, 3000);
   }, []);
 
   return (
