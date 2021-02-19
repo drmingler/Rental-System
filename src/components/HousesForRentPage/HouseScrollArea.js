@@ -10,6 +10,8 @@ import { ListingIconContainer } from "../AddPropertyPage";
 import { ReactComponent as BedIcon } from "../../assets/img/beds-icon.svg";
 import { ReactComponent as BathIcon } from "../../assets/img/bath-icon.svg";
 import { ReactComponent as SqrtIcon } from "../../assets/img/sqft-icon.svg";
+import { ReactComponent as ChevronLeft } from "../../assets/img/chevron-left.svg";
+import { ReactComponent as ChevronRight } from "../../assets/img/chevron-right.svg";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const HouseCards = ({ image }) => {
@@ -59,6 +61,26 @@ function Loading() {
   );
 }
 
+function PageControls() {
+  return (
+    <Col sm={12} className="page-control">
+      <Row>
+        <div className="prev-button px-3">
+          <button className="page-control-btn">
+            <ChevronLeft />
+            <span>Previous</span>
+          </button>
+        </div>
+        <div className="next-button px-3">
+          <button className="page-control-btn">
+            <span>Next</span>
+            <ChevronRight />
+          </button>
+        </div>
+      </Row>
+    </Col>
+  );
+}
 
 const HouseScrollArea = () => {
   return (
@@ -77,6 +99,7 @@ const HouseScrollArea = () => {
       <HouseCards image={Berlin} />
       <HouseCards image={Berlin} />
       <HouseCards image={Berlin} />
+      <PageControls />
     </Row>
   );
 };

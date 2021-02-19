@@ -11694,6 +11694,45 @@ html {
   height: 20px;
 }
 
+.page-control {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.page-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid mediumpurple;
+  height: 38px;
+  width: 100px;
+  color: mediumpurple;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 22px;
+  transition: all 0.3s ease-out;
+}
+.page-control-btn svg {
+  height: 16px;
+  width: 16px;
+}
+.page-control-btn:hover {
+  background-color: #7c54c1;
+  color: white;
+}
+
+.prev-button span {
+  margin-left: 5px;
+}
+
+.next-button {
+  margin-left: auto;
+}
+.next-button span {
+  margin-right: 7px;
+}
+
 .rental-map {
   min-height: calc(100vh - 80px);
   background-color: mediumpurple;

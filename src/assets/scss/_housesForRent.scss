@@ -288,7 +288,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .colour{
+  .colour {
     color: $deep-purple;
   }
 }
@@ -338,6 +338,47 @@
     svg {
       height: 20px;
     }
+  }
+}
+.page-control {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.page-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $mediumpurple;
+  height: 38px;
+  width: 100px;
+  color: $mediumpurple;
+  background-color: white;
+  border-radius: 3px;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  transition: all .3s ease-out;
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  &:hover{
+    background-color: $deep-purple;
+    color: white;
+  }
+}
+
+.prev-button {
+  span{
+    margin-left: 5px;
+  }
+}
+.next-button{
+  margin-left: auto;
+  span {
+    margin-right: 7px;
   }
 }
 
