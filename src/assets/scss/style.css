@@ -9949,10 +9949,20 @@ h3 {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10057,10 +10067,20 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10119,10 +10139,20 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10569,10 +10599,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10686,10 +10726,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10748,10 +10798,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11127,10 +11187,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -11502,10 +11572,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -12074,10 +12154,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .property-description h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-description-text .full-description, .property-description-text span, .property-utility .value {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.show-more-properties span, .property-monthly-price .monthly-price-header {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -12203,8 +12293,6 @@ html {
   display: block;
 }
 .property-utility .value {
-  font-size: 20px;
-  line-height: 28px;
   margin-top: 5px;
   font-weight: 700;
 }
@@ -12235,8 +12323,6 @@ html {
   display: flex;
   justify-content: center;
   margin: 0 0 10px;
-  font-size: 14px;
-  line-height: 20px;
   color: #858e98;
 }
 .property-monthly-price .price {
@@ -12291,13 +12377,26 @@ html {
   align-items: center;
 }
 .show-more-properties span {
-  font-size: 14px;
-  line-height: 20px;
   color: mediumpurple;
   cursor: pointer;
 }
 .show-more-properties span:hover {
   border-bottom: 1px solid mediumpurple;
+}
+
+.property-description-section {
+  padding-bottom: 100px;
+}
+
+.property-description-text {
+  margin-top: 25px;
+}
+.property-description-text span {
+  color: #2e2d36;
+}
+.property-description-text .full-description {
+  color: mediumpurple;
+  cursor: pointer;
 }
 
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
@@ -12321,10 +12420,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-description h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-utility .value, .property-description-text span, .property-description-text .full-description {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -12395,10 +12504,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-description h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-utility .value, .property-description-text span, .property-description-text .full-description {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -12457,10 +12576,20 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-description h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
+}
+
+.property-utility .value, .property-description-text span, .property-description-text .full-description {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {

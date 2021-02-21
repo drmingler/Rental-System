@@ -82,6 +82,21 @@ $svg-big-size: 30px;
   font-weight: 700;
 }
 
+%medium-font-style {
+  font-size: $medium-font-size;
+  line-height: $medium-line-height;
+}
+
+%smallest-font-style {
+  font-size: $smallest-font-size;
+  line-height: $smallest-line-height;
+}
+
+%small-font-style {
+  font-size: $smallest-font-size;
+  line-height: $smallest-line-height;
+}
+
 %button {
   text-align: center;
   border: none;

@@ -3,7 +3,8 @@ import MobileNavbar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
 import {
   Header,
-  HouseImagesSection
+  HouseImagesSection,
+  HouseDescriptionSection
 } from "../components/HouseDetailsPage/index";
 
 const HouseDetailsPage = () => {
@@ -13,6 +14,7 @@ const HouseDetailsPage = () => {
       <NavBar fixed={true} />
       <Header />
       <HouseImagesSection />
+      <HouseDescriptionSection />
     </Fragment>
   );
 };

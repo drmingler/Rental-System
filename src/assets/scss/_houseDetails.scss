@@ -89,8 +89,7 @@
     display: block;
   }
   .value {
-    font-size: $medium-font-size;
-    line-height: $medium-line-height;
+    @extend %medium-font-style;
     margin-top: 5px;
     font-weight: $font-weight;
   }
@@ -122,8 +121,7 @@
     display: flex;
     justify-content: center;
     margin: 0 0 10px;
-    font-size: $smallest-font-size;
-    line-height: $smallest-line-height;
+    @extend %smallest-font-style;
     color: $lighter-dark-colour;
   }
   .price {
@@ -170,7 +168,6 @@
   -moz-border-radius-bottomright: 6px;
 }
 
-
 // Property images section
 .property-image-container {
   @extend %listing-image-container;
@@ -179,24 +176,41 @@
   @extend %listing-image;
 }
 
-.show-more-properties{
+.show-more-properties {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  span{
-    font-size: $smallest-font-size;
-    line-height: $smallest-line-height;
+
+  span {
+    @extend %smallest-font-style;
     color: $mediumpurple;
     cursor: pointer;
-    &:hover{
+    &:hover {
       border-bottom: 1px solid $mediumpurple;
     }
   }
 }
 
+// Property amenities section
+.property-description-section {
+  padding-bottom: $medium-section-spacing;
+}
 
-
-
-
-
+.property-description {
+  h1 {
+    @extend %large-heading-style;
+  }
+}
+.property-description-text {
+  margin-top: 25px;
+  span {
+    @extend %medium-font-style;
+    color: $font-dark-colour;
+  }
+  .full-description{
+    @extend %medium-font-style;
+    color: $mediumpurple;
+    cursor: pointer;
+  }
+}
