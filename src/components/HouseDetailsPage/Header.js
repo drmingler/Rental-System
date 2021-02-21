@@ -39,7 +39,7 @@ const Header = () => {
         finalClass={"animate"}
         style={{ backgroundImage: `url(${HouseImage})` }}
       />
-      <Container className="property-header-container">
+      <Container className="property-header-container" fluid={'lg'}>
         <Row>
           <Col sm={12} className="property-header-address">
             <div className="address-wrapper apartment">

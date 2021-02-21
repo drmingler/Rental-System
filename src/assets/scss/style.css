@@ -12284,6 +12284,22 @@ html {
   -moz-border-radius-bottomright: 6px;
 }
 
+.show-more-properties {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-more-properties span {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+.show-more-properties span:hover {
+  border-bottom: 1px solid mediumpurple;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
