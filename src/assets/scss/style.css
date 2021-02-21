@@ -9963,6 +9963,33 @@ h3 {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -10044,6 +10071,33 @@ ul {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .renting-header .switch-btn, .renting-header .switch, .list-property, .nav-items, .nav-item-container {
   display: flex;
   align-items: center;
@@ -10077,6 +10131,33 @@ ul {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
 }
 
 .navbar-transparent, .navbar {
@@ -10502,6 +10583,33 @@ html {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -10592,6 +10700,33 @@ html {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .renting-header .switch-btn, .renting-header .switch, .nav-item-container, .nav-items, .list-property {
   display: flex;
   align-items: center;
@@ -10625,6 +10760,33 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
 }
 
 .renting-header {
@@ -10979,6 +11141,33 @@ html {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .add-property-header {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -11027,32 +11216,6 @@ html {
   line-height: 22px;
 }
 
-.listing-image-container {
-  position: relative;
-  bottom: 70px;
-}
-
-.listing-image {
-  position: relative;
-  cursor: pointer;
-  height: 250px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  background-color: #f4f5f7;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  transition: all 0.3s ease-out;
-  margin-top: 30px;
-}
-.listing-image:hover {
-  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
-  transform: scale(1.1);
-}
 .listing-image .upload-file-input {
   position: absolute;
   height: 100%;
@@ -11351,6 +11514,33 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
 }
 
 .houses-for-rent-container {
@@ -11898,6 +12088,33 @@ html {
   color: white;
 }
 
+.property-image-container, .listing-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.property-image, .listing-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.property-image:hover, .listing-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .property-header-container {
   padding-bottom: 150px;
 }
@@ -12102,6 +12319,33 @@ html {
   color: white;
 }
 
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .MuiInput-underline:after {
   border-bottom: 2px solid mediumpurple;
 }
@@ -12149,6 +12393,33 @@ html {
   color: white;
 }
 
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -12182,6 +12453,33 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
 }
 
 .header-container {

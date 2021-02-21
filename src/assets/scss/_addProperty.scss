@@ -69,31 +69,11 @@
   @extend %large-heading-style;
 }
 .listing-image-container {
-  position: relative;
-  bottom: 70px;
+  @extend %listing-image-container;
 }
 
 .listing-image {
-  position: relative;
-  cursor: pointer;
-  height: 250px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  background-color: $bg-colour-5;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  transition: all 0.3s ease-out;
-  margin-top: 30px;
-
-  &:hover {
-    box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
-    transform: scale(1.1);
-  }
+  @extend %listing-image;
 
   .upload-file-input {
     position: absolute;
