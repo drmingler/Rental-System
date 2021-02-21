@@ -1,11 +1,7 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import {
-  Amenities,
-  CustomTransition,
-  FilterOptions,
-  HousePriceSlider
-} from "./index";
+import {Col, Container, Row} from "react-bootstrap";
+import {Amenities, FilterOptions, HousePriceSlider} from "./index";
+import CustomTransition from "../CustomTransition";
 
 const FilterOptionPanel = ({
   panel,

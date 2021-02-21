@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, {useEffect, useState} from "react";
+import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
-
+import CustomTransition from "../CustomTransition";
 import HouseImage from "../../assets/img/0be3acfcb6d1bd77327fee16dbe221877d7e314a.jpg";
-import { ReactComponent as ArrowDownRight } from "../../assets/img/arrow-right-circle.svg";
+import {ReactComponent as ArrowDownRight} from "../../assets/img/arrow-right-circle.svg";
 import MoneyIconWhite from "../../assets/img/amenities/white-colour/money-icon-white.svg";
 import BedIconWhite from "../../assets/img/amenities/white-colour/bed-icon-white.svg";
 import CatIconWhite from "../../assets/img/amenities/white-colour/cat-icon-white.svg";
 import DogIconWhite from "../../assets/img/amenities/white-colour/dog-icon-white.svg";
 import SqrtIconWhite from "../../assets/img/amenities/white-colour/sqrt-icon-white.svg";
 import BathIconWhite from "../../assets/img/amenities/white-colour/bath-icon-white.svg";
+
 
 const Utilities = ({ icon, value, name }) => {
   return (
@@ -27,14 +28,15 @@ const Header = () => {
   const [animateBackground, setAnimation] = useState(false);
 
   useEffect(() => {
-      setAnimation(true);
+    setAnimation(true);
   }, []);
 
   return (
     <header className="house-details-header">
-      <div
-        className={` house-details-background-image ${animateBackground &&
-          "animate"}`}
+      <CustomTransition
+        state={animateBackground}
+        initialClass={"house-details-background-image"}
+        finalClass={"animate"}
         style={{ backgroundImage: `url(${HouseImage})` }}
       />
       <Container className="property-header-container">

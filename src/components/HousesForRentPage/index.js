@@ -3,7 +3,6 @@ import AmenitiesIcon from "./AmenitiesIcon";
 import SearchControlPanel from "./SearchControlPanel";
 import SearchControlPanelMobile from "./SearchControlPanelMobile";
 import HousePriceSlider from "./HousePriceSlider";
-import CustomTransition from "./CustomTransition";
 import FilterOptions from "./FilterOptions";
 import FilterOptionPanel from "./FilterOptionPanel";
 import HouseScrollArea from "./HouseScrollArea";
@@ -14,7 +13,6 @@ export {
   SearchControlPanel,
   SearchControlPanelMobile,
   HousePriceSlider,
-  CustomTransition,
   FilterOptions,
   FilterOptionPanel,
   HouseScrollArea
