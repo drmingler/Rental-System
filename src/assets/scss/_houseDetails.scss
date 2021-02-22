@@ -5,9 +5,11 @@
 .property-header-container {
   padding-bottom: $large-section-spacing;
 }
+
 .house-details-header {
   position: relative;
 }
+
 .house-details-background-image {
   position: absolute;
   height: 100%;
@@ -59,6 +61,7 @@
 
   &.apartment {
     cursor: pointer;
+
     &:hover {
       transition: background-color 0.3s ease-out;
       background: hsla(0, 0%, 100%, 0.15);
@@ -69,6 +72,7 @@
 .property-utility-summary {
   padding-top: 90px;
 }
+
 .property-utilities {
   h1 {
     font-size: $largest-font-size;
@@ -77,22 +81,27 @@
     color: white;
   }
 }
+
 .utilities-item-wrapper {
   padding-top: 57px;
 }
+
 .property-utility {
   display: inline-block;
   margin-right: 50px;
+
   span {
     text-align: center;
     color: white;
     display: block;
   }
+
   .value {
     @extend %medium-font-style;
     margin-top: 5px;
     font-weight: $font-weight;
   }
+
   .icon-wrapper {
     display: block;
     width: 24px;
@@ -101,6 +110,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
   }
+
   .name {
     font-size: 12px;
     line-height: 15px;
@@ -124,6 +134,7 @@
     @extend %smallest-font-style;
     color: $lighter-dark-colour;
   }
+
   .price {
     display: flex;
     justify-content: center;
@@ -132,6 +143,7 @@
     font-size: $medium-large-font-size;
     line-height: $medium-large-line-height;
   }
+
   .arrow-icon {
     margin-right: 10px;
     height: 20px;
@@ -139,6 +151,7 @@
     color: $light-green;
   }
 }
+
 .property-availability {
   background-color: $bg-colour-5;
   display: flex;
@@ -146,13 +159,16 @@
   font-size: $smallest-font-size;
   line-height: $smallest-line-height;
   padding: 10px 0;
+
   .available {
     margin-right: 6px;
   }
+
   .right-now {
     font-weight: $font-weight;
   }
 }
+
 .apply-for-property-button {
   width: 100%;
   background-color: $light-green;
@@ -172,6 +188,7 @@
 .property-image-container {
   @extend %listing-image-container;
 }
+
 .property-image {
   @extend %listing-image;
 }
@@ -186,6 +203,7 @@
     @extend %smallest-font-style;
     color: $mediumpurple;
     cursor: pointer;
+
     &:hover {
       border-bottom: 1px solid $mediumpurple;
     }
@@ -202,15 +220,45 @@
     @extend %large-heading-style;
   }
 }
+
 .property-description-text {
   margin-top: 25px;
+
   span {
     @extend %medium-font-style;
     color: $font-dark-colour;
   }
-  .full-description{
+
+  .full-description {
     @extend %medium-font-style;
     color: $mediumpurple;
     cursor: pointer;
+  }
+}
+.house-amenities-section{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.amenities-icon-wrapper {
+  display: flex;
+  align-items: center;
+  //.svg-icon {
+  //  width: 24px;
+  //  height: 24px;
+  //  display: block;
+  //  background-position: 50%;
+  //  background-repeat: no-repeat;
+  //}
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    @extend %smallest-font-style;
+    text-align: center;
+    padding-left: 10px;
+    line-height: 24px;
   }
 }

@@ -9960,7 +9960,7 @@ h3 {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10078,7 +10078,7 @@ ul {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10150,7 +10150,7 @@ ul {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10610,7 +10610,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10737,7 +10737,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10809,7 +10809,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11198,7 +11198,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11583,7 +11583,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12165,7 +12165,7 @@ html {
   line-height: 28px;
 }
 
-.show-more-properties span, .property-monthly-price .monthly-price-header {
+.amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12399,6 +12399,25 @@ html {
   cursor: pointer;
 }
 
+.house-amenities-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.amenities-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+.amenities-icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+}
+.amenities-icon-wrapper span {
+  text-align: center;
+  padding-left: 10px;
+  line-height: 24px;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -12431,7 +12450,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12515,7 +12534,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12587,7 +12606,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span {
   font-size: 14px;
   line-height: 20px;
 }
