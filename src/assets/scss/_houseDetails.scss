@@ -268,7 +268,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.contact-landlord-card{
+.contact-landlord-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -346,5 +346,57 @@
       color: white;
     }
   }
+}
 
+// Landlord details with short description
+
+.landlord-name-address {
+  h3 {
+    @extend %medium-font-style;
+    font-weight: $font-weight;
+    margin: 0;
+  }
+  span {
+    @extend %smallest-font-style;
+  }
+}
+.short-description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.landlord-stats-container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.landlord-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+
+  @extend %smallest-font-style;
+  text-align: center;
+  color: $deep-purple;
+
+  .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: $deep-purple;
+    border-radius: 5px;
+    svg {
+      height: 30px;
+      width: 30px;
+      color: white;
+    }
+  }
+  .date-joined {
+    display: block;
+  }
 }
