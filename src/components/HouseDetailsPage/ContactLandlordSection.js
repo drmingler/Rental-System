@@ -14,7 +14,7 @@ const ContactLandlordSection = () => {
         <Row>
           <Col md={9}>
             <Row>
-              <Col lg={6} xl={4}>
+              <Col lg={6} xl={5}>
                 <Paper variant="outlined" className="contact-landlord-card">
                   <div className="landlord-image-wrapper">
                     <div className="landlord-image-container">
@@ -50,14 +50,14 @@ const ContactLandlordSection = () => {
                   </div>
                 </Paper>
               </Col>
-              <Col lg={6} xl={8}>
+              <Col lg={6} xl={7}>
                 <div className="landlord-name-address">
                   <h3>Stefanie</h3>
                   <span>from Berlin, Germany</span>
                 </div>
                 <div className="short-description">
                   <span>
-                    Hi I am Stefanie, property manager for room housing. Happy
+                    Hi I am Stefanie. Happy
                     to get in contact with you and you are welcome to live in
                     our beautiful rooms.
                   </span>

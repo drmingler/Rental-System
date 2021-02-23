@@ -104,6 +104,11 @@ $svg-big-size: 30px;
   font-weight: $font-weight;
   color: white;
 }
+%button-with-outline {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
 
 %listing-image-container{
   position: relative;

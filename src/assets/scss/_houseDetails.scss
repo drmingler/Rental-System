@@ -306,13 +306,12 @@
   }
 }
 .contact-landlord-button {
+  @extend %button-with-outline;
   width: 100%;
   border: 1px solid $deep-purple;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: transparent;
   color: $deep-purple;
-  cursor: pointer;
+  padding: 8px 16px;
+
   &:hover {
     transition: all 0.3s ease-out;
     background-color: $deep-purple;
@@ -349,7 +348,7 @@
 }
 
 // Landlord details with short description
-.contact-landlord-section{
+.contact-landlord-section {
   padding-bottom: $medium-section-spacing;
   padding-top: $medium-section-spacing;
 }
@@ -405,12 +404,32 @@
 }
 
 // Similar properties section
-.similar-properties-section{
+.similar-properties-section {
   padding-bottom: $small-section-spacing;
   padding-top: $small-section-spacing;
   background-color: $bg-colour-5;
-  h1{
+  h1 {
     text-align: center;
     @extend %large-heading-style;
   }
+}
+.show-more-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .show-more-btn {
+    @extend %button-with-outline;
+    border: 1px solid $deep-purple;
+    color: $deep-purple;
+    padding: 5px 16px;
+    &:hover {
+      transition: all 0.3s ease-out;
+      background-color: $deep-purple;
+      color: white;
+    }
+  }
+}
+.properties-nearby {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }

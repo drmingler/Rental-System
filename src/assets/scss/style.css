@@ -9973,6 +9973,12 @@ h3 {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -10091,6 +10097,12 @@ ul {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -10161,6 +10173,12 @@ ul {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .property-image-container, .listing-image-container {
@@ -10633,6 +10651,12 @@ html {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -10760,6 +10784,12 @@ html {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -10830,6 +10860,12 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .property-image-container, .listing-image-container {
@@ -11221,6 +11257,12 @@ html {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -11604,6 +11646,12 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .property-image-container, .listing-image-container {
@@ -12188,6 +12236,12 @@ html {
   color: white;
 }
 
+.show-more-wrapper .show-more-btn, .contact-landlord-button {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .property-image-container, .listing-image-container {
   position: relative;
   bottom: 70px;
@@ -12470,11 +12524,8 @@ html {
 .contact-landlord-button {
   width: 100%;
   border: 1px solid #7c54c1;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: transparent;
   color: #7c54c1;
-  cursor: pointer;
+  padding: 8px 16px;
 }
 .contact-landlord-button:hover {
   transition: all 0.3s ease-out;
@@ -12565,6 +12616,27 @@ html {
   text-align: center;
 }
 
+.show-more-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-more-wrapper .show-more-btn {
+  border: 1px solid #7c54c1;
+  color: #7c54c1;
+  padding: 5px 16px;
+}
+.show-more-wrapper .show-more-btn:hover {
+  transition: all 0.3s ease-out;
+  background-color: #7c54c1;
+  color: white;
+}
+
+.properties-nearby {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -12608,6 +12680,12 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .listing-image-container, .property-image-container {
@@ -12694,6 +12772,12 @@ html {
   color: white;
 }
 
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
 .listing-image-container, .property-image-container {
   position: relative;
   bottom: 70px;
@@ -12764,6 +12848,12 @@ html {
   cursor: pointer;
   font-weight: 700;
   color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
 }
 
 .listing-image-container, .property-image-container {
