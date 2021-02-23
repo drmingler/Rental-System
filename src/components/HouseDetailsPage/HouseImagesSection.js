@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import PropertyImage1 from "../../assets/img/property-image-1.jpg";
 import PropertyImage2 from "../../assets/img/property-image-2.jpg";
 import PropertyImage3 from "../../assets/img/property-image-3.jpg";
+import useImageVisibility from "../../hooks/useImageVisiblity";
 
 const PropertyImage = ({ Image }) => {
   return (
@@ -25,14 +26,9 @@ const imagePlaceHolder = [
 ];
 
 const HouseImagesSection = () => {
-  const [imagesCount, increaseImage] = useState(3);
-  let totalImages = imagePlaceHolder.length;
-  let hiddenImages = totalImages - imagesCount;
-
-  function showMoreImages() {
-    increaseImage(totalImages);
-  }
-
+  const { imagesCount, hiddenImages, showMoreImages } = useImageVisibility(
+    imagePlaceHolder
+  );
   return (
     <section className="property-images-section">
       <Container fluid="lg">
