@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import "../assets/scss/style.scss";
 import { StylesProvider } from "@material-ui/core/styles";
 import HouseDetailsPage from "./HouseDetailsPage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "./HomePage";
+import PlatformUsage from "./PlatformUsage";
+import AddPropertyPage from "./AddPropertyPage";
+import HousesForRentPage from "./HousesForRentPage";
+import RentingInstruction from "./RentingInstruction";
 
 function App() {
   useEffect(() => {
@@ -13,14 +19,17 @@ function App() {
   }, []);
   return (
     <StylesProvider injectFirst>
-      <div className="App">
-        {/*<HomePage />*/}
-        {/*<PlatformUsage />*/}
-        {/*<AddPropertyPage />*/}
-        <HouseDetailsPage />
-        {/*<HousesForRentPage />*/}
-        {/*<RentingInstruction />*/}
-      </div>
+      <Router basename={'/'}>
+        <Switch>
+          <Route exact path={"/"} component={HomePage}/>
+          <Route exact path={"/list"} component={AddPropertyPage} />
+          <Route exact path={"/property"} component={HouseDetailsPage} />
+          <Route exact path={"/properties"} component={HousesForRentPage} />
+          <Route exact path={"/properties"} component={HousesForRentPage} />
+          <Route exact path={"/renting"} component={PlatformUsage} />
+          <Route exact path={"/renting-instruction"} component={RentingInstruction} />
+        </Switch>
+      </Router>
     </StylesProvider>
   );
 }

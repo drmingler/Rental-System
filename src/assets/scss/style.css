@@ -10246,6 +10246,11 @@ ul {
   border: 1px solid white;
   color: white;
 }
+.navbar-transparent .list-property button:hover {
+  transition: all 0.3s ease-out;
+  background-color: white;
+  color: mediumpurple;
+}
 
 .nav-item-container {
   height: 100%;
@@ -10347,6 +10352,11 @@ ul {
   background-color: transparent;
   font-size: 14px;
   border-radius: 4px;
+}
+.list-property button:hover {
+  transition: all 0.3s ease-out;
+  background-color: #dc7338;
+  color: white;
 }
 
 .account-setting-dropdown {
