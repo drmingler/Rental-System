@@ -268,10 +268,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.contact-agent-card {
+.contact-landlord-card{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.landlord-image-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
   padding-bottom: 20px;
 }
 .landlord-image-container {
@@ -286,7 +289,7 @@
   }
 }
 .card-content {
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .landlord-short-details {
@@ -310,9 +313,38 @@
   background: transparent;
   color: $deep-purple;
   cursor: pointer;
-  &:hover{
-    transition: all  0.3s ease-out;
+  &:hover {
+    transition: all 0.3s ease-out;
     background-color: $deep-purple;
     color: white;
   }
+}
+.phone-and-email {
+  background: $bg-colour-5;
+  @extend %smallest-font-style;
+  padding: 10px 20px;
+  border-left: 3px solid $deep-purple;
+}
+.text-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+
+  span {
+    padding-left: 12px;
+  }
+  .icon-wrapper {
+    height: 24px;
+    width: 24px;
+    border-radius: 3px;
+    background-color: $deep-purple;
+    text-align: center;
+
+    svg {
+      height: 14px;
+      width: 14px;
+      color: white;
+    }
+  }
+
 }

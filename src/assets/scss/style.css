@@ -9960,7 +9960,7 @@ h3 {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10078,7 +10078,7 @@ ul {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10150,7 +10150,7 @@ ul {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10620,7 +10620,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10747,7 +10747,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10819,7 +10819,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11208,7 +11208,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11593,7 +11593,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12175,7 +12175,7 @@ html {
   line-height: 28px;
 }
 
-.landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12433,10 +12433,14 @@ html {
   padding-bottom: 50px;
 }
 
-.contact-agent-card {
+.contact-landlord-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.landlord-image-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
   padding-bottom: 20px;
 }
 
@@ -12452,7 +12456,7 @@ html {
 }
 
 .card-content {
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 .landlord-short-details {
@@ -12475,6 +12479,33 @@ html {
 .contact-landlord-button:hover {
   transition: all 0.3s ease-out;
   background-color: #7c54c1;
+  color: white;
+}
+
+.phone-and-email {
+  background: #f4f5f7;
+  padding: 10px 20px;
+  border-left: 3px solid #7c54c1;
+}
+
+.text-icon-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.text-icon-wrapper span {
+  padding-left: 12px;
+}
+.text-icon-wrapper .icon-wrapper {
+  height: 24px;
+  width: 24px;
+  border-radius: 3px;
+  background-color: #7c54c1;
+  text-align: center;
+}
+.text-icon-wrapper .icon-wrapper svg {
+  height: 14px;
+  width: 14px;
   color: white;
 }
 
@@ -12510,7 +12541,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12594,7 +12625,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12666,7 +12697,7 @@ html {
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email {
   font-size: 14px;
   line-height: 20px;
 }
