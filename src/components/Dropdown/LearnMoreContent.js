@@ -7,8 +7,8 @@ const LearnMoreContent = () => {
     <Fragment>
       <h3>Rental Accommodation</h3>
       <DropdownItem icon={<HouseIcon />}>
-        <h5>Find a place</h5>
-        <span>How renting works on our platform</span>
+          <h5>Find a place</h5>
+          <span>How renting works on our platform</span>
       </DropdownItem>
       <DropdownItem icon={<HouseIcon />}>
         <h5>Rent out your place</h5>

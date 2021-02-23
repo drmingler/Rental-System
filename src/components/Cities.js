@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/scss/style.scss";
 import { Container, Col, Row } from "react-bootstrap";
 import Berlin from "../assets/img/Berlin.webp";
+import { Link } from "react-router-dom";
 
 function Cities() {
   return (
@@ -15,11 +16,15 @@ function Cities() {
         </div>
         <Row>
           <Col md={4} xs={6}>
-            <div className="city-container">
-              <img src={Berlin} alt={"Berlin apartments for rent"} />
-              <p className={"city-name"}>Berlin</p>
-              <p className={"city-description"}>See all apartments for rent </p>
-            </div>
+            <Link to={"/properties"}>
+              <div className="city-container">
+                <img src={Berlin} alt={"Berlin apartments for rent"} />
+                <p className={"city-name"}>Berlin</p>
+                <p className={"city-description"}>
+                  See all apartments for rent{" "}
+                </p>
+              </div>
+            </Link>
           </Col>
           <Col md={4} xs={6}>
             <div className="city-container">

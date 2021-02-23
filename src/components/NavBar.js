@@ -1,12 +1,8 @@
-import React, { useLayoutEffect, useState } from "react";
-import {
-  MenuOptionsDropDown,
-  AccountSettingsDropDown,
-  LearnMoreContent,
-  ProductContent
-} from "./Dropdown/index";
+import React, {useLayoutEffect, useState} from "react";
+import {AccountSettingsDropDown, LearnMoreContent, MenuOptionsDropDown, ProductContent} from "./Dropdown/index";
+import { withRouter } from "react-router-dom";
 
-function NavBar({ fixed }) {
+function NavBar({ fixed, history }) {
   const [transparent, setTransparent] = useState(
     fixed ? "navbar" : "navbar-transparent"
   );
@@ -46,7 +42,7 @@ function NavBar({ fixed }) {
           </MenuOptionsDropDown>
         </ul>
         <div className="list-property">
-          <button>List a Property</button>
+            <button onClick={()=>history.push("/list")}>List a Property</button>
           <AccountSettingsDropDown />
         </div>
       </div>
@@ -54,4 +50,4 @@ function NavBar({ fixed }) {
   );
 }
 
-export default NavBar;
+export default withRouter(NavBar);

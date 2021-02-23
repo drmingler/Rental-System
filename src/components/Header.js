@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import useToggle from "../hooks/useToggle";
+import {Link} from "react-router-dom";
 
 function Header() {
   const { setActive, showActive } = useToggle();
@@ -53,7 +54,9 @@ function Header() {
               </Col>
               <div className="header-btn-container">
                 <p>Market your property to millions</p>
-                <button>List Your Rental</button>
+                <Link to={"/list"}>
+                  <button>List Your Rental</button>
+                </Link>
               </div>
             </div>
           </Col>

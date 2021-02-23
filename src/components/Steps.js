@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import useToggle from "../hooks/useToggle";
 import Switch from "./Switch";
+import { Link } from "react-router-dom";
 
 function Steps() {
   const { showActive, setActive } = useToggle();
@@ -80,7 +81,9 @@ function Steps() {
             </Col>
           </Row>
           <div className="learn-more-btn">
-            <button>Learn More</button>
+            <Link to={"/renting-instruction"}>
+              <button>Learn More</button>
+            </Link>
           </div>
         </div>
       </Container>

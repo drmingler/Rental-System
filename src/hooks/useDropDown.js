@@ -7,7 +7,9 @@ const useDropDown = () => {
 
   useEffect(() => {
     function handleClickOutside(e) {
-      !innerRef.current.contains(e.target) && setActive(false);
+      if (innerRef.current) {
+        !innerRef.current.contains(e.target) && setActive(false);
+      }
     }
 
     window.addEventListener("click", handleClickOutside);

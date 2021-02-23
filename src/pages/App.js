@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import "../assets/scss/style.scss";
 import { StylesProvider } from "@material-ui/core/styles";
 import HouseDetailsPage from "./HouseDetailsPage";
@@ -10,22 +10,14 @@ import HousesForRentPage from "./HousesForRentPage";
 import RentingInstruction from "./RentingInstruction";
 
 function App() {
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
-  }, []);
   return (
     <StylesProvider injectFirst>
       <Router basename={'/'}>
         <Switch>
           <Route exact path={"/"} component={HomePage}/>
           <Route exact path={"/list"} component={AddPropertyPage} />
+          <Route exact path={"/properties"} component={HousesForRentPage} />
           <Route exact path={"/property"} component={HouseDetailsPage} />
-          <Route exact path={"/properties"} component={HousesForRentPage} />
-          <Route exact path={"/properties"} component={HousesForRentPage} />
           <Route exact path={"/renting"} component={PlatformUsage} />
           <Route exact path={"/renting-instruction"} component={RentingInstruction} />
         </Switch>

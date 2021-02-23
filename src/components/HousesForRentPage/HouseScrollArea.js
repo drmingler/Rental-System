@@ -17,37 +17,42 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 const HouseCards = ({ image }) => {
   return (
     <Col lg={12} xl={6}>
-      <Card className="house-cards">
-        <div className="house-price">
-          <span className="price-text">$2,300</span>
-        </div>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            alt="Contemplative Reptile"
-            height="200"
-            image={image}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography className="house-card-header">Common Baker</Typography>
-            <Typography className="house-card-text">
-              Lizards are a widespread group of squamate
-            </Typography>
-            <div className="house-card-footer">
-              <div className="house-card-icon-container">
-                <ListingIconContainer icon={<BedIcon />} text={"5 Bed"} />
+        <Card className="house-cards">
+          <div className="house-price">
+            <span className="price-text">$2,300</span>
+          </div>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt="Contemplative Reptile"
+              height="200"
+              image={image}
+              title="Contemplative Reptile"
+            />
+            <CardContent>
+              <Typography className="house-card-header">
+                Common Baker
+              </Typography>
+              <Typography className="house-card-text">
+                Lizards are a widespread group of squamate
+              </Typography>
+              <div className="house-card-footer">
+                <div className="house-card-icon-container">
+                  <ListingIconContainer icon={<BedIcon />} text={"5 Bed"} />
+                </div>
+                <div className="house-card-icon-container">
+                  <ListingIconContainer icon={<BathIcon />} text={"5 Bath"} />
+                </div>
+                <div className="house-card-icon-container">
+                  <ListingIconContainer
+                    icon={<SqrtIcon />}
+                    text={"1000 Sq Ft"}
+                  />
+                </div>
               </div>
-              <div className="house-card-icon-container">
-                <ListingIconContainer icon={<BathIcon />} text={"5 Bath"} />
-              </div>
-              <div className="house-card-icon-container">
-                <ListingIconContainer icon={<SqrtIcon />} text={"1000 Sq Ft"} />
-              </div>
-            </div>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+            </CardContent>
+          </CardActionArea>
+        </Card>
     </Col>
   );
 };
