@@ -349,7 +349,10 @@
 }
 
 // Landlord details with short description
-
+.contact-landlord-section{
+  padding-bottom: $medium-section-spacing;
+  padding-top: $medium-section-spacing;
+}
 .landlord-name-address {
   h3 {
     @extend %medium-font-style;
@@ -398,5 +401,16 @@
   }
   .date-joined {
     display: block;
+  }
+}
+
+// Similar properties section
+.similar-properties-section{
+  padding-bottom: $small-section-spacing;
+  padding-top: $small-section-spacing;
+  background-color: $bg-colour-5;
+  h1{
+    text-align: center;
+    @extend %large-heading-style;
   }
 }
