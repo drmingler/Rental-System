@@ -12373,10 +12373,35 @@ html {
   line-height: 15px;
 }
 
+.sticky-container {
+  position: relative;
+}
+
+.sticky-apply-container {
+  position: absolute;
+  min-height: 100%;
+  right: calc((100% - 1040px) / 2);
+}
+
+.sticky-apply.sticky-active {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
+}
+
+.sticky-active {
+  display: block;
+  position: relative;
+  margin-top: 280px;
+  margin-bottom: 100px;
+  z-index: 1;
+}
+
 .apply-for-property {
   width: 220px;
   border-radius: 6px;
   user-select: none;
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
 }
 
 .property-monthly-price {
