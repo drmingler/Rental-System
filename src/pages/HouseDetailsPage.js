@@ -8,7 +8,8 @@ import {
   HouseImagesSection,
   HouseAmenitiesSection,
   ContactLandlordSection,
-  SimilarPropertiesSection
+  SimilarPropertiesSection,
+  HowToRentProperty
 } from "../components/HouseDetailsPage/index";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as ArrowDownRight } from "../assets/img/arrow-right-circle.svg";
@@ -43,6 +44,7 @@ const HouseDetailsPage = () => {
         <HouseImagesSection />
         <HouseDescriptionSection />
         <HouseAmenitiesSection />
+        <HowToRentProperty />
         <ContactLandlordSection />
       </div>
       <SimilarPropertiesSection />

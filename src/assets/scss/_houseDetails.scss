@@ -119,7 +119,7 @@
 .sticky-container {
   position: relative;
 }
-.sticky-apply-container{
+.sticky-apply-container {
   position: absolute;
   min-height: 100%;
   right: calc((100% - 1040px) / 2);
@@ -130,13 +130,12 @@
   top: 110px;
 }
 
-.sticky-active{
+.sticky-active {
   display: block;
   position: relative;
   margin-top: 280px;
   margin-bottom: 100px;
   z-index: 1;
-
 }
 
 .apply-for-property {
@@ -284,6 +283,21 @@
     padding-left: 10px;
     line-height: 24px;
   }
+}
+// How to rent section
+.how-to-rent-section {
+  padding-top: 50px;
+  ol {
+    padding-left: 20px;
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
+.how-to-rent-header {
+  @extend %large-heading-style;
+  font-weight: $font-weight;
+  margin-bottom: 40px;
 }
 
 // Contact agent section

@@ -4,6 +4,7 @@ import HouseDescriptionSection from "./HouseDescriptionSection";
 import HouseAmenitiesSection from "./HouseAmenitiesSection";
 import ContactLandlordSection from "./ContactLandlordSection";
 import SimilarPropertiesSection from "./SimilarPropertiesSection";
+import HowToRentProperty from "./HowToRentProperty";
 
 export {
   Header,
@@ -11,5 +12,6 @@ export {
   HouseDescriptionSection,
   HouseAmenitiesSection,
   ContactLandlordSection,
-  SimilarPropertiesSection
+  SimilarPropertiesSection,
+  HowToRentProperty
 };
