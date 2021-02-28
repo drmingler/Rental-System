@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import PropertyImage1 from "../../assets/img/property-image-1.jpg";
 import PropertyImage2 from "../../assets/img/property-image-2.jpg";
 import PropertyImage3 from "../../assets/img/property-image-3.jpg";
 import useImageVisibility from "../../hooks/useImageVisiblity";
+import {ImageSlideContext} from "../../pages/HouseDetailsPage";
 
 const PropertyImage = ({ Image }) => {
   return (
@@ -26,9 +27,12 @@ const imagePlaceHolder = [
 ];
 
 const HouseImagesSection = () => {
+  const { setSlide }  = useContext(ImageSlideContext);
+
   const { imagesCount, hiddenImages, showMoreImages } = useImageVisibility(
     imagePlaceHolder
   );
+
   return (
     <section className="property-images-section">
       <Container fluid="lg">
@@ -36,7 +40,7 @@ const HouseImagesSection = () => {
           <Col md={12} xl={9} className="property-image-container">
             <ul className="row">
               {[...Array(imagesCount)].map((item, idx) => (
-                <li className="col-md-4" key={idx}>
+                <li className="col-md-4" key={idx} onClick={()=>setSlide(true)}>
                   <PropertyImage Image={imagePlaceHolder[idx].background} />
                 </li>
               ))}

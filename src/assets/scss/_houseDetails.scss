@@ -1,5 +1,107 @@
 @import "variables";
 
+.property-page-container {
+  position: relative;
+  user-select: none;
+
+  %overlay-controls {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    z-index: 31;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $deep-purple;
+      transition: all 0.3s ease-out;
+      svg {
+        color: white;
+        transition: all 0.3s ease-out;
+      }
+    }
+    svg {
+      color: $placeholder-colour;
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .cancel {
+    @extend %overlay-controls;
+    right: 30px;
+    top: 30px;
+  }
+  .left {
+    @extend %overlay-controls;
+    left: 30px;
+    top: 450px;
+  }
+
+  .right {
+    @extend %overlay-controls;
+    right: 30px;
+    top: 450px;
+  }
+
+  .picture-number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    z-index: 31;
+    color: white;
+    .large-font {
+      @extend %large-heading-style;
+      font-weight: 700;
+    }
+    .small-font {
+      @extend %medium-font-style;
+    }
+  }
+}
+
+// Property slider section
+.property-slides-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $bg-overlay-colour-darker;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transform: scale(0);
+
+  &.scale {
+    transition: opacity 334ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      transform 222ms cubic-bezier(0.4, 0, 0.2, 1) 111ms;
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.flex-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-height: 90%;
+    max-width: 90%;
+  }
+}
+
 // Property header section
 .property-header-container {
   padding-bottom: $large-section-spacing;
@@ -37,7 +139,7 @@
 
 .animate {
   transform: scale(1);
-  transition: transform 2.5s ease-out;
+  transition: transform 1.5s ease-out;
 }
 
 .property-header-address {
@@ -469,4 +571,16 @@
 .properties-nearby {
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .flex-image {
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .col-sm-12 {
+    padding: 0;
+  }
 }
