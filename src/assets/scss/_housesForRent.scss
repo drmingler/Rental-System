@@ -326,20 +326,21 @@
   padding-top: 16px;
   border-top: 1px solid $light-border;
   display: flex;
-  .house-card-icon-container {
-    margin-right: 12px;
+}
+.house-card-icon-container {
+  margin-right: 12px;
 
-    .svg-icon {
-      padding-right: 6px;
-    }
-    span {
-      text-align: center;
-    }
-    svg {
-      height: 20px;
-    }
+  .svg-icon {
+    padding-right: 6px;
+  }
+  span {
+    text-align: center;
+  }
+  svg {
+    height: 20px;
   }
 }
+
 .page-control {
   margin-top: 20px;
   margin-bottom: 30px;

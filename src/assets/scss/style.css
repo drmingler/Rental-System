@@ -12009,16 +12009,17 @@ html {
   border-top: 1px solid #e9eaef;
   display: flex;
 }
-.house-card-footer .house-card-icon-container {
+
+.house-card-icon-container {
   margin-right: 12px;
 }
-.house-card-footer .house-card-icon-container .svg-icon {
+.house-card-icon-container .svg-icon {
   padding-right: 6px;
 }
-.house-card-footer .house-card-icon-container span {
+.house-card-icon-container span {
   text-align: center;
 }
-.house-card-footer .house-card-icon-container svg {
+.house-card-icon-container svg {
   height: 20px;
 }
 
@@ -12354,6 +12355,10 @@ html {
 .flex-image img {
   max-height: 90%;
   max-width: 90%;
+}
+
+.house-details-header-mobile {
+  display: none;
 }
 
 .property-header-container {
@@ -12771,7 +12776,93 @@ html {
   }
 }
 @media (max-width: 767.98px) {
+  .house-details-header-mobile {
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 100%;
+  }
+
+  .property-img-mobile {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .house-price {
+    cursor: pointer;
+    position: absolute;
+    padding: 3px 16px;
+    border-radius: 20px;
+    background-color: #f7a31d;
+    top: 70px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+  }
+  .house-price .price-text {
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .left-arrow {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 150px;
+    left: 20px;
+  }
+
+  .right-arrow {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 150px;
+    right: 20px;
+    transform: rotate(180deg);
+  }
+
+  .mobile-header-footer {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+  }
+  .mobile-header-footer .property-utility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .mobile-header-footer .property-utility span {
+    display: block;
+    text-align: center;
+    color: white;
+  }
+  .mobile-header-footer .property-utility .value {
+    margin-top: 0;
+    padding-right: 7px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .mobile-header-footer .property-utility .icon-wrapper {
+    margin-right: 5px;
+  }
+  .mobile-header-footer .property-utility .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .property-description-section {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 

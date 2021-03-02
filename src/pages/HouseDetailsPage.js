@@ -12,6 +12,7 @@ import {
   HouseDescriptionSection,
   HouseImagesSection,
   HowToRentProperty,
+  MobileHeader,
   SimilarPropertiesSection
 } from "../components/HouseDetailsPage/index";
 import Paper from "@material-ui/core/Paper";
@@ -113,6 +114,7 @@ const HouseDetailsPage = () => {
             </div>
           </div>
           <Header />
+          <MobileHeader/>
           <ImageSlideContext.Provider value={{ setSlide }}>
             <HouseImagesSection />
           </ImageSlideContext.Provider>
