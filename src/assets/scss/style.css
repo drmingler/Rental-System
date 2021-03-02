@@ -12356,6 +12356,19 @@ html {
   max-width: 90%;
 }
 
+.test1 {
+  transition: all 0.3s ease;
+  transform: translateX(0%);
+}
+
+.test2 {
+  transform: translateX(200%);
+}
+
+.test3 {
+  transform: translateX(-200%);
+}
+
 .property-header-container {
   padding-bottom: 150px;
 }

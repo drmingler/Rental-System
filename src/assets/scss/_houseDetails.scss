@@ -96,10 +96,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   img {
     max-height: 90%;
     max-width: 90%;
+    //transform: translateX(-150%);
+    //transition: all 0.3s ease-out;
+    //&.image-enter{
+    //  transform: translateX(0);
+    //}
   }
+}
+
+.test1 {
+  transition: all 0.3s ease;
+  transform: translateX(0%);
+}
+
+.test2 {
+  transform: translateX(200%);
+}
+
+.test3 {
+  transform: translateX(-200%);
 }
 
 // Property header section

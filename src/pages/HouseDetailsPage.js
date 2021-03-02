@@ -3,6 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import MobileNavbar from "../components/MobileNavBar";
 import NavBar from "../components/NavBar";
 import Layout from "../components/Layout";
+import { useSwipeable } from "react-swipeable";
+
 import {
   ContactLandlordSection,
   Header,
@@ -49,6 +51,13 @@ const HouseDetailsPage = () => {
     setCurrentIndex(newIndex);
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleChangePicture(-1),
+    onSwipedRight: () => handleChangePicture(1),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
     <div className="property-page-container">
       <div className={`property-slides-container  ${showSlide && "scale"}`}>
@@ -68,10 +77,12 @@ const HouseDetailsPage = () => {
           </div>
         </div>
         <div>
-          <Container>
+          <Container {...handlers}>
             <Row>
-              <Col sm={12} className="flex-image ">
-                <img src={MockImages[currentIndex]} alt={"image1"} />
+              <Col sm={12}>
+                <div className="flex-image">
+                  <img src={MockImages[currentIndex]} alt={"image1"} />
+                </div>
               </Col>
             </Row>
           </Container>
