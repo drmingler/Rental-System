@@ -37,7 +37,7 @@ const HouseImagesSection = () => {
     <section className="property-images-section">
       <Container fluid="lg">
         <Row>
-          <Col md={12} xl={9} className="property-image-container">
+          <Col md={9}  className="property-image-container">
             <ul className="row">
               {[...Array(imagesCount)].map((item, idx) => (
                 <li className="col-md-4" key={idx} onClick={()=>setSlide(true)}>

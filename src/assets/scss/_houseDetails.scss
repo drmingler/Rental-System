@@ -15,14 +15,17 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
     &:hover {
       background-color: $deep-purple;
       transition: all 0.3s ease-out;
+
       svg {
         color: white;
         transition: all 0.3s ease-out;
       }
     }
+
     svg {
       color: $placeholder-colour;
       height: 30px;
@@ -35,6 +38,7 @@
     right: 30px;
     top: 30px;
   }
+
   .left {
     @extend %overlay-controls;
     left: 30px;
@@ -57,10 +61,12 @@
     bottom: 0;
     z-index: 31;
     color: white;
+
     .large-font {
       @extend %large-heading-style;
       font-weight: 700;
     }
+
     .small-font {
       @extend %medium-font-style;
     }
@@ -100,25 +106,7 @@
   img {
     max-height: 90%;
     max-width: 90%;
-    //transform: translateX(-150%);
-    //transition: all 0.3s ease-out;
-    //&.image-enter{
-    //  transform: translateX(0);
-    //}
   }
-}
-
-.test1 {
-  transition: all 0.3s ease;
-  transform: translateX(0%);
-}
-
-.test2 {
-  transform: translateX(200%);
-}
-
-.test3 {
-  transform: translateX(-200%);
 }
 
 // Property header section
@@ -236,15 +224,18 @@
     line-height: 15px;
   }
 }
+
 // Apply for property
 .sticky-container {
   position: relative;
 }
+
 .sticky-apply-container {
   position: absolute;
   min-height: 100%;
   right: calc((100% - 1040px) / 2);
 }
+
 .sticky-apply.sticky-active {
   position: -webkit-sticky;
   position: sticky;
@@ -378,10 +369,12 @@
     cursor: pointer;
   }
 }
+
 .house-amenities-section {
   padding-top: 70px;
   padding-bottom: 70px;
 }
+
 .amenities-icon-wrapper {
   display: flex;
   align-items: center;
@@ -403,18 +396,23 @@
     text-align: center;
     padding-left: 10px;
     line-height: 24px;
+    white-space: nowrap;
   }
 }
+
 // How to rent section
 .how-to-rent-section {
   padding-top: 50px;
+
   ol {
     padding-left: 20px;
+
     li {
       list-style-type: decimal;
     }
   }
 }
+
 .how-to-rent-header {
   @extend %large-heading-style;
   font-weight: $font-weight;
@@ -426,15 +424,18 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .contact-landlord-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .landlord-image-wrapper {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
+
 .landlord-image-container {
   height: 180px;
   width: 180px;
@@ -446,6 +447,7 @@
     border-radius: 50%;
   }
 }
+
 .card-content {
   padding: 10px 10px 20px 10px;
 }
@@ -459,10 +461,12 @@
     font-weight: $font-weight;
     margin: 0;
   }
+
   span {
     @extend %smallest-font-style;
   }
 }
+
 .contact-landlord-button {
   @extend %button-with-outline;
   width: 100%;
@@ -476,12 +480,14 @@
     color: white;
   }
 }
+
 .phone-and-email {
   background: $bg-colour-5;
   @extend %smallest-font-style;
   padding: 10px 20px;
   border-left: 3px solid $deep-purple;
 }
+
 .text-icon-wrapper {
   display: flex;
   align-items: center;
@@ -490,6 +496,7 @@
   span {
     padding-left: 12px;
   }
+
   .icon-wrapper {
     height: 24px;
     width: 24px;
@@ -510,16 +517,19 @@
   padding-bottom: $medium-section-spacing;
   padding-top: $medium-section-spacing;
 }
+
 .landlord-name-address {
   h3 {
     @extend %medium-font-style;
     font-weight: $font-weight;
     margin: 0;
   }
+
   span {
     @extend %smallest-font-style;
   }
 }
+
 .short-description {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -550,12 +560,14 @@
     width: 50px;
     background-color: $deep-purple;
     border-radius: 5px;
+
     svg {
       height: 30px;
       width: 30px;
       color: white;
     }
   }
+
   .date-joined {
     display: block;
   }
@@ -566,20 +578,24 @@
   padding-bottom: $small-section-spacing;
   padding-top: $small-section-spacing;
   background-color: $bg-colour-5;
+
   h1 {
     text-align: center;
     @extend %large-heading-style;
   }
 }
+
 .show-more-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+
   .show-more-btn {
     @extend %button-with-outline;
     border: 1px solid $deep-purple;
     color: $deep-purple;
     padding: 5px 16px;
+
     &:hover {
       transition: all 0.3s ease-out;
       background-color: $deep-purple;
@@ -587,12 +603,34 @@
     }
   }
 }
+
 .properties-nearby {
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+@media (max-width: 1200px) {
+  .sticky-apply-container {
+    right: calc((100% - 920px) / 2);
+  }
+}
+
 @media (max-width: 767.98px) {
+  .property-description-section {
+    padding-bottom: $small-section-spacing;
+  }
+
+  .contact-landlord-section {
+    padding-bottom: $small-section-spacing;
+    padding-top: $small-section-spacing;
+    .landlord-name-address {
+      padding-top: $small-section-spacing;
+    }
+    .short-description {
+      margin-bottom: 0;
+    }
+  }
+
   .flex-image {
     img {
       max-height: 100%;
@@ -601,5 +639,38 @@
   }
   .col-sm-12 {
     padding: 0;
+  }
+
+  .property-images-section,
+  .sticky-apply-container,
+  .property-header-container {
+    display: none;
+  }
+  .amenities-icon-wrapper {
+    span {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .property-description,
+  .similar-properties-section {
+    .header-text {
+      font-size: $medium-font-size;
+      line-height: $medium-line-height;
+    }
+  }
+
+  .property-description {
+    .property-description-text {
+      span {
+        font-size: $small-font-size;
+        line-height: $small-line-height;
+      }
+    }
+  }
+  .full-description {
+    //@extend %medium-font-style;
+    color: $mediumpurple;
+    cursor: pointer;
   }
 }

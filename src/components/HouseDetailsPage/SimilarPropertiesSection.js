@@ -19,13 +19,13 @@ const SimilarPropertiesSection = () => {
   );
   return (
     <section className="similar-properties-section">
-      <Container>
+      <Container fluid="lg">
         <Row>
           <Col lg={12}>
-            <h1>Similar Properties Nearby</h1>
+            <h1 className="header-text">Similar Properties Nearby</h1>
             <ul className="row properties-nearby">
               {[...Array(imagesCount)].map((item, idx) => (
-                <li className="col-lg-4" key={idx}>
+                <li className="col-md-4" key={idx}>
                   <HouseCard image={imagePlaceHolder[idx].background} />
                 </li>
               ))}

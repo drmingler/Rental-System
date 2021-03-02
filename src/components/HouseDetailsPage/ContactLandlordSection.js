@@ -10,11 +10,11 @@ import { ReactComponent as HomeIcon } from "../../assets/img/home.svg";
 const ContactLandlordSection = () => {
   return (
     <section className="contact-landlord-section">
-      <Container>
-        <Row>
-          <Col md={9}>
+        <Container fluid="lg">
+          <Row>
+            <Col md={9}>
             <Row>
-              <Col lg={6} xl={5}>
+              <Col sm={6} xl={5}>
                 <Paper variant="outlined" className="contact-landlord-card">
                   <div className="landlord-image-wrapper">
                     <div className="landlord-image-container">
@@ -50,7 +50,7 @@ const ContactLandlordSection = () => {
                   </div>
                 </Paper>
               </Col>
-              <Col lg={6} xl={7}>
+              <Col sm={6} xl={7}>
                 <div className="landlord-name-address">
                   <h3>Stefanie</h3>
                   <span>from Berlin, Germany</span>

@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const HowToRentProperty = () => {
   return (
     <section className="how-to-rent-section">
-      <Container>
+      <Container fluid="lg">
         <Row>
           <Col md={9}>
             <div>

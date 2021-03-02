@@ -12356,19 +12356,6 @@ html {
   max-width: 90%;
 }
 
-.test1 {
-  transition: all 0.3s ease;
-  transform: translateX(0%);
-}
-
-.test2 {
-  transform: translateX(200%);
-}
-
-.test3 {
-  transform: translateX(-200%);
-}
-
 .property-header-container {
   padding-bottom: 150px;
 }
@@ -12605,6 +12592,7 @@ html {
   text-align: center;
   padding-left: 10px;
   line-height: 24px;
+  white-space: nowrap;
 }
 
 .how-to-rent-section {
@@ -12777,7 +12765,27 @@ html {
   margin-top: 30px;
 }
 
+@media (max-width: 1200px) {
+  .sticky-apply-container {
+    right: calc((100% - 920px) / 2);
+  }
+}
 @media (max-width: 767.98px) {
+  .property-description-section {
+    padding-bottom: 50px;
+  }
+
+  .contact-landlord-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .contact-landlord-section .landlord-name-address {
+    padding-top: 50px;
+  }
+  .contact-landlord-section .short-description {
+    margin-bottom: 0;
+  }
+
   .flex-image img {
     max-height: 100%;
     max-width: 100%;
@@ -12785,6 +12793,33 @@ html {
 
   .col-sm-12 {
     padding: 0;
+  }
+
+  .property-images-section,
+.sticky-apply-container,
+.property-header-container {
+    display: none;
+  }
+
+  .amenities-icon-wrapper span {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .property-description .header-text,
+.similar-properties-section .header-text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .property-description .property-description-text span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .full-description {
+    color: mediumpurple;
+    cursor: pointer;
   }
 }
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {

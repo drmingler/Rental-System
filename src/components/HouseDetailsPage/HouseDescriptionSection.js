@@ -11,11 +11,11 @@ const HouseDescriptionSection = () => {
   }
   return (
     <section className="property-description-section">
-      <Container>
+      <Container fluid="lg">
         <Row>
-          <Col lg={9}>
+          <Col md={9}>
             <div className="property-description">
-              <h1>Apartment Description</h1>
+              <h1 className="header-text">Apartment Description</h1>
               <div className="property-description-text">
                 {!fullText && (
                   <Fragment>
