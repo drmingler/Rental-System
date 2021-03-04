@@ -8,16 +8,18 @@ import HowToRentProperty from "./HowToRentProperty";
 import HouseAddressMobile from "./HouseAddressMobile";
 import MobileHeader from "./MobileHeader";
 import Utilities from "./Utilities";
+import PropertySlider from "./PropertySlider";
 
 export {
-  Header,
-  HouseImagesSection,
-  HouseDescriptionSection,
-  HouseAmenitiesSection,
-  ContactLandlordSection,
-  SimilarPropertiesSection,
-  HowToRentProperty,
-  MobileHeader,
-  Utilities,
-  HouseAddressMobile
+    Header,
+    HouseImagesSection,
+    HouseDescriptionSection,
+    HouseAmenitiesSection,
+    ContactLandlordSection,
+    SimilarPropertiesSection,
+    HowToRentProperty,
+    MobileHeader,
+    Utilities,
+    HouseAddressMobile,
+    PropertySlider
 };
