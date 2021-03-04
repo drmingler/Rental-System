@@ -25,40 +25,19 @@ import { ReactComponent as ArrowDownRight } from "../assets/img/arrow-right-circ
 import { ReactComponent as Cancel } from "../assets/img/x-slim.svg";
 import { ReactComponent as ChevronLeft } from "../assets/img/chevron-left-slim.svg";
 import { ReactComponent as ChevronRight } from "../assets/img/chevron-right-slim.svg";
+import  {usePropertySlide, ImageSlideContext} from "../hooks/usePropertySlides";
 
 const MockImages = [sliderImage1, sliderImage2, sliderImage3];
 
-export const ImageSlideContext = React.createContext();
 const HouseDetailsPage = () => {
-  const [showSlide, setSlide] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  let ImageIndex = MockImages.length - 1;
-
-  useEffect(() => {
-    if (showSlide) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [showSlide]);
-
-  const handleChangePicture = indexChange => {
-    let newIndex = currentIndex + indexChange;
-    if (newIndex > ImageIndex) {
-      return setCurrentIndex(0);
-    }
-    if (newIndex < 0) {
-      return setCurrentIndex(ImageIndex);
-    }
-    setCurrentIndex(newIndex);
-  };
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () => handleChangePicture(-1),
-    onSwipedRight: () => handleChangePicture(1),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true
-  });
+  const {
+    showSlide,
+    setSlide,
+    handleChangePicture,
+    currentIndex,
+    ImageIndex,
+    swipeHandlers,
+  } = usePropertySlide(MockImages);
 
   return (
     <div className="property-page-container">
@@ -79,7 +58,7 @@ const HouseDetailsPage = () => {
           </div>
         </div>
         <div>
-          <Container {...handlers}>
+          <Container {...swipeHandlers}>
             <Row>
               <Col sm={12}>
                 <div className="flex-image">
@@ -115,8 +94,8 @@ const HouseDetailsPage = () => {
             </div>
           </div>
           <Header />
-          <MobileHeader/>
-          <HouseAddressMobile/>
+          <MobileHeader />
+          <HouseAddressMobile />
           <ImageSlideContext.Provider value={{ setSlide }}>
             <HouseImagesSection />
           </ImageSlideContext.Provider>
