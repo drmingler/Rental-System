@@ -4,6 +4,7 @@
 .house-address-mobile {
   display: none;
 }
+
 .property-page-container {
   position: relative;
   user-select: none;
@@ -95,7 +96,7 @@
 
   &.scale {
     transition: opacity 334ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-      transform 222ms cubic-bezier(0.4, 0, 0.2, 1) 111ms;
+    transform 222ms cubic-bezier(0.4, 0, 0.2, 1) 111ms;
     visibility: visible;
     transform: scale(1);
     opacity: 1;
@@ -648,24 +649,32 @@
     left: 20px;
     color: white;
     z-index: 2;
+
     .price-text {
       font-weight: $font-weight;
       line-height: $small-line-height;
     }
   }
-  .left-arrow {
+
+  %arrow {
     position: absolute;
+    width: 50px;
+    height: 80px;
+    top: 130px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    top: 150px;
-    left: 20px;
+  }
+
+  .left-arrow {
+    @extend %arrow;
+    left: 0;
   }
   .right-arrow {
-    position: absolute;
-    z-index: 2;
-    color: white;
-    top: 150px;
-    right: 20px;
+    @extend %arrow;
+    right: 0;
     transform: rotate(180deg);
   }
 
@@ -729,7 +738,7 @@
     color: $button-inactive-colour;
     border-bottom: 1px solid $bg-colour-5;
 
-    .house-type{
+    .house-type {
       display: inline-block;
       height: 30px;
       padding: 5px 12px;
@@ -740,20 +749,23 @@
       border-bottom: none;
     }
   }
-  .house-rules{
+  .house-rules {
     padding-top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .property-utility{
+
+    .property-utility {
       margin-right: 0;
-      .value{
+
+      .value {
         color: $font-dark-colour;
         font-size: $smallest-font-size;
         line-height: $smallest-line-height;
         font-weight: normal;
       }
-      .name{
+
+      .name {
         color: $button-inactive-colour;
       }
     }
@@ -768,11 +780,25 @@
   .contact-landlord-section {
     padding-bottom: $small-section-spacing;
     padding-top: $small-section-spacing;
+
     .landlord-name-address {
       padding-top: $small-section-spacing;
     }
+
     .short-description {
       margin-bottom: 0;
+    }
+  }
+
+  .landlord-stats {
+    .icon-wrapper {
+      height: 40px;
+      width: 40px;
+
+      svg {
+        height: 25px;
+        width: 25px;
+      }
     }
   }
 
@@ -817,5 +843,12 @@
     //@extend %medium-font-style;
     color: $mediumpurple;
     cursor: pointer;
+  }
+  .how-to-rent-section {
+    .how-to-rent-header {
+      font-size: $medium-font-size;
+      line-height: $medium-line-height;
+      font-weight: $font-weight;
+    }
   }
 }

@@ -25,12 +25,12 @@ const HowToRentProperty = () => {
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>
-                    <p>
+                  <div>
+                    <span>
                       When you find a property you like it's fairly simple to
                       make enquires. Both the tenant and the landlord need to be
                       in contact. This is how it works:
-                    </p>
+                    </span>
                     <div>
                       <ol>
                         <li>
@@ -48,7 +48,7 @@ const HowToRentProperty = () => {
                         </li>
                       </ol>
                     </div>
-                  </Typography>
+                  </div>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -61,12 +61,12 @@ const HowToRentProperty = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    <p>
+                    <span>
                       Even though we already have a lot of pictures of the
                       property, it is necessary to view the house. Agree on a date
                       when you and the Landlord can meet, inorder to view the
                         property.
-                    </p>
+                    </span>
                   </Typography>
                 </AccordionDetails>
               </Accordion>

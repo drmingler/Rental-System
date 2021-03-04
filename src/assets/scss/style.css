@@ -12811,20 +12811,24 @@ html {
     line-height: 22px;
   }
 
-  .left-arrow {
+  .right-arrow, .left-arrow {
     position: absolute;
+    width: 50px;
+    height: 80px;
+    top: 130px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    top: 150px;
-    left: 20px;
+  }
+
+  .left-arrow {
+    left: 0;
   }
 
   .right-arrow {
-    position: absolute;
-    z-index: 2;
-    color: white;
-    top: 150px;
-    right: 20px;
+    right: 0;
     transform: rotate(180deg);
   }
 
@@ -12928,6 +12932,15 @@ html {
     margin-bottom: 0;
   }
 
+  .landlord-stats .icon-wrapper {
+    height: 40px;
+    width: 40px;
+  }
+  .landlord-stats .icon-wrapper svg {
+    height: 25px;
+    width: 25px;
+  }
+
   .flex-image img {
     max-height: 100%;
     max-width: 100%;
@@ -12962,6 +12975,12 @@ html {
   .full-description {
     color: mediumpurple;
     cursor: pointer;
+  }
+
+  .how-to-rent-section .how-to-rent-header {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
   }
 }
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
