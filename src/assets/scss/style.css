@@ -12270,6 +12270,11 @@ html {
   transform: scale(1.1);
 }
 
+.house-details-header-mobile,
+.house-address-mobile {
+  display: none;
+}
+
 .property-page-container {
   position: relative;
   user-select: none;
@@ -12355,10 +12360,6 @@ html {
 .flex-image img {
   max-height: 90%;
   max-width: 90%;
-}
-
-.house-details-header-mobile {
-  display: none;
 }
 
 .property-header-container {
@@ -12859,6 +12860,56 @@ html {
   .mobile-header-footer .property-utility .name {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .house-address-mobile {
+    display: block;
+    padding-top: 25px;
+  }
+  .house-address-mobile h1 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+  .address-wrapper-mobile {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9c99b6;
+    border-bottom: 1px solid #f4f5f7;
+  }
+  .address-wrapper-mobile .house-type {
+    display: inline-block;
+    height: 30px;
+    padding: 5px 12px;
+    background-color: #f8f9fa;
+    border-radius: 34px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    border-bottom: none;
+  }
+
+  .house-rules {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .house-rules .property-utility {
+    margin-right: 0;
+  }
+  .house-rules .property-utility .value {
+    color: #2e2d36;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+  .house-rules .property-utility .name {
+    color: #9c99b6;
   }
 
   .property-description-section {
