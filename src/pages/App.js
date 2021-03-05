@@ -8,6 +8,7 @@ import PlatformUsage from "./PlatformUsage";
 import AddPropertyPage from "./AddPropertyPage";
 import HousesForRentPage from "./HousesForRentPage";
 import RentingInstruction from "./RentingInstruction";
+import MyListingsPage from "./MyListingPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path={"/property"} component={HouseDetailsPage} />
           <Route exact path={"/renting"} component={PlatformUsage} />
           <Route exact path={"/renting-instruction"} component={RentingInstruction} />
+          <Route exact path={"/my-listings"} component={MyListingsPage} />
         </Switch>
       </Router>
     </StylesProvider>
@@ -29,12 +31,13 @@ export default App;
 
 // housingforyou
 // 1. renting-out page and the link it directs you to page.
-// 5. My listings page
+// 6. Payment history
 
 // Rent berry
 // 2. List a property page
 // 3. Houses for rent page
 // 4. Property Page mixture of the two, header, amenities and images from rentberry then others from housinganywhere
+// 5. My listings page
 // 6. Verify account page
 // 7. Edit profile page content from housing anywhere and rent berry
 // 8. reg and login
