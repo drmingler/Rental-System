@@ -12,7 +12,7 @@ const ContactLandlordSection = () => {
     <section className="contact-landlord-section">
         <Container fluid="lg">
           <Row>
-            <Col md={9}>
+            <Col md={12} lg={9}>
             <Row>
               <Col sm={6} xl={5}>
                 <Paper variant="outlined" className="contact-landlord-card">

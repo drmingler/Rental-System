@@ -11,7 +11,7 @@ const HowToRentProperty = () => {
     <section className="how-to-rent-section">
       <Container fluid="lg">
         <Row>
-          <Col md={9}>
+          <Col md={12} lg={9}>
             <div>
               <h3 className="how-to-rent-header">How to rent this property</h3>
               <Accordion>

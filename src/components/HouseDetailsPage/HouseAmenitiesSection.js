@@ -43,7 +43,7 @@ const HouseAmenitiesSection = () => {
       <div className="listing-amenities-container">
         <Container fluid="lg">
           <Row>
-            <Col md={9} className="listing-amenities house-amenities-section">
+            <Col md={12} lg={9} className="listing-amenities house-amenities-section">
               <Row>
                 <Col md={6} lg={6}>
                   <div className="amenities-header">

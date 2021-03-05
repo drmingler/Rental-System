@@ -13,7 +13,7 @@ const HouseDescriptionSection = () => {
     <section className="property-description-section">
       <Container fluid="lg">
         <Row>
-          <Col md={9}>
+          <Col md={12} lg={9}>
             <div className="property-description">
               <h1 className="header-text">Apartment Description</h1>
               <div className="property-description-text">

@@ -59,7 +59,10 @@ const HouseDetailsPage = () => {
             </div>
           </div>
           <Header />
-          <MobileHeader sliderControls={slideControls} slideImage={MockImages}/>
+          <MobileHeader
+            sliderControls={slideControls}
+            slideImage={MockImages}
+          />
           <HouseAddressMobile />
           <ImageSlideContext.Provider value={{ setSlide }}>
             <HouseImagesSection />
@@ -70,6 +73,12 @@ const HouseDetailsPage = () => {
           <ContactLandlordSection />
         </div>
         <SimilarPropertiesSection />
+        <div className="sticky-apply-mobile">
+          <button className="apply-button-mobile">
+            <span>Apply for $2,075</span>
+            <span>/month</span>
+          </button>
+        </div>
       </Layout>
     </div>
   );

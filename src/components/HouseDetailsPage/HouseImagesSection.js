@@ -37,7 +37,7 @@ const HouseImagesSection = () => {
     <section className="property-images-section">
       <Container fluid="lg">
         <Row>
-          <Col md={9} className="property-image-container">
+          <Col md={12} lg={9} className="property-image-container">
             <ul className="row">
               {[...Array(imagesCount)].map((item, idx) => (
                 <li

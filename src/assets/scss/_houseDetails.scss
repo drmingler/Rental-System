@@ -1,7 +1,8 @@
 @import "variables";
 
 .house-details-header-mobile,
-.house-address-mobile {
+.house-address-mobile,
+.sticky-apply-mobile {
   display: none;
 }
 
@@ -620,7 +621,39 @@
   }
 }
 
+@media (max-width: 992px) {
+  .sticky-apply-container {
+    display: none;
+  }
+  .sticky-apply-mobile {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
+  }
+  .apply-button-mobile {
+    border: none;
+    font-size: $medium-large-font-size;
+    font-weight: $font-weight;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
+    box-shadow: 0 14px 24px 0 rgba(50, 48, 58, 1);
+  }
+}
+
 @media (max-width: 767.98px) {
+  .property-images-section,
+  .property-header-container {
+    display: none;
+  }
+
   // Page  Header mobile
   .house-details-header-mobile {
     display: block;
@@ -759,27 +792,6 @@
         width: 100px;
       }
     }
-
-    //.picture-number {
-    //  position: absolute;
-    //  display: flex;
-    //  justify-content: center;
-    //  align-items: center;
-    //  height: 70px;
-    //  width: 100%;
-    //  bottom: 0;
-    //  z-index: 31;
-    //  color: white;
-    //
-    //  .large-font {
-    //    @extend %large-heading-style;
-    //    font-weight: 700;
-    //  }
-    //
-    //  .small-font {
-    //    @extend %medium-font-style;
-    //  }
-    //}
   }
 
   // Page  address mobile
@@ -877,11 +889,6 @@
     padding: 0;
   }
 
-  .property-images-section,
-  .sticky-apply-container,
-  .property-header-container {
-    display: none;
-  }
   .amenities-icon-wrapper {
     span {
       font-size: 12px;
