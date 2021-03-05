@@ -12866,6 +12866,41 @@ html {
     line-height: 20px;
   }
 
+  .property-page-container .right, .property-page-container .left, .property-page-container .cancel {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .property-page-container .right:hover, .property-page-container .left:hover, .property-page-container .cancel:hover {
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+  }
+  .property-page-container .cancel {
+    right: 10px;
+    top: 10px;
+  }
+  .property-page-container .left {
+    width: 50px;
+    height: 80px;
+    left: 0;
+    top: 335px;
+  }
+  .property-page-container .left svg {
+    color: white;
+    height: 100px;
+    width: 100px;
+  }
+  .property-page-container .right {
+    width: 50px;
+    height: 80px;
+    right: 0;
+    top: 335px;
+  }
+  .property-page-container .right svg {
+    color: white;
+    height: 100px;
+    width: 100px;
+  }
+
   .house-address-mobile {
     display: block;
     padding-top: 25px;
@@ -12941,6 +12976,9 @@ html {
     width: 25px;
   }
 
+  .flex-image {
+    position: relative;
+  }
   .flex-image img {
     max-height: 100%;
     max-width: 100%;

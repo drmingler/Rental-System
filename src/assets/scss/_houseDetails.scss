@@ -96,7 +96,7 @@
 
   &.scale {
     transition: opacity 334ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-    transform 222ms cubic-bezier(0.4, 0, 0.2, 1) 111ms;
+      transform 222ms cubic-bezier(0.4, 0, 0.2, 1) 111ms;
     visibility: visible;
     transform: scale(1);
     opacity: 1;
@@ -717,11 +717,75 @@
     }
   }
 
+  .property-page-container {
+    %overlay-mobile--controls {
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    .cancel {
+      @extend %overlay-mobile--controls;
+      right: 10px;
+      top: 10px;
+    }
+
+    .left {
+      @extend %overlay-mobile--controls;
+      width: 50px;
+      height: 80px;
+      left: 0;
+      top: 335px;
+      svg {
+        color: white;
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    .right {
+      @extend %overlay-mobile--controls;
+      width: 50px;
+      height: 80px;
+      right: 0;
+      top: 335px;
+      svg {
+        color: white;
+        height: 100px;
+        width: 100px;
+      }
+    }
+
+    //.picture-number {
+    //  position: absolute;
+    //  display: flex;
+    //  justify-content: center;
+    //  align-items: center;
+    //  height: 70px;
+    //  width: 100%;
+    //  bottom: 0;
+    //  z-index: 31;
+    //  color: white;
+    //
+    //  .large-font {
+    //    @extend %large-heading-style;
+    //    font-weight: 700;
+    //  }
+    //
+    //  .small-font {
+    //    @extend %medium-font-style;
+    //  }
+    //}
+  }
+
   // Page  address mobile
   .house-address-mobile {
     display: block;
     padding-top: 25px;
-    //padding-bottom: $small-section-spacing;
     h1 {
       font-size: $medium-font-size;
       line-height: $medium-line-height;
@@ -803,6 +867,7 @@
   }
 
   .flex-image {
+    position: relative;
     img {
       max-height: 100%;
       max-width: 100%;

@@ -1,25 +1,32 @@
 import React from "react";
-import HouseImage from "../../assets/img/0be3acfcb6d1bd77327fee16dbe221877d7e314a.jpg";
 import { ReactComponent as MobileLeft } from "../../assets/img/mini-gallery-left-mobile.svg";
 import BedIconWhite from "../../assets/img/amenities/white-colour/bed-icon-white.svg";
 import BathIconWhite from "../../assets/img/amenities/white-colour/bath-icon-white.svg";
 import SqrtIconWhite from "../../assets/img/amenities/white-colour/sqrt-icon-white.svg";
 import Utilities from "./Utilities";
 
-const MobileHeader = () => {
+const MobileHeader = ({ sliderControls, slideImage }) => {
+  const {
+    handleChangePicture,
+    currentIndex,
+    swipeHandlers,
+    setSlide
+  } = sliderControls;
+
   return (
-    <header className="house-details-header-mobile">
+    <header className="house-details-header-mobile" {...swipeHandlers}>
       <div
-        style={{ backgroundImage: `url(${HouseImage})` }}
+        style={{ backgroundImage: `url(${slideImage[currentIndex]})` }}
         className="property-img-mobile"
+        onClick={() => setSlide(true)}
       />
       <div className="house-price">
         <span className="price-text">$2,300</span>
       </div>
-      <div className="left-arrow">
+      <div className="left-arrow" onClick={() => handleChangePicture(-1)}>
         <MobileLeft />
       </div>
-      <div className="right-arrow">
+      <div className="right-arrow" onClick={() => handleChangePicture(1)}>
         <MobileLeft />
       </div>
       <div className="mobile-header-footer">

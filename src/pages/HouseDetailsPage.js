@@ -59,7 +59,7 @@ const HouseDetailsPage = () => {
             </div>
           </div>
           <Header />
-          <MobileHeader />
+          <MobileHeader sliderControls={slideControls} slideImage={MockImages}/>
           <HouseAddressMobile />
           <ImageSlideContext.Provider value={{ setSlide }}>
             <HouseImagesSection />
