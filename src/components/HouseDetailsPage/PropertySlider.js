@@ -3,6 +3,7 @@ import { ReactComponent as Cancel } from "../../assets/img/x-slim.svg";
 import { ReactComponent as ChevronLeft } from "../../assets/img/chevron-left-slim.svg";
 import { ReactComponent as ChevronRight } from "../../assets/img/chevron-right-slim.svg";
 import { Col, Container, Row } from "react-bootstrap";
+import { useSwipeable } from "react-swipeable";
 
 const PropertySlider = ({ sliderControls, slideImage }) => {
   const {
@@ -10,12 +11,21 @@ const PropertySlider = ({ sliderControls, slideImage }) => {
     handleChangePicture,
     currentIndex,
     ImageIndex,
-    swipeHandlers,
     setSlide
   } = sliderControls;
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleChangePicture(-1),
+    onSwipedRight: () => handleChangePicture(1),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
-    <div className={`property-slides-container  ${showSlide && "scale"}`}>
+    <div
+      className={`property-slides-container  ${showSlide && "scale"}`}
+      {...swipeHandlers}
+    >
       <div className="cancel" onClick={() => setSlide(false)}>
         <Cancel />
       </div>
@@ -32,7 +42,7 @@ const PropertySlider = ({ sliderControls, slideImage }) => {
         </div>
       </div>
       <div>
-        <Container {...swipeHandlers}>
+        <Container>
           <Row>
             <Col sm={12}>
               <div className="flex-image">

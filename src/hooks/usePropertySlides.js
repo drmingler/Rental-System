@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useSwipeable } from "react-swipeable";
 
 const ImageSlideContext = React.createContext();
 const usePropertySlide = MockImages => {
@@ -26,20 +25,12 @@ const usePropertySlide = MockImages => {
     setCurrentIndex(newIndex);
   };
 
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: () => handleChangePicture(-1),
-    onSwipedRight: () => handleChangePicture(1),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true
-  });
-
   return {
     showSlide,
     setSlide,
     handleChangePicture,
     currentIndex,
     ImageIndex,
-    swipeHandlers,
   };
 };
 export  {usePropertySlide, ImageSlideContext};

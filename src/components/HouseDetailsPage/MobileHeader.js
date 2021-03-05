@@ -4,14 +4,16 @@ import BedIconWhite from "../../assets/img/amenities/white-colour/bed-icon-white
 import BathIconWhite from "../../assets/img/amenities/white-colour/bath-icon-white.svg";
 import SqrtIconWhite from "../../assets/img/amenities/white-colour/sqrt-icon-white.svg";
 import Utilities from "./Utilities";
+import { useSwipeable } from "react-swipeable";
 
 const MobileHeader = ({ sliderControls, slideImage }) => {
-  const {
-    handleChangePicture,
-    currentIndex,
-    swipeHandlers,
-    setSlide
-  } = sliderControls;
+  const { handleChangePicture, currentIndex, setSlide } = sliderControls;
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleChangePicture(-1),
+    onSwipedRight: () => handleChangePicture(1),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
 
   return (
     <header className="house-details-header-mobile" {...swipeHandlers}>
