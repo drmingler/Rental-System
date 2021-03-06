@@ -13390,6 +13390,84 @@ html {
   transform: scale(1.1);
 }
 
+.header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn-container, .header-input {
+  flex-direction: column;
+}
+
+.rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  flex-direction: row;
+}
+
+.listing-categories-section a, .available-cities-section a, .footer p, .footer a {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
 .MuiInput-underline:after {
   border-bottom: 2px solid mediumpurple;
 }

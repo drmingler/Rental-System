@@ -9,6 +9,10 @@ import AddPropertyPage from "./AddPropertyPage";
 import HousesForRentPage from "./HousesForRentPage";
 import RentingInstruction from "./RentingInstruction";
 import MyListingsPage from "./MyListingPage";
+import Login from "./Login";
+import SignUp from "./SignUp";
+import PasswordReset from "./PasswordReset";
+import ErrorPage from "./ErrorPage";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
           <Route exact path={"/renting"} component={PlatformUsage} />
           <Route exact path={"/renting-instruction"} component={RentingInstruction} />
           <Route exact path={"/my-listings"} component={MyListingsPage} />
+          <Route exact path={"/login"} component={Login} />
+          <Route exact path={"/sign-up"} component={SignUp} />
+          <Route exact path={"/reset-password"} component={PasswordReset} />
+          <Route exact path={"/not-found"} component={ErrorPage} />
         </Switch>
       </Router>
     </StylesProvider>
