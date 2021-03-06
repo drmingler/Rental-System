@@ -31,7 +31,6 @@ export default App;
 
 // housingforyou
 // 1. renting-out page and the link it directs you to page.
-// 6. Payment history
 
 // Rent berry
 // 2. List a property page
@@ -39,9 +38,13 @@ export default App;
 // 4. Property Page mixture of the two, header, amenities and images from rentberry then others from housinganywhere
 // 5. My listings page
 // 6. Verify account page
-// 7. Edit profile page content from housing anywhere and rent berry
+
+// TO DO
+// 7. Use the edit form as the verify form. Edit profile page content from housing anywhere and rent berry
 // 8. reg and login
-// 9. https://housinganywhere.com/users/show/577486
+// 9. Payment history
+// 10.Make Payment page
+// 11.Chat widget
 
 // import React from "react";
 //

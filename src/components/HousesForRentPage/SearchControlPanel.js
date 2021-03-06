@@ -21,7 +21,7 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
   const showDropDown = () => {
     setActive(!showActive);
   };
-  
+
   const handleSelect = key => {
     setActiveFilter(DropDownOption[key]);
   };
@@ -54,8 +54,8 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
         <div className="filter-dropdown" onClick={showDropDown} ref={innerRef}>
           <span className="filter-dropdown-text">{showActiveFilter}</span>
           <Expand className="filter-dropdown-icon" />
-          <Paper className="dropdown-option-container" elevation={2}>
-            {showActive && (
+          {showActive && (
+            <Paper className="dropdown-option-container" elevation={2}>
               <ul>
                 <li
                   className="dropdown-option"
@@ -86,8 +86,8 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
                   <span>By Price: High to Low</span>
                 </li>
               </ul>
-            )}
-          </Paper>
+            </Paper>
+          )}
         </div>
       )}
     </div>

@@ -9949,18 +9949,18 @@ h3 {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10073,18 +10073,18 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10151,18 +10151,18 @@ ul {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10627,18 +10627,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10760,18 +10760,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -10838,18 +10838,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11233,18 +11233,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -11624,18 +11624,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -12213,18 +12213,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
 }
 
-.landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
+.rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
 }
@@ -13070,18 +13070,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .my-listings-card-section .your-listings, .add-property-description .heading, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
+.add-property-description .text, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
   font-size: 20px;
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
+.rent-place-faster, .add-property-text, .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
   font-size: 14px;
   line-height: 20px;
 }
@@ -13127,6 +13127,191 @@ html {
   transform: scale(1.1);
 }
 
+.my-listings-container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.add-property-wrapper {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  padding: 100px 30px 50px;
+  border: 1px solid #e9eaef;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.add-property-wrapper:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
+}
+
+.plus-icon-wrapper {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #7c54c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.plus-icon-wrapper svg {
+  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+}
+
+.add-property-text {
+  font-weight: 700;
+}
+
+.rent-place-faster {
+  margin-top: 65px;
+  color: #9c99b6;
+}
+
+.add-description-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.add-property-description {
+  padding-left: 100px;
+}
+.add-property-description .heading {
+  color: #2e2d36;
+  margin-bottom: 20px;
+}
+.add-property-description .text {
+  color: #9c99b6;
+}
+
+.my-listings-card-section {
+  padding-top: 150px;
+}
+.my-listings-card-section .your-listings {
+  text-align: center;
+  color: #2e2d36;
+  margin-bottom: 40px;
+}
+
+.listings-card-container .MuiPaper-elevation1 {
+  box-shadow: none;
+  border: 1px solid #e9eaef;
+  border-radius: 6px;
+}
+.listings-card-container .house-cards {
+  transform: translateZ(0);
+  transition: all 0.2s ease-out;
+}
+.listings-card-container .house-cards:hover {
+  transform: scale(1.1);
+  box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
+}
+.listings-card-container .house-card-text {
+  padding-top: 25px;
+  color: #9c99b6;
+}
+
+.house-menu-icon {
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  z-index: 1;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+.house-menu-icon:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.house-menu-icon svg {
+  height: 30px;
+  width: 30px;
+}
+
+.house-card-dropdown {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: -12px;
+}
+.house-card-dropdown .dropdown-option-container .dropdown-option {
+  line-height: 15px;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 12px;
+}
+.house-card-dropdown .dropdown-option-container .dropdown-option:hover {
+  border-radius: 5px;
+}
+.house-card-dropdown .dropdown-option-container .dropdown-option span {
+  padding-left: 15px;
+}
+.house-card-dropdown .dropdown-option-container .dropdown-option svg {
+  height: 16px;
+  width: 16px;
+  color: #7c54c1;
+}
+
+@media (max-width: 767.98px) {
+  .my-listings-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .add-property-wrapper:hover {
+    transform: none;
+  }
+
+  .listings-card-container .house-cards:hover {
+    transform: scale(1);
+    box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
+  }
+  .listings-card-container .house-cards .house-price {
+    top: 20px;
+  }
+
+  .add-description-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-description-wrapper .add-property-description {
+    padding-left: 0;
+    text-align: center;
+  }
+  .add-description-wrapper .add-property-description .heading {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .add-description-wrapper .add-property-description .text {
+    font-size: 14px;
+    color: #2e2d36;
+  }
+
+  .my-listings-card-section {
+    padding-top: 50px;
+  }
+  .my-listings-card-section h1.your-listings {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+}
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -13148,18 +13333,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
+.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
   font-size: 20px;
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
   font-size: 14px;
   line-height: 20px;
 }
@@ -13238,18 +13423,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
+.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
   font-size: 20px;
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
   font-size: 14px;
   line-height: 20px;
 }
@@ -13316,18 +13501,18 @@ html {
   cursor: pointer;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
+.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
   font-size: 20px;
   line-height: 28px;
 }
 
-.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
   font-size: 14px;
   line-height: 20px;
 }
