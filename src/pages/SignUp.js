@@ -5,27 +5,21 @@ import Paper from "@material-ui/core/Paper";
 import { ReactComponent as FBIcon } from "../assets/img/fb.svg";
 import { ReactComponent as GoogleIcon } from "../assets/img/google.svg";
 import TextField from "@material-ui/core/TextField";
+import { SocialAuthButton } from "../components/AuthPages/index";
 
-const SocialAuthButton = ({ children }) => {
-  return (
-    <Col md={12}>
-      <button className="social-auth-btn">{children}</button>
-    </Col>
-  );
-};
 const SignUp = () => {
   return (
     <section className="auth-page">
-        <div className="cancel-button">
-            <Cancel />
-        </div>
-      <Container className="sign-up-container" fluid={"lg"}>
+      <div className="cancel-button">
+        <Cancel />
+      </div>
+      <Container fluid={"lg"}>
         <Row className="align-item-center justify-content-center">
-          <Col md={7} xl={5} className="sign-up-wrapper">
+          <Col md={8} xl={5} className="auth-wrapper">
             <h1>Sign Up</h1>
-            <Paper elevation={1} className="sign-up">
+            <Paper elevation={1} className="auth">
               <form>
-                <div className="sign-up-form">
+                <div className="auth-form">
                   <Row>
                     <SocialAuthButton>
                       <FBIcon />
@@ -41,7 +35,7 @@ const SignUp = () => {
                       </div>
                     </Col>
                   </Row>
-                  <Row className="sign-up-inputs">
+                  <Row className="auth-inputs">
                     <Col md={12}>
                       <TextField
                         label="Enter First Name"
@@ -68,7 +62,7 @@ const SignUp = () => {
                     </Col>
                   </Row>
                 </div>
-                <button className="sign-up-button">
+                <button className="auth-button">
                   <span>Sign Up</span>
                 </button>
               </form>
@@ -81,7 +75,7 @@ const SignUp = () => {
           </Col>
         </Row>
       </Container>
-      <div className="sign-up-footer">
+      <div className="auth-footer">
         <span>
           By signing up you agree to Rentberry’s <a href="/">Terms of Use </a>
           and <a href="/">Privacy Policy</a>
