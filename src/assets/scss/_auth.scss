@@ -1,1 +1,164 @@
 @import "variables";
+
+.auth-page {
+  position: relative;
+  background-color: $bg-colour-5-deep;
+}
+
+.cancel-button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  z-index: 31;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  right: 30px;
+  top: 30px;
+
+  &:hover {
+    background-color: $deep-purple;
+    transition: all 0.3s ease-out;
+
+    svg {
+      color: white;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  svg {
+    color: $placeholder-colour;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.sign-up-container {
+  padding-top: $medium-section-spacing;
+  padding-bottom: 30px;
+}
+.sign-up-wrapper {
+  h1 {
+    text-align: center;
+    @extend %large-heading-style;
+    margin-bottom: 30px;
+  }
+}
+.sign-up {
+  width: 100%;
+  box-shadow: 0 14px 24px 0 rgba(46, 45, 54, 0.25);
+}
+.sign-up-form {
+  padding: 50px 60px;
+}
+.social-auth-btn {
+  border: 1px solid $input-border-colour;
+  background-color: transparent;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 6px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+
+  span {
+    font-size: $medium-font-size;
+    line-height: $medium-line-height;
+    font-weight: $font-weight;
+    color: $font-dark-colour;
+    padding-left: 30px;
+  }
+}
+.with-email {
+  margin: 20px 0;
+  text-align: center;
+  @extend %smallest-font-style;
+  color: $button-inactive-colour;
+  &:before {
+    content: "";
+    width: 30%;
+    height: 1px;
+    border-top: 1px solid #e9eaef;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+  }
+  &:after {
+    content: "";
+    width: 30%;
+    height: 1px;
+    border-top: 1px solid #e9eaef;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+  }
+}
+.sign-up-button {
+  height: 60px;
+  width: 100%;
+  border: none;
+  font-size: $medium-large-font-size;
+  line-height: $medium-large-line-height;
+  font-weight: $font-weight;
+  background-color: $deep-purple;
+  color: white;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.already-signed-up {
+  margin: 15px 0;
+  text-align: center;
+  @extend %smallest-font-style;
+  span {
+    color: $button-inactive-colour;
+  }
+  a {
+    color: $deep-purple;
+  }
+}
+.sign-up-footer {
+  text-align: center;
+  @extend %smallest-font-style;
+  color: $button-inactive-colour;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  a {
+    color: $deep-purple;
+  }
+}
+
+@media (max-width: 767.98px) {
+  %overlay-mobile--controls {
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+      transition: none;
+      svg {
+        color: $font-dark-colour;
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+  .cancel-button {
+    @extend %overlay-mobile--controls;
+    right: 5px;
+    top: 5px;
+  }
+  .sign-up-wrapper {
+    h1 {
+      display: none;
+    }
+  }
+  .sign-up-form {
+    padding: 60px 20px;
+  }
+}
