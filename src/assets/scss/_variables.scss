@@ -82,6 +82,13 @@ $svg-big-size: 30px;
   color: $mediumpurple;
   cursor: pointer;
 }
+
+%largest-heading-style {
+  font-size: $largest-font-size;
+  line-height: $largest-line-height;
+  font-family: $bold-font-family;
+  font-weight: 700;
+}
 %large-heading-style {
   font-size: $large-font-size;
   line-height: $large-line-height;
