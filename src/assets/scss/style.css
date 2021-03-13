@@ -11520,7 +11520,7 @@ html {
   line-height: 22px;
 }
 
-.listing-image .upload-file-input {
+.upload-file-input {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -14002,6 +14002,7 @@ html {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .name-initial-wrapper {
@@ -14012,6 +14013,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .name-initial-wrapper h2 {
   color: white;

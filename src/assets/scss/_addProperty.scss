@@ -74,23 +74,22 @@
 
 .listing-image {
   @extend %listing-image;
-
-  .upload-file-input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    outline: none;
-    border: 0;
-    padding: 0;
-    border-radius: 6px;
-    z-index: 9;
-    opacity: 0;
-    cursor: pointer;
-    text-indent: -999999px;
-    overflow: hidden;
-  }
+}
+.upload-file-input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: 0;
+  padding: 0;
+  border-radius: 6px;
+  z-index: 9;
+  opacity: 0;
+  cursor: pointer;
+  text-indent: -999999px;
+  overflow: hidden;
 }
 
 .cancel-icon-container {

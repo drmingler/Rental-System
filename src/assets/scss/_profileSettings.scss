@@ -35,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 .name-initial-wrapper {
   width: 120px;
@@ -44,6 +45,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   h2 {
     color: white;

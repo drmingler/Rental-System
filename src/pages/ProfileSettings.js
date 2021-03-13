@@ -13,9 +13,11 @@ import {
 } from "@material-ui/pickers";
 import countries from "../constants/CountriesList";
 import MenuItem from "@material-ui/core/MenuItem";
+import useImageUploader from "../hooks/useImageUploader";
 
 const ProfileSettings = () => {
   const [value, setValue] = React.useState("female");
+  const { handleImageUpload, backgroundImage, showImage } = useImageUploader();
 
   const handleChange = event => {
     setValue(event.target.value);
@@ -32,12 +34,24 @@ const ProfileSettings = () => {
           <Row>
             <Col md={2}>
               <div className="profile-image-container">
-                <div className="name-initial-wrapper">
-                  <h2>O</h2>
+                <div
+                  className="name-initial-wrapper"
+                  style={{
+                    backgroundImage: `url(${showImage ? backgroundImage : ""})`
+                  }}
+                >
+                  {!showImage && <h2>O</h2>}
                 </div>
                 <div className="change-photo">
                   <span>Change photo</span>
                 </div>
+                <input
+                  accept="image/*"
+                  multiple
+                  type="file"
+                  className="upload-file-input"
+                  onChange={handleImageUpload}
+                />
               </div>
             </Col>
             <Col md={{ span: 4, offset: 1 }}>
