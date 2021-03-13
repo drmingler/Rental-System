@@ -5,9 +5,24 @@
 }
 
 .MuiInput-underline:before {
-  border-bottom: 2px solid $input-border-colour;
+  border-bottom: 1px solid $input-border-colour !important;
 }
-
+.MuiInput-underline:after{
+  border-bottom: 1px solid $deep-purple !important;;
+}
 .MuiMenuItem-root {
   line-height: 2;
+}
+
+.MuiFormLabel-root{
+  font-family: $regular-font-family;
+  font-size: $medium-font-size;
+
+}
+.MuiFormLabel-root.Mui-focused{
+  font-size: $small-font-size;
+  font-family: $regular-font-family;
+}
+.MuiInputBase-input {
+  font-size: $medium-font-size;
 }

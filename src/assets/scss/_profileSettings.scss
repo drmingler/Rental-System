@@ -1,0 +1,73 @@
+@import "variables";
+
+.profile-page {
+  padding-top: $large-section-spacing;
+  padding-bottom: $large-section-spacing;
+  .MuiFormGroup-root {
+    display: flex;
+    flex-direction: row;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: $lighter-dark-colour;
+  }
+  .MuiRadio-colorSecondary.Mui-checked {
+    color: $deep-purple;
+  }
+  .MuiIconButton-colorSecondary {
+    color: $deep-purple;
+  }
+}
+.profile-form {
+  margin-top: 50px;
+}
+.text-box-header {
+  @extend %medium-large-heading-style;
+}
+.text-box-wrapper {
+  margin-top: 60px;
+}
+
+.save-button {
+  @extend %listing-button;
+}
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.name-initial-wrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: $deeper-purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: white;
+    font-size: $largest-font-size;
+    line-height: $largest-line-height;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
+.change-photo {
+  text-align: center;
+  margin-top: 10px;
+  color: $deep-purple;
+  font-size: $smallest-font-size;
+}
+@media (max-width: 767.98px) {
+  .profile-page {
+    padding-top: 80px;
+  }
+  .name-initial-wrapper {
+    width: 150px;
+    height: 150px;
+    h2 {
+      font-size: 80px;
+    }
+  }
+}
