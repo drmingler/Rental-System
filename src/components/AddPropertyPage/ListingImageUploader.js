@@ -1,27 +1,16 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as Cancel } from "../../assets/img/x.svg";
 import { ReactComponent as Camera } from "../../assets/img/camera.svg";
+import useImageUploader from "../../hooks/useImageUploader";
 
 const ListingImageUploader = ({ uploadCallback }) => {
-  const [backgroundImage, setBackgroundImage] = useState(null);
-  const [showImage, setImageVisibility] = useState(false);
-
-  const handleRemoveImage = () => {
-    setImageVisibility(!showImage);
-  };
-
-  const handleImageUpload = event => {
-    const image = event.currentTarget.files[0];
-
-    let reader = new FileReader();
-    reader.onloadend = () => {
-      setImageVisibility(true);
-      setBackgroundImage(reader.result);
-      uploadCallback();
-    };
-    reader.readAsDataURL(image);
-  };
+  const {
+    handleImageUpload,
+    handleRemoveImage,
+    backgroundImage,
+    showImage
+  } = useImageUploader(uploadCallback);
 
   return (
     <Paper
