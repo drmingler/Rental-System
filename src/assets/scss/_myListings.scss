@@ -64,7 +64,7 @@
     margin-bottom: 20px;
   }
   .text {
-    @extend %medium-font-style;
+    @extend %medium-font-style-base;
     color: $button-inactive-colour;
   }
 }

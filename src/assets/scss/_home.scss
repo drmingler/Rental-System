@@ -5,10 +5,10 @@
 .header-container {
   position: relative;
   background: linear-gradient(
-                  -60.76deg,
-                  $bg-colour-1 0,
-                  $bg-colour-2 57.96%,
-                  $bg-colour-3 100%
+    -60.76deg,
+    $bg-colour-1 0,
+    $bg-colour-2 57.96%,
+    $bg-colour-3 100%
   );
 
   &::before {
@@ -109,6 +109,7 @@
   }
 
   .rent-btn {
+    font-family: $bold-font-family;
     background-color: rgba(46, 45, 54, 0.3);
     color: white;
     transition: all 0.2s ease-in;
@@ -120,6 +121,7 @@
   }
 
   .list-btn {
+    font-family: $bold-font-family;
     background-color: rgba(46, 45, 54, 0.3);
     color: white;
     transition: all 0.2s ease-in;
@@ -136,8 +138,8 @@
   margin-top: 50px;
 
   p {
-    font-size: $medium-font-size;
-    line-height: $medium-line-height;
+    @extend %medium-font-style;
+    font-family: $bold-font-family;
     font-weight: $font-weight;
     color: white;
   }
@@ -223,6 +225,7 @@
 
   .switch-btn {
     @include switch-btn;
+    @extend %medium-font-style;
   }
 }
 
@@ -245,6 +248,7 @@
       line-height: $small-line-height;
 
       h3 {
+        font-family: $bold-font-family;
         font-size: 17px;
         font-weight: 600;
         margin: 17px 0;
@@ -305,6 +309,7 @@
       margin-top: 20px;
       padding: 16px 28px;
       border-radius: 4px;
+      font-family: $bold-font-family;
       font-size: $small-font-size;
       background-color: $deep-purple;
     }

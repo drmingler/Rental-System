@@ -282,6 +282,7 @@
     font-weight: $font-weight;
     font-size: $medium-large-font-size;
     line-height: $medium-large-line-height;
+    font-family: $bold-font-family;
   }
 
   .arrow-icon {
@@ -310,6 +311,7 @@
 }
 
 .apply-for-property-button {
+  font-family: $bold-font-family;
   width: 100%;
   background-color: $light-green;
   border: none;
@@ -365,12 +367,12 @@
   margin-top: 25px;
 
   span {
-    @extend %medium-font-style;
+    @extend %medium-font-style-base;
     color: $font-dark-colour;
   }
 
   .full-description {
-    @extend %medium-font-style;
+    @extend %medium-font-style-base;
     color: $mediumpurple;
     cursor: pointer;
   }
@@ -421,6 +423,7 @@
 
 .how-to-rent-header {
   @extend %large-heading-style;
+  font-family: $bold-font-family;
   font-weight: $font-weight;
   margin-bottom: 40px;
 }

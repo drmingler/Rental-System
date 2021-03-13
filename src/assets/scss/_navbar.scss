@@ -328,10 +328,12 @@
       padding-left: 6px;
     }
     .name-symbol {
+      font-family: sans-serif;
       background-color: $deeper-purple;
       border-radius: 50%;
       height: 25px;
       width: 25px;
+
       span {
         position: relative;
         font-size: 16px;

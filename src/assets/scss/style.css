@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "proxima-nova-regular";
+  src: local("proxima-nova-regular"), url("../fonts/proxima_ssv/ProximaNova-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "proxima-nova-bold";
+  src: local("proxima-nova-bold"), url("../fonts/proxima_ssv/Proxima Nova Bold.otf") format("truetype");
+}
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -9955,9 +9963,20 @@ h3 {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10006,10 +10025,11 @@ h3 {
   transform: scale(1.1);
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
-  font-family: proxima-nova, sans-serif;
+  font-family: proxima-nova-regular, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -10030,7 +10050,9 @@ html {
   padding: 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -10052,6 +10074,10 @@ ul {
   height: 100vh;
 }
 
+h1 {
+  font-family: proxima-nova-bold, sans-serif;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .renting-header .switch-btn, .renting-header .switch, .list-property, .nav-items, .nav-item-container {
   display: flex;
   align-items: center;
@@ -10079,9 +10105,20 @@ ul {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10157,9 +10194,20 @@ ul {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10354,6 +10402,7 @@ ul {
 }
 .nav-item-dropdown .dropdown-item-container h5 {
   font-size: 16px;
+  font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
   margin-bottom: 0;
   opacity: 0.8;
@@ -10540,6 +10589,7 @@ html {
     padding-left: 6px;
   }
   .mobile-menu-name-choice .name-symbol {
+    font-family: sans-serif;
     background-color: #7a1ea0;
     border-radius: 50%;
     height: 25px;
@@ -10597,6 +10647,7 @@ html {
   }
   .mobile-menu-option-content-container .dropdown-item-container h5 {
     font-size: 16px;
+    font-family: proxima-nova-bold, sans-serif;
     font-weight: 700;
     margin-bottom: 0;
     opacity: 0.8;
@@ -10633,9 +10684,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10766,9 +10828,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10844,9 +10917,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -10972,12 +11056,12 @@ html {
   margin-bottom: 2rem;
 }
 .renting-services p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   color: #2e2d36;
 }
 .renting-services a {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   color: mediumpurple;
 }
@@ -11239,9 +11323,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -11493,11 +11588,6 @@ html {
   margin-top: 20px;
   margin-bottom: 55px;
 }
-.post-listing-section .available-from .section-header {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-}
 .post-listing-section .available-from .MuiFormControl-marginNormal {
   margin-top: 30px;
 }
@@ -11509,6 +11599,7 @@ html {
   padding-bottom: 50px;
 }
 .post-listing-button-section .listing-button {
+  font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
   font-size: 24px;
@@ -11630,9 +11721,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -11850,6 +11952,7 @@ html {
   padding-top: 10px;
 }
 .panel-heading h4 {
+  font-family: proxima-nova-bold, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -11939,6 +12042,7 @@ html {
   transition: transform 0.3s ease-in-out;
 }
 .find-property-btn button {
+  font-family: proxima-nova-bold, sans-serif;
   height: 60px;
   line-height: 60px;
   width: 100%;
@@ -11996,6 +12100,7 @@ html {
 .house-price .price-text {
   font-weight: 700;
   line-height: 22px;
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .house-card-text {
@@ -12219,9 +12324,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .landlord-name-address h3, .landlord-short-details h3, .property-description-text .full-description, .property-description-text span, .property-utility .value, .property-page-container .picture-number .small-font {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .property-description-text .full-description, .property-description-text span, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .landlord-name-address h3, .landlord-short-details h3, .property-utility .value, .property-page-container .picture-number .small-font {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
@@ -12515,6 +12631,7 @@ html {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  font-family: proxima-nova-bold, sans-serif;
 }
 .property-monthly-price .arrow-icon {
   margin-right: 10px;
@@ -12539,6 +12656,7 @@ html {
 }
 
 .apply-for-property-button {
+  font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   background-color: #53c160;
   border: none;
@@ -12613,6 +12731,7 @@ html {
 }
 
 .how-to-rent-header {
+  font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -13076,9 +13195,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .add-property-description .text, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.add-property-description .text, .rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3 {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3 {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
@@ -13339,9 +13469,20 @@ html {
   font-weight: 700;
 }
 
-.password-reset-text, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
+.auth-button, .post-listing-section .available-from .section-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .password-reset-text, .social-auth-btn span, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3 {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
@@ -13461,9 +13602,6 @@ html {
   margin-bottom: 20px;
 }
 .social-auth-btn span {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
   color: #2e2d36;
   padding-left: 30px;
 }
@@ -13498,9 +13636,6 @@ html {
   height: 60px;
   width: 100%;
   border: none;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
   background-color: #7c54c1;
   color: white;
   border-bottom-left-radius: 6px;
@@ -13618,9 +13753,119 @@ html {
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .password-reset-text {
+.post-listing-section .available-from .section-header, .auth-button {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
+.profile-page {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  height: 700px;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  font-size: 16px;
+}
+
+.header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn-container, .header-input {
+  flex-direction: column;
+}
+
+.rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  flex-direction: row;
+}
+
+.listing-categories-section a, .available-cities-section a, .footer p, .footer a {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.post-listing-section .available-from .section-header, .auth-button {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
@@ -13708,9 +13953,20 @@ html {
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .password-reset-text {
+.post-listing-section .available-from .section-header, .auth-button {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
@@ -13786,9 +14042,20 @@ html {
   font-weight: 700;
 }
 
-.property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .password-reset-text {
+.post-listing-section .available-from .section-header, .auth-button {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
   font-size: 20px;
   line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
@@ -13926,6 +14193,7 @@ html {
   border-top-right-radius: 6px;
 }
 .rent-list-btn .rent-btn {
+  font-family: proxima-nova-bold, sans-serif;
   background-color: rgba(46, 45, 54, 0.3);
   color: white;
   transition: all 0.2s ease-in;
@@ -13935,6 +14203,7 @@ html {
   color: mediumpurple;
 }
 .rent-list-btn .list-btn {
+  font-family: proxima-nova-bold, sans-serif;
   background-color: rgba(46, 45, 54, 0.3);
   color: white;
   transition: all 0.2s ease-in;
@@ -13948,8 +14217,7 @@ html {
   margin-top: 50px;
 }
 .header-btn-container p {
-  font-size: 20px;
-  line-height: 28px;
+  font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
   color: white;
 }
@@ -14057,6 +14325,7 @@ html {
   line-height: 22px;
 }
 .rental-instruction .rental-info .info-content h3 {
+  font-family: proxima-nova-bold, sans-serif;
   font-size: 17px;
   font-weight: 600;
   margin: 17px 0;
@@ -14105,6 +14374,7 @@ html {
   margin-top: 20px;
   padding: 16px 28px;
   border-radius: 4px;
+  font-family: proxima-nova-bold, sans-serif;
   font-size: 16px;
   background-color: #7c54c1;
 }

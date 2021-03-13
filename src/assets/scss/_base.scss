@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
-  font-family: proxima-nova,sans-serif;
+  font-family: proxima-nova-regular, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -16,20 +17,21 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
 button:focus {
-  outline:none;
+  outline: none;
 }
 
 li {
@@ -40,6 +42,10 @@ ul {
   margin: 0;
 }
 
-.App{
+.App {
   height: 100vh;
+}
+
+h1{
+  font-family: proxima-nova-bold, sans-serif;
 }

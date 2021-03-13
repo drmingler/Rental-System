@@ -247,9 +247,7 @@
     margin-top: 20px;
     margin-bottom: 55px;
     .section-header {
-      font-size: 24px;
-      line-height: $medium-line-height;
-      font-weight: $font-weight;
+      @extend %medium-large-heading-style;
     }
     .MuiFormControl-marginNormal {
       margin-top: 30px;
@@ -264,6 +262,7 @@
 .post-listing-button-section {
   padding-bottom: $small-section-spacing;
   .listing-button {
+    font-family: $bold-font-family;
     width: 100%;
     border: none;
     font-size: 24px;

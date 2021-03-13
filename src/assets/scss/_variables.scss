@@ -1,3 +1,7 @@
+// Fonts style
+$bold-font-family: proxima-nova-bold, sans-serif;
+$regular-font-family: proxima-nova-regular, sans-serif;
+
 // Fonts
 $smallest-font-size: 14px;
 $smallest-line-height: 20px;
@@ -83,10 +87,22 @@ $svg-big-size: 30px;
   line-height: $large-line-height;
   font-weight: 700;
 }
+%medium-large-heading-style {
+  font-size: $medium-large-font-size;
+  line-height: $medium-large-line-height;
+  font-weight: 700;
+  font-family: $bold-font-family;
+}
 
-%medium-font-style {
+%medium-font-style-base {
   font-size: $medium-font-size;
   line-height: $medium-line-height;
+}
+
+
+%medium-font-style {
+  @extend %medium-font-style-base;
+  font-family: $bold-font-family;
 }
 
 %smallest-font-style {

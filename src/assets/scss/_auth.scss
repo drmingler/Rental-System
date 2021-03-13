@@ -12,7 +12,7 @@
   justify-content: center;
   background-color: $bg-colour-5-deep;
 
-  .MuiInputLabel-root{
+  .MuiInputLabel-root {
     color: $lighter-dark-colour;
   }
 }
@@ -75,9 +75,7 @@
   margin-bottom: 20px;
 
   span {
-    font-size: $medium-font-size;
-    line-height: $medium-line-height;
-    font-weight: $font-weight;
+    @extend %medium-font-style;
     color: $font-dark-colour;
     padding-left: 30px;
   }
@@ -109,12 +107,10 @@
   }
 }
 .auth-button {
+  @extend %medium-large-heading-style;
   height: 60px;
   width: 100%;
   border: none;
-  font-size: $medium-large-font-size;
-  line-height: $medium-large-line-height;
-  font-weight: $font-weight;
   background-color: $deep-purple;
   color: white;
   border-bottom-left-radius: 6px;
@@ -171,7 +167,7 @@
       }
     }
   }
-  .auth-page{
+  .auth-page {
     min-height: 100%;
     height: 100%;
     background-color: white;

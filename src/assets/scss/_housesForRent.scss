@@ -174,6 +174,7 @@
 .panel-heading {
   padding-top: 10px;
   h4 {
+    font-family: $bold-font-family;
     font-size: $small-font-size;
     line-height: $small-line-height;
     font-weight: $font-weight;
@@ -261,6 +262,7 @@
   transform: translateY(-100vh);
   transition: transform 0.3s ease-in-out;
   button {
+    font-family: $bold-font-family;
     height: 60px;
     line-height: 60px;
     width: 100%;
@@ -315,6 +317,7 @@
   .price-text {
     font-weight: $font-weight;
     line-height: $small-line-height;
+    font-family: $bold-font-family;
   }
 }
 .house-card-text {

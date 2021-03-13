@@ -1,4 +1,12 @@
- @import "../../../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+ font-family: 'proxima-nova-regular';
+ src: local('proxima-nova-regular'), url("../fonts/proxima_ssv/ProximaNova-Regular.otf") format('truetype');
+}
+@font-face {
+ font-family: 'proxima-nova-bold';
+ src: local('proxima-nova-bold'), url("../fonts/proxima_ssv/Proxima Nova Bold.otf") format('truetype');
+}
+@import "../../../node_modules/bootstrap/scss/bootstrap";
  @import "variables";
  @import "base";
  @import "navbar";
@@ -9,5 +17,6 @@
  @import "houseDetails";
  @import "myListings";
  @import "auth";
+ @import "profileSettings";
  @import "muiOverride";
  @import "home";
