@@ -1,18 +1,15 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ReactComponent as Cancel } from "../assets/img/x-slim.svg";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as FBIcon } from "../assets/img/fb.svg";
 import { ReactComponent as GoogleIcon } from "../assets/img/google.svg";
 import TextField from "@material-ui/core/TextField";
 import { SocialAuthButton } from "../components/AuthPages/index";
+import {AuthLayout} from "../components/AuthPages/index";
 
 const SignUp = () => {
   return (
-    <section className="auth-page">
-      <div className="cancel-button">
-        <Cancel />
-      </div>
+    <AuthLayout>
       <Container fluid={"lg"}>
         <Row className="align-item-center justify-content-center">
           <Col md={8} xl={5} className="auth-wrapper">
@@ -81,7 +78,7 @@ const SignUp = () => {
           and <a href="/">Privacy Policy</a>
         </span>
       </div>
-    </section>
+    </AuthLayout>
   );
 };
 export default SignUp;

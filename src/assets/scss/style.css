@@ -13402,6 +13402,9 @@ html {
   justify-content: center;
   background-color: #F4F5FE;
 }
+.auth-page .MuiInputLabel-root {
+  color: #858e98;
+}
 
 .cancel-button {
   position: absolute;

@@ -1,15 +1,12 @@
 import React from "react";
-import { ReactComponent as Cancel } from "../assets/img/x-slim.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
+import {AuthLayout} from "../components/AuthPages/index";
 
 const PasswordReset = () => {
   return (
-    <section className="auth-page">
-      <div className="cancel-button">
-        <Cancel />
-      </div>
+    <AuthLayout>
       <Container fluid={"lg"}>
         <Row className="align-item-center justify-content-center">
           <Col md={8} xl={5} className="auth-wrapper">
@@ -44,7 +41,7 @@ const PasswordReset = () => {
           <a href="/">Terms of Use </a>|<a href="/"> Privacy Policy</a>
         </span>
       </div>
-    </section>
+    </AuthLayout>
   );
 };
 export default PasswordReset;

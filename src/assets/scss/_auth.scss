@@ -11,6 +11,10 @@
   align-items: center;
   justify-content: center;
   background-color: $bg-colour-5-deep;
+
+  .MuiInputLabel-root{
+    color: $lighter-dark-colour;
+  }
 }
 
 .cancel-button {
