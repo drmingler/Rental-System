@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as SubscriptionIcon } from "../assets/img/make-payment.svg";
 import { ReactComponent as TransactionHistoryIcon } from "../assets/img/invoice.svg";
-import { PanelForm, PanelRow } from "../components/PaymentPages/index";
+import { PaymentPanel } from "../components/PaymentPages/index";
 
 const PaymentSettingsPage = () => {
-  const [subscribe, setSubscribe] = useState(false);
   return (
     <Layout fixed={true}>
       <section className="payment-page">
@@ -28,32 +27,14 @@ const PaymentSettingsPage = () => {
                 </ul>
               </Paper>
             </Col>
+            {/*<PaymentPanel />*/}
             <Col md={{ span: 7, offset: 1 }}>
               <Paper elevation={1} className="payment-panel">
                 <div className="heading">
-                  <h3>Subscribe</h3>
-                </div>
-                <div className="panel-content-container">
-                  <PanelRow
-                    showTick={true}
-                    duration={"Monthly"}
-                    plan={"Pro Plan Monthly"}
-                    price={"$15.00"}
-                    setSubscribe={setSubscribe}
-                    subscribe={subscribe}
-                  />
-                  <PanelRow
-                    showTick={false}
-                    duration={"Yearly"}
-                    plan={"Pro Plan Yearly"}
-                    price={"$45.00"}
-                    setSubscribe={setSubscribe}
-                    subscribe={subscribe}
-                  />
+                  <h3>Transaction History</h3>
                 </div>
               </Paper>
             </Col>
-            {subscribe && <PanelForm />}
           </Row>
         </Container>
       </section>
