@@ -53,6 +53,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    b{
+      font-family: $bold-font-family;
+    }
   }
 }
 

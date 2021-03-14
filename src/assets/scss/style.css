@@ -9938,7 +9938,7 @@ h3 {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -9957,6 +9957,11 @@ h3 {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10104,7 +10109,7 @@ h1 {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -10123,6 +10128,11 @@ h1 {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10217,7 +10227,7 @@ h1 {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -10236,6 +10246,11 @@ h1 {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10731,7 +10746,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -10750,6 +10765,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10899,7 +10919,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -10918,6 +10938,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11012,7 +11037,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -11031,6 +11056,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11442,7 +11472,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -11461,6 +11491,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -11848,7 +11883,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -11867,6 +11902,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -11977,6 +12017,9 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.house-location-container .house-location-text b {
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .hide-dropdown-container {
@@ -12475,7 +12518,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -12494,6 +12537,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .landlord-stats, .landlord-name-address span, .phone-and-email, .landlord-short-details span, .amenities-icon-wrapper span, .show-more-properties span, .property-monthly-price .monthly-price-header {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -13370,7 +13418,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -13389,6 +13437,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .rent-place-faster, .add-property-text, .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -13668,7 +13721,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .auth-button, .post-listing-section .available-from .section-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -13687,6 +13740,11 @@ html {
 .forgot-password, .auth-footer, .already-signed-up, .with-email, .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -13976,7 +14034,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .text-box-header, .post-listing-section .available-from .section-header, .auth-button {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .text-box-header, .post-listing-section .available-from .section-header, .auth-button {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -13995,6 +14053,11 @@ html {
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14163,7 +14226,7 @@ html {
   font-weight: 700;
 }
 
-.policy-sub-header, .post-listing-section .available-from .section-header, .auth-button, .text-box-header {
+.payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .post-listing-section .available-from .section-header, .auth-button, .text-box-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -14182,6 +14245,11 @@ html {
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14264,6 +14332,22 @@ html {
   font-family: proxima-nova-bold, sans-serif;
 }
 
+@media (max-width: 767.98px) {
+  .policy-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .policy-page .policy-heading {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+  }
+  .policy-page .policy-sub-header {
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -14298,7 +14382,7 @@ html {
   font-weight: 700;
 }
 
-.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header {
+.payment-panel .heading, .payment-sidebar h3, .post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -14317,6 +14401,258 @@ html {
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
   font-size: 14px;
   line-height: 20px;
+}
+
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
+.post-listing-button-section .listing-button, .save-button {
+  font-family: proxima-nova-bold, sans-serif;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  line-height: 60px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #9c99b6;
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transition: background-color 0.3s ease;
+}
+.post-listing-button-section .listing-button:hover, .save-button:hover {
+  background-color: #9c94b6;
+}
+
+.payment-page {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.payment-sidebar {
+  padding-bottom: 20px;
+}
+.payment-sidebar h3 {
+  padding: 1.25rem 2rem 1.25rem;
+}
+
+.sidebar-option-wrapper li {
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  padding: 8px 16px;
+}
+.sidebar-option-wrapper li .text {
+  padding-left: 2rem;
+}
+.sidebar-option-wrapper li:hover {
+  transition: all 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.sidebar-option-wrapper .active {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.payment-panel .heading {
+  background-color: rgba(0, 0, 0, 0.04);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e9eaef;
+}
+.payment-panel .heading h3 {
+  margin-bottom: 0;
+}
+
+.panel-content-container {
+  padding: 1rem;
+  overflow: auto;
+}
+
+.panel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.panel-row.active {
+  padding: 10px 10px 10px 35px;
+}
+
+.plan-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+}
+.plan-type .type {
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.plan-type .type:hover {
+  border-bottom: 1px solid #2e2d36;
+}
+.plan-type .icon {
+  position: absolute;
+  bottom: -1px;
+  left: -35px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #53c160;
+}
+.plan-type .icon svg {
+  height: 15px;
+  width: 15px;
+  color: #53c160;
+}
+
+.plan-price {
+  min-width: 150px;
+}
+.plan-price .price {
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+  padding-right: 10px;
+}
+
+.plan-duration {
+  padding-left: 10px;
+}
+
+.subscribe-button-cancel, .subscribe-button {
+  padding: 5px 16px;
+  border-radius: 3px;
+  background: transparent;
+  margin-left: 10px;
+}
+
+.subscribe-button {
+  border: 1px solid #53c160;
+  color: #53c160;
+}
+.subscribe-button:hover {
+  background: #53c160;
+  color: white;
+}
+
+.subscribe-button-cancel {
+  border: 1px solid #e0485c;
+  color: white;
+  background: #e0485c;
+}
+
+.payment-form {
+  margin-top: 70px;
+}
+
+.header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn-container, .header-input {
+  flex-direction: column;
+}
+
+.rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  flex-direction: row;
+}
+
+.listing-categories-section a, .available-cities-section a, .footer p, .footer a {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+
+.policy-heading {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: proxima-nova-bold, sans-serif;
+  font-weight: 700;
+}
+
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header, .payment-sidebar h3, .payment-panel .heading {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14442,7 +14778,7 @@ html {
   font-weight: 700;
 }
 
-.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header {
+.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header, .payment-sidebar h3, .payment-panel .heading {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -14461,6 +14797,11 @@ html {
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
   font-size: 14px;
   line-height: 20px;
+}
+
+.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14555,7 +14896,7 @@ html {
   font-weight: 700;
 }
 
-.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header {
+.post-listing-section .available-from .section-header, .auth-button, .text-box-header, .policy-sub-header, .payment-sidebar h3, .payment-panel .heading {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -14574,6 +14915,11 @@ html {
 .property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
   font-size: 14px;
   line-height: 20px;
+}
+
+.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {

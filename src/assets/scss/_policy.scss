@@ -22,3 +22,20 @@
     font-family: $bold-font-family;
   }
 }
+
+@media (max-width: 767.98px) {
+  .policy-page {
+    padding-top: $medium-section-spacing;
+    padding-bottom: $medium-section-spacing;
+    .policy-heading {
+      font-size: $medium-font-size;
+      line-height: $medium-line-height;
+      margin-bottom: 1rem;
+    }
+    .policy-sub-header {
+      margin-top: 50px;
+      font-size: $medium-font-size;
+      line-height: $medium-line-height;
+    }
+  }
+}
