@@ -10005,7 +10005,7 @@ h3 {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -10018,7 +10018,7 @@ h3 {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -10176,7 +10176,7 @@ h1 {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -10189,7 +10189,7 @@ h1 {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -10294,7 +10294,7 @@ h1 {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -10307,7 +10307,7 @@ h1 {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -10813,7 +10813,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -10826,7 +10826,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -10986,7 +10986,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -10999,7 +10999,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -11104,7 +11104,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -11117,7 +11117,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -11539,7 +11539,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -11552,7 +11552,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -11950,7 +11950,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -11963,7 +11963,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -12585,7 +12585,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -12598,7 +12598,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -13485,7 +13485,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -13498,7 +13498,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -13788,7 +13788,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -13801,7 +13801,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -14101,7 +14101,7 @@ html {
   transform: scale(1.1);
 }
 
-.save-button, .post-listing-button-section .listing-button {
+.make-payment-button, .save-button, .post-listing-button-section .listing-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14114,7 +14114,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.save-button:hover, .post-listing-button-section .listing-button:hover {
+.make-payment-button:hover, .save-button:hover, .post-listing-button-section .listing-button:hover {
   background-color: #9c94b6;
 }
 
@@ -14293,7 +14293,7 @@ html {
   transform: scale(1.1);
 }
 
-.post-listing-button-section .listing-button, .save-button {
+.make-payment-button, .post-listing-button-section .listing-button, .save-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14306,7 +14306,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.post-listing-button-section .listing-button:hover, .save-button:hover {
+.make-payment-button:hover, .post-listing-button-section .listing-button:hover, .save-button:hover {
   background-color: #9c94b6;
 }
 
@@ -14449,7 +14449,7 @@ html {
   transform: scale(1.1);
 }
 
-.post-listing-button-section .listing-button, .save-button {
+.make-payment-button, .post-listing-button-section .listing-button, .save-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14462,13 +14462,14 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.post-listing-button-section .listing-button:hover, .save-button:hover {
+.make-payment-button:hover, .post-listing-button-section .listing-button:hover, .save-button:hover {
   background-color: #9c94b6;
 }
 
 .payment-page {
   padding-top: 150px;
   padding-bottom: 150px;
+  min-height: 100vh;
 }
 
 .payment-sidebar {
@@ -14540,11 +14541,11 @@ html {
 }
 .plan-type .icon {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: -35px;
   border-radius: 50%;
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14593,6 +14594,19 @@ html {
 
 .payment-form {
   margin-top: 70px;
+}
+.payment-form .MuiInputBase-input {
+  font-size: 16px;
+  font-family: proxima-nova-regular, sans-serif;
+}
+.payment-form .MuiFormLabel-root {
+  font-family: proxima-nova-regular, sans-serif;
+  font-size: 16px;
+}
+
+.make-payment-button {
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
@@ -14696,7 +14710,7 @@ html {
   transform: scale(1.1);
 }
 
-.post-listing-button-section .listing-button, .save-button {
+.post-listing-button-section .listing-button, .save-button, .make-payment-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14709,7 +14723,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.post-listing-button-section .listing-button:hover, .save-button:hover {
+.post-listing-button-section .listing-button:hover, .save-button:hover, .make-payment-button:hover {
   background-color: #9c94b6;
 }
 
@@ -14845,7 +14859,7 @@ html {
   transform: scale(1.1);
 }
 
-.post-listing-button-section .listing-button, .save-button {
+.post-listing-button-section .listing-button, .save-button, .make-payment-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14858,7 +14872,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.post-listing-button-section .listing-button:hover, .save-button:hover {
+.post-listing-button-section .listing-button:hover, .save-button:hover, .make-payment-button:hover {
   background-color: #9c94b6;
 }
 
@@ -14963,7 +14977,7 @@ html {
   transform: scale(1.1);
 }
 
-.post-listing-button-section .listing-button, .save-button {
+.post-listing-button-section .listing-button, .save-button, .make-payment-button {
   font-family: proxima-nova-bold, sans-serif;
   width: 100%;
   border: none;
@@ -14976,7 +14990,7 @@ html {
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
 }
-.post-listing-button-section .listing-button:hover, .save-button:hover {
+.post-listing-button-section .listing-button:hover, .save-button:hover, .make-payment-button:hover {
   background-color: #9c94b6;
 }
 

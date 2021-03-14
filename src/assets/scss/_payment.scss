@@ -3,6 +3,7 @@
 .payment-page {
   padding-top: $large-section-spacing;
   padding-bottom: $large-section-spacing;
+  min-height: 100vh;
 }
 
 .payment-sidebar {
@@ -79,11 +80,11 @@
   }
   .icon {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: -35px;
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,4 +133,19 @@
 
 .payment-form {
   margin-top: 70px;
+  .MuiInputBase-input {
+    font-size: $small-font-size;
+    font-family: $regular-font-family;
+  }
+  .MuiFormLabel-root{
+    font-family: $regular-font-family;
+    font-size: $small-font-size;
+
+  }
+}
+
+.make-payment-button {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  @extend %listing-button;
 }

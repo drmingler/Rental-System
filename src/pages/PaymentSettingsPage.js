@@ -4,31 +4,10 @@ import Layout from "../components/Layout";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as SubscriptionIcon } from "../assets/img/make-payment.svg";
 import { ReactComponent as TransactionHistoryIcon } from "../assets/img/invoice.svg";
-import { ReactComponent as CheckIcon } from "../assets/img/check.svg";
+import { PanelForm, PanelRow } from "../components/PaymentPages/index";
 
-const PanelRow = ({ plan, price, duration, showTick }) => {
-  const [active, setActive] = useState(true);
-  return (
-    <div className={`panel-row ${active && "active"}`}>
-      <div className="plan-type">
-        {showTick && (
-          <div className="icon">
-            <CheckIcon />
-          </div>
-        )}
-        <span className="type">{plan}</span>
-      </div>
-      <div className="plan-price">
-        <span className="price">{price}</span>
-        <span>/</span>
-        <span className="plan-duration">{duration}</span>
-      </div>
-      {showTick && <button className="subscribe-button-cancel">Cancel</button>}
-      {!showTick && <button className="subscribe-button">Subscribe</button>}
-    </div>
-  );
-};
 const PaymentSettingsPage = () => {
+  const [subscribe, setSubscribe] = useState(false);
   return (
     <Layout fixed={true}>
       <section className="payment-page">
@@ -60,24 +39,21 @@ const PaymentSettingsPage = () => {
                     duration={"Monthly"}
                     plan={"Pro Plan Monthly"}
                     price={"$15.00"}
+                    setSubscribe={setSubscribe}
+                    subscribe={subscribe}
                   />
                   <PanelRow
                     showTick={false}
                     duration={"Yearly"}
                     plan={"Pro Plan Yearly"}
                     price={"$45.00"}
+                    setSubscribe={setSubscribe}
+                    subscribe={subscribe}
                   />
                 </div>
               </Paper>
             </Col>
-            <Col md={{ span: 7, offset: 5 }} className="payment-form">
-              <Paper elevation={1} className="payment-panel">
-                <div className="heading">
-                  <h3>Billing Information</h3>
-                </div>
-                <div className="panel-content-container"></div>
-              </Paper>
-            </Col>
+            {subscribe && <PanelForm />}
           </Row>
         </Container>
       </section>
