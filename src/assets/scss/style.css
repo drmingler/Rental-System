@@ -14471,6 +14471,16 @@ html {
   padding-bottom: 150px;
   min-height: 100vh;
 }
+.payment-page .MuiTableCell-head {
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+  font-size: 16px;
+}
+.payment-page .MuiPaper-elevation1 {
+  box-shadow: none;
+  border: 1px solid #e9eaef;
+  border-radius: 6px;
+}
 
 .payment-sidebar {
   padding-bottom: 20px;

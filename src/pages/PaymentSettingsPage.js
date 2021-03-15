@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Paper from "@material-ui/core/Paper";
 import { ReactComponent as SubscriptionIcon } from "../assets/img/make-payment.svg";
 import { ReactComponent as TransactionHistoryIcon } from "../assets/img/invoice.svg";
-import { PaymentPanel } from "../components/PaymentPages/index";
+import { PaymentPanel, TransactionHistory } from "../components/PaymentPages/index";
 
 const PaymentSettingsPage = () => {
   return (
@@ -27,14 +27,8 @@ const PaymentSettingsPage = () => {
                 </ul>
               </Paper>
             </Col>
-            {/*<PaymentPanel />*/}
-            <Col md={{ span: 7, offset: 1 }}>
-              <Paper elevation={1} className="payment-panel">
-                <div className="heading">
-                  <h3>Transaction History</h3>
-                </div>
-              </Paper>
-            </Col>
+            <PaymentPanel />
+            {/*<TransactionHistory />*/}
           </Row>
         </Container>
       </section>

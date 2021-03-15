@@ -4,6 +4,16 @@
   padding-top: $large-section-spacing;
   padding-bottom: $large-section-spacing;
   min-height: 100vh;
+  .MuiTableCell-head {
+    font-weight: $font-weight;
+    font-family: $bold-font-family;
+    font-size: $small-font-size;
+  }
+  .MuiPaper-elevation1 {
+    box-shadow: none;
+    border: 1px solid $light-border;
+    border-radius: 6px;
+  }
 }
 
 .payment-sidebar {
@@ -137,10 +147,9 @@
     font-size: $small-font-size;
     font-family: $regular-font-family;
   }
-  .MuiFormLabel-root{
+  .MuiFormLabel-root {
     font-family: $regular-font-family;
     font-size: $small-font-size;
-
   }
 }
 
