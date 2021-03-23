@@ -1,9 +1,8 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
-import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const HowToRentProperty = () => {
@@ -20,9 +19,9 @@ const HowToRentProperty = () => {
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <Typography>
+                  <span>
                     I like this property, how do I book it?
-                  </Typography>
+                  </span>
                 </AccordionSummary>
                 <AccordionDetails>
                   <div>
@@ -34,17 +33,19 @@ const HowToRentProperty = () => {
                     <div>
                       <ol>
                         <li>
-                          Contact the Landlord by clicking on the contact or
-                          apply button.
-                        </li>
-                        <li>You will be given the Landlord's phone number.</li>
-                        <li>
-                          You might decide to call or write him/her a message
-                          from our website.
+                            Contact the Landlord by clicking on the contact or
+                            apply button.
                         </li>
                         <li>
-                          When the Landlord replies your message, you will
-                          receive a notification via email.
+                            You will be given the Landlord's phone number.
+                        </li>
+                        <li>
+                            You might decide to call or write him/her a message
+                            from our website.
+                        </li>
+                        <li>
+                            When the Landlord replies your message, you will
+                            receive a notification via email.
                         </li>
                       </ol>
                     </div>
@@ -57,17 +58,15 @@ const HowToRentProperty = () => {
                   aria-controls="panel2a-content"
                   id="panel2a-header"
                 >
-                  <Typography>Can I view this property?</Typography>
+                  <span>Can I view this property?</span>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>
                     <span>
                       Even though we already have a lot of pictures of the
-                      property, it is necessary to view the house. Agree on a date
-                      when you and the Landlord can meet, inorder to view the
-                        property.
+                      property, it is necessary to view the house. Agree on a
+                      date when you and the Landlord can meet, inorder to view
+                      the property.
                     </span>
-                  </Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -76,16 +75,16 @@ const HowToRentProperty = () => {
                   aria-controls="panel2a-content"
                   id="panel2a-header"
                 >
-                  <Typography>
+                  <span>
                     What happens after contacting the Landlord?
-                  </Typography>
+                  </span>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Typography>
+                  <span>
                     Please note that, we only match Landlords directly to
                     prospective Tenants. We are not responsible for whatever
                     happens after that.
-                  </Typography>
+                  </span>
                 </AccordionDetails>
               </Accordion>
             </div>

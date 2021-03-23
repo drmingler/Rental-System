@@ -9925,14 +9925,14 @@ h3 {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -9959,7 +9959,7 @@ h3 {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10096,14 +10096,14 @@ h1 {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -10130,7 +10130,7 @@ h1 {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10214,14 +10214,14 @@ h1 {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -10248,7 +10248,7 @@ h1 {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10733,14 +10733,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -10767,7 +10767,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10906,14 +10906,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -10940,7 +10940,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11024,14 +11024,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-search .renting-search-content h1, .tips h1, .renting-services h1, .renting-header .renting-header-text h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -11058,7 +11058,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11459,14 +11459,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .section-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -11493,7 +11493,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11870,14 +11870,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -11904,7 +11904,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -12505,14 +12505,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .similar-properties-section h1, .how-to-rent-header, .property-description h1, .property-page-container .picture-number .large-font, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -12539,7 +12539,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -13405,14 +13405,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .my-listings-card-section .your-listings, .add-property-description .heading, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -13439,7 +13439,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -13708,14 +13708,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .auth-wrapper h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .auth-wrapper h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -13742,7 +13742,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14021,14 +14021,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -14055,7 +14055,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14213,14 +14213,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -14247,7 +14247,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14369,14 +14369,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.pricing-header .pricing-header-text, .policy-heading {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-text, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1 {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -14403,7 +14403,7 @@ html {
   line-height: 20px;
 }
 
-.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14464,6 +14464,19 @@ html {
 }
 .make-payment-button:hover, .post-listing-button-section .listing-button:hover, .save-button:hover {
   background-color: #9c94b6;
+}
+
+.pricing-header .renting-header {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.pricing-header .pricing-text {
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
 }
 
 .payment-page {
@@ -14624,6 +14637,11 @@ html {
   padding-bottom: 150px;
 }
 
+.pricing-cards-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .pricing-card {
   border: 1px solid #e9eaef;
   border-radius: 20px;
@@ -14673,7 +14691,7 @@ html {
   border-radius: 6px;
   background: transparent;
   width: 100%;
-  color: #7a1ea0;
+  color: #7c54c1;
   font-weight: 700;
   font-family: proxima-nova-bold, sans-serif;
 }
@@ -14709,6 +14727,15 @@ html {
   background-color: #e0485c;
 }
 
+.faq-pricing-section {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #f8f9fa;
+}
+.faq-pricing-section h3 {
+  text-align: center;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
   display: flex;
   align-items: center;
@@ -14730,14 +14757,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.policy-heading, .pricing-header .pricing-header-text {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .price-amount .amount {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .pricing-cards-text, .price-amount .amount {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -14764,7 +14791,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+.pricing-header .pricing-text, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14879,14 +14906,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.policy-heading, .pricing-header .pricing-header-text {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .price-amount .amount {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .pricing-cards-text, .price-amount .amount {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -14913,7 +14940,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+.pricing-header .pricing-text, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14997,14 +15024,14 @@ html {
   cursor: pointer;
 }
 
-.policy-heading {
+.policy-heading, .pricing-header .pricing-header-text {
   font-size: 72px;
   line-height: 72px;
   font-family: proxima-nova-bold, sans-serif;
   font-weight: 700;
 }
 
-.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .price-amount .amount {
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .pricing-cards-text, .price-amount .amount {
   font-size: 48px;
   line-height: 48px;
   font-weight: 700;
@@ -15031,7 +15058,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
+.pricing-header .pricing-text, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price {
   font-size: 16px;
   line-height: 22px;
 }
