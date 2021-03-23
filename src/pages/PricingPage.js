@@ -34,7 +34,7 @@ const PricingPage = () => {
       </div>
       <section className="pricing-page">
         <Container>
-          <h1 className="pricing-cards-text">Our Affordable Pricing Plans</h1>
+          <h1 className="pricing-cards-header">Our Affordable Pricing Plans</h1>
           <Row>
             <Col lg={4}>
               <Paper elevation={0} className="pricing-card">

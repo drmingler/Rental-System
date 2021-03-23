@@ -1,26 +1,4 @@
 @import "variables";
-
-.pricing-header {
-  .renting-header {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  }
-
-  .pricing-header-text {
-    @extend %largest-heading-style;
-  }
-
-  .pricing-text {
-    @extend %small-font-style;
-    font-weight: $font-weight;
-    font-family: $bold-font-family;
-  }
-}
-
 // Payment pages
 .payment-page {
   padding-top: $large-section-spacing;
@@ -204,12 +182,31 @@
 }
 
 // Pricing page
+.pricing-header {
+  .renting-header {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .pricing-text {
+    @extend %small-font-style;
+    font-weight: $font-weight;
+    font-family: $bold-font-family;
+  }
+}
+.pricing-header-text {
+  @extend %largest-heading-style;
+}
+
 .pricing-page {
   padding-top: $large-section-spacing;
   padding-bottom: $large-section-spacing;
 }
 
-.pricing-cards-text {
+.pricing-cards-header {
   @extend %large-heading-style;
   text-align: center;
   margin-bottom: 50px;
@@ -327,3 +324,38 @@
   }
 }
 
+@media (max-width: 767px) {
+  %font-medium-head {
+    font-size: $medium-large-font-size;
+    line-height: $medium-large-line-height;
+    font-weight: $font-weight;
+  }
+  .payment-page {
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+  }
+  .pricing-page {
+    padding-top: $small-section-spacing;
+    padding-bottom: $small-section-spacing;
+    .pricing-cards-header {
+      @extend %font-medium-head;
+      margin-bottom: 0;
+    }
+  }
+  .pricing-header {
+    .renting-header {
+      height: 300px;
+      margin-bottom: 0;
+    }
+    .pricing-header-text {
+      @extend %font-medium-head;
+    }
+  }
+  .faq-pricing-section {
+    padding-top: $small-section-spacing;
+    padding-bottom: $medium-section-spacing;
+    .how-to-rent-header{
+      @extend %font-medium-head;
+    }
+  }
+}

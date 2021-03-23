@@ -29,6 +29,7 @@
     .MuiInputBase-input {
       font-size: 70px;
       font-weight: $font-weight;
+      font-family: $bold-font-family;
     }
   }
 
@@ -304,7 +305,8 @@
   .add-property-header {
     .property-name {
       .MuiInputBase-input {
-        font-size: $small-font-size;
+        font-size: $medium-font-size;
+        font-family: $regular-font-family;
         font-weight: 400;
       }
     }

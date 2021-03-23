@@ -313,7 +313,7 @@
 
 
 @media (max-width: 767.98px) {
-  %font-small {
+  %font-medium {
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: $font-weight;
@@ -322,14 +322,14 @@
     padding-top: 0;
     padding-bottom: 3rem;
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
     }
   }
   .renting-service-mobile {
     padding-top: 0;
     padding-bottom: 3rem;
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
     }
   }
 
@@ -338,7 +338,7 @@
     margin-bottom: 3rem;
     .renting-header-text {
       h1 {
-        @extend %font-small;
+        @extend %font-medium;
       }
     }
   }
@@ -347,13 +347,13 @@
     padding-top: $small-section-spacing;
     padding-bottom: $small-section-spacing;
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
     }
   }
   .renting-search {
     .renting-search-content {
       h1 {
-        @extend %font-small;
+        @extend %font-medium;
       }
     }
   }

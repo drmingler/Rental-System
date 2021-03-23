@@ -390,7 +390,7 @@
 
 // Responsiveness
 @media (max-width: 767.98px) {
-  %font-small {
+  %font-medium {
     font-size: $medium-font-size;
     line-height: $medium-line-height;
     font-weight: $font-weight;
@@ -408,7 +408,7 @@
   }
 
   .header-title {
-    @extend %font-small;
+    @extend %font-medium;
     margin-bottom: 1rem;
   }
   .input-container {
@@ -450,7 +450,7 @@
   }
   .cities-title {
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
       line-height: $small-line-height;
     }
 
@@ -513,14 +513,14 @@
     padding-bottom: $small-section-spacing;
 
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
       line-height: $small-line-height;
       margin-bottom: 40px;
     }
   }
   .listing-categories-section {
     h1 {
-      @extend %font-small;
+      @extend %font-medium;
       margin-bottom: 40px;
       line-height: $small-line-height;
     }
