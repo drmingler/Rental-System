@@ -1,11 +1,11 @@
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import React from "react";
 
 const PanelForm = () => {
   return (
-    <Col md={{ span: 7, offset: 5 }} className="payment-form">
+    <Col lg={{ span: 7, offset: 5 }} md={12} className="payment-form">
       <Paper elevation={1} className="payment-panel">
         <div className="heading">
           <h3>Billing Information</h3>

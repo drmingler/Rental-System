@@ -1,13 +1,13 @@
-import React, { Fragment, useState } from "react";
+import React, {Fragment, useState} from "react";
 import Paper from "@material-ui/core/Paper";
-import { Col } from "react-bootstrap";
-import { PanelForm, PanelRow } from "./index";
+import {Col} from "react-bootstrap";
+import {PanelForm, PanelRow} from "./index";
 
 const PaymentPanel = () => {
   const [subscribe, setSubscribe] = useState(false);
   return (
     <Fragment>
-      <Col md={{ span: 7, offset: 1 }}>
+      <Col lg={{ span: 7, offset: 1 }} md={12}>
         <Paper elevation={1} className="payment-panel">
           <div className="heading">
             <h3>Subscribe</h3>

@@ -102,21 +102,20 @@
   }
 
   .icon {
+    display: flex;
     position: absolute;
     bottom: 0;
     left: -35px;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid $light-green;
-
+    height: 18px;
+    width: 18px;
+    border-radius: 50px;
+    background: $light-green;
+    color: white;
     svg {
-      height: 15px;
-      width: 15px;
-      color: $light-green;
+      height: 12px;
+      width: 12px;
     }
   }
 }
@@ -137,7 +136,7 @@
 }
 
 %sub-button {
-  padding: 5px 16px;
+  width: 120px;
   border-radius: 3px;
   background: transparent;
   margin-left: 10px;
@@ -145,6 +144,7 @@
 
 .subscribe-button {
   @extend %sub-button;
+  padding: 5px 16px;
   border: 1px solid $light-green;
   color: $light-green;
 
@@ -155,6 +155,7 @@
 }
 
 .subscribe-button-cancel {
+  padding: 5px 26px;
   border: 1px solid $cancel-color;
   color: white;
   background: $cancel-color;
@@ -323,7 +324,11 @@
     text-align: center;
   }
 }
-
+@media (max-width: 992px) {
+  .payment-sidebar {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   %font-medium-head {
     font-size: $medium-large-font-size;
@@ -333,6 +338,9 @@
   .payment-page {
     padding-top: $small-section-spacing;
     padding-bottom: $small-section-spacing;
+    .payment-panel {
+      margin-top: 70px;
+    }
   }
   .pricing-page {
     padding-top: $small-section-spacing;
@@ -350,11 +358,15 @@
     .pricing-header-text {
       @extend %font-medium-head;
     }
+    .pricing-text {
+      font-weight:400;
+      font-family: $regular-font-family;
+    }
   }
   .faq-pricing-section {
     padding-top: $small-section-spacing;
     padding-bottom: $medium-section-spacing;
-    .how-to-rent-header{
+    .how-to-rent-header {
       @extend %font-medium-head;
     }
   }

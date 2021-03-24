@@ -14552,21 +14552,21 @@ html {
   border-bottom: 1px solid #2e2d36;
 }
 .plan-type .icon {
+  display: flex;
   position: absolute;
   bottom: 0;
   left: -35px;
-  border-radius: 50%;
-  height: 22px;
-  width: 22px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #53c160;
+  height: 18px;
+  width: 18px;
+  border-radius: 50px;
+  background: #53c160;
+  color: white;
 }
 .plan-type .icon svg {
-  height: 15px;
-  width: 15px;
-  color: #53c160;
+  height: 12px;
+  width: 12px;
 }
 
 .plan-price {
@@ -14583,13 +14583,14 @@ html {
 }
 
 .subscribe-button-cancel, .subscribe-button {
-  padding: 5px 16px;
+  width: 120px;
   border-radius: 3px;
   background: transparent;
   margin-left: 10px;
 }
 
 .subscribe-button {
+  padding: 5px 16px;
   border: 1px solid #53c160;
   color: #53c160;
 }
@@ -14599,6 +14600,7 @@ html {
 }
 
 .subscribe-button-cancel {
+  padding: 5px 26px;
   border: 1px solid #e0485c;
   color: white;
   background: #e0485c;
@@ -14738,6 +14740,11 @@ html {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .payment-sidebar {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .faq-pricing-section .how-to-rent-header, .pricing-header .pricing-header-text, .pricing-page .pricing-cards-header {
     font-size: 24px;
@@ -14748,6 +14755,9 @@ html {
   .payment-page {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .payment-page .payment-panel {
+    margin-top: 70px;
   }
 
   .pricing-page {
@@ -14762,6 +14772,11 @@ html {
     height: 300px;
     margin-bottom: 0;
   }
+  .pricing-header .pricing-text {
+    font-weight: 400;
+    font-family: proxima-nova-regular, sans-serif;
+  }
+
   .faq-pricing-section {
     padding-top: 50px;
     padding-bottom: 100px;

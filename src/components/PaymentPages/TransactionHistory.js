@@ -1,6 +1,6 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import { Col } from "react-bootstrap";
+import {Col} from "react-bootstrap";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableContainer from "@material-ui/core/TableContainer";
@@ -30,7 +30,7 @@ const TransactionHistory = () => {
     createData(5,"January 11th, 2021", 356, "July 11th, 2021",)
   ];
   return (
-    <Col md={{ span: 7, offset: 1 }}>
+    <Col lg={{ span: 7, offset: 1 }} md={12}>
       <Paper elevation={1} className="payment-panel">
         <div className="heading">
           <h3>Transaction History</h3>
