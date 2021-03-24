@@ -1,29 +1,24 @@
 import React from "react";
-import MobileNavbar from "../components/MobileNavBar";
-import NavBar from "../components/NavBar";
 import Layout from "../components/Layout";
 
 import {
   ContactLandlordSection,
   Header,
+  HouseAddressMobile,
   HouseAmenitiesSection,
   HouseDescriptionSection,
   HouseImagesSection,
   HowToRentProperty,
   MobileHeader,
-  SimilarPropertiesSection,
-  HouseAddressMobile,
-  PropertySlider
+  PropertySlider,
+  SimilarPropertiesSection
 } from "../components/HouseDetailsPage/index";
 import Paper from "@material-ui/core/Paper";
 import sliderImage1 from "../assets/img/slider-image.jpg";
 import sliderImage2 from "../assets/img/sliderImage2.jpg";
 import sliderImage3 from "../assets/img/slideImage3.jpg";
-import { ReactComponent as ArrowDownRight } from "../assets/img/arrow-right-circle.svg";
-import {
-  usePropertySlide,
-  ImageSlideContext
-} from "../hooks/usePropertySlides";
+import {ReactComponent as ArrowDownRight} from "../assets/img/arrow-right-circle.svg";
+import {ImageSlideContext, usePropertySlide} from "../hooks/usePropertySlides";
 
 const MockImages = [sliderImage1, sliderImage2, sliderImage3];
 
@@ -34,9 +29,7 @@ const HouseDetailsPage = () => {
   return (
     <div className="property-page-container">
       <PropertySlider sliderControls={slideControls} slideImage={MockImages} />
-      <Layout>
-        <MobileNavbar />
-        <NavBar fixed={true} />
+      <Layout fixed={true}>
         <div className="sticky-container">
           <div className="sticky-apply-container">
             <div className="sticky-apply sticky-active">
