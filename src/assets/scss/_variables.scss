@@ -30,7 +30,8 @@ $bg-colour-3: #eea4b3;
 $bg-colour-4: #434057;
 $bg-colour-5: #f4f5f7;
 $bg-colour-5-deep: #F4F5FE;
-$bg-colour-6: #f8f9fa;
+$light-background-colour: #f8f9fa;
+$my-message-bg : #f4edff;
 $bg-overlay-colour: rgba(20,16,52,.69);
 $bg-overlay-colour-darker: #1f1b36;
 $footer_bg-colour: #2d2e35;
@@ -49,7 +50,7 @@ $input-border-colour: #d2d4df;
 $tips-color-1: #feffd9;
 $tips-color-2: #dc7338;
 $cancel-color: #e0485c;
-$button-inactive-colour: #9c99b6;
+$light-text-colour: #9c99b6;
 
 // Section spacing
 $medium-section-spacing: 100px;
@@ -172,7 +173,7 @@ $svg-big-size: 30px;
   line-height: 60px;
   font-weight: $font-weight;
   border-radius: 5px;
-  background-color: $button-inactive-colour;
+  background-color: $light-text-colour;
   box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
   transition: background-color 0.3s ease;
   &:hover {

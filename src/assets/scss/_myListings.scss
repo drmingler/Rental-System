@@ -48,7 +48,7 @@
 .rent-place-faster {
   margin-top: 65px;
   @extend %smallest-font-style;
-  color: $button-inactive-colour;
+  color: $light-text-colour;
 }
 
 // Add Property description
@@ -65,7 +65,7 @@
   }
   .text {
     @extend %medium-font-style-base;
-    color: $button-inactive-colour;
+    color: $light-text-colour;
   }
 }
 
@@ -95,7 +95,7 @@
   }
   .house-card-text {
     padding-top: 25px;
-    color: $button-inactive-colour;
+    color: $light-text-colour;
   }
 }
 .house-menu-icon {

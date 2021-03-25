@@ -84,7 +84,7 @@
   margin: 20px 0;
   text-align: center;
   @extend %smallest-font-style;
-  color: $button-inactive-colour;
+  color: $light-text-colour;
   &:before {
     content: "";
     width: 30%;
@@ -121,7 +121,7 @@
   text-align: center;
   @extend %smallest-font-style;
   span {
-    color: $button-inactive-colour;
+    color: $light-text-colour;
   }
   a {
     color: $deep-purple;
@@ -133,7 +133,7 @@
   bottom: 0;
   text-align: center;
   @extend %smallest-font-style;
-  color: $button-inactive-colour;
+  color: $light-text-colour;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;

@@ -814,14 +814,14 @@
     align-items: center;
     font-size: $smallest-font-size;
     line-height: $smallest-line-height;
-    color: $button-inactive-colour;
+    color: $light-text-colour;
     border-bottom: 1px solid $bg-colour-5;
 
     .house-type {
       display: inline-block;
       height: 30px;
       padding: 5px 12px;
-      background-color: $bg-colour-6;
+      background-color: $light-background-colour;
       border-radius: 34px;
       text-transform: capitalize;
       margin-left: 30px;
@@ -845,7 +845,7 @@
       }
 
       .name {
-        color: $button-inactive-colour;
+        color: $light-text-colour;
       }
     }
   }

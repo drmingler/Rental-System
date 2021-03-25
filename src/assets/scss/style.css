@@ -9959,7 +9959,7 @@ h3 {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10130,7 +10130,7 @@ h1 {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10248,7 +10248,7 @@ h1 {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10767,7 +10767,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -10940,7 +10940,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11058,7 +11058,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11493,7 +11493,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -11906,7 +11906,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -12541,7 +12541,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -13441,7 +13441,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -13744,7 +13744,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14057,7 +14057,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14249,7 +14249,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14437,7 +14437,260 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-landlord-button, .show-more-wrapper .show-more-btn {
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.listing-image-container, .property-image-container {
+  position: relative;
+  bottom: 70px;
+}
+
+.listing-image, .property-image {
+  position: relative;
+  cursor: pointer;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  margin-top: 30px;
+}
+.listing-image:hover, .property-image:hover {
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transform: scale(1.1);
+}
+
+.make-payment-button, .post-listing-button-section .listing-button, .save-button {
+  font-family: proxima-nova-bold, sans-serif;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  line-height: 60px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #9c99b6;
+  box-shadow: 0 8px 12px 0 rgba(46, 45, 54, 0.25);
+  transition: background-color 0.3s ease;
+}
+.make-payment-button:hover, .post-listing-button-section .listing-button:hover, .save-button:hover {
+  background-color: #9c94b6;
+}
+
+.message-scroll-area {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.landlord-card {
+  position: fixed;
+  z-index: 5;
+  width: 220px;
+  padding: 30px;
+  box-shadow: 0 14px 24px 0 rgba(46, 45, 54, 0.0025);
+  top: 130px;
+  left: calc((100% - 940px) / 2);
+}
+.landlord-card .name {
+  display: block;
+  margin-top: 15px;
+  font-weight: 700;
+  font-family: proxima-nova-regular, sans-serif;
+  color: #7c54c1;
+}
+.landlord-card .link-to-apartment {
+  display: block;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9c99b6;
+}
+
+.landlord-photo-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.message-box-container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f8f9fa;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.chat-form {
+  display: flex;
+  align-items: flex-end;
+}
+.chat-form .MuiInputBase-input {
+  font-size: 16px;
+  font-family: proxima-nova-regular, sans-serif;
+}
+.chat-form .chat-input {
+  margin-bottom: 20px;
+}
+
+.send-btn {
+  width: 200px;
+  margin-left: 20px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #9c99b6;
+}
+.send-btn.active {
+  background-color: #7c54c1;
+  transition: all 0.3s ease-out;
+}
+
+.other-user-message, .my-message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.other-user-message .message, .my-message .message {
+  padding: 25px;
+  word-break: break-all;
+  white-space: pre-wrap;
+  border: 1px solid #e9eaef;
+  border-radius: 6px;
+}
+
+.my-message {
+  align-items: flex-end;
+}
+.my-message .message {
+  background-color: #f4edff;
+}
+
+.other-user-message {
+  align-items: flex-start;
+}
+.other-user-message .message {
+  background-color: #f2f3f5;
+}
+
+.message-date {
+  font-size: 12px;
+  display: block;
+  margin: 15px 0;
+  color: #9c99b6;
+}
+
+@media (max-width: 960px) {
+  .landlord-card {
+    border-bottom: 1px solid #f8f9fa;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    top: 50px;
+    left: 0;
+    box-shadow: none;
+  }
+  .landlord-card .landlord-photo-wrapper {
+    display: none;
+  }
+  .landlord-card .name {
+    margin-top: 5px;
+  }
+  .landlord-card .link-to-apartment {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767.98px) {
+  .send-btn {
+    width: 90px;
+  }
+}
+.header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-btn-container, .header-input {
+  flex-direction: column;
+}
+
+.rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
+  flex-direction: row;
+}
+
+.listing-categories-section a, .available-cities-section a, .footer p, .footer a {
+  font-size: 14px;
+  line-height: 20px;
+  color: mediumpurple;
+  cursor: pointer;
+}
+
+.pricing-header-text, .policy-heading {
+  font-size: 72px;
+  line-height: 72px;
+  font-family: proxima-nova-bold, sans-serif;
+  font-weight: 700;
+}
+
+.listing-categories-section h1, .available-cities-section h1, .cities-title h1, .price-amount .amount, .pricing-cards-header, .renting-header .renting-header-text h1, .renting-services h1, .tips h1, .renting-search .renting-search-content h1, .section-header, .property-page-container .picture-number .large-font, .property-description h1, .how-to-rent-header, .similar-properties-section h1, .add-property-description .heading, .my-listings-card-section .your-listings, .auth-wrapper h1, .landlord-name {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.price-name, .payment-panel .heading, .payment-sidebar h3, .policy-sub-header, .post-listing-section .available-from .section-header, .auth-button, .text-box-header, .landlord-profile-header {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .property-description-text span, .property-description-text .full-description, .landlord-short-details h3, .landlord-name-address h3, .add-property-description .text, .social-auth-btn span, .password-reset-text {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.rental-steps-container .switch-btn, .header-btn-container p, .property-page-container .picture-number .small-font, .property-utility .value, .landlord-short-details h3, .landlord-name-address h3, .social-auth-btn span, .password-reset-text {
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.property-monthly-price .monthly-price-header, .show-more-properties span, .amenities-icon-wrapper span, .landlord-short-details span, .phone-and-email, .landlord-name-address span, .landlord-stats, .add-property-text, .rent-place-faster, .with-email, .already-signed-up, .auth-footer, .forgot-password {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -14593,7 +14846,7 @@ html {
   line-height: 20px;
 }
 
-.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text {
+.pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name {
   font-size: 16px;
   line-height: 22px;
 }
@@ -15025,7 +15278,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -15174,7 +15427,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
@@ -15292,7 +15545,7 @@ html {
   line-height: 20px;
 }
 
-.sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
   font-size: 16px;
   line-height: 22px;
 }
