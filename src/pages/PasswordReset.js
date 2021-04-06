@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import {AuthLayout} from "../components/AuthPages/index";
@@ -15,7 +15,7 @@ const PasswordReset = () => {
               <form>
                 <div className="auth-form">
                   <div className="password-reset-text">
-                    <span> We’ll send you new password</span>
+                    <span>Request for password reset</span>
                   </div>
                   <Row className="auth-inputs">
                     <Col md={12}>
@@ -24,7 +24,7 @@ const PasswordReset = () => {
                   </Row>
                 </div>
                 <button className="auth-button">
-                  <span>Send Password</span>
+                  <span>Send Reset Link</span>
                 </button>
               </form>
             </Paper>

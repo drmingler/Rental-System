@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
@@ -21,7 +21,24 @@ function AddPropertyHeader() {
     {
       value: "Rent",
       label: "Rent"
-    }
+    },
+    {
+      value: "Rent",
+      label: "Rent"
+    },
+    {
+      value: "Rent",
+      label: "Rent"
+    },
+    {
+      value: "Rent",
+      label: "Rent"
+    },
+    {
+      value: "Rent",
+      label: "Rent"
+    },
+
   ];
 
   return (
@@ -66,7 +83,7 @@ function AddPropertyHeader() {
                 <TextField
                   select
                   fullWidth
-                  label="Bed"
+                  label="Bedroom"
                   margin="normal"
                   // value={currency}
                   // onChange={handleChange}
