@@ -5,6 +5,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
 import TextField from "@material-ui/core/TextField";
+import Link from "@material-ui/core/Link";
 
 const MyMessage = ({ children, date }) => {
   return (
@@ -53,9 +54,9 @@ const ChatUI = () => {
                 <img src={UserPlaceholderIcon} alt="landlord" />
               </div>
               <span className="name">Emmanuel David</span>
-              <span className="link-to-apartment">
+              <Link className="link-to-apartment">
                 Strausberger Pl. 9, 10243 Berlin, Germany
-              </span>
+              </Link>
             </div>
           </Paper>
           <Container>
