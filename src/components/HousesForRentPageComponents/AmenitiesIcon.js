@@ -1,37 +1,40 @@
 import React from "react";
-import {Col} from "react-bootstrap";
+import useSelect from "../../hooks/useSelect";
 
-const AmenitiesIcon = ({
-  iconDark,
-  iconWhite,
-  text,
-  filtersOptions,
-  setFilterOption
-}) => {
-  let filterOption = filtersOptions[text];
+const AmenitiesIcon = props => {
+    const {
+        IconDark,
+        IconWhite,
+        text,
+        filtersOptions,
+        setFilterOption,
+        value,
+        customKey
+    } = props;
+    const {selectedOption, handleSelect} = useSelect(
+        filtersOptions,
+        setFilterOption,
+        customKey,
+        value
+    );
 
-  function handleClick() {
-    if (filterOption) {
-      const { [filterOption]: _, ...newFilterOptions } = filtersOptions;
-      setFilterOption(newFilterOptions);
-    } else {
-      setFilterOption({ ...filtersOptions, [text]: text });
-    }
-  }
-
-  return (
-    <Col xs={6} className="panel-icon-container">
-      <div
-        className={`panel-icon ${filterOption && "active"}`}
-        onClick={handleClick}
-      >
-        {filterOption ? iconWhite : iconDark}
-      </div>
-      <span className="panel-icon-text" onClick={handleClick}>
+    return (
+        <li className=" col-6 panel-icon-container">
+            <div
+                className={`panel-icon ${selectedOption && "active"}`}
+                onClick={handleSelect}
+            >
+                {selectedOption ? (
+                    <IconWhite className="svg-icon"/>
+                ) : (
+                    <IconDark className="svg-icon"/>
+                )}
+            </div>
+            <span className="panel-icon-text" onClick={handleSelect}>
         {text}
       </span>
-    </Col>
-  );
+        </li>
+    );
 };
 
 export default AmenitiesIcon;
