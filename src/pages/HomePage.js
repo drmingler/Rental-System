@@ -1,22 +1,18 @@
 import React from "react";
-import Header from "../components/Header";
-import Cities from "../components/Cities";
-import Steps from "../components/Steps";
-import PerfectPlace from "../components/PerfectPlace";
-import AvailableCities from "../components/AvailableCities";
-import ListingCategories from "../components/ListingCategories";
-import Layout from "../components/Layout/Layout";
+import {PerfectPlace} from "../components/CommonComponents/index";
+import {Layout} from "../components/Layout/index";
+import {AvailableCities, Cities, Header, ListingCategories, Steps,} from "../components/Homepage/index";
 
 function HomePage() {
   return (
-      <Layout>
-        <Header />
-        <Cities />
-        <Steps />
-        <PerfectPlace />
-        <AvailableCities />
-        <ListingCategories />
-      </Layout>
+    <Layout>
+      <Header />
+      <Cities />
+      <Steps />
+      <PerfectPlace />
+      <AvailableCities />
+      <ListingCategories />
+    </Layout>
   );
 }
 

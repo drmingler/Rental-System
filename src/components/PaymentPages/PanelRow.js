@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ReactComponent as CheckIcon } from "../../assets/img/check.svg";
+import React, {useState} from "react";
+import {ReactComponent as CheckIcon} from "../../assets/img/check.svg";
 
 const PanelRow = ({
   plan,
@@ -9,7 +9,7 @@ const PanelRow = ({
   setSubscribe,
   subscribe
 }) => {
-  const [active, setActive] = useState(true);
+  const [active] = useState(true);
   function handleSubscribe() {
     setSubscribe(!subscribe);
   }

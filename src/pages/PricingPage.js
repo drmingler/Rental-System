@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
+import {Layout} from "../components/Layout/index";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import {ReactComponent as CheckIcon} from "../assets/img/check.svg";
 import pricingBackground from "../assets/img/pricing-background.gif";
-import PerfectPlace from "../components/PerfectPlace";
-import RentingHeader from "../components/RentingHeader";
+import {PerfectPlace} from "../components/CommonComponents/index";
+import {RentingHeader} from "../components/PlatformUsage/index";
 import rentBG3 from "../assets/img/newProperty3.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG1 from "../assets/img/newProperty.jpg";

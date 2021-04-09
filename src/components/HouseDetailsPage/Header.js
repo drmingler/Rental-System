@@ -38,28 +38,33 @@ const Header = () => {
           </Col>
           <Col sm={12} className="property-utility-summary">
             <Row>
-              <Col sm={9} className="property-utilities">
+              <Col sm={9} md={12} lg={9} className="property-utilities">
                 <h1>Dunsmuir AVN</h1>
                 <div className="utilities-item-wrapper">
                   <ul>
+                    <Utilities
+                        value={"$ 500"}
+                        name={"Deposit"}
+                        icon={MoneyIconWhite}
+                    />
                     <Utilities value={1} name={"Bed"} icon={BedIconWhite} />
                     <Utilities value={1} name={"Bath"} icon={BathIconWhite} />
+                    <Utilities
+                        value={"Music Instrument"}
+                        name={"Allowed"}
+                        icon={CatIconWhite}
+                    />
+                    <Utilities
+                        value={"Pet"}
+                        name={"Allowed"}
+                        icon={DogIconWhite}
+                    />
+                    <Utilities
+                        value={"Smoking"}
+                        name={"Allowed"}
+                        icon={CatIconWhite}
+                    />
                     <Utilities value={950} name={"SQRT"} icon={SqrtIconWhite} />
-                    <Utilities
-                      value={"Dogs"}
-                      name={"Allowed"}
-                      icon={DogIconWhite}
-                    />
-                    <Utilities
-                      value={"Cats"}
-                      name={"Cats"}
-                      icon={CatIconWhite}
-                    />
-                    <Utilities
-                      value={"$ 500"}
-                      name={"Deposit"}
-                      icon={MoneyIconWhite}
-                    />
                   </ul>
                 </div>
               </Col>

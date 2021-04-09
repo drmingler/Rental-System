@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import NavBar from "../components/Layout/NavBar";
-import MobileNavbar from "../components/MobileNavBar";
+import {MobileNavbar} from "../components/Layout/index";
 import CustomTransition from "../components/CommonComponents/CustomTransition";
 import {
   FilterOptionPanel,

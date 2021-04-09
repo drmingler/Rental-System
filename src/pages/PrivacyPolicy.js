@@ -1,4 +1,4 @@
-import Layout from "../components/Layout/Layout";
+import {Layout} from "../components/Layout/index";
 import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
 

@@ -3,19 +3,19 @@ import {Col, Row} from "react-bootstrap";
 import Berlin from "../../assets/img/Berlin.webp";
 import {ReactComponent as ChevronLeft} from "../../assets/img/chevron-left.svg";
 import {ReactComponent as ChevronRight} from "../../assets/img/chevron-right.svg";
-import CircularProgress from "@material-ui/core/CircularProgress";
+// import CircularProgress from "@material-ui/core/CircularProgress";
 import {HouseCard} from "../CommonComponents/index";
 
 
-function Loading() {
-  return (
-    <Col xl={12} className="loading">
-      <Row className="justify-content-center">
-        <CircularProgress className="colour" />
-      </Row>
-    </Col>
-  );
-}
+// function Loading() {
+//   return (
+//     <Col xl={12} className="loading">
+//       <Row className="justify-content-center">
+//         <CircularProgress className="colour" />
+//       </Row>
+//     </Col>
+//   );
+// }
 
 function PageControls() {
   return (

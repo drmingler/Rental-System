@@ -1,17 +1,19 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
-import RentingHeader from "../components/RentingHeader";
-import RentingLeft from "../components/RentingLeft";
-import RentingFooter from "../components/RentingFooter";
-import RentingRight from "../components/RentingRight";
-import Tips from "../components/Tips";
-import ProvenResults from "../components/ProvenResults";
-import PlatformUsageMobile from "../components/PlatformUsageMobile";
+import {Layout} from "../components/Layout/index";
 import rentBG3 from "../assets/img/newProperty3.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG1 from "../assets/img/newProperty.jpg";
 import messagingImage from "../assets/img/messaging.webp";
 import {Col} from "react-bootstrap";
+import {
+  PlatformUsageMobile,
+  ProvenResults,
+  RentingFooter,
+  RentingHeader,
+  RentingLeft,
+  RentingRight,
+  Tips
+} from "../components/PlatformUsage/index";
 
 const PlatformUsage = () => {
   return (

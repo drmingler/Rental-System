@@ -1,6 +1,5 @@
 import React from "react";
-import MobileNavbar from "../components/MobileNavBar";
-import NavBar from "../components/Layout/NavBar";
+import {MobileNavbar, NavBar} from "../components/Layout/index";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";

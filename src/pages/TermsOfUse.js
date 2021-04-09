@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
+import {Layout} from "../components/Layout/index";
 import {Col, Container, Row} from "react-bootstrap";
 
 const SubSection = ({ children }) => {

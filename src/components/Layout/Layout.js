@@ -1,7 +1,5 @@
 import React, {Fragment, useEffect} from "react";
-import MobileNavbar from "../MobileNavBar";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import {Footer, MobileNavbar, NavBar} from "./index";
 
 const Layout = props => {
   useEffect(() => {

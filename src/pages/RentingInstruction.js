@@ -1,14 +1,16 @@
 import React from "react";
-import {ReactComponent as BookOnline} from "../assets/img/Book_online.svg";
 import {Col} from "react-bootstrap";
-import Layout from "../components/Layout/Layout";
+import {ReactComponent as BookOnline} from "../assets/img/Book_online.svg";
 import useToggle from "../hooks/useToggle";
-import Switch from "../components/Switch";
-import RentingLeft from "../components/RentingLeft";
-import RentingRight from "../components/RentingRight";
-import RentingHeader from "../components/RentingHeader";
-import RentingFooter from "../components/RentingFooter";
-import RentalInstructionMobile from "../components/RentalInstructionMobile";
+import {Layout} from "../components/Layout/index";
+import {Switch} from "../components/CommonComponents/index";
+import {
+    RentalInstructionMobile,
+    RentingFooter,
+    RentingHeader,
+    RentingLeft,
+    RentingRight
+} from "../components/PlatformUsage/index";
 import rentBG1 from "../assets/img/newProperty.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG3 from "../assets/img/newProperty3.jpg";

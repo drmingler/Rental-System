@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
-import MobileNavbar from "../components/MobileNavBar";
+import {MobileNavbar} from "../components/Layout/index";
 import NavBar from "../components/Layout/NavBar";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
