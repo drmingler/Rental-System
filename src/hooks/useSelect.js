@@ -1,13 +1,13 @@
-const useSelect = (options, setOption, text) => {
-  let selectedOption = options[text];
+const useSelect = (options, setOption, customKey, value) => {
+  let selectedOption = options[customKey];
 
   function handleSelect() {
     if (selectedOption) {
       // If the selected option exist already remove it from the list
-      const { [selectedOption]: _, ...rest } = options;
+      const {[customKey]: value, ...rest} = options;
       setOption(rest);
     } else {
-      setOption({ ...options, [text]: text });
+      setOption({...options, [customKey]: value});
     }
   }
 

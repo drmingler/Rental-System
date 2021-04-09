@@ -2,16 +2,19 @@ import React from "react";
 import useSelect from "../../hooks/useSelect";
 
 const ListingAmenitiesIconWrapper = ({
-  InactiveIcon,
-  ActiveIcon,
-  text,
-  houseAmenities,
-  selectHouseAmenity
-}) => {
+                                       InactiveIcon,
+                                       ActiveIcon,
+                                       text,
+                                       customKey,
+                                       value,
+                                       houseAmenities,
+                                       selectHouseAmenity
+                                     }) => {
   const { selectedOption, handleSelect } = useSelect(
-    houseAmenities,
-    selectHouseAmenity,
-    text
+      houseAmenities,
+      selectHouseAmenity,
+      customKey,
+      value
   );
   return (
     <li className="col-6 listing-amenities-icon" onClick={handleSelect}>

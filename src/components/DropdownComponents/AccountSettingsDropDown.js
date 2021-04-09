@@ -1,6 +1,6 @@
 import React from "react";
 import useDropDown from "../../hooks/useDropDown";
-import { ReactComponent as HouseIcon } from "../../assets/img/house.svg";
+import {ReactComponent as HouseIcon} from "../../assets/img/house.svg";
 
 function AccountSettingsDropDown() {
   const { showActive, setActive, innerRef } = useDropDown();
