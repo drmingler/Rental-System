@@ -6,7 +6,6 @@ import {propertyAmenities} from "../../constants/PropertyConstants";
 
 const ListingAmenitySection = () => {
   const [houseAmenities, selectHouseAmenity] = useState({});
-  console.log(houseAmenities)
   return (
     <section className="listing-amenities-section">
       <div className="listing-amenities-container">
@@ -35,10 +34,10 @@ const ListingAmenitySection = () => {
               <ul className="row">
                 {propertyAmenities.map(amenity => (
                     <ListingAmenitiesIconWrapper
-                        InactiveIcon={amenity.iconLight}
-                        ActiveIcon={amenity.iconPurple}
                         houseAmenities={houseAmenities}
                         selectHouseAmenity={selectHouseAmenity}
+                        InactiveIcon={amenity.iconLight}
+                        ActiveIcon={amenity.iconPurple}
                         text={amenity.text}
                         key={amenity.key}
                         customKey={amenity.key}
