@@ -1,8 +1,8 @@
 import React from "react";
 
-const ListingIconContainer = ({icon, text}) => {
+const HouseCardIconWrapper = ({icon, text}) => {
   return (
-      <div className="listing-icon">
+      <div className="house-icon-wrapper">
         <div className="svg-icon">
             {icon}
         </div>
@@ -10,4 +10,4 @@ const ListingIconContainer = ({icon, text}) => {
       </div>
   );
 };
-export default ListingIconContainer;
+export default HouseCardIconWrapper;

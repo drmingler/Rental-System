@@ -1,17 +1,17 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {Amenities, FilterOptions, HousePriceSlider} from "./index";
-import CustomTransition from "../CustomTransition";
+import CustomTransition from "../CommonComponents/CustomTransition";
 
 const FilterOptionPanel = ({
-  panel,
+  showPanel,
   filtersOptions,
   setFilterOption,
   clearFilter
 }) => {
   return (
     <CustomTransition
-      state={panel}
+      state={showPanel}
       initialClass={"filter-options-panel"}
       finalClass={"filter-options-panel-enter"}
     >
@@ -165,22 +165,29 @@ const FilterOptionPanel = ({
         </Row>
         <Row className="panel-container">
           <Col md={12} xl={3} className="panel-heading">
-            <h4>Pet Policy</h4>
+            <h4>Property Rules</h4>
           </Col>
           <Col md={12} xl={8}>
             <Row>
               <FilterOptions
+                  filtersOptions={filtersOptions}
+                  setFilterOption={setFilterOption}
+                  text={"Musical Instruments"}
+                  sizeBig={6}
+                  sizeSmall={6}
+              />
+              <FilterOptions
                 filtersOptions={filtersOptions}
                 setFilterOption={setFilterOption}
-                text={"Dogs Allowed"}
-                sizeBig={5}
+                text={"Pets Allowed"}
+                sizeBig={6}
                 sizeSmall={6}
               />
               <FilterOptions
                 filtersOptions={filtersOptions}
                 setFilterOption={setFilterOption}
-                text={"Cats Allowed"}
-                sizeBig={5}
+                text={"Smoking Allowed"}
+                sizeBig={6}
                 sizeSmall={6}
               />
             </Row>

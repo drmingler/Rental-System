@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import RentingHeader from "../components/RentingHeader";
 import RentingLeft from "../components/RentingLeft";
 import RentingFooter from "../components/RentingFooter";
@@ -11,7 +11,7 @@ import rentBG3 from "../assets/img/newProperty3.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG1 from "../assets/img/newProperty.jpg";
 import messagingImage from "../assets/img/messaging.webp";
-import { Col } from "react-bootstrap";
+import {Col} from "react-bootstrap";
 
 const PlatformUsage = () => {
   return (

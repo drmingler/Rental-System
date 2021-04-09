@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import {
-  HouseListingSection,
   AddPropertyHeader,
-  ListingAmenitySection,
   AvailabilityDateSection,
+  HouseListingSection,
+  ListingAmenitySection,
   ListingButtonSection
 } from "../components/AddPropertyPage/index";
 

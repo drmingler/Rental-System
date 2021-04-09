@@ -1,11 +1,12 @@
 import React, {useEffect, useRef, useState} from "react";
 import MobileNavbar from "../components/MobileNavBar";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Layout/NavBar";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
 import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
+import {socket} from "./api";
 
 const MyMessage = ({ children, date }) => {
   return (
@@ -35,11 +36,34 @@ const ChatUI = () => {
 
   useEffect(() => {
     innerRef.current.scrollIntoView({ behavior: "smooth" });
+
+
+    socket.onopen = () => {
+      console.log("connected");
+    };
+    socket.onclose = () => {
+      console.log("closing");
+    };
+    socket.onmessage = event => {
+      const message = JSON.parse(event.data)
+      console.log(message);
+    };
+
+
+
+
   }, []);
 
   function handleChange(e) {
     const { name, value } = e.target;
     setMessage({ ...message, [name]: value });
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    socket.send(JSON.stringify({
+      // 'type': 'chat_message',
+      'message': message["message"]
+    }))
   }
 
   return (
@@ -63,9 +87,7 @@ const ChatUI = () => {
             <Row>
               <Col lg={{ offset: 4, span: 8 }}>
                 <Row>
-                  <MyMessage date={"2:00 PM, 03/23/21"}>
-                    Hi
-                  </MyMessage>
+                  <MyMessage date={"2:00 PM, 03/23/21"}>Hi</MyMessage>
                   <OtherUserMessage date={"2:00 PM, 03/23/21"}>
                     Hello
                   </OtherUserMessage>
@@ -105,7 +127,7 @@ const ChatUI = () => {
         <Container>
           <Row>
             <Col md={{ offset: 3, span: 7 }}>
-              <form className="chat-form">
+              <form className="chat-form" onSubmit={handleSubmit}>
                 <TextField
                   value={message.message}
                   className="chat-input"

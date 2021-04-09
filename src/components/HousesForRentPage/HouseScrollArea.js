@@ -1,10 +1,11 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 import Berlin from "../../assets/img/Berlin.webp";
-import { ReactComponent as ChevronLeft } from "../../assets/img/chevron-left.svg";
-import { ReactComponent as ChevronRight } from "../../assets/img/chevron-right.svg";
+import {ReactComponent as ChevronLeft} from "../../assets/img/chevron-left.svg";
+import {ReactComponent as ChevronRight} from "../../assets/img/chevron-right.svg";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import {HouseCard} from "./index"
+import {HouseCard} from "../CommonComponents/index";
+
 
 function Loading() {
   return (

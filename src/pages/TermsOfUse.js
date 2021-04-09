@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/Layout";
-import { Col, Container, Row } from "react-bootstrap";
+import Layout from "../components/Layout/Layout";
+import {Col, Container, Row} from "react-bootstrap";
 
 const SubSection = ({ children }) => {
   return <p className="policy-text">{children}</p>;

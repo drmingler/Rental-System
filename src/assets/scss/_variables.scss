@@ -181,6 +181,12 @@ $svg-big-size: 30px;
   }
 }
 
-%outlined-button{
-
+%icon-text-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  font-size: $smallest-font-size;
+  line-height: $small-line-height;
+  color: $placeholder-colour;
 }

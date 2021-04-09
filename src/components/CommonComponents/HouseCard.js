@@ -4,10 +4,10 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { ListingIconContainer } from "../AddPropertyPage";
-import { ReactComponent as BedIcon } from "../../assets/img/beds-icon.svg";
-import { ReactComponent as BathIcon } from "../../assets/img/bath-icon.svg";
-import { ReactComponent as SqrtIcon } from "../../assets/img/sqft-icon.svg";
+import {ReactComponent as BedIcon} from "../../assets/img/beds-icon.svg";
+import {ReactComponent as BathIcon} from "../../assets/img/bath-icon.svg";
+import {ReactComponent as SqrtIcon} from "../../assets/img/sqft-icon.svg";
+import {HouseCardIconWrapper} from "./index";
 
 const HouseCard = ({ image }) => {
   return (
@@ -29,15 +29,9 @@ const HouseCard = ({ image }) => {
             Lizards are a widespread group of squamate
           </Typography>
           <div className="house-card-footer">
-            <div className="house-card-icon-container">
-              <ListingIconContainer icon={<BedIcon />} text={"5 Bed"} />
-            </div>
-            <div className="house-card-icon-container">
-              <ListingIconContainer icon={<BathIcon />} text={"5 Bath"} />
-            </div>
-            <div className="house-card-icon-container">
-              <ListingIconContainer icon={<SqrtIcon />} text={"1000 Sq Ft"} />
-            </div>
+            <HouseCardIconWrapper icon={<BedIcon />} text={"5 Bed"} />
+            <HouseCardIconWrapper icon={<BathIcon />} text={"5 Bath"} />
+            <HouseCardIconWrapper icon={<SqrtIcon />} text={"1000 Sq Ft"} />
           </div>
         </CardContent>
       </CardActionArea>

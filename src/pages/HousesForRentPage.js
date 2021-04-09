@@ -1,18 +1,17 @@
-import React, { Fragment, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import NavBar from "../components/NavBar";
+import React, {Fragment, useState} from "react";
+import {Col, Container, Row} from "react-bootstrap";
+import NavBar from "../components/Layout/NavBar";
 import MobileNavbar from "../components/MobileNavBar";
-import CustomTransition from "../components/CustomTransition";
+import CustomTransition from "../components/CommonComponents/CustomTransition";
 import {
-  SearchControlPanel,
-  SearchControlPanelMobile,
   FilterOptionPanel,
-  HouseScrollArea
+  HouseScrollArea,
+  SearchControlPanel,
+  SearchControlPanelMobile
 } from "../components/HousesForRentPage/index";
 
-
 const HousesForRentPage = () => {
-  const [panel, setPanel] = useState(false);
+  const [showPanel, setPanel] = useState(false);
   const [smallDevice, setCurrentDevice] = useState(false);
 
   // Keep track of selected filter options
@@ -38,23 +37,23 @@ const HousesForRentPage = () => {
           <Row>
             <Col md={6} lg={5} className="scroll-area-container">
               <SearchControlPanel
-                panel={panel}
+                showPanel={showPanel}
                 smallDevice={smallDevice}
                 togglePanel={togglePanel}
               />
               <SearchControlPanelMobile
                 togglePanel={togglePanel}
-                panel={panel}
+                showPanel={showPanel}
                 clearFilter={clearFilter}
               />
               <FilterOptionPanel
-                panel={panel}
+                showPanel={showPanel}
                 setFilterOption={setFilterOption}
                 filtersOptions={filtersOptions}
                 clearFilter={clearFilter}
               />
               <CustomTransition
-                state={panel}
+                state={showPanel}
                 initialClass={"find-property-btn"}
                 finalClass={"find-property-btn-enter"}
               >

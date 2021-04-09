@@ -1,6 +1,6 @@
 import React, {useLayoutEffect, useState} from "react";
-import {AccountSettingsDropDown, LearnMoreContent, MenuOptionsDropDown, ProductContent} from "./Dropdown/index";
-import { withRouter } from "react-router-dom";
+import {AccountSettingsDropDown, LearnMoreContent, MenuOptionsDropDown, ProductContent} from "../Dropdown";
+import {withRouter} from "react-router-dom";
 
 function NavBar({ fixed, history }) {
   const [transparent, setTransparent] = useState(

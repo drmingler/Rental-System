@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
+import {Col, Container, Row} from "react-bootstrap";
 import {
   AirConditionDark,
   BalconyDark,
@@ -22,28 +22,19 @@ import {
   WasherDark,
   WheelchairDark
 } from "../../assets/img/amenities/index";
+import {AmenitiesIconWrapper} from "../CommonComponents/index";
 
-const AmenitiesIconWrapper = ({ Icon, name }) => {
-  return (
-    <li className="col-6 listing-amenities-icon">
-      <div className="amenities-icon-wrapper">
-        {/*<div*/}
-        {/*  className="svg-icon"*/}
-        {/*  style={{ backgroundImage: `url(${BalconyIconGray})` }}*/}
-        {/*/>*/}
-        <Icon />
-        <span>{name}</span>
-      </div>
-    </li>
-  );
-};
 const HouseAmenitiesSection = () => {
   return (
     <section className="listing-amenities-section">
       <div className="listing-amenities-container">
         <Container fluid="lg">
           <Row>
-            <Col md={12} lg={9} className="listing-amenities house-amenities-section">
+            <Col
+              md={12}
+              lg={9}
+              className="listing-amenities house-amenities-section"
+            >
               <Row>
                 <Col md={6} lg={6}>
                   <div className="amenities-header">
@@ -76,32 +67,32 @@ const HouseAmenitiesSection = () => {
                   name={"Dishwasher"}
                 />
                 <AmenitiesIconWrapper Icon={StorageDark} name={"Storage"} />
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={WheelchairDark}*/}
-                {/*  name={"Wheelchair Accessible"}*/}
-                {/*/>*/}
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={HardFloorDark}*/}
-                {/*  name={"Hardwood Floors"}*/}
-                {/*/>*/}
-                {/*<AmenitiesIconWrapper Icon={BalconyDark} name={"Balcony"} />*/}
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={FurnishedDark}*/}
-                {/*  name={"Furnished"}*/}
-                {/*/>*/}
-                {/*<AmenitiesIconWrapper Icon={ViewDark} name={"View"} />*/}
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={HighRiseDark}*/}
-                {/*  name={"High Rise"}*/}
-                {/*/>*/}
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={StudentFriendlyDark}*/}
-                {/*  name={"Student Friendly"}*/}
-                {/*/>*/}
-                {/*<AmenitiesIconWrapper*/}
-                {/*  Icon={UtilitiesDark}*/}
-                {/*  name={"Utilities Included"}*/}
-                {/*/>*/}
+                <AmenitiesIconWrapper
+                  Icon={WheelchairDark}
+                  name={"Wheelchair Accessible"}
+                />
+                <AmenitiesIconWrapper
+                  Icon={HardFloorDark}
+                  name={"Hardwood Floors"}
+                />
+                <AmenitiesIconWrapper Icon={BalconyDark} name={"Balcony"} />
+                <AmenitiesIconWrapper
+                  Icon={FurnishedDark}
+                  name={"Furnished"}
+                />
+                <AmenitiesIconWrapper Icon={ViewDark} name={"View"} />
+                <AmenitiesIconWrapper
+                  Icon={HighRiseDark}
+                  name={"High Rise"}
+                />
+                <AmenitiesIconWrapper
+                  Icon={StudentFriendlyDark}
+                  name={"Student Friendly"}
+                />
+                <AmenitiesIconWrapper
+                  Icon={UtilitiesDark}
+                  name={"Utilities Included"}
+                />
               </ul>
             </Col>
           </Row>

@@ -5,7 +5,7 @@ import Steps from "../components/Steps";
 import PerfectPlace from "../components/PerfectPlace";
 import AvailableCities from "../components/AvailableCities";
 import ListingCategories from "../components/ListingCategories";
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 
 function HomePage() {
   return (

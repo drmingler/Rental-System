@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import CustomTransition from "../CustomTransition";
+import React, {useEffect, useState} from "react";
+import {Col, Container, Row} from "react-bootstrap";
+import CustomTransition from "../CommonComponents/CustomTransition";
 import HouseImage from "../../assets/img/0be3acfcb6d1bd77327fee16dbe221877d7e314a.jpg";
 import MoneyIconWhite from "../../assets/img/amenities/white-colour/money-icon-white.svg";
 import CatIconWhite from "../../assets/img/amenities/white-colour/cat-icon-white.svg";

@@ -53,7 +53,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    b{
+    b {
       font-family: $bold-font-family;
     }
   }
@@ -333,9 +333,10 @@
   border-top: 1px solid $light-border;
   display: flex;
 }
-.house-card-icon-container {
-  margin-right: 12px;
 
+.house-icon-wrapper {
+  margin-right: 12px;
+  @extend %icon-text-wrapper;
   .svg-icon {
     padding-right: 6px;
   }
@@ -364,25 +365,25 @@
   border-radius: 3px;
   font-size: $small-font-size;
   line-height: $small-line-height;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 
   svg {
     height: 16px;
     width: 16px;
   }
 
-  &:hover{
+  &:hover {
     background-color: $deep-purple;
     color: white;
   }
 }
 
 .prev-button {
-  span{
+  span {
     margin-left: 5px;
   }
 }
-.next-button{
+.next-button {
   margin-left: auto;
   span {
     margin-right: 7px;
@@ -494,11 +495,9 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
   .house-card-footer {
-    .house-card-icon-container {
-      margin-right: 0;
-
+    .house-icon-wrapper {
       .svg-icon {
         padding-right: 0;
         padding-bottom: 1px;
@@ -514,17 +513,17 @@
   }
 }
 
-@media (max-width: 476px) {
+@media (max-width: 300px) {
   .house-card-footer {
-    .house-card-icon-container {
-      margin-right: 2px;
+    margin-right: 0;
+    .house-icon-wrapper {
 
       .svg-icon {
         padding-right: 1px;
         padding-bottom: 1px;
       }
       span {
-        font-size: 12px;
+        font-size: 11px;
         text-align: center;
       }
       svg {

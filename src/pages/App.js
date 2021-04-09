@@ -1,8 +1,8 @@
-import React  from "react";
+import React from "react";
 import "../assets/scss/style.scss";
-import { StylesProvider } from "@material-ui/core/styles";
+import {StylesProvider} from "@material-ui/core/styles";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import HouseDetailsPage from "./HouseDetailsPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./HomePage";
 import PlatformUsage from "./PlatformUsage";
 import AddPropertyPage from "./AddPropertyPage";
@@ -13,28 +13,59 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import PasswordReset from "./PasswordReset";
 import ErrorPage from "./ErrorPage";
+import ProfileSettings from "./ProfileSettings";
+import TermsOfUse from "./TermsOfUse";
+import PrivacyPolicy from "./PrivacyPolicy";
+import PaymentSubscriptionPage from "./PaymentSubscriptionPage";
+import PaymentTxHistory from "./PaymentTxHistory";
+import PricingPage from "./PricingPage";
+import LandlordProfilePage from "./LandlordProfilePage";
+import ChatUI from "./ChatUI";
+import Messages from "./Messages";
 
 function App() {
   return (
     <StylesProvider injectFirst>
-      <Router basename={'/'}>
+      <Router basename={"/"}>
         <Switch>
-          <Route exact path={"/"} component={HomePage}/>
+          <Route exact path={"/"} component={HomePage} />
           <Route exact path={"/list"} component={AddPropertyPage} />
-          <Route exact path={"/properties"} component={HousesForRentPage} />
-          <Route exact path={"/property"} component={HouseDetailsPage} />
-          <Route exact path={"/renting"} component={PlatformUsage} />
-          <Route exact path={"/renting-instruction"} component={RentingInstruction} />
           <Route exact path={"/my-listings"} component={MyListingsPage} />
+          <Route exact path={"/property"} component={HouseDetailsPage} />
+          <Route exact path={"/properties"} component={HousesForRentPage} />
+          <Route exact path={"/profile"} component={ProfileSettings} />
+          <Route exact path={"/payment/history"} component={PaymentTxHistory} />
+          <Route
+            exact
+            path={"/payment/subscribe"}
+            component={PaymentSubscriptionPage}
+          />
+          <Route exact path={"/messages"} component={Messages} />
+          <Route exact path={"/messages/chat"} component={ChatUI} />
+          <Route
+            exact
+            path={"/profile/landlord"}
+            component={LandlordProfilePage}
+          />
           <Route exact path={"/login"} component={Login} />
           <Route exact path={"/sign-up"} component={SignUp} />
           <Route exact path={"/reset-password"} component={PasswordReset} />
+          <Route exact path={"/renting"} component={PlatformUsage} />
+          <Route
+            exact
+            path={"/renting-instruction"}
+            component={RentingInstruction}
+          />
+          <Route exact path={"/pricing"} component={PricingPage} />
+          <Route exact path={"/terms"} component={TermsOfUse} />
+          <Route exact path={"/privacy-policy"} component={PrivacyPolicy} />
           <Route exact path={"/not-found"} component={ErrorPage} />
         </Switch>
       </Router>
     </StylesProvider>
   );
 }
+
 export default App;
 
 // housingforyou
@@ -50,9 +81,14 @@ export default App;
 // TO DO
 // 7. Use the edit form as the verify form. Edit profile page content from housing anywhere and rent berry
 // 8. reg and login
-// 9. Payment history
+// 11.terms and privacy policy
+
+// 9. Payment history https://drawsql.app/settings/teams/9617#/subscription https://housinganywhere.com/my/payouts/history
 // 10.Make Payment page
-// 11.Chat widget
+
+// 12. Chat widget
+// 13. Go through the whole code and add the necessary stuff
+// 14. Reset password page
 
 // import React from "react";
 //
@@ -62,3 +98,15 @@ export default App;
 //   </div>);
 // };
 // export default RentingInstruction;
+
+// BACKEND
+// Integrate with google API
+// Integrate with google for searching address
+// Integrate with api for chat
+
+// CLEAN UP
+// remove warnings
+// property document uploader
+// Add map and google address search
+// find a nice logo
+// Project outline

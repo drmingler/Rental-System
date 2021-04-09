@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "../components/Layout/Layout";
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import {HouseCard} from "../components/HousesForRentPage/index";
+import {HouseCard} from "../components/CommonComponents/index";
 import Berlin from "../assets/img/Berlin.webp";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
 

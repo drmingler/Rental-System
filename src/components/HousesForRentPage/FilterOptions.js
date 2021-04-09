@@ -1,5 +1,6 @@
-import { Col } from "react-bootstrap";
+import {Col} from "react-bootstrap";
 import React from "react";
+import useSelect from "../../hooks/useSelect";
 
 const FilterOptions = ({
   text,
@@ -8,22 +9,17 @@ const FilterOptions = ({
   filtersOptions,
   setFilterOption
 }) => {
-  let filterOption = filtersOptions[text];
-
-  function handleClick() {
-    if (filterOption) {
-      const { [filterOption]: _, ...newFilterOptions } = filtersOptions;
-      setFilterOption(newFilterOptions);
-    } else {
-      setFilterOption({ ...filtersOptions, [text]: text });
-    }
-  }
+  const { selectedOption, handleSelect } = useSelect(
+    filtersOptions,
+    setFilterOption,
+    text
+  );
 
   return (
     <Col xs={sizeSmall} lg={sizeBig} className="panel-options-container">
       <div
-        className={`panel-options  ${filterOption && "active"}`}
-        onClick={handleClick}
+        className={`panel-options  ${selectedOption && "active"}`}
+        onClick={handleSelect}
       >
         <span>{text}</span>
       </div>

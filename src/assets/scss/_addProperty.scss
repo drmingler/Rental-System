@@ -167,27 +167,6 @@
   margin: 10px 0;
 }
 
-.listing-icon {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
-  font-size: $smallest-font-size;
-  line-height: $small-line-height;
-  color: $placeholder-colour;
-
-  .svg-icon {
-    padding-right: 16px;
-  }
-  svg {
-    height: 20px;
-  }
-
-  &:hover {
-    color: $font-dark-colour;
-  }
-}
-
 //Listing Description
 .listing-description-input {
   margin-bottom: 80px;
@@ -227,15 +206,41 @@
   background-color: $bg-colour-5;
   padding-top: $medium-section-spacing;
   padding-bottom: $medium-section-spacing;
+}
 
-  .warning {
-    svg {
-      height: 25px;
-    }
+.amenities-instruction {
+  @extend %icon-text-wrapper;
+
+  span {
+    padding-left: 10px;
+  }
+  svg {
+    height: 30px;
+  }
+}
+
+.listing-amenities-icon-wrapper {
+  margin-top: 20px;
+  @extend %icon-text-wrapper;
+
+  &:hover {
+    color: $font-dark-colour;
   }
 
-  .listing-amenities-icon {
-    margin-top: 20px;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    @extend %smallest-font-style;
+    text-align: center;
+    padding-left: 10px;
+    line-height: 24px;
+    white-space: nowrap;
+    &.active {
+      color: $deep-purple;
+    }
   }
 }
 
@@ -355,14 +360,16 @@
         line-height: 15px;
       }
     }
+    .amenities-instruction {
+      display: none;
+    }
   }
   .listing-image {
     margin: 15px auto 0;
     height: 150px;
     width: 150px;
   }
-  .listing-image-instruction,
-  .warning {
+  .listing-image-instruction {
     display: none;
   }
   .listing-amenities-section {

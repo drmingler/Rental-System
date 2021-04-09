@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactComponent as BookOnline } from "../assets/img/Book_online.svg";
-import { Col } from "react-bootstrap";
-import Layout from "../components/Layout";
+import {ReactComponent as BookOnline} from "../assets/img/Book_online.svg";
+import {Col} from "react-bootstrap";
+import Layout from "../components/Layout/Layout";
 import useToggle from "../hooks/useToggle";
 import Switch from "../components/Switch";
 import RentingLeft from "../components/RentingLeft";

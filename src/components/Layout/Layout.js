@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect } from "react";
-import MobileNavbar from "./MobileNavBar";
+import React, {Fragment, useEffect} from "react";
+import MobileNavbar from "../MobileNavBar";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 

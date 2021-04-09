@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { ReactComponent as Filter } from "../../assets/img/filter-btn.svg";
-import { ReactComponent as HideIcon } from "../../assets/img/hide-icon.svg";
-import { ReactComponent as Expand } from "../../assets/img/expand.svg";
+import React, {useState} from "react";
+import {ReactComponent as Filter} from "../../assets/img/filter-btn.svg";
+import {ReactComponent as HideIcon} from "../../assets/img/hide-icon.svg";
+import {ReactComponent as Expand} from "../../assets/img/expand.svg";
 import Paper from "@material-ui/core/Paper";
 import useDropDown from "../../hooks/useDropDown";
 
@@ -12,7 +12,7 @@ const DropDownOption = {
   HighToLow: "By Price: High to Low"
 };
 
-const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
+const SearchControlPanel = ({ togglePanel, showPanel, smallDevice }) => {
   const { showActive, setActive, innerRef } = useDropDown();
   const [showActiveFilter, setActiveFilter] = useState(
     DropDownOption["bestMatch"]
@@ -31,7 +31,7 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
       <div className="house-location-container">
         <Filter
           className="panel-menu-icon"
-          onClick={() => togglePanel(!panel)}
+          onClick={() => togglePanel(!showPanel)}
         />
         <div className="house-location-text">
           <b>20,800 </b>
@@ -39,10 +39,10 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
         </div>
       </div>
 
-      {panel && !smallDevice && (
+      {showPanel && !smallDevice && (
         <div
           className="hide-dropdown-container"
-          onClick={() => togglePanel(!panel)}
+          onClick={() => togglePanel(!showPanel)}
           ref={innerRef}
         >
           <HideIcon className="panel-menu-icon" />
@@ -50,7 +50,7 @@ const SearchControlPanel = ({ togglePanel, panel, smallDevice }) => {
         </div>
       )}
 
-      {(!panel || smallDevice) && (
+      {(!showPanel || smallDevice) && (
         <div className="filter-dropdown" onClick={showDropDown} ref={innerRef}>
           <span className="filter-dropdown-text">{showActiveFilter}</span>
           <Expand className="filter-dropdown-icon" />

@@ -1,16 +1,13 @@
 import React from "react";
-import Layout from "../components/Layout";
-import { Col, Container, Row } from "react-bootstrap";
+import Layout from "../components/Layout/Layout";
+import {Col, Container, Row} from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import FormControl from "@material-ui/core/FormControl";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Radio from "@material-ui/core/Radio";
 import DateFnsUtils from "@date-io/date-fns";
-import {
-  KeyboardDatePicker,
-  MuiPickersUtilsProvider
-} from "@material-ui/pickers";
+import {KeyboardDatePicker, MuiPickersUtilsProvider} from "@material-ui/pickers";
 import countries from "../constants/CountriesList";
 import MenuItem from "@material-ui/core/MenuItem";
 import useImageUploader from "../hooks/useImageUploader";

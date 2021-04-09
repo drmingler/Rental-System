@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import Layout from "../../components/Layout";
+import Layout from "../Layout/Layout";
 import Paper from "@material-ui/core/Paper";
 import {ReactComponent as SubscriptionIcon} from "../../assets/img/make-payment.svg";
 import {ReactComponent as TransactionHistoryIcon} from "../../assets/img/invoice.svg";

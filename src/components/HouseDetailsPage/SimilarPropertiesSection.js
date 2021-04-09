@@ -1,6 +1,6 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { HouseCard } from "../HousesForRentPage";
+import {Col, Container, Row} from "react-bootstrap";
+import {HouseCard} from "../CommonComponents/index";
 import useImageVisibility from "../../hooks/useImageVisiblity";
 import Berlin from "../../assets/img/Berlin.webp";
 

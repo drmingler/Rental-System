@@ -6,6 +6,10 @@ export let authHeader = {
   Authorization:
     "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE3NDc3NDYyLCJqdGkiOiI1ODU3NzdmYmIxZTA0OWRiOWZmY2EyODY1OGM3ZTA0YSIsInVzZXJfaWQiOjMyfQ.wcaWijzyqP-Ik4JoaEB8RUb2M_gf-BCUwJu06lRX_uQ"
 };
+// console.log(test_token)
+// const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE3NzM1NjcwLCJqdGkiOiIxMGY1NGY0MTgwOWQ0Y2UyODFiYzExN2E2MzE2NTJhNyIsInVzZXJfaWQiOjMyfQ.Go7nS__eO6TdSxSf7aV6dA8fC0rzmMEEuNAZzJYDQ6I"
+// const token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE3ODAyNTY4LCJqdGkiOiI2OGY1Zjc5YzM0YzY0MDQ1YTIyZTI3YzAxYTJmNWU2NyIsInVzZXJfaWQiOjF9.tWH4TdOZwoFexdasZFBojWOrOW9sDhTAhXw6HH7ZYMs"
+
 let dataSet = {
   propertyName: "emma",
   numberOfBedrooms: 20,
@@ -72,3 +76,9 @@ export async function searchEachAdmin(payload) {
     .post(uri, payload, { headers: authHeader })
     .then(response => response.data);
 }
+
+let test_token = localStorage.getItem("token")
+let user_id = localStorage.getItem("user_id")
+let token = test_token ? test_token.split(" ")[1] :  ""
+
+export const socket = new WebSocket(`ws://127.0.0.1:8000/ws/chat/${user_id}/?token=${token}`);
