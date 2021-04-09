@@ -1,5 +1,5 @@
 import React from "react";
-import {Layout} from "../components/Layout/index";
+import {Layout} from "../components/LayoutComponents/index";
 import rentBG3 from "../assets/img/newProperty3.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG1 from "../assets/img/newProperty.jpg";
@@ -13,7 +13,7 @@ import {
   RentingLeft,
   RentingRight,
   Tips
-} from "../components/PlatformUsage/index";
+} from "../components/PlatformUsageComponents/index";
 
 const PlatformUsage = () => {
   return (

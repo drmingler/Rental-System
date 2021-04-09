@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
-import {MobileNavbar} from "../components/Layout/index";
-import NavBar from "../components/Layout/NavBar";
+import {MobileNavbar} from "../components/LayoutComponents/index";
+import NavBar from "../components/LayoutComponents/NavBar";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
@@ -8,9 +8,9 @@ import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import {socket} from "./api";
 
-const MyMessage = ({ children, date }) => {
+const MyMessage = ({children, date}) => {
   return (
-    <Col lg={{ offset: 3, span: 9 }} className="my-message">
+      <Col lg={{offset: 3, span: 9}} className="my-message">
       <div className="message">
         <span>{children}</span>
       </div>

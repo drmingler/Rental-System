@@ -1,4 +1,4 @@
-import {Layout} from "../components/Layout/index";
+import {Layout} from "../components/LayoutComponents/index";
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {HouseCard} from "../components/CommonComponents/index";

@@ -1,12 +1,12 @@
 import React from "react";
-import {Layout} from "../components/Layout/index";
+import {Layout} from "../components/LayoutComponents/index";
 import {
   AddPropertyHeader,
   AvailabilityDateSection,
   HouseListingSection,
   ListingAmenitySection,
   ListingButtonSection
-} from "../components/AddPropertyPage/index";
+} from "../components/AddPropertyPageComponents/index";
 
 const AddPropertyPage = () => {
   return (

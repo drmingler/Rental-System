@@ -106,7 +106,10 @@ export default App;
 
 // CLEAN UP
 // remove warnings
+// fix payload
 // property document uploader
+
 // Add map and google address search
+
 // find a nice logo
 // Project outline

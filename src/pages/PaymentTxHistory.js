@@ -1,5 +1,5 @@
 import React from "react";
-import {PaymentLayout, TransactionHistory} from "../components/PaymentPages/index";
+import {PaymentLayout, TransactionHistory} from "../components/PaymentPagesComponents/index";
 
 const PaymentTxHistory = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
-import {AuthLayout} from "../components/AuthPages/index";
+import {AuthLayout} from "../components/AuthPageComponents/index";
 
 const PasswordReset = () => {
   return (

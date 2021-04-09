@@ -2,7 +2,7 @@ import React from "react";
 import {Col} from "react-bootstrap";
 import {ReactComponent as BookOnline} from "../assets/img/Book_online.svg";
 import useToggle from "../hooks/useToggle";
-import {Layout} from "../components/Layout/index";
+import {Layout} from "../components/LayoutComponents/index";
 import {Switch} from "../components/CommonComponents/index";
 import {
     RentalInstructionMobile,
@@ -10,7 +10,7 @@ import {
     RentingHeader,
     RentingLeft,
     RentingRight
-} from "../components/PlatformUsage/index";
+} from "../components/PlatformUsageComponents/index";
 import rentBG1 from "../assets/img/newProperty.jpg";
 import rentBG2 from "../assets/img/newProperty2.jpg";
 import rentBG3 from "../assets/img/newProperty3.jpg";

@@ -1,14 +1,14 @@
 import React, {Fragment, useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import NavBar from "../components/Layout/NavBar";
-import {MobileNavbar} from "../components/Layout/index";
+import NavBar from "../components/LayoutComponents/NavBar";
+import {MobileNavbar} from "../components/LayoutComponents/index";
 import CustomTransition from "../components/CommonComponents/CustomTransition";
 import {
   FilterOptionPanel,
   HouseScrollArea,
   SearchControlPanel,
   SearchControlPanelMobile
-} from "../components/HousesForRentPage/index";
+} from "../components/HousesForRentPageComponents/index";
 
 const HousesForRentPage = () => {
   const [showPanel, setPanel] = useState(false);

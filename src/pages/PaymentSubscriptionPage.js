@@ -1,5 +1,5 @@
 import React from "react";
-import {PaymentLayout, PaymentPanel} from "../components/PaymentPages/index";
+import {PaymentLayout, PaymentPanel} from "../components/PaymentPagesComponents/index";
 
 const PaymentSubscriptionPage = () => {
   return (

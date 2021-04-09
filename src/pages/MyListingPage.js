@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import {Container} from "react-bootstrap";
-import {AddPropertySection, ListingsCardSection} from "../components/MyListingPage/index";
+import {AddPropertySection, ListingsCardSection} from "../components/MyListingPageComponents/index";
 
 const MyListingsPage = () => {
   return (

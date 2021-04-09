@@ -1,5 +1,5 @@
 import React from "react";
-import {Layout} from "../components/Layout/index";
+import {Layout} from "../components/LayoutComponents/index";
 
 import {
   ContactLandlordSection,
@@ -12,7 +12,7 @@ import {
   MobileHeader,
   PropertySlider,
   SimilarPropertiesSection
-} from "../components/HouseDetailsPage/index";
+} from "../components/HouseDetailsPageComponents/index";
 import Paper from "@material-ui/core/Paper";
 import sliderImage1 from "../assets/img/slider-image.jpg";
 import sliderImage2 from "../assets/img/sliderImage2.jpg";
