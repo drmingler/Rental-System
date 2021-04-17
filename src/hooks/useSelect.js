@@ -12,8 +12,8 @@ const useSelect = (options, setOption, customKey, value) => {
   }
 
   return {
-      selectedOption,
-      handleSelect
-  }
+    selectedOption,
+    handleSelect
+  };
 };
 export default useSelect;

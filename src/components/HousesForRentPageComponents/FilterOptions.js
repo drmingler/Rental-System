@@ -3,16 +3,19 @@ import React from "react";
 import useSelect from "../../hooks/useSelect";
 
 const FilterOptions = ({
-  text,
-  sizeSmall,
-  sizeBig,
-  filtersOptions,
-  setFilterOption
-}) => {
+                         text,
+                         sizeSmall,
+                         sizeBig,
+                         filtersOptions,
+                         setFilterOption,
+                         customKey,
+                         value
+                       }) => {
   const { selectedOption, handleSelect } = useSelect(
-    filtersOptions,
-    setFilterOption,
-    text
+      filtersOptions,
+      setFilterOption,
+      customKey,
+      value
   );
 
   return (

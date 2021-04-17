@@ -21,12 +21,21 @@ const HouseAddressMobile = () => {
               </div>
             </div>
             <div className="house-rules">
-              <Utilities value={"Dogs"} name={"Allowed"} icon={DogIconGray} />
-              <Utilities value={"Cats"} name={"Cats"} icon={CatIconGray} />
+              <Utilities value={"Pets"} name={"Allowed"} icon={DogIconGray}/>
               <Utilities
-                value={"$ 1000"}
-                name={"Deposit"}
-                icon={MoneyIconGray}
+                  value={"Smoking"}
+                  name={"Allowed"}
+                  icon={CatIconGray}
+              />
+              <Utilities
+                  value={"$ 1000"}
+                  name={"Deposit"}
+                  icon={MoneyIconGray}
+              />
+              <Utilities
+                  value={"Music Instrument"}
+                  name={"Allowed"}
+                  icon={CatIconGray}
               />
             </div>
           </Col>

@@ -50,11 +50,6 @@ const Header = () => {
                     <Utilities value={1} name={"Bed"} icon={BedIconWhite} />
                     <Utilities value={1} name={"Bath"} icon={BathIconWhite} />
                     <Utilities
-                        value={"Music Instrument"}
-                        name={"Allowed"}
-                        icon={CatIconWhite}
-                    />
-                    <Utilities
                         value={"Pet"}
                         name={"Allowed"}
                         icon={DogIconWhite}
@@ -64,7 +59,12 @@ const Header = () => {
                         name={"Allowed"}
                         icon={CatIconWhite}
                     />
-                    <Utilities value={950} name={"SQRT"} icon={SqrtIconWhite} />
+                    <Utilities
+                        value={"Music Instrument"}
+                        name={"Allowed"}
+                        icon={CatIconWhite}
+                    />
+                    <Utilities value={950} name={"SQRT"} icon={SqrtIconWhite}/>
                   </ul>
                 </div>
               </Col>

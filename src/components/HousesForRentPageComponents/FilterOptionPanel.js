@@ -2,6 +2,7 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {Amenities, FilterOptions, HousePriceSlider} from "./index";
 import CustomTransition from "../CommonComponents/CustomTransition";
+import {bathRoomNumber, bedroomsNumber, houseRulesConfig, houseType} from "../../constants/PropertyConstants";
 
 const FilterOptionPanel = ({
   showPanel,
@@ -23,55 +24,18 @@ const FilterOptionPanel = ({
           </Col>
           <Col md={12} xl={8}>
             <Row>
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Apartment"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"House"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Condo"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Townhouse"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Duplex"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Loft"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Room"}
-                sizeBig={4}
-                sizeSmall={6}
-              />
+              {houseType.map(type => (
+                  <FilterOptions
+                      filtersOptions={filtersOptions}
+                      setFilterOption={setFilterOption}
+                      sizeBig={4}
+                      sizeSmall={6}
+                      text={type.text}
+                      key={type.key}
+                      customKey={type.key}
+                      value={type.value}
+                  />
+              ))}
             </Row>
           </Col>
         </Row>
@@ -81,41 +45,18 @@ const FilterOptionPanel = ({
           </Col>
           <Col md={12} xl={8}>
             <Row>
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Studio"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"1 bed"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"2 bed"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"3 bed"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"4+ bed"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
+              {bedroomsNumber.map(type => (
+                  <FilterOptions
+                      filtersOptions={filtersOptions}
+                      setFilterOption={setFilterOption}
+                      sizeBig={3}
+                      sizeSmall={4}
+                      text={type.text}
+                      key={type.key}
+                      customKey={type.key}
+                      value={type.value}
+                  />
+              ))}
             </Row>
           </Col>
         </Row>
@@ -125,41 +66,18 @@ const FilterOptionPanel = ({
           </Col>
           <Col md={12} xl={8}>
             <Row>
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"1"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"2"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"3"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"4"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"5+"}
-                sizeBig={3}
-                sizeSmall={4}
-              />
+              {bathRoomNumber.map(bathroom => (
+                  <FilterOptions
+                      filtersOptions={filtersOptions}
+                      setFilterOption={setFilterOption}
+                      sizeBig={3}
+                      sizeSmall={4}
+                      text={bathroom.text}
+                      key={bathroom.key}
+                      customKey={bathroom.key}
+                      value={bathroom.value}
+                  />
+              ))}
             </Row>
           </Col>
         </Row>
@@ -169,27 +87,18 @@ const FilterOptionPanel = ({
           </Col>
           <Col md={12} xl={8}>
             <Row>
-              <FilterOptions
-                  filtersOptions={filtersOptions}
-                  setFilterOption={setFilterOption}
-                  text={"Musical Instruments"}
-                  sizeBig={6}
-                  sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Pets Allowed"}
-                sizeBig={6}
-                sizeSmall={6}
-              />
-              <FilterOptions
-                filtersOptions={filtersOptions}
-                setFilterOption={setFilterOption}
-                text={"Smoking Allowed"}
-                sizeBig={6}
-                sizeSmall={6}
-              />
+              {houseRulesConfig.map(rules => (
+                  <FilterOptions
+                      filtersOptions={filtersOptions}
+                      setFilterOption={setFilterOption}
+                      sizeBig={6}
+                      sizeSmall={6}
+                      text={rules.text}
+                      key={rules.key}
+                      customKey={rules.key}
+                      value={rules.value}
+                  />
+              ))}
             </Row>
           </Col>
         </Row>

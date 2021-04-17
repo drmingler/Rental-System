@@ -16,6 +16,7 @@ const HousesForRentPage = () => {
 
   // Keep track of selected filter options
   const [filtersOptions, setFilterOption] = useState({});
+  console.log(filtersOptions)
 
   const togglePanel = (panelState, isSmallDevice) => {
     setPanel(panelState);
