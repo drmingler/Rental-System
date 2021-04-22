@@ -10435,6 +10435,16 @@ h1 {
   color: mediumpurple;
 }
 
+.logo {
+  height: 40px;
+  width: 40px;
+}
+.logo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .nav-item-container {
   height: 100%;
   border-left: 1px solid #e9eaef;
@@ -13709,6 +13719,22 @@ html {
   text-align: center;
   color: #2e2d36;
   margin-bottom: 40px;
+}
+
+.house-price {
+  font-family: proxima-nova-bold, sans-serif;
+}
+.house-price.verified {
+  background-color: #53c160;
+}
+.house-price.pending {
+  background-color: #f7a31d;
+}
+.house-price.rejected {
+  background-color: #e0485c;
+}
+.house-price.expired {
+  background-color: #dc7338;
 }
 
 .listings-card-container .MuiPaper-elevation1 {

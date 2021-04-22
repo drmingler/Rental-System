@@ -18,12 +18,12 @@ const Login = () => {
                 <div className="auth-form">
                   <Row>
                     <SocialAuthButton>
-                      <FBIcon />
-                      <span>Sign up with Facebook</span>
+                      <FBIcon/>
+                      <span>Log in with Facebook</span>
                     </SocialAuthButton>
                     <SocialAuthButton>
-                      <GoogleIcon />
-                      <span>Sign up with Google</span>
+                      <GoogleIcon/>
+                      <span>Log in with Google</span>
                     </SocialAuthButton>
                     <Col md={12}>
                       <div className="with-email">

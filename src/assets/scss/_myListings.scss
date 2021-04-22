@@ -72,6 +72,7 @@
 // My listing card
 .my-listings-card-section {
   padding-top: $large-section-spacing;
+
   .your-listings {
     text-align: center;
     @extend %large-heading-style;
@@ -79,12 +80,34 @@
     margin-bottom: 40px;
   }
 }
+
+.house-price {
+  font-family: $bold-font-family;
+
+  &.verified {
+    background-color: $light-green;
+  }
+
+  &.pending {
+    background-color: $light-yellow;
+  }
+
+  &.rejected {
+    background-color: $cancel-color;
+  }
+
+  &.expired {
+    background-color: $tips-color-2;
+  }
+}
+
 .listings-card-container {
   .MuiPaper-elevation1 {
     box-shadow: none;
     border: 1px solid $light-border;
     border-radius: 6px;
   }
+
   .house-cards {
     transform: translateZ(0);
     transition: all 0.2s ease-out;

@@ -1,15 +1,16 @@
-import React, {Fragment} from "react";
+import React from "react";
 import {Container} from "react-bootstrap";
 import {AddPropertySection, ListingsCardSection} from "../components/MyListingPageComponents/index";
+import {Layout} from "../components/LayoutComponents";
 
 const MyListingsPage = () => {
   return (
-    <Fragment fixed={true}>
-      <Container className="my-listings-container" fluid={"lg"}>
-        <AddPropertySection />
-        <ListingsCardSection />
-      </Container>
-    </Fragment>
+      <Layout fixed={true}>
+          <Container className="my-listings-container" fluid={"lg"}>
+              <AddPropertySection/>
+              <ListingsCardSection/>
+          </Container>
+      </Layout>
   );
 };
 export default MyListingsPage;

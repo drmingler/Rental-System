@@ -386,12 +386,20 @@ const houseRulesConfig = [
   }
 ];
 
+let propertyStatus = {
+  Verified: ["Verified", "This property has been reviewed and verified and is now visible for every other user."],
+  Pending: ["Pending", "This property is still being reviewed. We will notify you when the status changes"],
+  Rejected: ["Rejected", "This property has been rejected because we could not verify the uploaded document"],
+  Expired: ["Expired", "This Property has expired. Please subscribe to make it visible to other users again"]
+}
+
 export {
   propertyAmenities,
   houseType,
   bedroomsNumber,
   bathRoomNumber,
-  houseRulesConfig
+  houseRulesConfig,
+  propertyStatus
 };
 
 // let amenities = [
