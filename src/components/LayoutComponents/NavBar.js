@@ -1,6 +1,7 @@
 import React, {useLayoutEffect, useState} from "react";
 import {AccountSettingsDropDown, LearnMoreContent, MenuOptionsDropDown, ProductContent} from "../DropdownComponents";
 import {withRouter} from "react-router-dom";
+import HomeLogo from "../../assets/img/homeLogo.png"
 
 function NavBar({ fixed, history }) {
   const [transparent, setTransparent] = useState(
@@ -21,7 +22,7 @@ function NavBar({ fixed, history }) {
   return (
     <div className={`${transparent}`}>
       <div className="logo">
-        <h3>Logo</h3>
+        <img src={HomeLogo} alt="logo"/>
       </div>
       <div className="nav-item-container">
         <ul className="nav-items">

@@ -70,6 +70,17 @@
   }
 }
 
+.logo {
+  height: 40px;
+  width: 40px;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .nav-item-container {
   @extend %flex-row;
   height: 100%;
