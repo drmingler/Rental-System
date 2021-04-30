@@ -9,31 +9,32 @@ import {ReactComponent as BathIcon} from "../../assets/img/bath-icon.svg";
 import {ReactComponent as SqrtIcon} from "../../assets/img/sqft-icon.svg";
 import {HouseCardIconWrapper} from "./index";
 
-const HouseCard = ({ image }) => {
+const HouseCard = (props) => {
+  const {image, propertyName, address, price, bed, bath, size} = props;
   return (
-    <Card className="house-cards">
-      <div className="house-price">
-        <span className="price-text">$2,300</span>
-      </div>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt="Contemplative Reptile"
-          height="200"
-          image={image}
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography className="house-card-header">Common Baker</Typography>
-          <Typography className="house-card-text">
-            Lizards are a widespread group of squamate
-          </Typography>
-          <div className="house-card-footer">
-            <HouseCardIconWrapper icon={<BedIcon />} text={"5 Bed"} />
-            <HouseCardIconWrapper icon={<BathIcon />} text={"5 Bath"} />
-            <HouseCardIconWrapper icon={<SqrtIcon />} text={"1000 Sq Ft"} />
-          </div>
-        </CardContent>
+      <Card className="house-cards">
+        <div className="house-price">
+          <span className="price-text">{`₦${price && price.toLocaleString()}`}</span>
+        </div>
+        <CardActionArea>
+          <CardMedia
+              component="img"
+              alt="property"
+              height="200"
+              image={image}
+              title="Property Card"
+          />
+          <CardContent>
+            <Typography className="house-card-header">{propertyName}</Typography>
+            <Typography className="house-card-text eclipse">
+              {address}
+            </Typography>
+            <div className="house-card-footer">
+              <HouseCardIconWrapper icon={<BedIcon/>} text={`${bed} Bed`}/>
+              <HouseCardIconWrapper icon={<BathIcon/>} text={`${bath} Bath`}/>
+              <HouseCardIconWrapper icon={<SqrtIcon/>} text={`${size} Sq Ft`}/>
+            </div>
+          </CardContent>
       </CardActionArea>
     </Card>
   );

@@ -38,20 +38,17 @@ const ListingCard = ({status, address, propertyImage}) => {
                     {showActive && (
                         <Paper className="dropdown-option-container" elevation={2}>
                             <ul>
+                                <li className="dropdown-option">
+                                    <VisibilityIcon/>
+                                    <span>View Listing</span>
+                                </li>
                                 <li
                                     className="dropdown-option"
-                  // onClick={() => handleSelect("bestMatch")}
-                >
-                  <VisibilityIcon />
-                  <span>View Listing</span>
-                </li>
-                <li
-                  className="dropdown-option"
-                  // onClick={() => handleSelect("bestMatch")}
-                >
-                  <EditIcon />
-                  <span>Edit</span>
-                </li>
+                                    // onClick={() => handleSelect("bestMatch")}
+                                >
+                                    <EditIcon/>
+                                    <span>Edit</span>
+                                </li>
                 <li
                   className="dropdown-option"
                   // onClick={() => handleSelect("bestMatch")}
@@ -64,21 +61,21 @@ const ListingCard = ({status, address, propertyImage}) => {
           )}
         </div>
         <CardActionArea>
-          <CardMedia
-              component="img"
-              alt="Contemplative Reptile"
-              height="200"
-              image={propertyImage}
-              title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography className="house-card-header">
-                {address.substring(1, 40) + "..."}
-            </Typography>
-            <Typography className="house-card-text">
-                {propertyStatus[1]}
-            </Typography>
-          </CardContent>
+            <CardMedia
+                component="img"
+                alt="Contemplative Reptile"
+                height="200"
+                image={propertyImage}
+                title="Contemplative Reptile"
+            />
+            <CardContent>
+                <Typography className="house-card-header eclipse">
+                    {address}
+                </Typography>
+                <Typography className="house-card-text">
+                    {propertyStatus[1]}
+                </Typography>
+            </CardContent>
         </CardActionArea>
       </Card>
     </Col>

@@ -78,6 +78,7 @@ import {ReactComponent as UtilitiesDark} from "./gray-colour/utilities-included.
 import {ReactComponent as UtilitiesWhite} from "./white-colour/utilities-included.svg";
 import {ReactComponent as UtilitiesLight} from "./light-colour/utilities-included.svg";
 import {ReactComponent as UtilitiesPurple} from "./purple-colour/utilities-included.svg";
+import {ReactComponent as SqrtIconWhite} from "./white-colour/sqrt-icon-white.svg";
 import {ReactComponent as BedIconWhite} from "./white-colour/bed-icon-white.svg";
 import {ReactComponent as BathIconWhite} from "./white-colour/bath-icon-white.svg";
 import {ReactComponent as DogIconWhite} from "./white-colour/dog-icon-white.svg";
@@ -86,8 +87,11 @@ import {ReactComponent as DogIconLight} from "./light-colour/dog-icon-light.svg"
 import {ReactComponent as CatIconWhite} from "./white-colour/cat-icon-white.svg";
 import {ReactComponent as CatIconPurple} from "./purple-colour/cat-icon-purple.svg";
 import {ReactComponent as CatIconLight} from "./light-colour/cat-icon-light.svg";
-import {ReactComponent as SqrtIconWhite} from "./white-colour/sqrt-icon-white.svg";
 import {ReactComponent as MoneyIconWhite} from "./white-colour/money-icon-white.svg";
+// import {ReactComponent as SmokingWhite} from "./white-colour/cigarrete-white.svg";
+// import {ReactComponent as SmokingLight} from "./gray-colour/cigarrete-gray.svg";
+// import {ReactComponent as SmokingDark} from "./light-colour/cigarrete-light.svg";
+// import {ReactComponent as SmokingPurple} from "./purple-colour/cigarrete-purple.svg";
 
 
 export {
@@ -181,4 +185,8 @@ export {
   DogIconPurple,
   DogIconLight,
   CatIconLight,
+  // SmokingWhite,
+  // SmokingLight,
+  // SmokingDark,
+  // SmokingPurple,
 };

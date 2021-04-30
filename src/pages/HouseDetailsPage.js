@@ -39,8 +39,8 @@ const HouseDetailsPage = () => {
                     <span>Monthly Price</span>
                   </div>
                   <div className="price">
-                    <ArrowDownRight className="arrow-icon" />
-                    <span>$1,500</span>
+                    <ArrowDownRight className="arrow-icon"/>
+                    <span>₦10,500</span>
                   </div>
                 </div>
                 <div className="property-availability">

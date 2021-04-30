@@ -79,7 +79,7 @@ const ChatUI = () => {
               </div>
               <span className="name">Emmanuel David</span>
               <Link className="link-to-apartment">
-                Strausberger Pl. 9, 10243 Berlin, Germany
+                Gwarimpa Pl. 9, 10243 Abuja, Nigeria
               </Link>
             </div>
           </Paper>
@@ -92,16 +92,15 @@ const ChatUI = () => {
                     Hello
                   </OtherUserMessage>
                   <MyMessage date={"2:00 PM, 03/23/21"}>
-                    Centrally located between Mitte, Prenzlauer Berg,
-                    Friedrichshain und Kreuzberg (all within 10 min walk). I
-                    sublet my furnished apartment since I am going away for 1 to
-                    2 years. Minimum contract duration is 1 year. 2
+                    Please I am interested in the property you posted
                   </MyMessage>
                   <OtherUserMessage date={"2:00 PM, 03/23/21"}>
-                    Centrally located between Mitte, Prenzlauer Berg,
-                    Friedrichshain und Kreuzberg (all within 10 min walk). I
-                    sublet my furnished apartment since I am going away for 1 to
-                    2 years. Minimum contract duration is 1 year. 2
+                    Oh! Nice
+                  </OtherUserMessage>
+                  <OtherUserMessage date={"2:00 PM, 03/23/21"}>
+                    The property is centrally located between Frank and Johnson street (all within 10 min walk). I
+                    sublet my furnished apartment since I will be away for 1 to
+                    2 years. Minimum contract duration is 1 year.
                   </OtherUserMessage>
                   <MyMessage date={"2:00 PM, 03/23/21"}>
                     Centrally located between Mitte, Prenzlauer Berg,

@@ -12400,6 +12400,11 @@ html {
   font-size: 14px;
   font-weight: 700;
 }
+.house-card-header.eclipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .house-price {
   cursor: pointer;
@@ -12422,6 +12427,11 @@ html {
   padding: 9px 0 15px 0;
   font-size: 14px;
   color: #858e98;
+}
+.house-card-text.eclipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .house-card-footer {

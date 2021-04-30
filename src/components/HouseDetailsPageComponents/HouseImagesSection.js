@@ -10,10 +10,10 @@ import {ImageSlideContext} from "../../hooks/usePropertySlides";
 const PropertyImage = ({Image}) => {
   return (
       <Paper
-      elevation={0}
-      className="property-image"
-      style={{ backgroundImage: `url(${Image})` }}
-    />
+          elevation={0}
+          className="property-image"
+          style={{backgroundImage: `url(${Image})`}}
+      />
   );
 };
 

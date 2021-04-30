@@ -8,8 +8,9 @@ import DogIconWhite from "../../assets/img/amenities/white-colour/dog-icon-white
 import BedIconWhite from "../../assets/img/amenities/white-colour/bed-icon-white.svg";
 import SqrtIconWhite from "../../assets/img/amenities/white-colour/sqrt-icon-white.svg";
 import BathIconWhite from "../../assets/img/amenities/white-colour/bath-icon-white.svg";
-import Utilities from "./Utilities";
+import SmokingWhite from "../../assets/img/amenities/white-colour/cigarrete-white.svg"
 
+import Utilities from "./Utilities";
 
 const Header = () => {
   const [animateBackground, setAnimation] = useState(false);
@@ -43,12 +44,12 @@ const Header = () => {
                 <div className="utilities-item-wrapper">
                   <ul>
                     <Utilities
-                        value={"$ 500"}
+                        value={"₦ 20000"}
                         name={"Deposit"}
                         icon={MoneyIconWhite}
                     />
-                    <Utilities value={1} name={"Bed"} icon={BedIconWhite} />
-                    <Utilities value={1} name={"Bath"} icon={BathIconWhite} />
+                    <Utilities value={1} name={"Bed"} icon={BedIconWhite}/>
+                    <Utilities value={1} name={"Bath"} icon={BathIconWhite}/>
                     <Utilities
                         value={"Pet"}
                         name={"Allowed"}
@@ -57,7 +58,7 @@ const Header = () => {
                     <Utilities
                         value={"Smoking"}
                         name={"Allowed"}
-                        icon={CatIconWhite}
+                        icon={SmokingWhite}
                     />
                     <Utilities
                         value={"Music Instrument"}

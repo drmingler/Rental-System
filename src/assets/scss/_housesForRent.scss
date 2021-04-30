@@ -306,6 +306,12 @@
   padding-top: 10px;
   font-size: $smallest-font-size;
   font-weight: $font-weight;
+
+  &.eclipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .house-price {
   cursor: pointer;
@@ -323,11 +329,23 @@
     font-family: $bold-font-family;
   }
 }
+
 .house-card-text {
   padding: 9px 0 15px 0;
   font-size: $smallest-font-size;
   color: $lighter-dark-colour;
+
+  &.eclipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
+
+.MuiTypography-root {
+
+}
+
 .house-card-footer {
   padding-top: 16px;
   border-top: 1px solid $light-border;
