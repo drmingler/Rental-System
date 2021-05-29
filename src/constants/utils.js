@@ -4,4 +4,8 @@ function getPropertyStatus(key) {
   return propertyStatus[key];
 }
 
-export {getPropertyStatus};
+function addComma(string) {
+  return string.toLocaleString();
+}
+
+export {getPropertyStatus, addComma};

@@ -9,6 +9,7 @@ import {
   SearchControlPanel,
   SearchControlPanelMobile
 } from "../components/HousesForRentPageComponents/index";
+import Map from "../components/HousesForRentPageComponents/Map";
 
 const HousesForRentPage = () => {
   const [showPanel, setPanel] = useState(false);
@@ -54,15 +55,15 @@ const HousesForRentPage = () => {
                 clearFilter={clearFilter}
               />
               <CustomTransition
-                state={showPanel}
-                initialClass={"find-property-btn"}
-                finalClass={"find-property-btn-enter"}
+                  state={showPanel}
+                  initialClass={"find-property-btn"}
+                  finalClass={"find-property-btn-enter"}
               >
                 <button>Find Properties</button>
               </CustomTransition>
-              <HouseScrollArea />
+              <HouseScrollArea/>
             </Col>
-            <Col md={6} lg={7} className="rental-map" />
+            <Map/>
           </Row>
         </Container>
       </section>

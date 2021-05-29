@@ -6,6 +6,8 @@ import HousePriceSlider from "./HousePriceSlider";
 import FilterOptions from "./FilterOptions";
 import FilterOptionPanel from "./FilterOptionPanel";
 import HouseScrollArea from "./HouseScrollArea";
+import Map from "./Map";
+import MarkerComponent from "./MarkerComponent";
 
 export {
   Amenities,
@@ -16,4 +18,6 @@ export {
   FilterOptions,
   FilterOptionPanel,
   HouseScrollArea,
+  Map,
+  MarkerComponent,
 };
