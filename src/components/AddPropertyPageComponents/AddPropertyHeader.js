@@ -1,12 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
-// import { usePlacesWidget } from "react-google-autocomplete";
-import useGoogle from "react-google-autocomplete/lib/usePlacesAutocompleteService";
-import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
-import {PlaceSuggestion} from "./index";
+import {PlaceSuggestion} from "../CommonComponents/index";
+import useGoogleSuggestions from "../../hooks/useGoogleSuggestions";
 
 function AddPropertyHeader() {
   const currencies = [
@@ -44,17 +42,15 @@ function AddPropertyHeader() {
     }
   ];
 
-  const {placePredictions, getPlacePredictions} = useGoogle({
-    apiKey: "",
-    options: {
-      types: ["geocode"],
-      componentRestrictions: {country: "ng"}
-    }
-  });
-
-  placePredictions && console.log(placePredictions);
-  const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
-  const [value, setValue] = useState("");
+  const {
+    showActive,
+    setActive,
+    innerRef,
+    value,
+    setValue,
+    placePredictions,
+    getPlacePredictions
+  } = useGoogleSuggestions();
 
   return (
       <header className="add-property-header">
@@ -65,29 +61,29 @@ function AddPropertyHeader() {
                   className="property-name"
                   placeholder="Property Name"
                   fullWidth
-              margin="normal"
-            />
+                  margin="normal"
+              />
 
-            <Row className="property-contact">
-              <Col md={8}>
-                <div className="address-text_box" ref={innerRef}>
-                  <TextField
-                      fullWidth
-                      label="Address"
-                      margin="normal"
-                      value={value}
-                      onChange={evt => {
-                        getPlacePredictions({input: evt.target.value});
-                        setValue(evt.target.value);
-                        setActive(true);
-                      }}
-                  />
-                  <PlaceSuggestion
-                      placePredictions={placePredictions}
-                      setActive={setActive}
-                      showActive={showActive}
-                      setValue={setValue}
-                  />
+              <Row className="property-contact">
+                <Col md={8}>
+                  <div className="address-text_box" ref={innerRef}>
+                    <TextField
+                        fullWidth
+                        label="Address"
+                        margin="normal"
+                        value={value}
+                        onChange={evt => {
+                          getPlacePredictions({input: evt.target.value});
+                          setValue(evt.target.value);
+                          setActive(true);
+                        }}
+                    />
+                    <PlaceSuggestion
+                        placePredictions={placePredictions}
+                        setActive={setActive}
+                        showActive={showActive}
+                        setValue={setValue}
+                    />
                 </div>
               </Col>
               <Col md={4}>

@@ -4,6 +4,7 @@ import HouseCard from "./HouseCard";
 import PerfectPlace from "./PerfectPlace";
 import Switch from "./Switch";
 import HousePrice from "./HousePrice";
+import PlaceSuggestion from "./PlaceSuggestion";
 
 export {
   AmenitiesIconWrapper,
@@ -11,5 +12,6 @@ export {
   HouseCard,
   PerfectPlace,
   Switch,
-  HousePrice
+  HousePrice,
+  PlaceSuggestion
 };

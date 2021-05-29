@@ -49,6 +49,10 @@
   cursor: pointer;
   position: relative;
 
+  .suggestions-dropdown {
+    margin-top: 10px;
+  }
+
   input {
     padding: 21px 30px;
     width: 100%;

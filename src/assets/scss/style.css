@@ -9992,8 +9992,8 @@ h3 {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10173,8 +10173,8 @@ h1 {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10301,8 +10301,8 @@ h1 {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -10840,8 +10840,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11023,8 +11023,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11151,8 +11151,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .renting-search .renting-search-content button, .go-to-inbox {
@@ -11596,8 +11596,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -11691,18 +11691,15 @@ html {
   font-weight: 700;
   font-family: proxima-nova-bold, sans-serif;
 }
-
 .add-property-header .property-contact {
-    margin-top: 30px;
+  margin-top: 30px;
 }
-
 .add-property-header .property-contact .MuiFormControl-marginNormal {
-    margin-bottom: 1px;
+  margin-bottom: 1px;
 }
-
 .add-property-header .property-facilities {
-    margin-top: 28px;
-    margin-bottom: 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 .add-property-header .price-form-container .MuiFormLabel-root {
   color: #2e2d36;
@@ -11713,71 +11710,64 @@ html {
 .add-property-header .monthly-rent-container {
   background-color: white;
 }
-
 .add-property-header .monthly-rent-inputs {
-    padding: 40px 40px 30px;
+  padding: 40px 40px 30px;
 }
-
 .add-property-header .monthly-rent-instruction {
-    margin-top: 20px;
-    color: #9a99b6;
-    font-size: 14px;
-    line-height: 22px;
+  margin-top: 20px;
+  color: #9a99b6;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .address-text_box {
-    position: relative;
+  position: relative;
 }
 
 .suggestions-dropdown {
-    box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
-    border-radius: 3px;
-    background: #fff;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    cursor: pointer;
-    overflow: hidden;
+  box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
 }
-
 .suggestions-dropdown li {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    height: 70px;
-    line-height: 70px;
-    color: #2e2d36;
-    border-bottom: 1px solid #f4f5f7;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+  line-height: 70px;
+  color: #2e2d36;
+  border-bottom: 1px solid #f4f5f7;
 }
-
 .suggestions-dropdown li span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-
 .suggestions-dropdown li strong {
-    color: #7c54c1;
+  color: #7c54c1;
 }
-
 .suggestions-dropdown li:hover {
-    background-color: #f2f3f5;
-    transition: all 0.3s ease-in;
+  background-color: #f2f3f5;
+  transition: all 0.3s ease-in;
 }
-
 .suggestions-dropdown li:first-child {
-    background-color: #f2f3f5;
+  background-color: #f2f3f5;
 }
 
 .upload-file-input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    outline: none;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: 0;
+  padding: 0;
   border-radius: 6px;
   z-index: 9;
   opacity: 0;
@@ -12075,8 +12065,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -12839,8 +12829,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -13750,8 +13740,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14079,8 +14069,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14402,8 +14392,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14604,8 +14594,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -14802,8 +14792,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -15135,8 +15125,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -15301,8 +15291,8 @@ html {
 }
 
 .location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -15743,8 +15733,8 @@ html {
 }
 
 .location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -15906,8 +15896,8 @@ html {
 }
 
 .location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -16034,8 +16024,8 @@ html {
 }
 
 .location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
-    font-size: 16px;
-    line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .perfect-place-section .perfect-place-content button, .rental-instruction .learn-more-btn button, .header-btn-container button, .rent-list-btn button, .go-to-inbox, .renting-search .renting-search-content button {
@@ -16142,19 +16132,22 @@ html {
 }
 
 .input-container {
-    cursor: pointer;
-    position: relative;
+  cursor: pointer;
+  position: relative;
+}
+.input-container .suggestions-dropdown {
+  margin-top: 10px;
 }
 .input-container input {
-    padding: 21px 30px;
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    line-height: 28px;
-    box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
-    color: #2e2d36;
-    outline: none;
+  padding: 21px 30px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 28px;
+  box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
+  color: #2e2d36;
+  outline: none;
 }
 .input-container ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -16171,38 +16164,38 @@ html {
 }
 
 .location-dropdown {
-    width: 100%;
-    margin-top: 10px;
-    box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
-    position: absolute;
-    border-radius: 3px;
-    background: #fff;
-    overflow: hidden;
-    z-index: 1;
-    display: none;
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
+  position: absolute;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+  z-index: 1;
+  display: none;
 }
 .location-dropdown-enter {
-    display: block;
+  display: block;
 }
 .location-dropdown li {
-    padding: 0 30px;
-    line-height: 70px;
-    color: #2e2d36;
+  padding: 0 30px;
+  line-height: 70px;
+  color: #2e2d36;
 }
 .location-dropdown li:hover {
-    background-color: #f2f3f5;
-    transition: all 0.3s ease-in;
+  background-color: #f2f3f5;
+  transition: all 0.3s ease-in;
 }
 .location-dropdown li:first-child {
-    background-color: #f2f3f5;
+  background-color: #f2f3f5;
 }
 
 .rent-list-btn button {
-    padding: 11px 40px;
-    font-size: 20px;
-    line-height: 28px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+  padding: 11px 40px;
+  font-size: 20px;
+  line-height: 28px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .rent-list-btn .rent-btn {
   font-family: proxima-nova-bold, sans-serif;

@@ -1,18 +1,34 @@
 import React from "react";
-import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
+import {PlaceSuggestion} from "../CommonComponents";
+import useGoogleSuggestions from "../../hooks/useGoogleSuggestions";
 
 const GoogleMapSearch = () => {
-    const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
+    const {
+        showActive,
+        setActive,
+        innerRef,
+        value,
+        setValue,
+        placePredictions,
+        getPlacePredictions
+    } = useGoogleSuggestions();
 
     return (
         <div className="input-container" ref={innerRef}>
             <input
                 placeholder="Where do you want to live?"
                 type="text"
+                value={value}
+                onChange={evt => {
+                    getPlacePredictions({input: evt.target.value});
+                    setValue(evt.target.value);
+                    setActive(true);
+                }}
                 onClick={() => setActive(!showActive)}
             />
             <ul
-                className={`location-dropdown ${showActive &&
+                className={`location-dropdown ${!value &&
+                showActive &&
                 "location-dropdown-enter"}`}
             >
                 <li> Abuja</li>
@@ -22,6 +38,12 @@ const GoogleMapSearch = () => {
                 <li> Enugu</li>
                 <li> Ibadan</li>
             </ul>
+            <PlaceSuggestion
+                placePredictions={placePredictions}
+                setActive={setActive}
+                showActive={showActive}
+                setValue={setValue}
+            />
         </div>
     );
 };

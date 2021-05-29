@@ -8,7 +8,6 @@ import AvailabilityDateSection from "./AvailabilityDateSection";
 import ListingButtonSection from "./ListingButtonSection";
 import ListingAmenitiesIconWrapper from "./ListingAmenitiesIconWrapper";
 import HouseRulesIconWrapper from "./HouseRulesIconWrapper";
-import PlaceSuggestion from "./PlaceSuggestion";
 
 export {
     ImageUploaderContainer,
@@ -21,5 +20,4 @@ export {
     ListingButtonSection,
     ListingAmenitiesIconWrapper,
     HouseRulesIconWrapper,
-    PlaceSuggestion,
 };
