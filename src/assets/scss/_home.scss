@@ -5,10 +5,10 @@
 .header-container {
   position: relative;
   background: linear-gradient(
-    -60.76deg,
-    $bg-colour-1 0,
-    $bg-colour-2 57.96%,
-    $bg-colour-3 100%
+                  -60.76deg,
+                  $bg-colour-1 0,
+                  $bg-colour-2 57.96%,
+                  $bg-colour-3 100%
   );
 
   &::before {
@@ -46,6 +46,7 @@
 }
 
 .input-container {
+  cursor: pointer;
   position: relative;
 
   input {
@@ -57,6 +58,7 @@
     line-height: $medium-line-height;
     box-shadow: 0 14px 24px rgba(46, 45, 54, 0.25);
     color: $font-dark-colour;
+    outline: none;
   }
 
   ::placeholder {
@@ -93,6 +95,17 @@
   li {
     padding: 0 30px;
     line-height: 70px;
+    color: $font-dark-colour;
+    @extend %small-font-style;
+
+    &:hover {
+      background-color: $hover-color;
+      transition: all 0.3s ease-in;
+    }
+
+    &:first-child {
+      background-color: $hover-color;
+    }
   }
 }
 

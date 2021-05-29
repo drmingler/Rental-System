@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import useToggle from "../../hooks/useToggle";
 import {Link} from "react-router-dom";
+import GoogleMapSearch from "./GoogleMapSearch";
 
 function Header() {
-  const { setActive, showActive } = useToggle();
   const [activeButton, setActiveButton] = useState("rent");
 
   const handleSetButton = buttonName => {
@@ -24,33 +23,17 @@ function Header() {
                     className={`rent-btn ${activeButton === "rent" &&
                       "rent-btn-active"}`}
                   >
-                    Rent
+                      Rent
                   </button>
-                  <button
-                    onClick={() => handleSetButton("list")}
-                    className={`list-btn ${activeButton === "list" &&
-                      "list-btn-active"}`}
-                  >
-                    List
-                  </button>
+                    <button
+                        onClick={() => handleSetButton("list")}
+                        className={`list-btn ${activeButton === "list" &&
+                        "list-btn-active"}`}
+                    >
+                        List
+                    </button>
                 </div>
-                <div className="input-container">
-                  <input
-                    placeholder="Where do you want to live?"
-                    type="text"
-                    onClick={() => setActive(!showActive)}
-                  />
-                  <ul
-                    className={`location-dropdown ${showActive &&
-                      "location-dropdown-enter"}`}
-                  >
-                    <li> Hello</li>
-                    <li> Hello</li>
-                    <li> Hello</li>
-                    <li> Hello</li>
-                    <li> Hello</li>
-                  </ul>
-                </div>
+                  <GoogleMapSearch/>
               </Col>
               <div className="header-btn-container">
                 <p>Market your property to millions</p>
