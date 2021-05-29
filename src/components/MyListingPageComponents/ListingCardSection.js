@@ -13,12 +13,12 @@ import HouseImage from "../../assets/img/property-image-1.jpg";
 import propertyImage1 from "../../assets/img/propertyImage1.jpeg";
 import propertyImage2 from "../../assets/img/propertyImage2.jpeg";
 import propertyImage3 from "../../assets/img/propertyImage3.jpeg";
-import useDropDown from "../../hooks/useDropDown";
+import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 import Paper from "@material-ui/core/Paper";
 import {getPropertyStatus} from "../../constants/utils";
 
 const ListingCard = ({status, address, propertyImage}) => {
-    const {showActive, setActive, innerRef} = useDropDown();
+    const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
 
     const showDropDown = () => {
         setActive(!showActive);

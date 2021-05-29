@@ -3,7 +3,7 @@ import {ReactComponent as Filter} from "../../assets/img/filter-btn.svg";
 import {ReactComponent as HideIcon} from "../../assets/img/hide-icon.svg";
 import {ReactComponent as Expand} from "../../assets/img/expand.svg";
 import Paper from "@material-ui/core/Paper";
-import useDropDown from "../../hooks/useDropDown";
+import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 
 const DropDownOption = {
   bestMatch: "Best Match",
@@ -13,9 +13,9 @@ const DropDownOption = {
 };
 
 const SearchControlPanel = ({ togglePanel, showPanel, smallDevice }) => {
-  const { showActive, setActive, innerRef } = useDropDown();
+  const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
   const [showActiveFilter, setActiveFilter] = useState(
-    DropDownOption["bestMatch"]
+      DropDownOption["bestMatch"]
   );
 
   const showDropDown = () => {

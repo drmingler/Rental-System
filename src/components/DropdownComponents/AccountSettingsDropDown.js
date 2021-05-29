@@ -1,9 +1,9 @@
 import React from "react";
-import useDropDown from "../../hooks/useDropDown";
+import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 import {ReactComponent as HouseIcon} from "../../assets/img/house.svg";
 
 function AccountSettingsDropDown() {
-  const { showActive, setActive, innerRef } = useDropDown();
+  const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
   return (
     <div className="account-setting-dropdown" ref={innerRef}>
       <div className="name-symbol" onClick={() => setActive(!showActive)}>

@@ -1,10 +1,10 @@
 import React from "react";
 import {ReactComponent as ChevronUp} from "../../assets/img/chevron-up.svg";
 import {ReactComponent as ChevronDown} from "../../assets/img/chevron-down.svg";
-import useDropDown from "../../hooks/useDropDown";
+import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 
 function MenuOptionsDropDown({menuOption, children}) {
-    const {showActive, setActive, innerRef} = useDropDown();
+    const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
     return (
         <li ref={innerRef} className="nav-item-dropdown">
             <div className="nav-option" onClick={() => setActive(!showActive)}>

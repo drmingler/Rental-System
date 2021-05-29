@@ -1,8 +1,8 @@
 import useToggle from "./useToggle";
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 
-const useDropDown = () => {
-  const { showActive, setActive } = useToggle();
+const useDetectClickOutsideTarget = () => {
+  const {showActive, setActive} = useToggle();
   const innerRef = useRef();
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const useDropDown = () => {
   };
 };
 
-export default useDropDown;
+export default useDetectClickOutsideTarget;
