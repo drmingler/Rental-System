@@ -35,6 +35,10 @@
 
   .property-contact {
     margin-top: 30px;
+
+    .MuiFormControl-marginNormal {
+      margin-bottom: 1px;
+    }
   }
 
   .property-facilities {
@@ -54,9 +58,11 @@
   .monthly-rent-container {
     background-color: white;
   }
+
   .monthly-rent-inputs {
     padding: 40px 40px 30px;
   }
+
   .monthly-rent-instruction {
     margin-top: 20px;
     color: $placeholder-colour;
@@ -65,10 +71,56 @@
   }
 }
 
+.address-text_box {
+  position: relative;
+}
+
+.suggestions-dropdown {
+  box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
+  border-radius: 3px;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
+    line-height: 70px;
+    color: $font-dark-colour;
+    @extend %small-font-style;
+    border-bottom: 1px solid $bg-colour-5;
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    strong {
+      color: $deep-purple;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+      transition: all 0.3s ease-in;
+    }
+
+    &:first-child {
+      background-color: $hover-color;
+    }
+  }
+}
+
 // Image Upload
 .section-header {
   @extend %large-heading-style;
 }
+
 .listing-image-container {
   @extend %listing-image-container;
 }

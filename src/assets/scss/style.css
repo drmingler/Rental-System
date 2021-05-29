@@ -9991,7 +9991,7 @@ h3 {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -10172,7 +10172,7 @@ h1 {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -10300,7 +10300,7 @@ h1 {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -10839,7 +10839,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -11022,7 +11022,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -11150,7 +11150,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -11595,7 +11595,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -11691,12 +11691,18 @@ html {
   font-weight: 700;
   font-family: proxima-nova-bold, sans-serif;
 }
+
 .add-property-header .property-contact {
-  margin-top: 30px;
+    margin-top: 30px;
 }
+
+.add-property-header .property-contact .MuiFormControl-marginNormal {
+    margin-bottom: 1px;
+}
+
 .add-property-header .property-facilities {
-  margin-top: 28px;
-  margin-bottom: 28px;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 .add-property-header .price-form-container .MuiFormLabel-root {
   color: #2e2d36;
@@ -11707,25 +11713,71 @@ html {
 .add-property-header .monthly-rent-container {
   background-color: white;
 }
+
 .add-property-header .monthly-rent-inputs {
-  padding: 40px 40px 30px;
+    padding: 40px 40px 30px;
 }
+
 .add-property-header .monthly-rent-instruction {
-  margin-top: 20px;
-  color: #9a99b6;
-  font-size: 14px;
-  line-height: 22px;
+    margin-top: 20px;
+    color: #9a99b6;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.address-text_box {
+    position: relative;
+}
+
+.suggestions-dropdown {
+    box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.suggestions-dropdown li {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
+    line-height: 70px;
+    color: #2e2d36;
+    border-bottom: 1px solid #f4f5f7;
+}
+
+.suggestions-dropdown li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.suggestions-dropdown li strong {
+    color: #7c54c1;
+}
+
+.suggestions-dropdown li:hover {
+    background-color: #f2f3f5;
+    transition: all 0.3s ease-in;
+}
+
+.suggestions-dropdown li:first-child {
+    background-color: #f2f3f5;
 }
 
 .upload-file-input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  outline: none;
-  border: 0;
-  padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: 0;
+    padding: 0;
   border-radius: 6px;
   z-index: 9;
   opacity: 0;
@@ -12022,7 +12074,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text, .suggestions-dropdown li {
     font-size: 16px;
     line-height: 22px;
 }
@@ -12786,7 +12838,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -13697,7 +13749,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -14026,7 +14078,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -14349,7 +14401,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -14551,7 +14603,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -14749,7 +14801,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .marker-wrapper .map-house-cards .price-text {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .landlord-card .name, .chat-info .name, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -15082,7 +15134,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
     font-size: 16px;
     line-height: 22px;
 }
@@ -15248,7 +15300,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
+.location-dropdown li, .pricing-header .pricing-text, .plan-price .price, .plan-type .type, .sidebar-option-wrapper li .text, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name {
     font-size: 16px;
     line-height: 22px;
 }
@@ -15690,7 +15742,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -15853,7 +15905,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -15981,7 +16033,7 @@ html {
   line-height: 20px;
 }
 
-.location-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
+.location-dropdown li, .suggestions-dropdown li, .marker-wrapper .map-house-cards .price-text, .chat-info .name, .landlord-card .name, .sidebar-option-wrapper li .text, .plan-type .type, .plan-price .price, .pricing-header .pricing-text {
     font-size: 16px;
     line-height: 22px;
 }
@@ -16119,32 +16171,28 @@ html {
 }
 
 .location-dropdown {
-  width: 100%;
-  margin-top: 10px;
-  box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
-  position: absolute;
-  border-radius: 3px;
-  background: #fff;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 8px 12px rgba(46, 45, 54, 0.25);
+    position: absolute;
+    border-radius: 3px;
+    background: #fff;
     overflow: hidden;
     z-index: 1;
     display: none;
 }
-
 .location-dropdown-enter {
     display: block;
 }
-
 .location-dropdown li {
     padding: 0 30px;
     line-height: 70px;
     color: #2e2d36;
 }
-
 .location-dropdown li:hover {
     background-color: #f2f3f5;
     transition: all 0.3s ease-in;
 }
-
 .location-dropdown li:first-child {
     background-color: #f2f3f5;
 }
@@ -16156,7 +16204,6 @@ html {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-
 .rent-list-btn .rent-btn {
   font-family: proxima-nova-bold, sans-serif;
   background-color: rgba(46, 45, 54, 0.3);
