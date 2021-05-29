@@ -7,15 +7,13 @@ import Typography from "@material-ui/core/Typography";
 import {ReactComponent as BedIcon} from "../../assets/img/beds-icon.svg";
 import {ReactComponent as BathIcon} from "../../assets/img/bath-icon.svg";
 import {ReactComponent as SqrtIcon} from "../../assets/img/sqft-icon.svg";
-import {HouseCardIconWrapper} from "./index";
+import {HouseCardIconWrapper, HousePrice} from "./index";
 
 const HouseCard = (props) => {
   const {image, propertyName, address, price, bed, bath, size} = props;
   return (
       <Card className="house-cards">
-        <div className="house-price">
-          <span className="price-text">{`₦${price && price.toLocaleString()}`}</span>
-        </div>
+        <HousePrice price={price}/>
         <CardActionArea>
           <CardMedia
               component="img"
