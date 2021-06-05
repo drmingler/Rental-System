@@ -11908,6 +11908,70 @@ html {
   color: #7c54c1;
 }
 
+.property-documents-section {
+  padding-top: 50px;
+}
+
+.file-uploader {
+  position: relative;
+  height: 200px;
+  border: 1px solid #d2d4df;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upload-instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-instruction svg {
+  width: 24px;
+  height: 24px;
+  color: #7c54c1;
+}
+.upload-instruction .text {
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: proxima-nova-bold, sans-serif;
+}
+
+.list-of-files-container {
+  margin-top: 30px;
+}
+
+.file-list {
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #f4f5f7;
+  border: 1px solid #e9eaef;
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.file-list .name {
+  color: #2e2d36;
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-list .icon svg {
+  color: #7c54c1;
+}
+.file-list .size {
+  color: #9a99b6;
+  padding: 0 10px;
+}
+
 .post-listing-section {
   padding-top: 50px;
   padding-bottom: 50px;

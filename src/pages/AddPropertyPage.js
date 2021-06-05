@@ -5,18 +5,20 @@ import {
   AvailabilityDateSection,
   HouseListingSection,
   ListingAmenitySection,
-  ListingButtonSection
+  ListingButtonSection,
+  PropertyDocumentsSection
 } from "../components/AddPropertyPageComponents/index";
 
 const AddPropertyPage = () => {
   return (
     <Layout fixed={true}>
       <form>
-        <AddPropertyHeader />
-        <HouseListingSection />
-        <ListingAmenitySection />
-        <AvailabilityDateSection />
-        <ListingButtonSection />
+        <AddPropertyHeader/>
+        <HouseListingSection/>
+        <ListingAmenitySection/>
+        <PropertyDocumentsSection/>
+        <AvailabilityDateSection/>
+        <ListingButtonSection/>
       </form>
     </Layout>
   );

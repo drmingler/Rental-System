@@ -290,9 +290,82 @@
     padding-left: 10px;
     line-height: 24px;
     white-space: nowrap;
+
     &.active {
       color: $deep-purple;
     }
+  }
+}
+
+// Upload house ownership documents section
+.property-documents-section {
+  padding-top: $small-section-spacing;
+}
+
+.file-uploader {
+  position: relative;
+  height: 200px;
+  border: 1px solid $input-border-colour;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upload-instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: $deep-purple;
+  }
+
+  .text {
+    margin-left: 15px;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    font-weight: 700;
+    font-family: $bold-font-family;
+  }
+}
+
+.list-of-files-container {
+  margin-top: 30px;
+}
+
+.file-list {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  background-color: $bg-colour-5;
+  border: 1px solid $light-border;
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  .name {
+    color: $font-dark-colour;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .icon {
+    svg {
+      color: $deep-purple;
+    }
+  }
+
+  .size {
+    color: $placeholder-colour;
+    padding: 0 10px;
   }
 }
 
@@ -300,9 +373,11 @@
 .post-listing-section {
   padding-top: $small-section-spacing;
   padding-bottom: $small-section-spacing;
+
   .available-from {
     margin-top: 20px;
     margin-bottom: 55px;
+
     .section-header {
       @extend %medium-large-heading-style;
     }

@@ -8,6 +8,8 @@ import AvailabilityDateSection from "./AvailabilityDateSection";
 import ListingButtonSection from "./ListingButtonSection";
 import ListingAmenitiesIconWrapper from "./ListingAmenitiesIconWrapper";
 import HouseRulesIconWrapper from "./HouseRulesIconWrapper";
+import PropertyDocumentsSection from "./PropertyDocumentsSection";
+import FileList from "./FileList";
 
 export {
     ImageUploaderContainer,
@@ -20,4 +22,6 @@ export {
     ListingButtonSection,
     ListingAmenitiesIconWrapper,
     HouseRulesIconWrapper,
+    PropertyDocumentsSection,
+    FileList
 };
