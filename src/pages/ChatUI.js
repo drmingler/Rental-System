@@ -38,16 +38,16 @@ const ChatUI = () => {
     innerRef.current.scrollIntoView({ behavior: "smooth" });
 
 
-    socket.onopen = () => {
-      console.log("connected");
-    };
-    socket.onclose = () => {
-      console.log("closing");
-    };
-    socket.onmessage = event => {
-      const message = JSON.parse(event.data)
-      console.log(message);
-    };
+    // socket.onopen = () => {
+    //   console.log("connected");
+    // };
+    // socket.onclose = () => {
+    //   console.log("closing");
+    // };
+    // socket.onmessage = event => {
+    //   const message = JSON.parse(event.data)
+    //   console.log(message);
+    // };
 
 
 
