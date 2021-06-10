@@ -10,8 +10,7 @@ export const methods = {
 }
 
 export function AuthHeader() {
-    // const token = localStorage.getItem("token");
-    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjIzNDE4MjM2LCJqdGkiOiI1NjU1OTQ1Y2U5NGE0MTlhOWM2NGM2NTc5YWQ0MmUxYSIsInVzZXJfaWQiOjYwfQ.oSo8UYCf-nSdjVlO3PzeymRHzbaPIDHEWEwqLbEujr4"
+    const token = localStorage.getItem("token");
     return token ? { Authorization: `Bearer ${token}` } : {}
 }
 

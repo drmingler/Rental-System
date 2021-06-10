@@ -3,14 +3,16 @@ import {PerfectPlace} from "../components/CommonComponents/index";
 import {Layout} from "../components/LayoutComponents/index";
 import {useDispatch} from "react-redux";
 import {AvailableCities, Cities, Header, ListingCategories, Steps} from "../components/HomepageComponents/index";
-import {handleGetOtherUser} from "../store/userSlice";
-
+import {handleLogin} from "../store/authSlice";
 
 function HomePage() {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(handleGetOtherUser(33));
-    }, [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(
+      handleLogin({ email: "kymedia@gmail.com", password: "Krypton@16" })
+    );
+    // dispatch(handleGetOtherUser(33));
+  }, [dispatch]);
   return (
     <Layout>
       <Header />
