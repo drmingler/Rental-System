@@ -11,12 +11,12 @@ async function Login(user) {
 }
 
 async function FetchUserProfile(userId) {
-  const uri = `${URI}/api/account/${userId}/`;
+  const uri = `${URI}/api/retrieve-profile/${userId}/`;
   return MakeApiCall(uri, {}, methods.GET);
 }
 
 async function UpdateUserProfile(userId, user) {
-  const uri = `${URI}/api/account/${userId}/`;
+  const uri = `${URI}/api/update-profile/${userId}/`;
   return MakeApiCall(uri, user, methods.PUT);
 }
 

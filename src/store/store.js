@@ -1,9 +1,13 @@
 import {configureStore, getDefaultMiddleware} from "@reduxjs/toolkit";
-import logger from "redux-logger";
 import {combineReducers} from "redux";
+import logger from "redux-logger";
+import userSlice from "./userSlice";
 
-const rootReducer = combineReducers({});
 let middleware = [...getDefaultMiddleware(), logger];
+
+const rootReducer = combineReducers({
+  users: userSlice,
+});
 
 const store = configureStore({
   middleware,

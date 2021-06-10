@@ -1,21 +1,16 @@
 import React, {useEffect} from "react";
 import {PerfectPlace} from "../components/CommonComponents/index";
 import {Layout} from "../components/LayoutComponents/index";
+import {useDispatch} from "react-redux";
 import {AvailableCities, Cities, Header, ListingCategories, Steps} from "../components/HomepageComponents/index";
-import {FetchUserProfile} from "../api/index";
+import {handleGetOtherUser} from "../store/userSlice";
 
-let new_user = {
-  email: "kymedia@gmail.com",
-  firstName: "ZIKKO",
-  lastName: "David",
-  password: "Krypton@16",
-  phoneNumber: "07062235480"
-};
 
 function HomePage() {
-  useEffect(() => {
-      FetchUserProfile(60).then((result) => console.log(result))
-  }, []);
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(handleGetOtherUser(33));
+    }, [dispatch]);
   return (
     <Layout>
       <Header />
