@@ -24,6 +24,8 @@
     "react-scripts": "4.0.1",
     "react-swipeable": "^6.0.1",
     "react-transition-group": "^4.4.1",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
     "styled-components": "^5.2.1",
     "supercluster": "^7.1.3",
     "swiper": "^6.4.15",
@@ -58,7 +60,9 @@
     "@date-io/date-fns": "^1.3.13",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@material-ui/pickers": "^3.2.10",
+    "@reduxjs/toolkit": "^1.6.0",
     "react-google-autocomplete": "^2.1.2",
+    "react-redux": "^7.2.4",
     "use-supercluster": "^0.2.9"
   }
 }

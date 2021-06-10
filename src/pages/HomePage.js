@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {PerfectPlace} from "../components/CommonComponents/index";
 import {Layout} from "../components/LayoutComponents/index";
 import {AvailableCities, Cities, Header, ListingCategories, Steps} from "../components/HomepageComponents/index";
-import {GetUserProfile} from "../api/index";
+import {FetchUserProfile} from "../api/index";
 
 let new_user = {
   email: "kymedia@gmail.com",
@@ -14,7 +14,7 @@ let new_user = {
 
 function HomePage() {
   useEffect(() => {
-    console.log(GetUserProfile(60));
+      FetchUserProfile(60).then((result) => console.log(result))
   }, []);
   return (
     <Layout>
