@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {DispatchWrapper, loadingFailed, startLoading} from "./constants";
-import {FetchUserProfile, Login} from "../api/api";
-import {setOtherUser} from "./userSlice";
+import {Login} from "../api/api";
+import {logout} from "../api/apiUtils";
 
 const initialState = {
   isLoading: false,
@@ -35,15 +35,10 @@ export const handleLogin = loginDetails => {
   };
 };
 
-export const handleGetOtherUser = userId => {
+export const handleLogout = () => {
   return async dispatch => {
-    async function APICall() {
-      const user = await FetchUserProfile(userId);
-      dispatch(setOtherUser(user));
-    }
-
-    return DispatchWrapper(dispatch, APICall);
+    dispatch(setToken(null));
+    logout();
   };
 };
-
 export default authSlice.reducer;

@@ -4,6 +4,7 @@ import {Layout} from "../components/LayoutComponents/index";
 import {useDispatch} from "react-redux";
 import {AvailableCities, Cities, Header, ListingCategories, Steps} from "../components/HomepageComponents/index";
 import {handleLogin} from "../store/authSlice";
+import {handleGetOtherUser} from "../store/userSlice";
 
 function HomePage() {
   const dispatch = useDispatch();
@@ -11,7 +12,7 @@ function HomePage() {
     dispatch(
       handleLogin({ email: "kymedia@gmail.com", password: "Krypton@16" })
     );
-    // dispatch(handleGetOtherUser(33));
+    dispatch(handleGetOtherUser(33));
   }, [dispatch]);
   return (
     <Layout>
