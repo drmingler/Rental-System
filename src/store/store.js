@@ -5,6 +5,7 @@ import userSlice from "./userSlice";
 import authSlice from "./authSlice";
 import propertySlice from "./propertySlice";
 import locationSlice from "./locationSlice";
+import transactionSlice from "./transactionSlice";
 
 let middleware = [...getDefaultMiddleware(), logger];
 
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   auth: authSlice,
   users: userSlice,
   property: propertySlice,
-  location: locationSlice
+  location: locationSlice,
+  transaction: transactionSlice
 });
 
 const store = configureStore({

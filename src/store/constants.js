@@ -1,5 +1,3 @@
-import {failed, loading} from "./userSlice";
-
 export function startLoading(state) {
     state.isLoading = true;
 }
@@ -9,7 +7,7 @@ export function loadingFailed(state, action) {
     state.error = action.payload;
 }
 
-export function DispatchWrapper(dispatch, callback) {
+export function DispatchWrapper(dispatch, callback, loading, failed) {
     try {
         dispatch(loading());
         callback();

@@ -49,7 +49,7 @@ export const handleGetUser = userId => {
       dispatch(setUser(user));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -60,7 +60,7 @@ export const handleCreateUser = userData => {
       dispatch(setUser(user));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -71,7 +71,7 @@ export const handleUpdateUser = (userId, userData) => {
       dispatch(setUser(user));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -82,7 +82,7 @@ export const handleGetLandlord = userId => {
       dispatch(setLandlord(user));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -93,7 +93,7 @@ export const handleGetOtherUser = userId => {
       dispatch(setOtherUser(user));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 

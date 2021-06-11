@@ -67,7 +67,7 @@ export const handleGetProperty = propertyId => {
       dispatch(setProperty(property));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -78,7 +78,7 @@ export const handleSearchProperties = query => {
       dispatch(setProperties(property));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -89,7 +89,7 @@ export const handleGetProperties = () => {
       dispatch(setProperties(property));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -100,7 +100,7 @@ export const handleUpdateProperty = (propertyId, property) => {
       dispatch(setProperty(updatedProperty));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -111,7 +111,7 @@ export const handleCreateProperty = property => {
       dispatch(setProperty(updatedProperty));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -122,7 +122,7 @@ export const handleDeleteProperty = propertyId => {
       dispatch(deleteProperty(propertyId));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
@@ -132,7 +132,7 @@ export const HandleUploadObject = propertyObject => {
       await UploadObject(propertyObject);
       dispatch(propertyObjectUploaded());
     }
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 

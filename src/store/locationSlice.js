@@ -34,7 +34,7 @@ export const handleGetLocations = () => {
       dispatch(setAvailableLocations(locations));
     }
 
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 

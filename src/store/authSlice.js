@@ -31,7 +31,7 @@ export const handleLogin = loginDetails => {
       localStorage.setItem("token", token.access);
       dispatch(setToken(token.access));
     }
-    return DispatchWrapper(dispatch, APICall);
+    return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
 
