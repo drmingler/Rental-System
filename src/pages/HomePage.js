@@ -3,14 +3,15 @@ import {PerfectPlace} from "../components/CommonComponents/index";
 import {Layout} from "../components/LayoutComponents/index";
 import {useDispatch} from "react-redux";
 import {AvailableCities, Cities, Header, ListingCategories, Steps} from "../components/HomepageComponents/index";
+import {handleGetSubscriptions} from "../store/transactionSlice";
+
+// chat slice
+// Notification slice
 
 function HomePage() {
   const dispatch = useDispatch();
   useEffect(() => {
-    // dispatch(
-    //   handleLogin({ email: "kymedia@gmail.com", password: "Krypton@16" })
-    // );
-    // dispatch(handleGetOtherUser(33));
+    dispatch(handleGetSubscriptions());
   }, [dispatch]);
   return (
     <Layout>
