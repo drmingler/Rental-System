@@ -68,8 +68,8 @@ async function DeletePropertyImage(ObjectId) {
   return MakeApiCall(uri, {}, methods.DELETE);
 }
 
-async function GetLocationCoordinates(locationName) {
-  const uri = `${URI}/api/location/?${locationName}`;
+async function GetLocationCoordinates() {
+  const uri = `${URI}/api/location/`;
   return MakeApiCall(uri, {}, methods.GET);
 }
 
