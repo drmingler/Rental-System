@@ -3,12 +3,14 @@ import {combineReducers} from "redux";
 import logger from "redux-logger";
 import userSlice from "./userSlice";
 import authSlice from "./authSlice";
+import propertySlice from "./propertySlice";
 
 let middleware = [...getDefaultMiddleware(), logger];
 
 const rootReducer = combineReducers({
   auth: authSlice,
-  users: userSlice
+  users: userSlice,
+  property: propertySlice
 });
 
 const store = configureStore({

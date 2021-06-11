@@ -39,7 +39,7 @@ async function CreateProperty(property) {
   const uri = `${URI}/api/property/`;
   return MakeApiCall(uri, property, methods.POST);
 }
-async function UpdateProperty(property, propertyId) {
+async function UpdateProperty(propertyId, property) {
   const uri = `${URI}/api/property/${propertyId}/`;
   return MakeApiCall(uri, property, methods.PUT);
 }
