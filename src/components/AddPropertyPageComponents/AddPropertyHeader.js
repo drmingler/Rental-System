@@ -1,67 +1,13 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import TextField from "@material-ui/core/TextField";
+import {bathroomNumber, bedroomNumber, propertyTypes} from "../../helpers/PropertyConstants";
 import MenuItem from "@material-ui/core/MenuItem";
+import TextField from "@material-ui/core/TextField";
 import Paper from "@material-ui/core/Paper";
 import {PlaceSuggestion} from "../CommonComponents/index";
 import useGoogleSuggestions from "../../hooks/useGoogleSuggestions";
 
 function AddPropertyHeader() {
-  const propertyTypes = [
-    {
-      value: "Apartment",
-      label: "Apartment"
-    },
-    {
-      value: "House",
-      label: "House"
-    },
-    {
-      value: "Condo",
-      label: "Condo"
-    },
-    {
-      value: "Duplex",
-      label: "Duplex"
-    }
-  ];
-  const bedroomNumber = [
-    {
-      value: 1,
-      label: "1"
-    },
-    {
-      value: 2,
-      label: "2"
-    },
-    {
-      value: 3,
-      label: "3"
-    },
-    {
-      value: 4,
-      label: "4+"
-    }
-  ];
-  const bathroomNumber = [
-    {
-      value: 1,
-      label: "1"
-    },
-    {
-      value: 2,
-      label: "2"
-    },
-    {
-      value: 3,
-      label: "3"
-    },
-    {
-      value: 4,
-      label: "4+"
-    }
-  ];
-
   const {
     showActive,
     setActive,

@@ -387,13 +387,83 @@ const houseRulesConfig = [
 ];
 
 let propertyStatus = {
-  Verified: ["Verified", "This property has been reviewed and verified and is now visible for every other user."],
-  Pending: ["Pending", "This property is still being reviewed. We will notify you when the status changes"],
-  Rejected: ["Rejected", "This property has been rejected because we could not verify the uploaded document"],
-  Expired: ["Expired", "This Property has expired. Please subscribe to make it visible to other users again"]
-}
+  Verified: [
+    "Verified",
+    "This property has been reviewed and verified and is now visible for every other user."
+  ],
+  Pending: [
+    "Pending",
+    "This property is still being reviewed. We will notify you when the status changes"
+  ],
+  Rejected: [
+    "Rejected",
+    "This property has been rejected because we could not verify the uploaded document"
+  ],
+  Expired: [
+    "Expired",
+    "This Property has expired. Please subscribe to make it visible to other users again"
+  ]
+};
+
+const propertyTypes = [
+  {
+    value: "Apartment",
+    label: "Apartment"
+  },
+  {
+    value: "House",
+    label: "House"
+  },
+  {
+    value: "Condo",
+    label: "Condo"
+  },
+  {
+    value: "Duplex",
+    label: "Duplex"
+  }
+];
+const bedroomNumber = [
+  {
+    value: 1,
+    label: "1"
+  },
+  {
+    value: 2,
+    label: "2"
+  },
+  {
+    value: 3,
+    label: "3"
+  },
+  {
+    value: 4,
+    label: "4+"
+  }
+];
+const bathroomNumber = [
+  {
+    value: 1,
+    label: "1"
+  },
+  {
+    value: 2,
+    label: "2"
+  },
+  {
+    value: 3,
+    label: "3"
+  },
+  {
+    value: 4,
+    label: "4+"
+  }
+];
 
 export {
+  propertyTypes,
+  bedroomNumber,
+  bathroomNumber,
   propertyAmenities,
   houseType,
   bedroomsNumber,

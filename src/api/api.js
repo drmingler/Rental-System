@@ -1,4 +1,5 @@
-import {MakeApiCall, methods, URI} from "./apiUtils";
+import {API_KEY, MakeApiCall, methods, URI} from "./apiUtils";
+import axios from "axios";
 
 async function CreateUser(user) {
   const uri = `${URI}/auth/users/`;
@@ -86,6 +87,14 @@ async function GetTransactionsHistory() {
 async function CreateSubscription(payload) {
   const uri = `${URI}/api/subscription/`;
   return MakeApiCall(uri, payload, methods.POST);
+}
+
+async function fetchLocationFromGoogle(placeId) {
+  const uri = `https://maps.googleapis.com/maps/api/geocode/json?place_id=${placeId}&key=${API_KEY}`;
+  return await axios
+    .get(uri)
+    .then(response => response.data.results.geometry.location)
+    .catch(reason => console.log(reason));
 }
 
 export {

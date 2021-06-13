@@ -1,18 +1,17 @@
 export function startLoading(state) {
-    state.isLoading = true;
+  state.isLoading = true;
 }
 
 export function loadingFailed(state, action) {
-    state.isLoading = false;
-    state.error = action.payload;
+  state.isLoading = false;
+  state.error = action.payload;
 }
 
-export function DispatchWrapper(dispatch, callback, loading, failed) {
-    try {
-        dispatch(loading());
-        callback();
-    } catch (err) {
-        console.log(err)
-        dispatch(failed(err.toString()));
-    }
+export async function DispatchWrapper(dispatch, APICall, loading, failed) {
+  try {
+    dispatch(loading());
+    await APICall();
+  } catch (err) {
+    dispatch(failed(err.toString()));
+  }
 }
