@@ -28,12 +28,14 @@ export const handleLogin = loginDetails => {
   return async dispatch => {
     async function APICall() {
       const token = await Login(loginDetails);
-      localStorage.setItem("token", token.access);
       dispatch(setToken(token.access));
+      localStorage.setItem("token", token.access);
     }
     return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
+
+
 
 export const handleLogout = () => {
   return async dispatch => {

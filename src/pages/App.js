@@ -68,6 +68,14 @@ function App() {
 
 export default App;
 
+// TODO
+// 1. Add submit all the forms
+// Login, Profile, Payment, HouseUpload
+// 2. Fetch all the data
+// 3. Complete map
+// 4. Chat
+// 4. Filtering
+
 // housingforyou
 // 1. renting-out page and the link it directs you to page.
 

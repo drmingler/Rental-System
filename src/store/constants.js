@@ -3,13 +3,13 @@ export function startLoading(state) {
 }
 
 export function loadingFailed(state, action) {
-  state.isLoading = false;
   state.error = action.payload;
+  state.isLoading = false;
 }
 
 export async function DispatchWrapper(dispatch, APICall, loading, failed) {
   try {
-    dispatch(loading());
+    dispatch(loading);
     await APICall();
   } catch (err) {
     dispatch(failed(err.toString()));

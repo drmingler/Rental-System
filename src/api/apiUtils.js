@@ -32,7 +32,7 @@ export async function MakeApiCall(url, payload, method) {
     case methods.GET:
       return await axios
         .get(url, { headers: AuthHeader() })
-        .then(response => response.data)
+        .then(response => response)
         .catch(AuthChecker);
 
     case methods.POST:

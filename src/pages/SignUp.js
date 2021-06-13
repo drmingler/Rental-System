@@ -17,10 +17,11 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const { isLoading, error } = useSelector(state => state.users);
 
-  const signUp = values => {
-    dispatch(handleCreateUser(values));
-    // If it is not loading and there is an error do not redirect
-    !isLoading && error && history.push("/login");
+  const signUp = signUpData => {
+    dispatch(handleCreateUser(signUpData));
+    if (isLoading === false && error === null) {
+      history.push("/login");
+    }
   };
 
   const {
@@ -112,7 +113,7 @@ const SignUp = () => {
                     </Col>
                   </Row>
                 </div>
-                <button className="auth-button">
+                <button className="auth-button" type="submit">
                   {isLoading && (
                     <CircularProgress className="button-spinner" size={30} />
                   )}
