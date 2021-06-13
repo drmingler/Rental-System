@@ -10,6 +10,21 @@
 .MuiInput-underline:after {
   border-bottom: 1px solid $deep-purple !important;
 }
+
+.Mui-error {
+  &.MuiInput-underline:before {
+    border-bottom: 1px solid $cancel-color !important;
+  }
+  &.MuiInput-underline:after {
+    border-bottom: 1px solid $cancel-color !important;
+  }
+  &.MuiFormLabel-root {
+    color: $cancel-color;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: $cancel-color;
+  }
+}
 .MuiMenuItem-root {
   line-height: 2;
 }
@@ -35,4 +50,9 @@ input {
 }
 .MuiMenu-list {
   height: 190px;
+}
+.button-spinner {
+  height: 30px;
+  width: 30px;
+  color: white;
 }

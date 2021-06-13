@@ -36,11 +36,11 @@ export const registrationValidator = Yup.object({
     .min(10, "Phone number not valid"),
   password: Yup.string()
     .required("Required")
-    .min(8)
     .matches(
       passwordRegExp,
       "Password must contain 8 or more characters, one uppercase, one lowercase and one number"
     )
+    .min(8)
 });
 
 // Login form validation
@@ -151,7 +151,7 @@ export const paymentValidator = Yup.object({
     .max(16)
     .required("Required"),
   expiry: Yup.string()
-    .format("MM/YY")
+    // .format("MM/YY")
     .required("Required"),
   cvc: Yup.number()
     .min(3)

@@ -15882,6 +15882,19 @@ html {
   border-bottom: 1px solid #7c54c1 !important;
 }
 
+.Mui-error.MuiInput-underline:before {
+  border-bottom: 1px solid #e0485c !important;
+}
+.Mui-error.MuiInput-underline:after {
+  border-bottom: 1px solid #e0485c !important;
+}
+.Mui-error.MuiFormLabel-root {
+  color: #e0485c;
+}
+.Mui-error .MuiFormHelperText-root.Mui-error {
+  color: #e0485c;
+}
+
 .MuiMenuItem-root {
   line-height: 2;
 }
@@ -15908,6 +15921,12 @@ input:-webkit-autofill {
 
 .MuiMenu-list {
   height: 190px;
+}
+
+.button-spinner {
+  height: 30px;
+  width: 30px;
+  color: white;
 }
 
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .nav-item-container, .nav-items, .list-property, .renting-header .switch, .renting-header .switch-btn {
