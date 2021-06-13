@@ -1,7 +1,7 @@
 import * as Yup from "yup";
-import {passwordRegExp, phoneRegExp} from "../helpers/utils";
+import {passwordRegExp, phoneRegExp, validateUploads} from "../helpers/utils";
 
-const MAX_SIZE = 700000;
+const MAX_SIZE = 1000000;
 const SUPPORTED_IMAGE_FORMATS = ["image/png", "image/jpg", "image/jpeg"];
 const SUPPORTED_FILE_FORMATS = [
   "image/png",
@@ -57,7 +57,7 @@ export const loginValidator = Yup.object({
   password: Yup.string().required("Required")
 });
 
-// Password reset Rrequest  validator
+// Password reset request  validator
 export const emailInitialValues = {
   email: ""
 };
@@ -131,4 +131,108 @@ export const updateDetailsValidator = Yup.object({
       "File size is too large, maximum upload size is 700KB",
       value => !value || (value && value.size <= MAX_SIZE)
     )
+});
+
+// Payment form validator
+export const paymentInitialValues = {
+  cardHolderName: "",
+  cardNumber: "",
+  expiry: "",
+  cvc: ""
+};
+
+export const paymentValidator = Yup.object({
+  cardHolderName: Yup.string()
+    .min(2, "Must be 2 characters or more")
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+  cardNumber: Yup.string()
+    .min(16)
+    .max(16)
+    .required("Required"),
+  expiry: Yup.string()
+    .format("MM/YY")
+    .required("Required"),
+  cvc: Yup.number()
+    .min(3)
+    .min(3)
+    .required("Required")
+});
+
+// Chat form validator
+export const chatInitialValues = {
+  message: ""
+};
+
+export const chatValidator = Yup.object({
+  message: Yup.string()
+    .min(2, "Must be 2 characters or more")
+    .required("Required")
+});
+
+// House upload form validator
+export const houseUploadInitialValues = {
+  propertyName: "",
+  address: "",
+  numberOfBedrooms: "",
+  numberOfBathrooms: "",
+  unit: "",
+  size: "",
+  listingDescription: "",
+  availableFrom: "",
+  propertyType: "",
+  monthlyRent: "",
+  securityDeposit: "",
+  images: [],
+  files: []
+};
+
+export const houseUploadValidator = Yup.object({
+  propertyName: Yup.string()
+    .min(2, "Must be 2 characters or more")
+    .max(15, "Must be 15 characters or less")
+    .required("Required"),
+  address: Yup.string().required("Required"),
+  numberOfBedrooms: Yup.number().required("Required"),
+  numberOfBathrooms: Yup.number().required("Required"),
+  unit: Yup.number().required("Required"),
+  size: Yup.number().required("Required"),
+  listingDescription: Yup.number()
+    .min(50, "Must be 50 characters or more")
+    .max(1500, "Must be 1500 characters or less")
+    .required("Required"),
+  availableFrom: Yup.string().required("Required"),
+  propertyType: Yup.string().required("Required"),
+  monthlyRent: Yup.number().required("Required"),
+  securityDeposit: Yup.number().required("Required"),
+  images: Yup.mixed()
+    .test("fileFormat", "Unsupported format, upload images only", value => {
+      const result = value.map(
+        file => !file || (file && SUPPORTED_IMAGE_FORMATS.includes(file.type))
+      );
+      return !result.includes(false);
+    })
+    .test(
+      "fileSize",
+      "File size is too large, Maximum upload size is 5MB",
+      value => {
+        return validateUploads(value, MAX_SIZE);
+      }
+    )
+    .test("Required", "Property image is required", value => value[0]),
+  files: Yup.mixed()
+    .test("fileFormat", "Unsupported format, upload files only", value => {
+      const result = value.map(
+        file => !file || (file && SUPPORTED_FILE_FORMATS.includes(file.type))
+      );
+      return !result.includes(false);
+    })
+    .test(
+      "fileSize",
+      "File size is too large, Maximum upload size is 5MB",
+      value => {
+        return validateUploads(value, MAX_SIZE);
+      }
+    )
+    .test("Required", "Property image is required", value => value[0])
 });
