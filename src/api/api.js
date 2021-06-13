@@ -25,12 +25,12 @@ async function FetchLandlordProfile(landlordId) {
   return MakeApiCall(uri, {}, methods.GET);
 }
 
-async function FetchConversation() {
-  const uri = `${URI}/api/conversation/`;
+async function FetchConversation(userId) {
+  const uri = `${URI}/api/conversation/?user_id=${userId}`;
   return MakeApiCall(uri, {}, methods.GET);
 }
 
-async function FetchLastMessages() {
+async function FetchLastChats() {
   const uri = `${URI}/api/last-message/`;
   return MakeApiCall(uri, {}, methods.GET);
 }
@@ -95,7 +95,7 @@ export {
   UpdateUserProfile,
   FetchLandlordProfile,
   FetchConversation,
-  FetchLastMessages,
+  FetchLastChats,
   CreateProperty,
   UpdateProperty,
   DeleteProperty,

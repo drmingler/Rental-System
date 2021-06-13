@@ -225,7 +225,8 @@
 }
 
 .listing-description {
-  input {
+  .MuiInputBase-input {
+    line-height: $medium-line-height;
     font-size: $medium-font-size;
   }
   .MuiFormHelperText-root {

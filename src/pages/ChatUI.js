@@ -1,16 +1,17 @@
-import React, {useEffect, useRef, useState} from "react";
-import {MobileNavbar} from "../components/LayoutComponents/index";
-import NavBar from "../components/LayoutComponents/NavBar";
+import React, {useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import Paper from "@material-ui/core/Paper";
-import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
-import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
-import {socket} from "./api";
+import NavBar from "../components/LayoutComponents/NavBar";
+import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
+import {MobileNavbar} from "../components/LayoutComponents/index";
+import Paper from "@material-ui/core/Paper";
+import TextField from "@material-ui/core/TextField";
+import {handleMessageSend} from "../store/chatSlice";
+import useChat from "../hooks/useChat";
 
-const MyMessage = ({children, date}) => {
+const MyMessage = ({ children, date }) => {
   return (
-      <Col lg={{offset: 3, span: 9}} className="my-message">
+    <Col lg={{ offset: 3, span: 9 }} className="my-message">
       <div className="message">
         <span>{children}</span>
       </div>
@@ -31,28 +32,8 @@ const OtherUserMessage = ({ children, date }) => {
 };
 
 const ChatUI = () => {
-  const innerRef = useRef();
   const [message, setMessage] = useState({});
-
-  useEffect(() => {
-    innerRef.current.scrollIntoView({ behavior: "smooth" });
-
-
-    // socket.onopen = () => {
-    //   console.log("connected");
-    // };
-    // socket.onclose = () => {
-    //   console.log("closing");
-    // };
-    // socket.onmessage = event => {
-    //   const message = JSON.parse(event.data)
-    //   console.log(message);
-    // };
-
-
-
-
-  }, []);
+  const { connection, dispatch, innerRef } = useChat();
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -60,10 +41,7 @@ const ChatUI = () => {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    socket.send(JSON.stringify({
-      // 'type': 'chat_message',
-      'message': message["message"]
-    }))
+    dispatch(handleMessageSend(connection, message));
   }
 
   return (
@@ -98,9 +76,10 @@ const ChatUI = () => {
                     Oh! Nice
                   </OtherUserMessage>
                   <OtherUserMessage date={"2:00 PM, 03/23/21"}>
-                    The property is centrally located between Frank and Johnson street (all within 10 min walk). I
-                    sublet my furnished apartment since I will be away for 1 to
-                    2 years. Minimum contract duration is 1 year.
+                    The property is centrally located between Frank and Johnson
+                    street (all within 10 min walk). I sublet my furnished
+                    apartment since I will be away for 1 to 2 years. Minimum
+                    contract duration is 1 year.
                   </OtherUserMessage>
                   <MyMessage date={"2:00 PM, 03/23/21"}>
                     Centrally located between Mitte, Prenzlauer Berg,

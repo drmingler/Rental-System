@@ -7,10 +7,12 @@ import propertySlice from "./propertySlice";
 import locationSlice from "./locationSlice";
 import transactionSlice from "./transactionSlice";
 import notificationSlice from "./notificationSlice";
+import chatSlice from "./chatSlice";
 
 let middleware = [...getDefaultMiddleware(), logger];
 
 const rootReducer = combineReducers({
+  chat: chatSlice,
   auth: authSlice,
   users: userSlice,
   property: propertySlice,

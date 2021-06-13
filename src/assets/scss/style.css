@@ -11850,7 +11850,8 @@ html {
   margin-bottom: 80px;
 }
 
-.listing-description input {
+.listing-description .MuiInputBase-input {
+  line-height: 28px;
   font-size: 20px;
 }
 .listing-description .MuiFormHelperText-root {

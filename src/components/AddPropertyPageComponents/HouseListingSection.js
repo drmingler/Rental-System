@@ -52,6 +52,7 @@ function HouseListingSection() {
               <TextField
                 className="property-name listing-description-input"
                 placeholder="Type a short description"
+                multiline
                 fullWidth
                 margin="normal"
                 helperText="Minimum 140 characters"
