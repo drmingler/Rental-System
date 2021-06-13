@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {Amenities, FilterOptions, HousePriceSlider} from "./index";
 import CustomTransition from "../CommonComponents/CustomTransition";
-import {bathRoomNumber, bedroomsNumber, houseRulesConfig, houseType} from "../../constants/PropertyConstants";
+import {bathRoomNumber, bedroomsNumber, houseRulesConfig, houseType} from "../../helpers/PropertyConstants";
 
 const FilterOptionPanel = ({
   showPanel,

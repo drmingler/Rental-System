@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 
 import {AmenitiesIcon} from "./index";
-import {propertyAmenities} from "../../constants/PropertyConstants";
+import {propertyAmenities} from "../../helpers/PropertyConstants";
 
 const Amenities = props => {
     const {filtersOptions, setFilterOption} = props;

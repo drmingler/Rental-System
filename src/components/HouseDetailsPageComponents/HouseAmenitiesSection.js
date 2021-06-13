@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {AmenitiesIconWrapper} from "../CommonComponents/index";
-import {propertyAmenities} from "../../constants/PropertyConstants";
+import {propertyAmenities} from "../../helpers/PropertyConstants";
 
 const HouseAmenitiesSection = () => {
   return (

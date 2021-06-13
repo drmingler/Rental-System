@@ -15,7 +15,7 @@ import propertyImage2 from "../../assets/img/propertyImage2.jpeg";
 import propertyImage3 from "../../assets/img/propertyImage3.jpeg";
 import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 import Paper from "@material-ui/core/Paper";
-import {getPropertyStatus} from "../../constants/utils";
+import {getPropertyStatus} from "../../helpers/utils";
 
 const ListingCard = ({status, address, propertyImage}) => {
     const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();

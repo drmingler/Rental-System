@@ -15899,6 +15899,11 @@ html {
 .MuiInputBase-input {
   font-size: 20px;
   font-family: proxima-nova-regular, sans-serif;
+  line-height: 28px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
 }
 
 .MuiMenu-list {

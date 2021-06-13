@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {addComma} from "../../constants/utils";
+import {addComma} from "../../helpers/utils";
 import Card from "@material-ui/core/Card";
 import {HouseCardIconWrapper, HousePrice} from "../CommonComponents";
 import CardActionArea from "@material-ui/core/CardActionArea";

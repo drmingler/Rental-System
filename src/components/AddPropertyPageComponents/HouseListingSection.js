@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {HouseRulesIconWrapper, ImageUploaderContainer, ListingInstructions} from "./index";
 import TextField from "@material-ui/core/TextField";
-import {houseRulesConfig} from "../../constants/PropertyConstants";
+import {houseRulesConfig} from "../../helpers/PropertyConstants";
 
 
 function HouseListingSection() {

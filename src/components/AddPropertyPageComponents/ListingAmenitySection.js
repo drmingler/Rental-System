@@ -2,7 +2,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import React, {useState} from "react";
 import {ReactComponent as AlertCircle} from "../../assets/img/alert-circle.svg";
 import {ListingAmenitiesIconWrapper, ListingInstructions} from "./index";
-import {propertyAmenities} from "../../constants/PropertyConstants";
+import {propertyAmenities} from "../../helpers/PropertyConstants";
 
 const ListingAmenitySection = () => {
   const [houseAmenities, selectHouseAmenity] = useState({});

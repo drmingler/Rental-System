@@ -8,17 +8,12 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Radio from "@material-ui/core/Radio";
 import DateFnsUtils from "@date-io/date-fns";
 import {KeyboardDatePicker, MuiPickersUtilsProvider} from "@material-ui/pickers";
-import countries from "../constants/CountriesList";
+import countries from "../helpers/CountriesList";
 import MenuItem from "@material-ui/core/MenuItem";
 import useImageUploader from "../hooks/useImageUploader";
 
 const ProfileSettings = () => {
-  const [value, setValue] = React.useState("female");
   const { handleImageUpload, backgroundImage, showImage } = useImageUploader();
-
-  const handleChange = event => {
-    setValue(event.target.value);
-  };
   const [selectedDate, setSelectedDate] = React.useState(null);
 
   const handleDateChange = date => {
@@ -83,9 +78,9 @@ const ProfileSettings = () => {
                     <h3 className="text-box-header">Your Gender</h3>
                     <RadioGroup
                       aria-label="gender"
-                      name="gender1"
-                      value={value}
-                      onChange={handleChange}
+                      name="gender"
+                      // value={value}
+                      // onChange={handleChange}
                     >
                       <FormControlLabel
                         value="female"
@@ -106,7 +101,8 @@ const ProfileSettings = () => {
                   </FormControl>
                 </div>
                 <TextField
-                  label="City of residence"
+                  label="Address"
+                  multiline={true}
                   fullWidth
                   margin="normal"
                 />
@@ -128,10 +124,10 @@ const ProfileSettings = () => {
                   <FormControl component="fieldset">
                     <h3 className="text-box-header">Your Occupation</h3>
                     <RadioGroup
-                      aria-label="gender"
-                      name="gender1"
-                      value={value}
-                      onChange={handleChange}
+                      aria-label="occupation"
+                      name="occupation"
+                      // value={value}
+                      // onChange={handleChange}
                     >
                       <FormControlLabel
                         value="student"

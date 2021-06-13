@@ -1,5 +1,5 @@
 import React from "react";
-import {addComma} from "../../constants/utils";
+import {addComma} from "../../helpers/utils";
 
 const HousePrice = ({price}) => {
     return (
