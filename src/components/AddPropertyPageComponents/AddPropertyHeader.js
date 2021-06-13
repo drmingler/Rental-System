@@ -7,7 +7,7 @@ import {PlaceSuggestion} from "../CommonComponents/index";
 import useGoogleSuggestions from "../../hooks/useGoogleSuggestions";
 
 function AddPropertyHeader() {
-  const currencies = [
+  const propertyTypes = [
     {
       value: "Apartment",
       label: "Apartment"
@@ -17,28 +17,48 @@ function AddPropertyHeader() {
       label: "House"
     },
     {
-      value: "Paid",
-      label: "Paid"
+      value: "Condo",
+      label: "Condo"
     },
     {
-      value: "Rent",
-      label: "Rent"
+      value: "Duplex",
+      label: "Duplex"
+    }
+  ];
+  const bedroomNumber = [
+    {
+      value: 1,
+      label: "1"
     },
     {
-      value: "Rent",
-      label: "Rent"
+      value: 2,
+      label: "2"
     },
     {
-      value: "Rent",
-      label: "Rent"
+      value: 3,
+      label: "3"
     },
     {
-      value: "Rent",
-      label: "Rent"
+      value: 4,
+      label: "4+"
+    }
+  ];
+  const bathroomNumber = [
+    {
+      value: 1,
+      label: "1"
     },
     {
-      value: "Rent",
-      label: "Rent"
+      value: 2,
+      label: "2"
+    },
+    {
+      value: 3,
+      label: "3"
+    },
+    {
+      value: 4,
+      label: "4+"
     }
   ];
 
@@ -53,90 +73,90 @@ function AddPropertyHeader() {
   } = useGoogleSuggestions();
 
   return (
-      <header className="add-property-header">
-        <Container fluid={"sm"}>
-          <Row>
-            <Col xl={8} lg={7} md={12} className="property-form-container">
-              <TextField
-                  className="property-name"
-                  placeholder="Property Name"
-                  fullWidth
-                  margin="normal"
-              />
+    <header className="add-property-header">
+      <Container fluid={"sm"}>
+        <Row>
+          <Col xl={8} lg={7} md={12} className="property-form-container">
+            <TextField
+              className="property-name"
+              placeholder="Property Name"
+              fullWidth
+              margin="normal"
+            />
 
-              <Row className="property-contact">
-                <Col md={8}>
-                  <div className="address-text_box" ref={innerRef}>
-                    <TextField
-                        fullWidth
-                        label="Address"
-                        margin="normal"
-                        value={value}
-                        onChange={evt => {
-                          getPlacePredictions({input: evt.target.value});
-                          setValue(evt.target.value);
-                          setActive(true);
-                        }}
-                    />
-                    <PlaceSuggestion
-                        placePredictions={placePredictions}
-                        setActive={setActive}
-                        showActive={showActive}
-                        setValue={setValue}
-                    />
+            <Row className="property-contact">
+              <Col md={8}>
+                <div className="address-text_box" ref={innerRef}>
+                  <TextField
+                    fullWidth
+                    label="Address"
+                    margin="normal"
+                    value={value}
+                    onChange={evt => {
+                      getPlacePredictions({ input: evt.target.value });
+                      setValue(evt.target.value);
+                      setActive(true);
+                    }}
+                  />
+                  <PlaceSuggestion
+                    placePredictions={placePredictions}
+                    setActive={setActive}
+                    showActive={showActive}
+                    setValue={setValue}
+                  />
                 </div>
               </Col>
               <Col md={4}>
-                <TextField fullWidth label="Unit# (optional)" margin="normal"/>
+                <TextField fullWidth label="Unit# (optional)" margin="normal" />
               </Col>
             </Row>
 
             <Row className="property-facilities">
               <Col md={3}>
                 <TextField
-                    select
-                    fullWidth
-                    label="Type"
-                    margin="normal"
-                    // value={currency}
-                    // onChange={handleChange}
+                  select
+                  fullWidth
+                  label="Type"
+                  margin="normal"
+                  // value={currency}
+                  // onChange={handleChange}
                 >
-                  {currencies.map((option, index) => (
-                      <MenuItem key={index} value={option.value}>
-                        {option.label}
-                      </MenuItem>
+                  {propertyTypes.map((option, index) => (
+                    <MenuItem key={index} value={option.value}>
+                      {option.label}
+                    </MenuItem>
                   ))}
                 </TextField>
               </Col>
               <Col md={3}>
                 <TextField
-                    select
-                    fullWidth
-                    label="Bedroom"
-                    margin="normal"
-                    // value={currency}
-                    // onChange={handleChange}
+                  select
+                  fullWidth
+                  label="Bedroom"
+                  margin="normal"
+                  // value={currency}
+                  // onChange={handleChange}
                 >
-                  {currencies.map((option, index) => (
-                      <MenuItem key={index} value={option.value}>
-                        {option.label}
-                      </MenuItem>
+                  {bedroomNumber.map((option, index) => (
+                    <MenuItem key={index} value={option.value}>
+                      {option.label}
+                    </MenuItem>
                   ))}
                 </TextField>
               </Col>
               <Col md={3} xs={5}>
                 <TextField
-                    select
-                    fullWidth
-                    label="Bath"
-                    margin="normal"
-                    // value={currency}
-                    // onChange={handleChange}
+                  select
+                  fullWidth
+                  label="Bath"
+                  margin="normal"
+                  // value={currency}
+                  // onChange={handleChange}
                 >
-                  {currencies.map((option, index) => (
-                      <MenuItem key={index} value={option.value}>
-                        {option.label}
-                      </MenuItem>
+                  {bathroomNumber.map((option, index) => (
+                    <MenuItem key={index} value={option.value}>
+                      {option.label}
+                    </MenuItem>
                   ))}
                 </TextField>
               </Col>
