@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 
 const useImageUploader = callback => {
   const [backgroundImage, setBackgroundImage] = useState(null);
@@ -18,7 +18,7 @@ const useImageUploader = callback => {
   const handleRemoveImage = () => {
     setImageVisibility(!showImage);
   };
-  return { handleImageUpload,handleRemoveImage, backgroundImage, showImage };
+  return { handleImageUpload,handleRemoveImage, backgroundImage, showImage, setBackgroundImage };
 };
 
 export default useImageUploader;

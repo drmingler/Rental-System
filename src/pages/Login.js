@@ -6,11 +6,12 @@ import {ReactComponent as FBIcon} from "../assets/img/fb.svg";
 import {ReactComponent as GoogleIcon} from "../assets/img/google.svg";
 import TextField from "@material-ui/core/TextField";
 import {useForm} from "../hooks/useForm";
-import {useHistory, useLocation} from "react-router-dom";
+import {Link, useHistory, useLocation} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {handleLogin} from "../store/authSlice";
 import {AuthLayout, SocialAuthButton} from "../components/AuthPageComponents/index";
 import CircularProgress from "@material-ui/core/CircularProgress";
+
 
 const Login = () => {
   let history = useHistory();
@@ -107,7 +108,7 @@ const Login = () => {
           </Col>
           <Col md={12} className="already-signed-up">
             <span>
-              Don’t have an account yet? <a href="/">Sign up</a>
+              Don’t have an account yet? <Link to="/sign-up">Sign up</Link>
             </span>
           </Col>
         </Row>

@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import {useForm} from "../hooks/useForm";
 import {useDispatch, useSelector} from "react-redux";
 import {handleCreateUser} from "../store/userSlice";
-import {useHistory} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import {ReactComponent as FBIcon} from "../assets/img/fb.svg";
 import {ReactComponent as GoogleIcon} from "../assets/img/google.svg";
 import {AuthLayout, SocialAuthButton} from "../components/AuthPageComponents/index";
@@ -124,7 +124,7 @@ const SignUp = () => {
           </Col>
           <Col md={12} className="already-signed-up">
             <span>
-              Already have Rentberry account? <a href="/">Log in</a>
+              Already have Rentberry account? <Link to="/login">Log in</Link>
             </span>
           </Col>
         </Row>

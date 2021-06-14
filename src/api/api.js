@@ -11,8 +11,13 @@ async function Login(user) {
   return MakeApiCall(uri, user, methods.POST);
 }
 
-async function FetchUserProfile(userId) {
+async function FetchUserSimpleProfile(userId) {
   const uri = `${URI}/api/retrieve-profile/${userId}/`;
+  return MakeApiCall(uri, {}, methods.GET);
+}
+
+async function FetchUserCompleteProfile() {
+  const uri = `${URI}/api/profile/`;
   return MakeApiCall(uri, {}, methods.GET);
 }
 
@@ -100,7 +105,8 @@ async function fetchLocationFromGoogle(placeId) {
 export {
   CreateUser,
   Login,
-  FetchUserProfile,
+  FetchUserSimpleProfile,
+  FetchUserCompleteProfile,
   UpdateUserProfile,
   FetchLandlordProfile,
   FetchConversation,

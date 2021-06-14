@@ -7,6 +7,7 @@ function NavBar({ fixed, history }) {
   const [transparent, setTransparent] = useState(
     fixed ? "navbar" : "navbar-transparent"
   );
+
   useLayoutEffect(() => {
     window.onscroll = () => {
       let currentPosition = window.pageYOffset;

@@ -8,6 +8,14 @@ function addComma(string) {
   return string.toLocaleString();
 }
 
+export function isEmpty(payload) {
+  return payload && Object.keys(payload).length === 0
+}
+
+export const toDate= (dateTime) => {
+    return dateTime.toISOString().split('T')[0].toString()
+}
+
 export { getPropertyStatus, addComma };
 
 export const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;

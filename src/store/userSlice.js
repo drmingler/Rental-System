@@ -1,6 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {DispatchWrapper, loadingFailed, startLoading} from "./constants";
-import {CreateUser, FetchLandlordProfile, FetchUserProfile, UpdateUserProfile} from "../api/api";
+import {
+  CreateUser,
+  FetchLandlordProfile,
+  FetchUserCompleteProfile,
+  FetchUserSimpleProfile,
+  UpdateUserProfile
+} from "../api/api";
 
 const initialState = {
   isLoading: false,
@@ -42,10 +48,10 @@ export const {
   failed
 } = usersSlice.actions;
 
-export const handleGetUser = userId => {
+export const handleGetSimpleUser = userId => {
   return async dispatch => {
     async function APICall() {
-      const user = await FetchUserProfile(userId);
+      const user = await FetchUserSimpleProfile(userId);
       dispatch(setUser(user));
     }
 
@@ -53,6 +59,16 @@ export const handleGetUser = userId => {
   };
 };
 
+export const handleGetCompleteUser = () => {
+  return async dispatch => {
+    async function APICall() {
+      const user = await FetchUserCompleteProfile();
+      dispatch(setUser(user));
+    }
+
+    return DispatchWrapper(dispatch, APICall, loading, failed);
+  };
+};
 
 export const handleCreateUser = userData => {
   return async dispatch => {
@@ -91,7 +107,7 @@ export const handleGetLandlord = userId => {
 export const handleGetOtherUser = userId => {
   return async dispatch => {
     async function APICall() {
-      const user = await FetchUserProfile(userId);
+      const user = await FetchUserSimpleProfile(userId);
       dispatch(setOtherUser(user));
     }
 

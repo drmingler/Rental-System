@@ -69,7 +69,6 @@ export const emailValidator = Yup.object({
 });
 
 // Password reset validator
-
 export const passwordResetInitialValues = {
   new_password: "",
   re_new_password: ""
@@ -92,7 +91,6 @@ export const passwordResetValidator = Yup.object({
 });
 
 // Update profile validation
-
 export const updateDetailsValidator = Yup.object({
   firstName: Yup.string()
     .min(2, "Must be 2 characters or more")
@@ -106,8 +104,7 @@ export const updateDetailsValidator = Yup.object({
     .email("Invalid email address")
     .required("Required"),
   birthDate: Yup.string()
-    .email("Invalid email address")
-    .required("Required"),
+    .required("Date field can not be empty"),
   gender: Yup.string().required("Required"),
   nationality: Yup.string().required("Required"),
   occupation: Yup.string().required("Required"),
