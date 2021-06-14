@@ -6,7 +6,7 @@ import {ReactComponent as FBIcon} from "../assets/img/fb.svg";
 import {ReactComponent as GoogleIcon} from "../assets/img/google.svg";
 import TextField from "@material-ui/core/TextField";
 import {useForm} from "../hooks/useForm";
-import {useHistory} from "react-router-dom";
+import {useHistory, useLocation} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {handleLogin} from "../store/authSlice";
 import {AuthLayout, SocialAuthButton} from "../components/AuthPageComponents/index";
@@ -14,14 +14,20 @@ import CircularProgress from "@material-ui/core/CircularProgress";
 
 const Login = () => {
   let history = useHistory();
+  let location = useLocation();
+
   const dispatch = useDispatch();
   const { isLoading, error } = useSelector(state => state.auth);
 
   const login = loginDetails => {
     dispatch(handleLogin(loginDetails));
-    if (isLoading === false && error === null) {
-      history.push("/");
-    }
+
+    setTimeout(() => {
+      if (isLoading === false && error === null) {
+        const state = location.state;
+        state === undefined ? history.push("/") : history.push(state.from);
+      }
+    }, 500);
   };
 
   const {

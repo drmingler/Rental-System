@@ -1,67 +1,12 @@
 import React from "react";
 import "../assets/scss/style.scss";
 import {StylesProvider} from "@material-ui/core/styles";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import HouseDetailsPage from "./HouseDetailsPage";
-import HomePage from "./HomePage";
-import PlatformUsage from "./PlatformUsage";
-import AddPropertyPage from "./AddPropertyPage";
-import HousesForRentPage from "./HousesForRentPage";
-import RentingInstruction from "./RentingInstruction";
-import MyListingsPage from "./MyListingPage";
-import Login from "./Login";
-import SignUp from "./SignUp";
-import PasswordReset from "./PasswordReset";
-import ErrorPage from "./ErrorPage";
-import ProfileSettings from "./ProfileSettings";
-import TermsOfUse from "./TermsOfUse";
-import PrivacyPolicy from "./PrivacyPolicy";
-import PaymentSubscriptionPage from "./PaymentSubscriptionPage";
-import PaymentTxHistory from "./PaymentTxHistory";
-import PricingPage from "./PricingPage";
-import LandlordProfilePage from "./LandlordProfilePage";
-import ChatUI from "./ChatUI";
-import Messages from "./Messages";
+import Routers from "../router";
 
 function App() {
   return (
     <StylesProvider injectFirst>
-      <Router basename={"/"}>
-        <Switch>
-          <Route exact path={"/"} component={HomePage} />
-          <Route exact path={"/list"} component={AddPropertyPage} />
-          <Route exact path={"/my-listings"} component={MyListingsPage} />
-          <Route exact path={"/property"} component={HouseDetailsPage} />
-          <Route exact path={"/properties"} component={HousesForRentPage} />
-          <Route exact path={"/profile"} component={ProfileSettings} />
-          <Route exact path={"/payment/history"} component={PaymentTxHistory} />
-          <Route
-            exact
-            path={"/payment/subscribe"}
-            component={PaymentSubscriptionPage}
-          />
-          <Route exact path={"/messages"} component={Messages} />
-          <Route exact path={"/messages/chat"} component={ChatUI} />
-          <Route
-            exact
-            path={"/profile/landlord"}
-            component={LandlordProfilePage}
-          />
-          <Route exact path={"/login"} component={Login} />
-          <Route exact path={"/sign-up"} component={SignUp} />
-          <Route exact path={"/reset-password"} component={PasswordReset} />
-          <Route exact path={"/renting"} component={PlatformUsage} />
-          <Route
-            exact
-            path={"/renting-instruction"}
-            component={RentingInstruction}
-          />
-          <Route exact path={"/pricing"} component={PricingPage} />
-          <Route exact path={"/terms"} component={TermsOfUse} />
-          <Route exact path={"/privacy-policy"} component={PrivacyPolicy} />
-          <Route exact path={"/not-found"} component={ErrorPage} />
-        </Switch>
-      </Router>
+      <Routers />
     </StylesProvider>
   );
 }
