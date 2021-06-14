@@ -1,9 +1,10 @@
 import React from "react";
 import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
 import {ReactComponent as HouseIcon} from "../../assets/img/house.svg";
+import {ReRoute} from "../CommonComponents/index";
 
 function AccountSettingsDropDown() {
-  const {showActive, setActive, innerRef} = useDetectClickOutsideTarget();
+  const { showActive, setActive, innerRef } = useDetectClickOutsideTarget();
   return (
     <div className="account-setting-dropdown" ref={innerRef}>
       <div className="name-symbol" onClick={() => setActive(!showActive)}>
@@ -14,30 +15,30 @@ function AccountSettingsDropDown() {
         ${showActive && "show-name-dropdown"}`}
       >
         <ul>
-          <li>
+          <ReRoute to={"/profile"}>
             <div className="name-dropdown-icon">
               <HouseIcon />
             </div>
             <span>Switch to tenant</span>
-          </li>
-          <li>
+          </ReRoute>
+          <ReRoute to={"/profile"}>
             <div className="name-dropdown-icon">
               <HouseIcon />
             </div>
             <span>Account Settings</span>
-          </li>
-          <li>
+          </ReRoute>
+          <ReRoute to={"/profile"}>
             <div className="name-dropdown-icon">
               <HouseIcon />
             </div>
             <span>Help</span>
-          </li>
-          <li>
+          </ReRoute>
+          <ReRoute to={"/logout"}>
             <div className="name-dropdown-icon">
               <HouseIcon />
             </div>
             <span>Logout</span>
-          </li>
+          </ReRoute>
         </ul>
       </div>
     </div>

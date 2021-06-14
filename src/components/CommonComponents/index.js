@@ -5,6 +5,7 @@ import PerfectPlace from "./PerfectPlace";
 import Switch from "./Switch";
 import HousePrice from "./HousePrice";
 import PlaceSuggestion from "./PlaceSuggestion";
+import ReRoute from "./ReRoute";
 
 export {
   AmenitiesIconWrapper,
@@ -13,5 +14,6 @@ export {
   PerfectPlace,
   Switch,
   HousePrice,
-  PlaceSuggestion
+  PlaceSuggestion,
+  ReRoute
 };

@@ -10117,6 +10117,12 @@ h1 {
   font-family: proxima-nova-bold, sans-serif;
 }
 
+a {
+  color: transparent;
+  text-decoration: none;
+  background-color: transparent;
+}
+
 .header-btn-container, .header-input, .rental-steps-container .switch-btn, .rental-steps-container .switch, .rent-list-btn, .renting-header .switch-btn, .renting-header .switch, .list-property, .nav-items, .nav-item-container {
   display: flex;
   align-items: center;

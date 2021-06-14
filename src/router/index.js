@@ -21,6 +21,7 @@ import TermsOfUse from "../pages/TermsOfUse";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import ErrorPage from "../pages/ErrorPage";
 import ProtectedRoutes from "./ProtectedRoutes";
+import Logout from "../pages/Logout";
 
 const Routers = () => {
   return (
@@ -58,6 +59,7 @@ const Routers = () => {
           component={LandlordProfilePage}
         />
         <Route exact path={"/login"} component={Login} />
+        <Route exact path={"/logout"} component={Logout} />
         <Route exact path={"/sign-up"} component={SignUp} />
         <Route exact path={"/reset-password"} component={PasswordReset} />
         <Route exact path={"/renting"} component={PlatformUsage} />
