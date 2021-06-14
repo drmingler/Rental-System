@@ -27,7 +27,7 @@ function AccountSettingsDropDown() {
             </div>
             <span>Account Settings</span>
           </ReRoute>
-          <ReRoute to={"/profile"}>
+          <ReRoute to={"/renting"}>
             <div className="name-dropdown-icon">
               <HouseIcon />
             </div>

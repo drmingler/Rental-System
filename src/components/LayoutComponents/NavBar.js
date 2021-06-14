@@ -1,7 +1,7 @@
 import React, {useLayoutEffect, useState} from "react";
 import {AccountSettingsDropDown, LearnMoreContent, MenuOptionsDropDown, ProductContent} from "../DropdownComponents";
-import {withRouter} from "react-router-dom";
-import HomeLogo from "../../assets/img/homeLogo.png"
+import {Link, withRouter} from "react-router-dom";
+import HomeLogo from "../../assets/img/homeLogo.png";
 
 function NavBar({ fixed, history }) {
   const [transparent, setTransparent] = useState(
@@ -22,7 +22,7 @@ function NavBar({ fixed, history }) {
   return (
     <div className={`${transparent}`}>
       <div className="logo">
-        <img src={HomeLogo} alt="logo"/>
+        <Link to="/"> <img src={HomeLogo} alt="logo" /></Link>
       </div>
       <div className="nav-item-container">
         <ul className="nav-items">
@@ -30,20 +30,20 @@ function NavBar({ fixed, history }) {
             <ProductContent />
           </MenuOptionsDropDown>
           <li>
-            <a href="/">Properties</a>
+            <Link to="/properties">Properties</Link>
           </li>
           <li>
-            <a href="/">Messages</a>
+            <Link to="/messages">Messages</Link>
           </li>
           <li>
-            <a href="/">Pricing</a>
+            <Link to="/pricing">Pricing</Link>
           </li>
           <MenuOptionsDropDown menuOption={"Learn More"}>
             <LearnMoreContent />
           </MenuOptionsDropDown>
         </ul>
         <div className="list-property">
-            <button onClick={()=>history.push("/list")}>List a Property</button>
+          <button onClick={() => history.push("/list")}>List a Property</button>
           <AccountSettingsDropDown />
         </div>
       </div>

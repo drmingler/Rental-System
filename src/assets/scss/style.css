@@ -10530,8 +10530,8 @@ a {
 .nav-item-dropdown .dropdown-item-container .dropdown-item-icon {
   padding-right: 20px;
 }
-.nav-item-dropdown .dropdown-item-container .dropdown-item-icon svg {
-  height: 30px;
+.nav-item-dropdown .dropdown-item-container .dropdown-item-icon .MuiSvgIcon-fontSizeInherit {
+  font-size: 25px;
 }
 .nav-item-dropdown .dropdown-item-container h5 {
   font-size: 16px;
@@ -10588,6 +10588,9 @@ a {
   visibility: hidden;
   box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
 }
+.name-dropdown .MuiSvgIcon-fontSizeInherit {
+  font-size: 20px;
+}
 .name-dropdown li {
   display: flex;
   align-items: center;
@@ -10605,9 +10608,6 @@ a {
 }
 .name-dropdown .name-dropdown-icon {
   padding-right: 10px;
-}
-.name-dropdown .name-dropdown-icon svg {
-  height: 30px;
 }
 
 .show-name-dropdown {
@@ -10775,8 +10775,8 @@ html {
   .mobile-menu-option-content-container .dropdown-item-container .dropdown-item-icon {
     padding-right: 20px;
   }
-  .mobile-menu-option-content-container .dropdown-item-container .dropdown-item-icon svg {
-    height: 30px;
+  .mobile-menu-option-content-container .dropdown-item-container .dropdown-item-icon .MuiSvgIcon-fontSizeInherit {
+    font-size: 25px;
   }
   .mobile-menu-option-content-container .dropdown-item-container h5 {
     font-size: 16px;
