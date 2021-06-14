@@ -24,18 +24,19 @@ const authSlice = createSlice({
 
 export const { loading, setToken, failed } = authSlice.actions;
 
-export const handleLogin = loginDetails => {
+export const handleLogin = (loginDetails, history, location) => {
   return async dispatch => {
     async function APICall() {
       const token = await Login(loginDetails);
       dispatch(setToken(token.access));
       localStorage.setItem("token", token.access);
+
+      const state = location.state;
+      state === undefined ? history.push("/") : history.push(state.from);
     }
     return DispatchWrapper(dispatch, APICall, loading, failed);
   };
 };
-
-
 
 export const handleLogout = () => {
   return async dispatch => {

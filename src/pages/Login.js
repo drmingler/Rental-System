@@ -12,7 +12,6 @@ import {handleLogin} from "../store/authSlice";
 import {AuthLayout, SocialAuthButton} from "../components/AuthPageComponents/index";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-
 const Login = () => {
   let history = useHistory();
   let location = useLocation();
@@ -21,14 +20,7 @@ const Login = () => {
   const { isLoading, error } = useSelector(state => state.auth);
 
   const login = loginDetails => {
-    dispatch(handleLogin(loginDetails));
-
-    setTimeout(() => {
-      if (isLoading === false && error === null) {
-        const state = location.state;
-        state === undefined ? history.push("/") : history.push(state.from);
-      }
-    }, 500);
+    dispatch(handleLogin(loginDetails, history, location));
   };
 
   const {

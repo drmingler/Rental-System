@@ -70,16 +70,17 @@ export const handleGetCompleteUser = () => {
   };
 };
 
-export const handleCreateUser = userData => {
-  return async dispatch => {
-    async function APICall() {
-      const user = await CreateUser(userData);
-      dispatch(setUser(user));
-    }
+export const handleCreateUser = (userData, history) => {
+         return async dispatch => {
+           async function APICall() {
+             const user = await CreateUser(userData);
+             dispatch(setUser(user));
+             history.push("/login");
+           }
 
-    return DispatchWrapper(dispatch, APICall, loading, failed);
-  };
-};
+           return DispatchWrapper(dispatch, APICall, loading, failed);
+         };
+       };
 
 
 export const handleUpdateUser = (userId, userData) => {

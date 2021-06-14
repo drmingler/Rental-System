@@ -2,15 +2,15 @@ import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
+import {handleCreateUser} from "../store/userSlice";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import {useForm} from "../hooks/useForm";
 import {useDispatch, useSelector} from "react-redux";
-import {handleCreateUser} from "../store/userSlice";
 import {Link, useHistory} from "react-router-dom";
 import {ReactComponent as FBIcon} from "../assets/img/fb.svg";
 import {ReactComponent as GoogleIcon} from "../assets/img/google.svg";
 import {AuthLayout, SocialAuthButton} from "../components/AuthPageComponents/index";
 import {regInitialValues, registrationValidator} from "../validators/formValidators";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
 const SignUp = () => {
   let history = useHistory();
@@ -18,10 +18,7 @@ const SignUp = () => {
   const { isLoading, error } = useSelector(state => state.users);
 
   const signUp = signUpData => {
-    dispatch(handleCreateUser(signUpData));
-    if (isLoading === false && error === null) {
-      history.push("/login");
-    }
+    dispatch(handleCreateUser(signUpData, history));
   };
 
   const {
