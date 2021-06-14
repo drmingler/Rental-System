@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../assets/scss/style.scss";
 import {StylesProvider} from "@material-ui/core/styles";
 import Routers from "../router";
+import {useDispatch} from "react-redux";
+import {handleGetCompleteUser} from "../store/userSlice";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+    token && dispatch(handleGetCompleteUser());
+  }, [dispatch]);
   return (
     <StylesProvider injectFirst>
       <Routers />

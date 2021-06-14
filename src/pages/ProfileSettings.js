@@ -78,7 +78,6 @@ const ProfileSettings = () => {
                   <input
                     name="avatar"
                     accept="image/*"
-                    multiple
                     type="file"
                     className="upload-file-input"
                     onChange={event => {
@@ -96,7 +95,7 @@ const ProfileSettings = () => {
                     fullWidth
                     margin="normal"
                     onBlur={handleBlur}
-                    value={values.firstName}
+                    value={values.firstName || ""}
                     onChange={handleChange}
                     error={touched.firstName && Boolean(errors.firstName)}
                     helperText={touched.firstName && errors.firstName}
@@ -107,7 +106,7 @@ const ProfileSettings = () => {
                     fullWidth
                     margin="normal"
                     onBlur={handleBlur}
-                    value={values.lastName}
+                    value={values.lastName || ""}
                     onChange={handleChange}
                     error={touched.lastName && Boolean(errors.lastName)}
                     helperText={touched.lastName && errors.lastName}
@@ -119,7 +118,7 @@ const ProfileSettings = () => {
                     disabled
                     margin="normal"
                     onBlur={handleBlur}
-                    value={values.email}
+                    value={values.email || ""}
                     onChange={handleChange}
                     error={touched.email && Boolean(errors.email)}
                     helperText={touched.email && errors.email}
@@ -136,7 +135,7 @@ const ProfileSettings = () => {
                         placeholder="Date of birth"
                         margin="normal"
                         onBlur={handleBlur}
-                        value={values.birthDate}
+                        value={values.birthDate || new Date()}
                         onChange={date => {
                           setFieldValue("birthDate", toDate(date));
                         }}
@@ -153,7 +152,7 @@ const ProfileSettings = () => {
                       label="Phone Number"
                       fullWidth
                       onBlur={handleBlur}
-                      value={values.phoneNumber}
+                      value={values.phoneNumber || ""}
                       onChange={handleChange}
                       error={touched.phoneNumber && Boolean(errors.phoneNumber)}
                       helperText={touched.phoneNumber && errors.phoneNumber}
@@ -166,7 +165,7 @@ const ProfileSettings = () => {
                         aria-label="gender"
                         name="gender"
                         onBlur={handleBlur}
-                        value={values.gender}
+                        value={values.gender || ""}
                         onChange={handleChange}
                         error={
                           touched.gender && Boolean(errors.gender).toString()
@@ -192,7 +191,7 @@ const ProfileSettings = () => {
                     fullWidth
                     margin="normal"
                     onBlur={handleBlur}
-                    value={values.address}
+                    value={values.address || ""}
                     onChange={handleChange}
                     error={touched.address && Boolean(errors.address)}
                     helperText={touched.address && errors.address}
@@ -222,7 +221,7 @@ const ProfileSettings = () => {
                         aria-label="occupation"
                         name="occupation"
                         onBlur={handleBlur}
-                        value={values.occupation}
+                        value={values.occupation || ""}
                         onChange={handleChange}
                         error={
                           touched.occupation &&
@@ -255,7 +254,7 @@ const ProfileSettings = () => {
                       multiline={true}
                       placeholder={"Tell a bit about yourself (Optional)"}
                       onBlur={handleBlur}
-                      value={values.bio}
+                      value={values.bio || ""}
                       onChange={handleChange}
                       error={touched.bio && Boolean(errors.bio)}
                       helperText={touched.bio && errors.bio}

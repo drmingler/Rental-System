@@ -4,9 +4,9 @@ export const useForm = (makeRequest, initialValues, validator) => {
   return useFormik({
     initialValues: initialValues,
     validationSchema: validator,
-    onSubmit: (values, { resetForm }) => {
+    enableReinitialize : true,
+    onSubmit: values => {
       makeRequest(values);
-      return resetForm();
     }
   });
 };
