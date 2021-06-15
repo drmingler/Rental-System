@@ -1,11 +1,13 @@
 import {useFormik} from "formik";
 
-export const useForm = (makeRequest, initialValues, validator) => {
+export const useChatForm = (makeRequest, initialValues, validator) => {
   return useFormik({
     initialValues: initialValues,
     validationSchema: validator,
-    onSubmit: values => {
+    enableReinitialize: true,
+    onSubmit: (values, { resetForm }) => {
       makeRequest(values);
+      resetForm();
     }
   });
 };

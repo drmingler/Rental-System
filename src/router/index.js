@@ -52,7 +52,7 @@ const Routers = () => {
           component={PaymentSubscriptionPage}
         />
         <ProtectedRoutes exact path={"/messages"} component={Messages} />
-        <ProtectedRoutes exact path={"/messages/chat"} component={ChatUI} />
+        <ProtectedRoutes exact path={"/messages/chat/:id"} component={ChatUI} />
         <Route
           exact
           path={"/profile/landlord"}

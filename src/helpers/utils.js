@@ -45,7 +45,7 @@ export const pickAmenities = amenities => {
 };
 
 export const handleRedirect = (path, history) => {
-  history.push(path);
+  return history.push(path);
 };
 
 export { getPropertyStatus, addComma };
@@ -66,4 +66,12 @@ export function validateUploads(value, MAX_SIZE) {
 
 export const Capitalize = string => {
   return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+export const formatDateTime = dateString => {
+  const dated = new Date(dateString);
+  const splitDate = dated.toString().split(" ");
+  const time = splitDate[4];
+  const date = splitDate.splice(0, 4).join(" ");
+  return `${date}, ${time}`;
 };

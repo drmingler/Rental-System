@@ -4,12 +4,14 @@ import {StylesProvider} from "@material-ui/core/styles";
 import Routers from "../router";
 import {useDispatch} from "react-redux";
 import {handleGetCompleteUser} from "../store/userSlice";
+import {handleLastChats} from "../store/chatSlice";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     let token = localStorage.getItem("token");
     token && dispatch(handleGetCompleteUser());
+    token && dispatch(handleLastChats());
   }, [dispatch]);
   return (
     <StylesProvider injectFirst>

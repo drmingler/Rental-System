@@ -3,27 +3,51 @@ import {MobileNavbar, NavBar} from "../components/LayoutComponents/index";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import UserPlaceholderIcon from "../assets/img/user_mock_big.svg";
+import {useSelector} from "react-redux";
+import {formatDateTime} from "../helpers/utils";
+import {useHistory} from "react-router-dom";
 
-const MessageItem = ({ text }) => {
+const MessageItem = ({ chat }) => {
+  let history = useHistory();
+  const { id } = useSelector(state => state.users.currentUser);
+  const { message, sender, receiver, created_at } = chat;
+
+  const handleRedirect = () => {
+    let redirectId = id === sender ? receiver.id : sender;
+    let location = {
+      pathname: `/messages/chat/${redirectId}`,
+      state: { receiver: receiver }
+    };
+    return history.push(location);
+  };
   return (
-    <li className="col-md-12 my-2">
+    <li className="col-md-12 my-2" onClick={() => handleRedirect()}>
       <Paper className="chat-wrapper" elevation={0}>
         <Row>
           <Col md={5} className="owner-of-chat">
             <div className="landlord-photo-wrapper">
-              <img src={UserPlaceholderIcon} alt="Tenant" />
+              <img src={receiver.avatar || UserPlaceholderIcon} alt="Tenant" />
             </div>
             <div className="chat-info">
-              <span className="name">Emmanuel David</span>
-              <span className="address">
-                Strausberger Pl. 9, 10243 Berlin, Germany
-              </span>
+              <span className="name">{`${receiver.firstName} ${receiver.lastName}`}</span>
+              {receiver.address && (
+                <span className="address">{receiver.address}</span>
+              )}
+              {!receiver.address && (
+                <span className="address">
+                  Gwarimpa Pl. 9, 10243 Abuja, Nigeria
+                </span>
+              )}
             </div>
           </Col>
           <Col md={7}>
             <div>
-              <span>{text.substring(0, 150) + "... "}</span>
-              <span className="message-date">2:00 PM, 03/23/21</span>
+              <span>
+                {message.length > 150
+                  ? message.substring(0, 150) + "... "
+                  : message}
+              </span>
+              <span className="message-date">{formatDateTime(created_at)}</span>
             </div>
           </Col>
         </Row>
@@ -32,8 +56,7 @@ const MessageItem = ({ text }) => {
   );
 };
 const Messages = () => {
-  let text =
-    "Centrally located between Mitte, Prenzlauer Berg, Friedrichshain und Kreuzberg (all within 10 min walk). I sublet my furnished apartment since I am going away for 1 to 2 years. Minimum contract duration is 1 year. 2 bedrooms (or 1 bedroom + 1 living room), 1 bathroom, toilet / bathroom separate, huge kitchen, washer. no balcony but amazing view. Ideal for single or couple. Also included: TV, mountain bike, dishwasher, 5.1 surround sound system, my plants :) Room 1: - Huge Sofa - sleep sofa / bed - TV - Surround Sound - Whiteboard - Desk Room 2: - Huge bed - Small desk - Small sofa - Closet Kitchen: - Fridge / Freezer - Oven - Dishwasher - Table for 4 - Sofa (it's amazing to have a sofa in the";
+  const { lastChats } = useSelector(state => state.chat);
   return (
     <div>
       <MobileNavbar />
@@ -41,10 +64,9 @@ const Messages = () => {
       <section className="message-page">
         <Container>
           <ul className="row">
-            <MessageItem text={text} />
-            <MessageItem text={text} />
-            <MessageItem text={text} />
-            <MessageItem text={text} />
+            {lastChats.map((chat, idx) => (
+              <MessageItem chat={chat} key={idx} />
+            ))}
           </ul>
         </Container>
       </section>
