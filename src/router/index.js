@@ -36,7 +36,7 @@ const Routers = () => {
         />
         <ProtectedRoutes
           exact
-          path={"/property"}
+          path={"/property:propertyId"}
           component={HouseDetailsPage}
         />
         <Route exact path={"/properties"} component={HousesForRentPage} />

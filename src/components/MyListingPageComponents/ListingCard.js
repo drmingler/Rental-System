@@ -12,12 +12,18 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
+import {useHistory} from "react-router-dom";
 
-const ListingCard = ({ status, address, propertyImage }) => {
+const ListingCard = ({ status, address, propertyImage, propertyId }) => {
   const { showActive, setActive, innerRef } = useDetectClickOutsideTarget();
+  let history = useHistory();
 
   const showDropDown = () => {
     setActive(!showActive);
+  };
+
+  const handleRedirect = path => {
+    history.push(path);
   };
 
   let propertyStatus = getPropertyStatus(status);
@@ -34,7 +40,10 @@ const ListingCard = ({ status, address, propertyImage }) => {
           {showActive && (
             <Paper className="dropdown-option-container" elevation={2}>
               <ul>
-                <li className="dropdown-option">
+                <li
+                  className="dropdown-option"
+                  onClick={() => handleRedirect(`/property/${propertyId}`)}
+                >
                   <VisibilityIcon />
                   <span>View Listing</span>
                 </li>

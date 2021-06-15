@@ -12,6 +12,7 @@ const ListingsCardSection = ({ properties }) => {
       {properties.map(
         ({ propertyStatus, propertyAddress, id, propertyImage }) => (
           <ListingCard
+            propertyId={id}
             key={id}
             status={propertyStatus}
             address={propertyAddress.address}
