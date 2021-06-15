@@ -1,20 +1,48 @@
-import {propertyStatus} from "./PropertyConstants";
+import {propertyAmenities, propertyStatus} from "./PropertyConstants";
 
 function getPropertyStatus(key) {
   return propertyStatus[key];
 }
-
 function addComma(string) {
-  return string.toLocaleString();
+  if (string) {
+    let toNumber = parseFloat(string).toFixed(0);
+    let toString = toNumber.toString();
+    return toString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 }
 
 export function isEmpty(payload) {
-  return payload && Object.keys(payload).length === 0
+  return payload && Object.keys(payload).length === 0;
 }
 
-export const toDate= (dateTime) => {
-    return dateTime.toISOString().split('T')[0].toString()
-}
+export const toDate = dateTime => {
+  return dateTime
+    .toISOString()
+    .split("T")[0]
+    .toString();
+};
+
+export const toFormatedDate = dateString => {
+  const dated = new Date(dateString);
+  const splitDate = dated.toString().split(" ");
+  const year = splitDate[3];
+  const date = splitDate.splice(0, 3).join(" ");
+  return `${date}, ${year}`;
+};
+
+export const pickAmenities = amenities => {
+  const validAmenities = [];
+  Object.keys(amenities).map(key => {
+    if (amenities[key] === true) {
+      propertyAmenities.forEach(propertyAmenity => {
+        if (propertyAmenity["key"] === key) {
+          validAmenities.push(propertyAmenity);
+        }
+      });
+    }
+  });
+  return validAmenities;
+};
 
 export { getPropertyStatus, addComma };
 

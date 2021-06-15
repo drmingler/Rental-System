@@ -1,9 +1,9 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {AmenitiesIconWrapper} from "../CommonComponents/index";
-import {propertyAmenities} from "../../helpers/PropertyConstants";
+import {pickAmenities} from "../../helpers/utils";
 
-const HouseAmenitiesSection = () => {
+const HouseAmenitiesSection = ({ amenities }) => {
   return (
     <section className="listing-amenities-section">
       <div className="listing-amenities-container">
@@ -22,12 +22,12 @@ const HouseAmenitiesSection = () => {
                 </Col>
               </Row>
               <ul className="row">
-                {propertyAmenities.map(amenity => (
-                    <AmenitiesIconWrapper
-                        Icon={amenity.iconGrey}
-                        name={amenity.text}
-                        key={amenity.key}
-                    />
+                {pickAmenities(amenities).map(amenity => (
+                  <AmenitiesIconWrapper
+                    Icon={amenity.iconGrey}
+                    name={amenity.text}
+                    key={amenity.key}
+                  />
                 ))}
               </ul>
             </Col>

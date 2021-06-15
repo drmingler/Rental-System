@@ -7,6 +7,7 @@ import HousePrice from "./HousePrice";
 import PlaceSuggestion from "./PlaceSuggestion";
 import ReRoute from "./ReRoute";
 import BackDropLoading from "./BackDropLoading";
+import BackDropLoadingFull from "./BackDropLoadingFull";
 
 export {
   AmenitiesIconWrapper,
@@ -17,5 +18,6 @@ export {
   HousePrice,
   PlaceSuggestion,
   ReRoute,
-  BackDropLoading
+  BackDropLoading,
+  BackDropLoadingFull
 };

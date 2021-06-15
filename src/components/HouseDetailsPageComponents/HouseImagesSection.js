@@ -1,36 +1,24 @@
 import React, {useContext} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
-import PropertyImage1 from "../../assets/img/property-image-1.jpg";
-import PropertyImage2 from "../../assets/img/property-image-2.jpg";
-import PropertyImage3 from "../../assets/img/property-image-3.jpg";
 import useImageVisibility from "../../hooks/useImageVisiblity";
 import {ImageSlideContext} from "../../hooks/usePropertySlides";
 
-const PropertyImage = ({Image}) => {
+const PropertyImage = ({ Image }) => {
   return (
-      <Paper
-          elevation={0}
-          className="property-image"
-          style={{backgroundImage: `url(${Image})`}}
-      />
+    <Paper
+      elevation={0}
+      className="property-image"
+      style={{ backgroundImage: `url(${Image})` }}
+    />
   );
 };
 
-const imagePlaceHolder = [
-  { background: PropertyImage1 },
-  { background: PropertyImage2 },
-  { background: PropertyImage3 },
-  { background: PropertyImage1 },
-  { background: PropertyImage2 },
-  { background: PropertyImage3 }
-];
-
-const HouseImagesSection = () => {
+const HouseImagesSection = ({ propertyImages }) => {
   const { setSlide } = useContext(ImageSlideContext);
 
   const { imagesCount, hiddenImages, showMoreImages } = useImageVisibility(
-    imagePlaceHolder
+    propertyImages
   );
 
   return (
@@ -45,7 +33,7 @@ const HouseImagesSection = () => {
                   key={idx}
                   onClick={() => setSlide(true)}
                 >
-                  <PropertyImage Image={imagePlaceHolder[idx].background} />
+                  <PropertyImage Image={propertyImages[idx]} />
                 </li>
               ))}
             </ul>

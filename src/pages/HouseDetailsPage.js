@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Layout} from "../components/LayoutComponents/index";
 
 import {
@@ -10,25 +10,40 @@ import {
   HouseImagesSection,
   HowToRentProperty,
   MobileHeader,
-  PropertySlider,
-  SimilarPropertiesSection
+  PropertySlider
 } from "../components/HouseDetailsPageComponents/index";
 import Paper from "@material-ui/core/Paper";
-import sliderImage1 from "../assets/img/slider-image.jpg";
-import sliderImage2 from "../assets/img/sliderImage2.jpg";
-import sliderImage3 from "../assets/img/slideImage3.jpg";
 import {ReactComponent as ArrowDownRight} from "../assets/img/arrow-right-circle.svg";
 import {ImageSlideContext, usePropertySlide} from "../hooks/usePropertySlides";
-
-const MockImages = [sliderImage1, sliderImage2, sliderImage3];
+import {useDispatch, useSelector} from "react-redux";
+import {handleGetProperty} from "../store/propertySlice";
+import {useParams} from "react-router-dom";
+import {addComma} from "../helpers/utils";
+import BackDropLoadingFull from "../components/CommonComponents/BackDropLoadingFull";
 
 const HouseDetailsPage = () => {
-  const slideControls = usePropertySlide(MockImages);
+  const dispatch = useDispatch();
+  let { propertyId } = useParams();
+  const { isLoading, currentProperty } = useSelector(state => state.property);
+
+  let propertyImages = currentProperty.propertyImage
+    ? currentProperty.propertyImage.map(imageDict => imageDict.image)
+    : [];
+
+  const slideControls = usePropertySlide(propertyImages);
   const { setSlide } = slideControls;
+
+  useEffect(() => {
+    dispatch(handleGetProperty(propertyId));
+  }, [dispatch, propertyId]);
 
   return (
     <div className="property-page-container">
-      <PropertySlider sliderControls={slideControls} slideImage={MockImages} />
+      {<BackDropLoadingFull state={isLoading} />}
+      <PropertySlider
+        sliderControls={slideControls}
+        slideImage={propertyImages}
+      />
       <Layout fixed={true}>
         <div className="sticky-container">
           <div className="sticky-apply-container">
@@ -39,8 +54,8 @@ const HouseDetailsPage = () => {
                     <span>Monthly Price</span>
                   </div>
                   <div className="price">
-                    <ArrowDownRight className="arrow-icon"/>
-                    <span>₦10,500</span>
+                    <ArrowDownRight className="arrow-icon" />
+                    <span>{`₦${addComma(currentProperty.monthlyRent)}`}</span>
                   </div>
                 </div>
                 <div className="property-availability">
@@ -51,24 +66,29 @@ const HouseDetailsPage = () => {
               </Paper>
             </div>
           </div>
-          <Header />
+          <Header
+            propertyImages={propertyImages}
+            currentProperty={currentProperty}
+          />
           <MobileHeader
             sliderControls={slideControls}
-            slideImage={MockImages}
+            slideImage={propertyImages}
           />
           <HouseAddressMobile />
           <ImageSlideContext.Provider value={{ setSlide }}>
-            <HouseImagesSection />
+            <HouseImagesSection propertyImages={propertyImages} />
           </ImageSlideContext.Provider>
-          <HouseDescriptionSection />
-          <HouseAmenitiesSection />
+          <HouseDescriptionSection
+            propertyDescription={currentProperty.listingDescription || ""}
+          />
+          <HouseAmenitiesSection amenities={currentProperty.propertyAmenities || {}}/>
           <HowToRentProperty />
-          <ContactLandlordSection />
+          <ContactLandlordSection landlordDetails={currentProperty.landlord} />
         </div>
-        <SimilarPropertiesSection />
+        {/*<SimilarPropertiesSection />*/}
         <div className="sticky-apply-mobile">
           <button className="apply-button-mobile">
-            <span>Apply for $2,075</span>
+            <span>{`Apply for ${currentProperty.monthlyRent}`}</span>
             <span>/month</span>
           </button>
         </div>

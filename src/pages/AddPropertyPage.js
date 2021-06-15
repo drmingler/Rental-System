@@ -34,7 +34,7 @@ const AddPropertyPage = () => {
   };
 
   useEffect(() => {
-    if (id) {
+    if (id && files.length > 0) {
       let imageData = new FormData();
       files[1].forEach((image, idx) => imageData.append(`image`, image));
       imageData.append("propertyId", id);
