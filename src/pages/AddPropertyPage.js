@@ -1,6 +1,5 @@
 import React, {Fragment, useEffect, useState} from "react";
 import {Layout} from "../components/LayoutComponents/index";
-import {useForm} from "../hooks/useForm";
 import {handleCreateProperty, HandleUploadObject} from "../store/propertySlice";
 import {
   AddPropertyHeader,
@@ -13,6 +12,7 @@ import {
 import {houseUploadInitialValues, houseUploadValidator} from "../validators/formValidators";
 import {useDispatch, useSelector} from "react-redux";
 import {BackDropLoading} from "../components/CommonComponents/index";
+import {useAddPropertyForm} from "../hooks/useAddPropertyForm";
 
 const AddPropertyPage = () => {
   const dispatch = useDispatch();
@@ -20,17 +20,17 @@ const AddPropertyPage = () => {
   const { id } = useSelector(state => state.property.currentProperty);
   const [files, setFiles] = useState([]);
 
-  const uploadProperty = property => {
+  const uploadProperty = (property, lat, lng) => {
     const { address, latitude, longitude, files, image, ...payload } = property;
     setFiles([files, image]);
     payload.propertyAddress = {
       address,
-      latitude,
-      longitude
+      latitude: lat,
+      longitude: lng
     };
     dispatch(handleCreateProperty(payload));
   };
-  console.log(isLoading);
+
   useEffect(() => {
     if (id) {
       let imageData = new FormData();
@@ -47,7 +47,7 @@ const AddPropertyPage = () => {
     }
   }, [id, files, dispatch]);
 
-  const formHandlers = useForm(
+  const formHandlers = useAddPropertyForm(
     uploadProperty,
     houseUploadInitialValues,
     houseUploadValidator

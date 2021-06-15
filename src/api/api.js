@@ -98,7 +98,7 @@ async function fetchLocationFromGoogle(placeId) {
   const uri = `https://maps.googleapis.com/maps/api/geocode/json?place_id=${placeId}&key=${API_KEY}`;
   return await axios
     .get(uri)
-    .then(response => response.data.results.geometry.location)
+    .then(response => response.data.results[0].geometry.location)
     .catch(reason => console.log(reason));
 }
 
@@ -121,5 +121,6 @@ export {
   GetLocationCoordinates,
   SearchProperties,
   GetTransactionsHistory,
-  CreateSubscription
+  CreateSubscription,
+  fetchLocationFromGoogle
 };

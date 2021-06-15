@@ -181,8 +181,7 @@ export const houseUploadInitialValues = {
   securityDeposit: "",
   propertyAmenities: {},
   propertyRules: {},
-  longitude: 10,
-  latitude: 10,
+  placeId: "",
   image: [],
   files: []
   // propertyImages: {
@@ -206,8 +205,6 @@ export const houseUploadValidator = Yup.object({
   numberOfBedrooms: Yup.number().required("Required"),
   numberOfBathrooms: Yup.number().required("Required"),
   size: Yup.number().required("Required"),
-  // longitude: Yup.number().required("Required"),
-  // latitude: Yup.number().required("Required"),
   listingDescription: Yup.string()
     .min(50, "Must be 50 characters or more")
     .max(1500, "Must be 1500 characters or less")
