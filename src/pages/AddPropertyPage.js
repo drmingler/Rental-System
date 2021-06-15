@@ -13,11 +13,13 @@ import {houseUploadInitialValues, houseUploadValidator} from "../validators/form
 import {useDispatch, useSelector} from "react-redux";
 import {BackDropLoading} from "../components/CommonComponents/index";
 import {useAddPropertyForm} from "../hooks/useAddPropertyForm";
+import {useHistory} from "react-router-dom";
 
 const AddPropertyPage = () => {
+  let history = useHistory();
   const dispatch = useDispatch();
   const isLoading = useSelector(state => state.property.isLoading);
-  const { id } = useSelector(state => state.property.currentProperty);
+  const { id, landlord } = useSelector(state => state.property.currentProperty);
   const [files, setFiles] = useState([]);
 
   const uploadProperty = (property, lat, lng) => {
@@ -44,8 +46,11 @@ const AddPropertyPage = () => {
       fileData.append("propertyId", id);
       fileData.append("modelName", "OwnershipDocument");
       dispatch(HandleUploadObject(fileData));
+      if (landlord && Boolean(isLoading)) {
+        return history.push(`/my-listings/${landlord}`);
+      }
     }
-  }, [id, files, dispatch]);
+  }, [id, files, dispatch, landlord, history, isLoading]);
 
   const formHandlers = useAddPropertyForm(
     uploadProperty,

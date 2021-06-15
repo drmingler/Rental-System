@@ -1,14 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {DispatchWrapper} from "./constants";
-import {
-  CreateProperty,
-  DeleteProperty,
-  GetProperties,
-  GetProperty,
-  SearchProperties,
-  UpdateProperty,
-  UploadObject
-} from "../api/api";
+import {CreateProperty, DeleteProperty, GetProperty, SearchProperties, UpdateProperty, UploadObject} from "../api/api";
 
 const initialState = {
   pageNumber: 0,
@@ -34,6 +26,7 @@ const propertySlice = createSlice({
       const { pageCount, results } = action.payload;
       state.pageCount = pageCount;
       state.properties = results;
+      state.currentProperty = {};
       state.isLoading = state.isLoading - 1
       state.error = null;
     },
@@ -86,10 +79,10 @@ export const handleSearchProperties = query => {
   };
 };
 
-export const handleGetProperties = () => {
+export const handleGetProperties = (query) => {
   return async dispatch => {
     async function APICall() {
-      const property = await GetProperties();
+      const property = await SearchProperties(query);
       dispatch(setProperties(property));
     }
 

@@ -54,8 +54,8 @@ async function DeleteProperty(propertyId) {
   return MakeApiCall(uri, {}, methods.DELETE);
 }
 
-async function GetProperties() {
-  const uri = `${URI}/api/property-search/`;
+async function GetProperties(query) {
+  const uri = `${URI}/api/property-search/?${query}`;
   return MakeApiCall(uri, {}, methods.GET);
 }
 

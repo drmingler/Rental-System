@@ -2,12 +2,14 @@ import React from "react";
 import {Col, Row} from "react-bootstrap";
 import Paper from "@material-ui/core/Paper";
 import {ReactComponent as PlusIcon} from "../../assets/img/plus-icon.svg";
+import {useHistory} from "react-router-dom";
 
 const AddPropertySection = () => {
+  let history = useHistory();
   return (
     <Row>
       <Col md={4}>
-        <Paper elevation={0} className="add-property-wrapper">
+        <Paper elevation={0} className="add-property-wrapper" onClick={()=>history.push("/list")}>
           <div className="plus-icon-wrapper">
             <PlusIcon />
           </div>
