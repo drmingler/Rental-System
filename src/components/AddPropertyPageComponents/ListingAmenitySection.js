@@ -1,11 +1,17 @@
 import {Col, Container, Row} from "react-bootstrap";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {ReactComponent as AlertCircle} from "../../assets/img/alert-circle.svg";
 import {ListingAmenitiesIconWrapper, ListingInstructions} from "./index";
 import {propertyAmenities} from "../../helpers/PropertyConstants";
 
-const ListingAmenitySection = () => {
+const ListingAmenitySection = ({ formHandlers }) => {
+  const { setFieldValue } = formHandlers;
   const [houseAmenities, selectHouseAmenity] = useState({});
+
+  useEffect(() => {
+    setFieldValue("propertyAmenities", { ...houseAmenities });
+  }, [houseAmenities, setFieldValue]);
+
   return (
     <section className="listing-amenities-section">
       <div className="listing-amenities-container">
@@ -25,7 +31,7 @@ const ListingAmenitySection = () => {
                 >
                   <div className="amenities-instruction">
                     <div className="svg-icon">
-                      <AlertCircle/>
+                      <AlertCircle />
                     </div>
                     <span>Mark what your place offers</span>
                   </div>
@@ -33,16 +39,16 @@ const ListingAmenitySection = () => {
               </Row>
               <ul className="row">
                 {propertyAmenities.map(amenity => (
-                    <ListingAmenitiesIconWrapper
-                        houseAmenities={houseAmenities}
-                        selectHouseAmenity={selectHouseAmenity}
-                        InactiveIcon={amenity.iconLight}
-                        ActiveIcon={amenity.iconPurple}
-                        text={amenity.text}
-                        key={amenity.key}
-                        customKey={amenity.key}
-                        value={amenity.value}
-                    />
+                  <ListingAmenitiesIconWrapper
+                    houseAmenities={houseAmenities}
+                    selectHouseAmenity={selectHouseAmenity}
+                    InactiveIcon={amenity.iconLight}
+                    ActiveIcon={amenity.iconPurple}
+                    text={amenity.text}
+                    key={amenity.key}
+                    customKey={amenity.key}
+                    value={amenity.value}
+                  />
                 ))}
               </ul>
             </Col>

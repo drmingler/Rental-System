@@ -7,53 +7,78 @@ import Paper from "@material-ui/core/Paper";
 import {PlaceSuggestion} from "../CommonComponents/index";
 import useGoogleSuggestions from "../../hooks/useGoogleSuggestions";
 
-function AddPropertyHeader() {
+function AddPropertyHeader({ formHandlers }) {
   const {
     showActive,
     setActive,
     innerRef,
-    value,
-    setValue,
     placePredictions,
     getPlacePredictions
   } = useGoogleSuggestions();
-
+  const {
+    handleChange,
+    setFieldValue,
+    handleBlur,
+    values,
+    touched,
+    errors
+  } = formHandlers;
   return (
     <header className="add-property-header">
       <Container fluid={"sm"}>
         <Row>
           <Col xl={8} lg={7} md={12} className="property-form-container">
             <TextField
+              name="propertyName"
               className="property-name"
               placeholder="Property Name"
               fullWidth
               margin="normal"
+              onBlur={handleBlur}
+              value={values.propertyName}
+              onChange={handleChange}
+              error={touched.propertyName && Boolean(errors.propertyName)}
+              helperText={touched.propertyName && errors.propertyName}
             />
 
             <Row className="property-contact">
               <Col md={8}>
                 <div className="address-text_box" ref={innerRef}>
                   <TextField
+                    name="address"
                     fullWidth
                     label="Address"
                     margin="normal"
-                    value={value}
+                    value={values.address}
                     onChange={evt => {
                       getPlacePredictions({ input: evt.target.value });
-                      setValue(evt.target.value);
+                      setFieldValue("address", evt.target.value);
                       setActive(true);
                     }}
+                    error={touched.address && Boolean(errors.address)}
+                    helperText={touched.address && errors.address}
                   />
                   <PlaceSuggestion
                     placePredictions={placePredictions}
                     setActive={setActive}
                     showActive={showActive}
-                    setValue={setValue}
+                    setValue={setFieldValue}
                   />
                 </div>
               </Col>
               <Col md={4}>
-                <TextField fullWidth label="Unit# (optional)" margin="normal" />
+                <TextField
+                  name="unit"
+                  type="number"
+                  fullWidth
+                  label="Unit# (optional)"
+                  margin="normal"
+                  onBlur={handleBlur}
+                  value={values.unit}
+                  onChange={handleChange}
+                  error={touched.unit && Boolean(errors.unit)}
+                  helperText={touched.unit && errors.unit}
+                />
               </Col>
             </Row>
 
@@ -62,10 +87,14 @@ function AddPropertyHeader() {
                 <TextField
                   select
                   fullWidth
+                  name="propertyType"
                   label="Type"
                   margin="normal"
-                  // value={currency}
-                  // onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.propertyType}
+                  onChange={handleChange}
+                  error={touched.propertyType && Boolean(errors.propertyType)}
+                  helperText={touched.propertyType && errors.propertyType}
                 >
                   {propertyTypes.map((option, index) => (
                     <MenuItem key={index} value={option.value}>
@@ -76,12 +105,20 @@ function AddPropertyHeader() {
               </Col>
               <Col md={3}>
                 <TextField
+                  name="numberOfBedrooms"
                   select
                   fullWidth
                   label="Bedroom"
                   margin="normal"
-                  // value={currency}
-                  // onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.numberOfBedrooms}
+                  onChange={handleChange}
+                  error={
+                    touched.numberOfBedrooms && Boolean(errors.numberOfBedrooms)
+                  }
+                  helperText={
+                    touched.numberOfBedrooms && errors.numberOfBedrooms
+                  }
                 >
                   {bedroomNumber.map((option, index) => (
                     <MenuItem key={index} value={option.value}>
@@ -92,12 +129,21 @@ function AddPropertyHeader() {
               </Col>
               <Col md={3} xs={5}>
                 <TextField
+                  name="numberOfBathrooms"
                   select
                   fullWidth
                   label="Bath"
                   margin="normal"
-                  // value={currency}
-                  // onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.numberOfBathrooms}
+                  onChange={handleChange}
+                  error={
+                    touched.numberOfBathrooms &&
+                    Boolean(errors.numberOfBathrooms)
+                  }
+                  helperText={
+                    touched.numberOfBathrooms && errors.numberOfBathrooms
+                  }
                 >
                   {bathroomNumber.map((option, index) => (
                     <MenuItem key={index} value={option.value}>
@@ -107,7 +153,18 @@ function AddPropertyHeader() {
                 </TextField>
               </Col>
               <Col md={{ span: 3, offset: 0 }} xs={{ span: 5, offset: 2 }}>
-                <TextField fullWidth label="SQFT" margin="normal" />
+                <TextField
+                  fullWidth
+                  name="size"
+                  label="SQFT"
+                  margin="normal"
+                  type="number"
+                  onBlur={handleBlur}
+                  value={values.size}
+                  onChange={handleChange}
+                  error={touched.size && Boolean(errors.size)}
+                  helperText={touched.size && errors.size}
+                />
               </Col>
             </Row>
           </Col>
@@ -121,6 +178,7 @@ function AddPropertyHeader() {
               <Row className="monthly-rent-inputs">
                 <Col md={12}>
                   <TextField
+                    name="monthlyRent"
                     label="Monthly Price*"
                     fullWidth
                     margin="normal"
@@ -128,10 +186,16 @@ function AddPropertyHeader() {
                     InputLabelProps={{
                       shrink: true
                     }}
+                    onBlur={handleBlur}
+                    value={values.monthlyRent}
+                    onChange={handleChange}
+                    error={touched.monthlyRent && Boolean(errors.monthlyRent)}
+                    helperText={touched.monthlyRent && errors.monthlyRent}
                   />
                 </Col>
                 <Col md={12}>
                   <TextField
+                    name="securityDeposit"
                     label="Security Deposit*"
                     fullWidth
                     margin="normal"
@@ -139,6 +203,15 @@ function AddPropertyHeader() {
                     InputLabelProps={{
                       shrink: true
                     }}
+                    onBlur={handleBlur}
+                    value={values.securityDeposit}
+                    onChange={handleChange}
+                    error={
+                      touched.securityDeposit && Boolean(errors.securityDeposit)
+                    }
+                    helperText={
+                      touched.securityDeposit && errors.securityDeposit
+                    }
                   />
                 </Col>
                 <Col md={12} className="monthly-rent-instruction">

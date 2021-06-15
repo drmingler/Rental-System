@@ -8,8 +8,8 @@ export function loadingFailed(state, action) {
 }
 
 export async function DispatchWrapper(dispatch, APICall, loading, failed) {
-  dispatch(loading);
   try {
+    dispatch(loading());
     await APICall();
   } catch (err) {
     dispatch(failed(err.toString()));

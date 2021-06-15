@@ -7,7 +7,9 @@ const ListingButtonSection = () => {
       <Container fluid="lg">
         <Row>
           <Col md={{ span: 6, offset: 3 }} lg={{ span: 5, offset: 3 }}>
-            <button className="listing-button">Save & Post</button>
+            <button className="listing-button" type="submit">
+              Save & Post
+            </button>
             <div className="listing-terms">
               <span>
                 By clicking "Save & Post" you agree to <br /> our{" "}

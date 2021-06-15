@@ -1,7 +1,7 @@
 import ImageUploaderContainer from "./ImageUploaderContainer";
 import ListingImageUploader from "./ListingImageUploader";
 import AddPropertyHeader from "./AddPropertyHeader";
-import HouseListingSection from "./HouseListingSection";
+import HouseDescriptionSection from "./HouseDescriptionSection";
 import ListingInstructions from "./ListingInstructions";
 import ListingAmenitySection from "./ListingAmenitySection";
 import AvailabilityDateSection from "./AvailabilityDateSection";
@@ -15,7 +15,7 @@ export {
     ImageUploaderContainer,
     ListingImageUploader,
     AddPropertyHeader,
-    HouseListingSection,
+    HouseDescriptionSection,
     ListingInstructions,
     ListingAmenitySection,
     AvailabilityDateSection,

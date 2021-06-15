@@ -1,18 +1,29 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {HouseRulesIconWrapper, ImageUploaderContainer, ListingInstructions} from "./index";
 import TextField from "@material-ui/core/TextField";
 import {houseRulesConfig} from "../../helpers/PropertyConstants";
 
-
-function HouseListingSection() {
+function HouseDescriptionSection({ formHandlers }) {
   const [houseRules, selectHouseRule] = useState({});
+  const {
+    handleChange,
+    touched,
+    errors,
+    setFieldValue,
+    handleBlur,
+    values
+  } = formHandlers;
+
+  useEffect(() => {
+    setFieldValue("propertyRules", { ...houseRules });
+  }, [houseRules, setFieldValue]);
 
   return (
-      <section className="house-listing-section">
-        <Container fluid="lg">
-          <Row>
-            <ImageUploaderContainer/>
+    <section className="house-listing-section">
+      <Container fluid="lg">
+        <Row>
+          <ImageUploaderContainer formHandlers={formHandlers} />
           <ListingInstructions offset={0} InstructionKey={"instruction1"}>
             Tenants like to see photos of listed property. The first photo will
             be used as a listing cover.
@@ -25,16 +36,16 @@ function HouseListingSection() {
               <div className="pet-policy-items-container">
                 <Row>
                   {houseRulesConfig.map(rules => (
-                      <HouseRulesIconWrapper
-                          selectHouseRule={selectHouseRule}
-                          houseRules={houseRules}
-                          ActiveIcon={rules.iconPurple}
-                          InactiveIcon={rules.iconLight}
-                          text={rules.text}
-                          key={rules.key}
-                          customKey={rules.key}
-                          value={rules.value}
-                      />
+                    <HouseRulesIconWrapper
+                      selectHouseRule={selectHouseRule}
+                      houseRules={houseRules}
+                      ActiveIcon={rules.iconPurple}
+                      InactiveIcon={rules.iconLight}
+                      text={rules.text}
+                      key={rules.key}
+                      customKey={rules.key}
+                      value={rules.value}
+                    />
                   ))}
                 </Row>
               </div>
@@ -54,8 +65,16 @@ function HouseListingSection() {
                 placeholder="Type a short description"
                 multiline
                 fullWidth
+                name="listingDescription"
                 margin="normal"
                 helperText="Minimum 140 characters"
+                onBlur={handleBlur}
+                value={values.listingDescription}
+                onChange={handleChange}
+                error={
+                  touched.listingDescription &&
+                  Boolean(errors.listingDescription)
+                }
               />
             </Col>
             <ListingInstructions offset={1} InstructionKey={"instruction3"}>
@@ -67,4 +86,4 @@ function HouseListingSection() {
     </section>
   );
 }
-export default HouseListingSection;
+export default HouseDescriptionSection;

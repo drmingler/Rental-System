@@ -3,19 +3,19 @@ import {Col} from "react-bootstrap";
 import useSelect from "../../hooks/useSelect";
 
 const HouseRulesIconWrapper = ({
-                                 InactiveIcon,
-                                 ActiveIcon,
-                                 text,
-                                 houseRules,
-                                 selectHouseRule,
-                                 customKey,
-                                 value
-                               }) => {
+  InactiveIcon,
+  ActiveIcon,
+  text,
+  houseRules,
+  selectHouseRule,
+  customKey,
+  value
+}) => {
   const { selectedOption, handleSelect } = useSelect(
-      houseRules,
-      selectHouseRule,
-      customKey,
-      value
+    houseRules,
+    selectHouseRule,
+    customKey,
+    value
   );
 
   return (

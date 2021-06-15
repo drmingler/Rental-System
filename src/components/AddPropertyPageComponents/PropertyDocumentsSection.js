@@ -1,18 +1,20 @@
-import React, {useState} from "react";
+import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {ReactComponent as FileUploaderIcon} from "../../assets/img/file-plus.svg";
 import {FileList} from "./index";
 
-const PropertyDocumentsSection = () => {
-  const [files, setFiles] = useState([]);
+const PropertyDocumentsSection = ({ formHandlers }) => {
+  const { setFieldValue, values } = formHandlers;
+
   const handleImageUpload = event => {
     const image = event.currentTarget.files[0];
-    setFiles([...files, image]);
+    setFieldValue("files", [...values.files, image]);
   };
   const handleRemoveFile = id => {
-    files.splice(id, 1);
-    setFiles([...files]);
+    values.files.splice(id, 1);
+    setFieldValue("files", [...values.files]);
   };
+
   return (
     <section className="property-documents-section">
       <Container fluid="lg">
@@ -24,7 +26,7 @@ const PropertyDocumentsSection = () => {
                 <span className="text">Upload property documents here</span>
               </div>
               <input
-                accept="image/*"
+                name="files"
                 multiple
                 type="file"
                 className="upload-file-input"
@@ -34,7 +36,7 @@ const PropertyDocumentsSection = () => {
           </Col>
           <Col md={12} lg={9}>
             <ul className="list-of-files-container">
-              {files.map((file, idx) => (
+              {values.files.map((file, idx) => (
                 <FileList
                   name={file.name}
                   size={file.size}

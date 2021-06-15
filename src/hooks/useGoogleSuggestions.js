@@ -1,4 +1,3 @@
-import {useState} from "react";
 import useGoogle from "react-google-autocomplete/lib/usePlacesAutocompleteService";
 import useDetectClickOutsideTarget from "./useDetectClickOutsideTarget";
 import {API_KEY} from "../api/apiUtils";
@@ -13,13 +12,11 @@ const useGoogleSuggestions = () => {
   });
 
   const { showActive, setActive, innerRef } = useDetectClickOutsideTarget();
-  const [value, setValue] = useState("");
+
   return {
     showActive,
     setActive,
     innerRef,
-    value,
-    setValue,
     placePredictions,
     getPlacePredictions
   };

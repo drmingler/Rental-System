@@ -6,6 +6,7 @@ import Switch from "./Switch";
 import HousePrice from "./HousePrice";
 import PlaceSuggestion from "./PlaceSuggestion";
 import ReRoute from "./ReRoute";
+import BackDropLoading from "./BackDropLoading";
 
 export {
   AmenitiesIconWrapper,
@@ -15,5 +16,6 @@ export {
   Switch,
   HousePrice,
   PlaceSuggestion,
-  ReRoute
+  ReRoute,
+  BackDropLoading
 };

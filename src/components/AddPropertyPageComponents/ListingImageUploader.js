@@ -4,7 +4,9 @@ import {ReactComponent as Cancel} from "../../assets/img/x.svg";
 import {ReactComponent as Camera} from "../../assets/img/camera.svg";
 import useImageUploader from "../../hooks/useImageUploader";
 
-const ListingImageUploader = ({uploadCallback}) => {
+const ListingImageUploader = ({ uploadCallback, formHandlers }) => {
+  const { setFieldValue, values } = formHandlers;
+
   const {
     handleImageUpload,
     handleRemoveImage,
@@ -32,11 +34,18 @@ const ListingImageUploader = ({uploadCallback}) => {
             <span className="image-instruction">Add Photo</span>
           </div>
           <input
+            name="image"
             accept="image/*"
             multiple
             type="file"
             className="upload-file-input"
-            onChange={handleImageUpload}
+            onChange={event => {
+              handleImageUpload(event);
+              setFieldValue("image", [
+                ...values.image,
+                event.currentTarget.files[0]
+              ]);
+            }}
           />
         </Fragment>
       )}

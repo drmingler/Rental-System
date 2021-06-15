@@ -103,8 +103,7 @@ export const updateDetailsValidator = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
     .required("Required"),
-  birthDate: Yup.string()
-    .required("Date field can not be empty"),
+  birthDate: Yup.string().required("Date field can not be empty"),
   gender: Yup.string().required("Required"),
   nationality: Yup.string().required("Required"),
   occupation: Yup.string().required("Required"),
@@ -180,10 +179,22 @@ export const houseUploadInitialValues = {
   propertyType: "",
   monthlyRent: "",
   securityDeposit: "",
-  longitude: "",
-  latitude: "",
-  images: [],
+  propertyAmenities: {},
+  propertyRules: {},
+  longitude: 10,
+  latitude: 10,
+  image: [],
   files: []
+  // propertyImages: {
+  //   modelName : "PropertyImage",
+  //   propertyId: "",
+  //   image: []
+  // },
+  // propertyFiles: {
+  //   modelName : "OwnershipDocument",
+  //   propertyId: "",
+  //   image: []
+  // },
 };
 
 export const houseUploadValidator = Yup.object({
@@ -195,9 +206,9 @@ export const houseUploadValidator = Yup.object({
   numberOfBedrooms: Yup.number().required("Required"),
   numberOfBathrooms: Yup.number().required("Required"),
   size: Yup.number().required("Required"),
-  longitude: Yup.number().required("Required"),
-  latitude: Yup.number().required("Required"),
-  listingDescription: Yup.number()
+  // longitude: Yup.number().required("Required"),
+  // latitude: Yup.number().required("Required"),
+  listingDescription: Yup.string()
     .min(50, "Must be 50 characters or more")
     .max(1500, "Must be 1500 characters or less")
     .required("Required"),
@@ -205,7 +216,7 @@ export const houseUploadValidator = Yup.object({
   propertyType: Yup.string().required("Required"),
   monthlyRent: Yup.number().required("Required"),
   securityDeposit: Yup.number().required("Required"),
-  images: Yup.mixed()
+  image: Yup.mixed()
     .test("fileFormat", "Unsupported format, upload images only", value => {
       const result = value.map(
         file => !file || (file && SUPPORTED_IMAGE_FORMATS.includes(file.type))

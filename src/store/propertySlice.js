@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {DispatchWrapper, loadingFailed, startLoading} from "./constants";
+import {DispatchWrapper} from "./constants";
 import {
   CreateProperty,
   DeleteProperty,
@@ -12,7 +12,7 @@ import {
 
 const initialState = {
   pageNumber: 0,
-  isLoading: false,
+  isLoading: 0,
   currentProperty: {},
   properties: [],
   error: null
@@ -22,17 +22,19 @@ const propertySlice = createSlice({
   name: "property",
   initialState: initialState,
   reducers: {
-    loading: startLoading,
+    loading(state) {
+      state.isLoading = state.isLoading + 1;
+    },
     setProperty(state, action) {
       state.currentProperty = action.payload;
-      state.isLoading = false;
+      state.isLoading = state.isLoading - 1
       state.error = null;
     },
     setProperties(state, action) {
       const { pageCount, results } = action.payload;
       state.pageCount = pageCount;
       state.properties = results;
-      state.isLoading = false;
+      state.isLoading = state.isLoading - 1
       state.error = null;
     },
     deleteProperty(state, action) {
@@ -40,14 +42,16 @@ const propertySlice = createSlice({
       state.properties = state.properties.filter(
         property => property.id !== id
       );
-      state.isLoading = false;
+      state.isLoading = state.isLoading - 1
       state.error = null;
     },
     propertyObjectUploaded(state) {
-      state.isLoading = false;
+      state.isLoading = state.isLoading - 1
       state.error = null;
     },
-    failed: loadingFailed
+    failed(state) {
+      state.isLoading = 0
+    }
   }
 });
 
