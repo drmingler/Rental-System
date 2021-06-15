@@ -1,5 +1,5 @@
 import useDetectClickOutsideTarget from "../../hooks/useDetectClickOutsideTarget";
-import {getPropertyStatus} from "../../helpers/utils";
+import {getPropertyStatus, handleRedirect} from "../../helpers/utils";
 import {Col} from "react-bootstrap";
 import Card from "@material-ui/core/Card";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
@@ -22,10 +22,6 @@ const ListingCard = ({ status, address, propertyImage, propertyId }) => {
     setActive(!showActive);
   };
 
-  const handleRedirect = path => {
-    history.push(path);
-  };
-
   let propertyStatus = getPropertyStatus(status);
   return (
     <Col md={4} className="listings-card-container">
@@ -42,7 +38,9 @@ const ListingCard = ({ status, address, propertyImage, propertyId }) => {
               <ul>
                 <li
                   className="dropdown-option"
-                  onClick={() => handleRedirect(`/property/${propertyId}`)}
+                  onClick={() =>
+                    handleRedirect(`/property/${propertyId}`, history)
+                  }
                 >
                   <VisibilityIcon />
                   <span>View Listing</span>

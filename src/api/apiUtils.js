@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const URI = process.env.REACT_APP_URI;
 export const API_KEY = process.env.REACT_APP_APIKEY;
+export const API_TEST_KEY = process.env.REACT_APP_TEST_APIKEY;
 export const SOCKET_URI = "ws://127.0.0.1:8000/ws/chat/";
 
 export const methods = {

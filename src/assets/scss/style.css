@@ -12492,6 +12492,10 @@ html {
   max-height: calc(100vh - 130px);
   height: 100%;
 }
+.house-scroll-area .MuiBackdrop-root {
+  position: absolute;
+  z-index: -1;
+}
 
 .loading {
   display: flex;

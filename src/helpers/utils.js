@@ -44,6 +44,10 @@ export const pickAmenities = amenities => {
   return validAmenities;
 };
 
+export const handleRedirect = (path, history) => {
+  history.push(path);
+};
+
 export { getPropertyStatus, addComma };
 
 export const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -59,3 +63,7 @@ export function validateUploads(value, MAX_SIZE) {
 
   return sum <= MAX_SIZE;
 }
+
+export const Capitalize = string => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};

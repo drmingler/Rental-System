@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import NavBar from "../components/LayoutComponents/NavBar";
 import {MobileNavbar} from "../components/LayoutComponents/index";
@@ -10,14 +10,21 @@ import {
   SearchControlPanelMobile
 } from "../components/HousesForRentPageComponents/index";
 import Map from "../components/HousesForRentPageComponents/Map";
+import {useDispatch, useSelector} from "react-redux";
+import {handleSearchProperties} from "../store/propertySlice";
+import {useParams} from "react-router-dom";
 
 const HousesForRentPage = () => {
+  const dispatch = useDispatch();
+  let center = useParams();
   const [showPanel, setPanel] = useState(false);
   const [smallDevice, setCurrentDevice] = useState(false);
+  const [newCenter, setNewCenter] = useState({});
+  const { properties, isLoading } = useSelector(state => state.property);
 
   // Keep track of selected filter options
   const [filtersOptions, setFilterOption] = useState({});
-  console.log(filtersOptions)
+  console.log(filtersOptions);
 
   const togglePanel = (panelState, isSmallDevice) => {
     setPanel(panelState);
@@ -29,6 +36,14 @@ const HousesForRentPage = () => {
   const clearFilter = () => {
     setFilterOption({});
   };
+
+  useEffect(() => {
+    const { lat, lng } = newCenter || center;
+    let adjustedLng = Number(lng) - 1;
+    let adjustedLat = Number(lat) + 1;
+    const query = `latitude__range=${adjustedLng}__${adjustedLat}&longitude__range=${adjustedLng}__${adjustedLat}`;
+    lat && dispatch(handleSearchProperties(query));
+  }, [center, dispatch, newCenter]);
 
   return (
     <Fragment>
@@ -55,15 +70,19 @@ const HousesForRentPage = () => {
                 clearFilter={clearFilter}
               />
               <CustomTransition
-                  state={showPanel}
-                  initialClass={"find-property-btn"}
-                  finalClass={"find-property-btn-enter"}
+                state={showPanel}
+                initialClass={"find-property-btn"}
+                finalClass={"find-property-btn-enter"}
               >
                 <button>Find Properties</button>
               </CustomTransition>
-              <HouseScrollArea/>
+              <HouseScrollArea properties={properties} isLoading={isLoading} />
             </Col>
-            <Map/>
+            <Map
+              center={center}
+              properties={properties}
+              setNewCenter={setNewCenter}
+            />
           </Row>
         </Container>
       </section>

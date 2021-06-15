@@ -5,7 +5,7 @@ import {ReactComponent as PhoneIcon} from "../../assets/img/phone.svg";
 import {ReactComponent as MailIcon} from "../../assets/img/mail.svg";
 import {ReactComponent as UserIcon} from "../../assets/img/user.svg";
 import {ReactComponent as HomeIcon} from "../../assets/img/home.svg";
-import {toFormatedDate} from "../../helpers/utils";
+import {handleRedirect, toFormatedDate} from "../../helpers/utils";
 import {useHistory} from "react-router-dom";
 
 const ContactLandlordSection = ({ landlordDetails }) => {
@@ -20,9 +20,6 @@ const ContactLandlordSection = ({ landlordDetails }) => {
     bio
   } = landlordDetails || {};
 
-  function handleRedirect(path) {
-    history.push(path);
-  }
   return (
     <section className="contact-landlord-section">
       <Container fluid="lg">
@@ -43,7 +40,9 @@ const ContactLandlordSection = ({ landlordDetails }) => {
                     </div>
                     <button
                       className="contact-landlord-button"
-                      onClick={() => handleRedirect(`/messages/chat/${id}`)}
+                      onClick={() =>
+                        handleRedirect(`/messages/chat/${id}`, history)
+                      }
                     >
                       {`Contact ${firstName}`}
                     </button>

@@ -288,6 +288,10 @@
   overflow-y: auto;
   max-height: calc(100vh - 130px);
   height: 100%;
+  .MuiBackdrop-root{
+    position: absolute;
+    z-index: -1;
+  }
 }
 .loading {
   display: flex;

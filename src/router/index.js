@@ -39,7 +39,7 @@ const Routers = () => {
           path={"/property/:propertyId"}
           component={HouseDetailsPage}
         />
-        <Route exact path={"/properties"} component={HousesForRentPage} />
+        <Route exact path={"/properties/:lat/:lng"} component={HousesForRentPage} />
         <ProtectedRoutes exact path={"/profile"} component={ProfileSettings} />
         <ProtectedRoutes
           exact
